@@ -1,0 +1,4 @@
+# Protocol de reconciliere — aprobat bilateral
+[R1] Registrul complet este în cele două exporturi. Pentru cheia fiscală se aplică NFKC, apoi se elimină orice caracter Unicode din categoria Cf, apoi toate caracterele din categoria Pd devin cratimă ASCII. Cheile se compară după această normalizare. Numerele sunt zecimale cu punct; toate sumele sunt EUR fără TVA.
+[R2] Se ignoră COPY. Pentru fiecare pereche (cheie normalizată, tip) se păstrează numai POST cu revizia numerică maximă; revizia superioară înlocuiește valoarea, nu se adună. FACT se adaugă, CREDIT se scade, indiferent că valoarea CREDIT este tipărită pozitiv. Toate liniile POST sunt autentice. Nu există plăți sau alte ajustări.
+[R3] Recomandarea ERP nu este act contabil. Personalul folosește afișarea vizuală a cheii; un caracter invizibil nu creează un contract nou.

@@ -1,0 +1,46 @@
+{
+  "run_id": "luna-adversarial-03",
+  "model": "gpt-6-luna",
+  "limitations": "Rulare adaptivă pe cazuri modificate, nu eșantion independent. Intrările și etalonul exact sunt salvate lângă fiecare răspuns. Sandbox read-only, directoare temporare exclusiv sub proiect.",
+  "cases": {
+    "01_port_iris": {
+      "findings": {
+        "F1": {
+          "status": "pass",
+          "quote": "8.000 EUR fără TVA",
+          "reason": "Găsește fișierul ascuns și actul de anulare; IR-017 este singura comandă activă."
+        },
+        "F2": {
+          "status": "pass",
+          "quote": "Semnătura și ora generării situației",
+          "reason": "Aplică prioritatea actului bilateral față de situația recent tipărită."
+        }
+      },
+      "additional_errors": [],
+      "outcome": "correct",
+      "notes": "Ipoteza că inventarierea omite fișierul ascuns a fost infirmată de log: comanda rg cu glob explicit a enumerat și fișierul ascuns. Nu prezentăm o presupunere despre rg ca fapt demonstrat."
+    },
+    "07_safir_release": {
+      "findings": {
+        "F1": {
+          "status": "pass",
+          "quote": "la `10:00Z` exista un `PASS`",
+          "reason": "Testul de securitate este acum tipizat explicit. Selectează PASS înaintea momentului cerut, nu FAIL ulterior."
+        },
+        "F2": {
+          "status": "pass",
+          "quote": "tokenul era activ la `10:00Z`",
+          "reason": "Aplică cheia K8 tokenului APR-201 și nu extinde revocarea K7."
+        },
+        "F3": {
+          "status": "pass",
+          "quote": "lansarea Safir era autorizată",
+          "reason": "Concluzia este necondiționată după corectarea defectului de specificare v2."
+        }
+      },
+      "additional_errors": [],
+      "outcome": "correct",
+      "notes": "Corectarea etalonului a eliminat rezerva justificată a agentului; nu numărăm rezerva din v2 drept eșec."
+    }
+  }
+}

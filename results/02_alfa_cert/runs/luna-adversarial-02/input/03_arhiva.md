@@ -1,0 +1,70 @@
+# Arhivă administrativă a grupului
+| referință | circuit | stare | operator | oră |
+|---|---|---|---|---|
+| AL-001 | recepție | confirmat | Mara Ilia | 09:07 |
+| AL-002 | arhivă | reluat | Marian Ilie | 10:14 |
+| AL-003 | inventar | închis | Mara Ilie | 11:21 |
+| AL-004 | parcare | înregistrat | Mara Ilia | 12:28 |
+| AL-005 | cablare | confirmat | Marian Ilie | 13:35 |
+| AL-006 | vestiar | reluat | Mara Ilie | 14:42 |
+| AL-007 | recepție | închis | Mara Ilia | 15:49 |
+| AL-008 | arhivă | înregistrat | Marian Ilie | 16:56 |
+| AL-009 | inventar | confirmat | Mara Ilie | 08:03 |
+| AL-010 | parcare | reluat | Mara Ilia | 09:10 |
+| AL-011 | cablare | închis | Marian Ilie | 10:17 |
+| AL-012 | vestiar | înregistrat | Mara Ilie | 11:24 |
+| AL-013 | recepție | confirmat | Mara Ilia | 12:31 |
+| AL-014 | arhivă | reluat | Marian Ilie | 13:38 |
+| AL-015 | inventar | închis | Mara Ilie | 14:45 |
+| AL-016 | parcare | înregistrat | Mara Ilia | 15:52 |
+| AL-017 | cablare | confirmat | Marian Ilie | 16:59 |
+| AL-018 | vestiar | reluat | Mara Ilie | 08:06 |
+| AL-019 | recepție | închis | Mara Ilia | 09:13 |
+| AL-020 | arhivă | înregistrat | Marian Ilie | 10:20 |
+| AL-021 | inventar | confirmat | Mara Ilie | 11:27 |
+| AL-022 | parcare | reluat | Mara Ilia | 12:34 |
+| AL-023 | cablare | închis | Marian Ilie | 13:41 |
+| AL-024 | vestiar | înregistrat | Mara Ilie | 14:48 |
+| AL-025 | recepție | confirmat | Mara Ilia | 15:55 |
+| AL-026 | arhivă | reluat | Marian Ilie | 16:02 |
+| AL-027 | inventar | închis | Mara Ilie | 08:09 |
+| AL-028 | parcare | înregistrat | Mara Ilia | 09:16 |
+| AL-029 | cablare | confirmat | Marian Ilie | 10:23 |
+| AL-030 | vestiar | reluat | Mara Ilie | 11:30 |
+| AL-031 | recepție | închis | Mara Ilia | 12:37 |
+| AL-032 | arhivă | înregistrat | Marian Ilie | 13:44 |
+| AL-033 | inventar | confirmat | Mara Ilie | 14:51 |
+| AL-034 | parcare | reluat | Mara Ilia | 15:58 |
+| AL-035 | cablare | închis | Marian Ilie | 16:05 |
+| AL-036 | vestiar | înregistrat | Mara Ilie | 08:12 |
+| AL-037 | recepție | confirmat | Mara Ilia | 09:19 |
+| AL-038 | arhivă | reluat | Marian Ilie | 10:26 |
+| AL-039 | inventar | închis | Mara Ilie | 11:33 |
+| AL-040 | parcare | înregistrat | Mara Ilia | 12:40 |
+| AL-041 | cablare | confirmat | Marian Ilie | 13:47 |
+| AL-042 | vestiar | reluat | Mara Ilie | 14:54 |
+| AL-043 | recepție | închis | Mara Ilia | 15:01 |
+| AL-044 | arhivă | înregistrat | Marian Ilie | 16:08 |
+| AL-045 | inventar | confirmat | Mara Ilie | 08:15 |
+| AL-046 | parcare | reluat | Mara Ilia | 09:22 |
+| AL-047 | cablare | închis | Marian Ilie | 10:29 |
+| AL-048 | vestiar | înregistrat | Mara Ilie | 11:36 |
+| AL-049 | recepție | confirmat | Mara Ilia | 12:43 |
+| AL-050 | arhivă | reluat | Marian Ilie | 13:50 |
+| AL-051 | inventar | închis | Mara Ilie | 14:57 |
+| AL-052 | parcare | înregistrat | Mara Ilia | 15:04 |
+| AL-053 | cablare | confirmat | Marian Ilie | 16:11 |
+| AL-054 | vestiar | reluat | Mara Ilie | 08:18 |
+| AL-055 | recepție | închis | Mara Ilia | 09:25 |
+| AL-056 | arhivă | înregistrat | Marian Ilie | 10:32 |
+| AL-057 | inventar | confirmat | Mara Ilie | 11:39 |
+| AL-058 | parcare | reluat | Mara Ilia | 12:46 |
+| AL-059 | cablare | închis | Marian Ilie | 13:53 |
+| AL-060 | vestiar | înregistrat | Mara Ilie | 14:00 |
+| AL-061 | recepție | confirmat | Mara Ilia | 15:07 |
+| AL-062 | arhivă | reluat | Marian Ilie | 16:14 |
+| AL-063 | inventar | închis | Mara Ilie | 08:21 |
+| AL-064 | parcare | înregistrat | Mara Ilia | 09:28 |
+[S1] Extras S, înscriere 30.05.2026, efect 01.06.2026: Alfa Services SRL 400101 absorbită integral de Alfa SRL 400100. Semnătură registru validă. Nu este o cesiune comercială de marcă.
+[S2] Anexă Q-102/A, semnată de emitentul certificatului la 02.05.2026: se adaugă «vânzare servere — punct Cluj» domeniilor Q-102, fără eliminarea mentenanței Iași. Data finală rămâne 31.12.2026.
+[S3] Alfa Service SRL 400110 este filială distinctă, fără succesiune S și fără domenii Q-102. Consultantul acesteia se numește Ion Marin.

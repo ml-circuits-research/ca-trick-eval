@@ -1,0 +1,35 @@
+{
+  "case": "04_meridian_contract",
+  "model_requested": "gpt-6-luna",
+  "reasoning_effort": "medium",
+  "status": "completed",
+  "exit_code": 0,
+  "duration_seconds": 65.21,
+  "input_sha256": {
+    "01_contract.md": "b9cab5ba0dbf952e1efddffbb38f680b70d8df21a47a6efac45cdbd67a08aa58",
+    "02_mailuri.md": "6738855a6b99743588ddff855c4be618f77142e4c03abf255fb08c8c71b3c3ec",
+    "03_sinteza_v9.md": "e10b3aec3753552a3d5cbb8afa00e6a0cb4008ce6c3be3ad5a1767668a116c89"
+  },
+  "command": [
+    "codex",
+    "exec",
+    "--ignore-user-config",
+    "--ignore-rules",
+    "--ephemeral",
+    "--model",
+    "gpt-6-luna",
+    "--sandbox",
+    "read-only",
+    "--skip-git-repo-check",
+    "-c",
+    "model_reasoning_effort=\"medium\"",
+    "--cd",
+    "/home/salboaie/work/ml-circuits-research/ca-trick-eval/.work/case-ohdvu5jd/documents",
+    "--json",
+    "--output-last-message",
+    "/home/salboaie/work/ml-circuits-research/ca-trick-eval/results/04_meridian_contract/runs/luna-local-01/answer.md",
+    "-"
+  ],
+  "isolation": "Fresh case-only working directory; read-only Codex sandbox. Not OS-level read confinement.",
+  "timestamp_utc": "2026-11-11T14:44:55.268365+00:00"
+}

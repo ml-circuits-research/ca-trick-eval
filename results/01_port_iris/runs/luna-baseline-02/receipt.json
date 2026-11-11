@@ -1,0 +1,35 @@
+{
+  "case": "01_port_iris",
+  "model_requested": "gpt-6-luna",
+  "reasoning_effort": "medium",
+  "status": "completed",
+  "exit_code": 0,
+  "duration_seconds": 30.14,
+  "input_sha256": {
+    "01_situatie.md": "40a918bc1da6a42305b0db9daa1459f8b08c5220094766577e86e455a619e018",
+    "02_reguli.md": "2cfc2a9f1ffff29bf3879d407d78ee499d6b6095d2386301e0b5fcf15dabe00a",
+    "03_corespondenta.md": "9971677f1e41a7b61cab136fa95dc9914165cc78dabe41a2de10039155e6d5a3"
+  },
+  "command": [
+    "codex",
+    "exec",
+    "--ignore-user-config",
+    "--ignore-rules",
+    "--ephemeral",
+    "--model",
+    "gpt-6-luna",
+    "--sandbox",
+    "read-only",
+    "--skip-git-repo-check",
+    "-c",
+    "model_reasoning_effort=\"medium\"",
+    "--cd",
+    "/tmp/ca-trick-case-b_cwklt7",
+    "--json",
+    "--output-last-message",
+    "/home/salboaie/work/ml-circuits-research/ca-trick-eval/results/01_port_iris/runs/luna-baseline-02/answer.md",
+    "-"
+  ],
+  "isolation": "Fresh case-only working directory; read-only Codex sandbox. Not OS-level read confinement.",
+  "timestamp_utc": "2026-11-11T14:41:38.782898+00:00"
+}

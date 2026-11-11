@@ -1,0 +1,35 @@
+{
+  "case": "10_vega_incident",
+  "model_requested": "gpt-6-luna",
+  "reasoning_effort": "medium",
+  "status": "completed",
+  "exit_code": 0,
+  "duration_seconds": 35.7,
+  "input_sha256": {
+    "01_jurnal.md": "24f75d81a8cbeba31c7da1ebfe16da12b6ccaf510840053182335d14453cfc79",
+    "02_audit.md": "cc7c4a23660a6a36489d01ab064eae4fb87cf86d1bea52a000b1d7f4b9b43b1a",
+    "03_raport_preliminar.md": "ea4325d77b918851b824cc81be9e8ad6afd397cb7582c4f30f56511ea0b57ae0"
+  },
+  "command": [
+    "codex",
+    "exec",
+    "--ignore-user-config",
+    "--ignore-rules",
+    "--ephemeral",
+    "--model",
+    "gpt-6-luna",
+    "--sandbox",
+    "read-only",
+    "--skip-git-repo-check",
+    "-c",
+    "model_reasoning_effort=\"medium\"",
+    "--cd",
+    "/home/salboaie/work/ml-circuits-research/ca-trick-eval/.work/case-12ydipbd/documents",
+    "--json",
+    "--output-last-message",
+    "/home/salboaie/work/ml-circuits-research/ca-trick-eval/results/10_vega_incident/runs/luna-local-01/answer.md",
+    "-"
+  ],
+  "isolation": "Fresh case-only working directory; read-only Codex sandbox. Not OS-level read confinement.",
+  "timestamp_utc": "2026-11-11T14:48:18.384660+00:00"
+}

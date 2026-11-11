@@ -1,0 +1,35 @@
+{
+  "case": "02_alfa_cert",
+  "model_requested": "gpt-6-luna",
+  "reasoning_effort": "medium",
+  "status": "completed",
+  "exit_code": 0,
+  "duration_seconds": 33.04,
+  "input_sha256": {
+    "01_achizitie.md": "2598e4e56876936efd2cf5b0c4f700c1dc8c67f7c547559d113fff2b588d6712",
+    "02_certificat.md": "94c2ae5bfc7cdf7c6d1d7392eef83b37939293e7781f5ee3b161ff9c15ec845f",
+    "03_politica.md": "3e6d7932bfdff2b1f9ed1b3c2e01a7e911001fec53aefe6027f7fad9f21873ce"
+  },
+  "command": [
+    "codex",
+    "exec",
+    "--ignore-user-config",
+    "--ignore-rules",
+    "--ephemeral",
+    "--model",
+    "gpt-6-luna",
+    "--sandbox",
+    "read-only",
+    "--skip-git-repo-check",
+    "-c",
+    "model_reasoning_effort=\"medium\"",
+    "--cd",
+    "/home/salboaie/work/ml-circuits-research/ca-trick-eval/.work/case-hjr_a22j/documents",
+    "--json",
+    "--output-last-message",
+    "/home/salboaie/work/ml-circuits-research/ca-trick-eval/results/02_alfa_cert/runs/luna-local-01/answer.md",
+    "-"
+  ],
+  "isolation": "Fresh case-only working directory; read-only Codex sandbox. Not OS-level read confinement.",
+  "timestamp_utc": "2026-11-11T14:43:15.736812+00:00"
+}

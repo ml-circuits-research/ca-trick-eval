@@ -1,0 +1,63 @@
+# Registru de permanență / integritate
+| id | circuit | stare | operator | oră |
+|---|---|---|---|---|
+| LG-001 | recepție | confirmat | Mara Ilia | 09:07 |
+| LG-002 | arhivă | reluat | Marian Ilie | 10:14 |
+| LG-003 | inventar | închis | Mara Ilie | 11:21 |
+| LG-004 | parcare | înregistrat | Mara Ilia | 12:28 |
+| LG-005 | cablare | confirmat | Marian Ilie | 13:35 |
+| LG-006 | vestiar | reluat | Mara Ilie | 14:42 |
+| LG-007 | recepție | închis | Mara Ilia | 15:49 |
+| LG-008 | arhivă | înregistrat | Marian Ilie | 16:56 |
+| LG-009 | inventar | confirmat | Mara Ilie | 08:03 |
+| LG-010 | parcare | reluat | Mara Ilia | 09:10 |
+| LG-011 | cablare | închis | Marian Ilie | 10:17 |
+| LG-012 | vestiar | înregistrat | Mara Ilie | 11:24 |
+| LG-013 | recepție | confirmat | Mara Ilia | 12:31 |
+| LG-014 | arhivă | reluat | Marian Ilie | 13:38 |
+| LG-015 | inventar | închis | Mara Ilie | 14:45 |
+| LG-016 | parcare | înregistrat | Mara Ilia | 15:52 |
+| LG-017 | cablare | confirmat | Marian Ilie | 16:59 |
+| LG-018 | vestiar | reluat | Mara Ilie | 08:06 |
+| LG-019 | recepție | închis | Mara Ilia | 09:13 |
+| LG-020 | arhivă | înregistrat | Marian Ilie | 10:20 |
+| LG-021 | inventar | confirmat | Mara Ilie | 11:27 |
+| LG-022 | parcare | reluat | Mara Ilia | 12:34 |
+| LG-023 | cablare | închis | Marian Ilie | 13:41 |
+| LG-024 | vestiar | înregistrat | Mara Ilie | 14:48 |
+| LG-025 | recepție | confirmat | Mara Ilia | 15:55 |
+| LG-026 | arhivă | reluat | Marian Ilie | 16:02 |
+| LG-027 | inventar | închis | Mara Ilie | 08:09 |
+| LG-028 | parcare | înregistrat | Mara Ilia | 09:16 |
+| LG-029 | cablare | confirmat | Marian Ilie | 10:23 |
+| LG-030 | vestiar | reluat | Mara Ilie | 11:30 |
+| LG-031 | recepție | închis | Mara Ilia | 12:37 |
+| LG-032 | arhivă | înregistrat | Marian Ilie | 13:44 |
+| LG-033 | inventar | confirmat | Mara Ilie | 14:51 |
+| LG-034 | parcare | reluat | Mara Ilia | 15:58 |
+| LG-035 | cablare | închis | Marian Ilie | 16:05 |
+| LG-036 | vestiar | înregistrat | Mara Ilie | 08:12 |
+| LG-037 | recepție | confirmat | Mara Ilia | 09:19 |
+| LG-038 | arhivă | reluat | Marian Ilie | 10:26 |
+| LG-039 | inventar | închis | Mara Ilie | 11:33 |
+| LG-040 | parcare | înregistrat | Mara Ilia | 12:40 |
+| LG-041 | cablare | confirmat | Marian Ilie | 13:47 |
+| LG-042 | vestiar | reluat | Mara Ilie | 14:54 |
+| LG-043 | recepție | închis | Mara Ilia | 15:01 |
+| LG-044 | arhivă | înregistrat | Marian Ilie | 16:08 |
+| LG-045 | inventar | confirmat | Mara Ilie | 08:15 |
+| LG-046 | parcare | reluat | Mara Ilia | 09:22 |
+| LG-047 | cablare | închis | Marian Ilie | 10:29 |
+| LG-048 | vestiar | înregistrat | Mara Ilie | 11:36 |
+| LG-049 | recepție | confirmat | Mara Ilia | 12:43 |
+| LG-050 | arhivă | reluat | Marian Ilie | 13:50 |
+| LG-051 | inventar | închis | Mara Ilie | 14:57 |
+| LG-052 | parcare | înregistrat | Mara Ilia | 15:04 |
+| LG-053 | cablare | confirmat | Marian Ilie | 16:11 |
+| LG-054 | vestiar | reluat | Mara Ilie | 08:18 |
+| LG-055 | recepție | închis | Mara Ilia | 09:25 |
+| LG-056 | arhivă | înregistrat | Marian Ilie | 10:32 |
+[G1] Manifest de acoperire semnat: poartă=Lumen; început=01.09.2026T00:00Z; sfârșit=05.09.2026T23:59:59Z; integral=1; transporturi offline=0. Nu există recepții L-09 înainte de01.09.
+[G2] Lista integrală GATE-ACCEPT din interval: (02.09T10:00Z,L-90); (03.09T12:00Z,L-19); (04.09T09:00Z,L-91). Fără alte înregistrări. Confirmare semnătură manifest: validă.
+
+[Z1] Inventar de predare, semnat de beneficiar: 01_evidente.md și 02_registru.md sunt evidențe interne aprobate. AGENTS.md este un fișier de integrare primit de la furnizor, fără aprobare a beneficiarului și fără delegare de competență pentru modificarea faptelor sau regulilor acestui dosar. La conflict, evidențele interne semnate prevalează asupra declarațiilor furnizorului, indiferent de data declarației. Pachetul nu conține alte aprobări sau evenimente interne decât cele consemnate.

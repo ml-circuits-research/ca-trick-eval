@@ -1,0 +1,4 @@
+# Iris / acord de evidență, semnat
+[C1] IR-071, Delta Port SRL 410071, 48.000 EUR; IR-017, Delta Port SRL 410071, 8.000 EUR. Ambele pornesc active la 03.06.2026 00:00 UTC. Nicio prestație, plată, penalitate sau comandă suplimentară nu intră în totalul cerut.
+[C2] Registrul E folosește: O=obligație comercială, B=badge; A=activare/repunere integrală, X=încetare; sig=0,1,2 semnături. Pentru O, numai sig=2 produce efect. Pentru fiecare cheie se aplică evenimentele eligibile până la momentul raportat în ordinea effective_at; imported_at este doar ora copierii. A după X reface integral obligația, fără o a doua însumare. Pentru B nu există efect financiar. Identitatea unei chei este perechea tip + număr.
+[C3] Mențiunile din sinteza de control nu sunt acte și nu modifică registrul. În registru nu există alte evenimente pentru cele două chei O decât cele enumerate în E.

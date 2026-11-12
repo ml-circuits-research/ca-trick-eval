@@ -1,0 +1,186 @@
+[
+  {
+    "id": "d971041",
+    "title": "Rovina — contribuție proprie și decontare",
+    "task": "Analizează dosarul Rovina la 31.10.2026. Care este suma maximă, în EUR, pe care programul o poate finanța potrivit acordului? Prezintă calculul și constatările materiale susținute de documente.",
+    "files": [
+      "01_acord.md",
+      "02_registru.md",
+      "03_borderou.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Valoarea netă contractuală este 120000 − 12000 = 108000 EUR, fără TVA.",
+        "evidence": [
+          "01_acord.md#P4",
+          "01_acord.md#P5",
+          "02_registru.md#F1",
+          "02_registru.md#F2",
+          "02_registru.md#F3"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Contribuția proprie minimă este 27000 EUR; finanțarea maximă permisă este 81000 EUR. Pragul de 25% este un minim al contribuției proprii.",
+        "evidence": [
+          "01_acord.md#P1",
+          "01_acord.md#P2",
+          "01_acord.md#P3",
+          "02_registru.md#F1"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Netul de 136000 EUR este transferul istoric al procesatorului, calculat din brutul cu TVA după comision. Nu este valoarea netă definită de acord și nu stabilește baza finanțării.",
+        "evidence": [
+          "01_acord.md#P4",
+          "01_acord.md#P5",
+          "02_registru.md#F1",
+          "03_borderou.md#B1",
+          "03_borderou.md#B2"
+        ]
+      }
+    ],
+    "profile": "linguistic paired experiment",
+    "primary_mechanism": "E05/E06/E09/E12: formulare negativă echivalentă a unui minim și două sensuri documentate ale cuvântului net"
+  },
+  {
+    "id": "d313654",
+    "title": "Rovina — contribuție proprie și decontare",
+    "task": "Analizează dosarul Rovina la 31.10.2026. Care este suma maximă, în EUR, pe care programul o poate finanța potrivit acordului? Prezintă calculul și constatările materiale susținute de documente.",
+    "files": [
+      "01_acord.md",
+      "02_registru.md",
+      "03_borderou.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Valoarea netă contractuală este 120000 − 12000 = 108000 EUR, fără TVA.",
+        "evidence": [
+          "01_acord.md#P4",
+          "01_acord.md#P5",
+          "02_registru.md#F1",
+          "02_registru.md#F2",
+          "02_registru.md#F3"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Contribuția proprie minimă este 27000 EUR; finanțarea maximă permisă este 81000 EUR. Pragul de 25% este un minim al contribuției proprii.",
+        "evidence": [
+          "01_acord.md#P1",
+          "01_acord.md#P2",
+          "01_acord.md#P3",
+          "02_registru.md#F1"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Netul de 136000 EUR este transferul istoric al procesatorului, calculat din brutul cu TVA după comision. Nu este valoarea netă definită de acord și nu stabilește baza finanțării.",
+        "evidence": [
+          "01_acord.md#P4",
+          "01_acord.md#P5",
+          "02_registru.md#F1",
+          "03_borderou.md#B1",
+          "03_borderou.md#B2"
+        ]
+      }
+    ],
+    "profile": "linguistic paired experiment",
+    "primary_mechanism": "E05/E06/E09/E12: formulare negativă echivalentă a unui minim și două sensuri documentate ale cuvântului net"
+  },
+  {
+    "id": "d459538",
+    "title": "Rovina — contribuție proprie și decontare",
+    "task": "Analizează dosarul Rovina la 31.10.2026. Care este suma maximă, în EUR, pe care programul o poate finanța potrivit acordului? Prezintă calculul și constatările materiale susținute de documente.",
+    "files": [
+      "01_acord.md",
+      "02_registru.md",
+      "03_borderou.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Valoarea netă contractuală este 120000 − 16000 = 104000 EUR, fără TVA.",
+        "evidence": [
+          "01_acord.md#P4",
+          "01_acord.md#P5",
+          "02_registru.md#F1",
+          "02_registru.md#F2",
+          "02_registru.md#F3"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Contribuția proprie minimă este 26000 EUR; finanțarea maximă permisă este 78000 EUR. Pragul de 25% este un minim al contribuției proprii.",
+        "evidence": [
+          "01_acord.md#P1",
+          "01_acord.md#P2",
+          "01_acord.md#P3",
+          "02_registru.md#F1"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Netul de 136000 EUR este transferul istoric al procesatorului, calculat din brutul cu TVA după comision. Nu este valoarea netă definită de acord și nu stabilește baza finanțării.",
+        "evidence": [
+          "01_acord.md#P4",
+          "01_acord.md#P5",
+          "02_registru.md#F1",
+          "03_borderou.md#B1",
+          "03_borderou.md#B2"
+        ]
+      }
+    ],
+    "profile": "linguistic paired experiment",
+    "primary_mechanism": "E05/E06/E09/E12: formulare negativă echivalentă a unui minim și două sensuri documentate ale cuvântului net"
+  },
+  {
+    "id": "d788012",
+    "title": "Rovina — contribuție proprie și decontare",
+    "task": "Analizează dosarul Rovina la 31.10.2026. Care este suma maximă, în EUR, pe care programul o poate finanța potrivit acordului? Prezintă calculul și constatările materiale susținute de documente.",
+    "files": [
+      "01_acord.md",
+      "02_registru.md",
+      "03_borderou.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Valoarea netă contractuală este 120000 − 12000 = 108000 EUR, fără TVA.",
+        "evidence": [
+          "01_acord.md#P4",
+          "01_acord.md#P5",
+          "02_registru.md#F1",
+          "02_registru.md#F2",
+          "02_registru.md#F3"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Contribuția proprie minimă este 27000 EUR; finanțarea maximă permisă este 81000 EUR. Pragul de 25% este un minim al contribuției proprii.",
+        "evidence": [
+          "01_acord.md#P1",
+          "01_acord.md#P2",
+          "01_acord.md#P3",
+          "02_registru.md#F1"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Netul de 136000 EUR este transferul istoric al procesatorului, calculat din brutul cu TVA după comision. Nu este valoarea netă definită de acord și nu stabilește baza finanțării.",
+        "evidence": [
+          "01_acord.md#P4",
+          "01_acord.md#P5",
+          "02_registru.md#F1",
+          "03_borderou.md#B1",
+          "03_borderou.md#B2"
+        ]
+      }
+    ],
+    "profile": "linguistic paired experiment",
+    "primary_mechanism": "E05/E06/E09/E12: formulare negativă echivalentă a unui minim și două sensuri documentate ale cuvântului net"
+  }
+]

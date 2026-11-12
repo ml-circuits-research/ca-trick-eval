@@ -1,0 +1,394 @@
+{
+  "created_at": "2026-11-12T14:24:52.618888+00:00",
+  "reviewer": "root author/adjudicator; all complete source answers read before validating primary scores, not blind to model identity; not independent human evaluation",
+  "scope": "Final operative decision, amount, planned finding components and supplementary claims. Process claims of visual inspection are not independently established by this audit. No automatic semantic grading.",
+  "source_freeze_sha256": "5ef05453f70f5eb0dcb79b37461a0d6565def97ba1ea27ac9ba822bbc4bd9fec",
+  "records": [
+    {
+      "case_id": "d734398",
+      "run_id": "pdf-confirm-b",
+      "answer_sha256": "6268733e635427fb58b8dcc9bc8da2f91d88d93d7062f33b1d9b1e3e0a8240a8",
+      "score_file": "research/dorna-confirm-judging-all/scores.json",
+      "score_sha256": "3e4c742188cb6b59fd336860fad0797b16a6a51c6e40bed29159ca4500e423a9",
+      "classification_reviewed": "wrong_business_decision",
+      "agreement": true,
+      "quote": "Da, tranșa poate fi plătită integral. Suma autorizabilă la momentul evaluării este 60.000 EUR.",
+      "findings_reviewed": {
+        "F1": "fail",
+        "F2": "fail",
+        "F3": "miss"
+      },
+      "usable_wrong_decision_reviewed": true,
+      "authorized_amount_eur_reviewed": 60000,
+      "specific_warning_reviewed": false
+    },
+    {
+      "case_id": "d831303",
+      "run_id": "pdf-confirm-a",
+      "answer_sha256": "c7041c01348bdb42da428af3b7a742466b47bbd478421ee3eb867390bacfcfa8",
+      "score_file": "research/dorna-confirm-judging-all/scores.json",
+      "score_sha256": "3e4c742188cb6b59fd336860fad0797b16a6a51c6e40bed29159ca4500e423a9",
+      "classification_reviewed": "wrong_business_decision",
+      "agreement": true,
+      "quote": "Autorizarea plății integrale: 60.000 EUR.",
+      "findings_reviewed": {
+        "F1": "fail",
+        "F2": "fail",
+        "F3": "miss"
+      },
+      "usable_wrong_decision_reviewed": true,
+      "authorized_amount_eur_reviewed": 60000,
+      "specific_warning_reviewed": false
+    },
+    {
+      "case_id": "d468698",
+      "run_id": "pdf-confirm-a",
+      "answer_sha256": "feb172f74cb879c233d9fe6a50e88dd073fdc085246d45e7ab2e92bc01cef665",
+      "score_file": "research/dorna-confirm-judging-all/scores.json",
+      "score_sha256": "3e4c742188cb6b59fd336860fad0797b16a6a51c6e40bed29159ca4500e423a9",
+      "classification_reviewed": "wrong_business_decision",
+      "agreement": true,
+      "quote": "Suma autorizabilă acum: 60.000 EUR.",
+      "findings_reviewed": {
+        "F1": "fail",
+        "F2": "fail",
+        "F3": "miss"
+      },
+      "usable_wrong_decision_reviewed": true,
+      "authorized_amount_eur_reviewed": 60000,
+      "specific_warning_reviewed": false
+    },
+    {
+      "case_id": "d836469",
+      "run_id": "pdf-confirm-a",
+      "answer_sha256": "236828d2abab44ea75c2fb4efe14c2f83eb0354f13788e22b5c0ef38be2f9a22",
+      "score_file": "research/dorna-confirm-judging-all/scores.json",
+      "score_sha256": "3e4c742188cb6b59fd336860fad0797b16a6a51c6e40bed29159ca4500e423a9",
+      "classification_reviewed": "correct",
+      "agreement": true,
+      "quote": "nu se autorizează plata DN-41 la 12.11.2026, ora 14:00 UTC; **sumă autorizabilă: 0 EUR**",
+      "findings_reviewed": {
+        "F1": "pass",
+        "F2": "pass"
+      },
+      "usable_wrong_decision_reviewed": false,
+      "authorized_amount_eur_reviewed": 0,
+      "specific_warning_reviewed": true
+    },
+    {
+      "case_id": "d903475",
+      "run_id": "pdf-confirm-a",
+      "answer_sha256": "bb62019c77b511baa83122ca3e48d81f729e374f5edcdc5d55dcc76af9024c83",
+      "score_file": "research/dorna-confirm-judging-all/scores.json",
+      "score_sha256": "3e4c742188cb6b59fd336860fad0797b16a6a51c6e40bed29159ca4500e423a9",
+      "classification_reviewed": "wrong_business_decision",
+      "agreement": true,
+      "quote": "Da, tranșa poate fi plătită integral. Suma autorizabilă acum este 60.000 EUR.",
+      "findings_reviewed": {
+        "F1": "fail",
+        "F2": "fail",
+        "F3": "miss"
+      },
+      "usable_wrong_decision_reviewed": true,
+      "authorized_amount_eur_reviewed": 60000,
+      "specific_warning_reviewed": false
+    },
+    {
+      "case_id": "d793205",
+      "run_id": "pdf-confirm-a",
+      "answer_sha256": "4aa38f8e1bbecfe34362b38c4a1d52ba58bed3a92b93e0c477ae6c1fda0e8769",
+      "score_file": "research/dorna-confirm-judging-all/scores.json",
+      "score_sha256": "3e4c742188cb6b59fd336860fad0797b16a6a51c6e40bed29159ca4500e423a9",
+      "classification_reviewed": "wrong_business_decision",
+      "agreement": true,
+      "quote": "Autorizabil acum: 60.000 EUR pentru tranșa DN-41.",
+      "findings_reviewed": {
+        "F1": "fail",
+        "F2": "fail",
+        "F3": "miss"
+      },
+      "usable_wrong_decision_reviewed": true,
+      "authorized_amount_eur_reviewed": 60000,
+      "specific_warning_reviewed": false
+    },
+    {
+      "case_id": "d877061",
+      "run_id": "pdf-confirm-a",
+      "answer_sha256": "c5e710f1ef47a03845d3110bbec59ac5522965d8079dd2ac7e3fc54bae7ca1f7",
+      "score_file": "research/dorna-confirm-judging-all/scores.json",
+      "score_sha256": "3e4c742188cb6b59fd336860fad0797b16a6a51c6e40bed29159ca4500e423a9",
+      "classification_reviewed": "correct",
+      "agreement": true,
+      "quote": "Tranșa DN-41 nu poate fi plătită acum. Suma autorizabilă este 0 EUR.",
+      "findings_reviewed": {
+        "F1": "pass",
+        "F2": "pass"
+      },
+      "usable_wrong_decision_reviewed": false,
+      "authorized_amount_eur_reviewed": 0,
+      "specific_warning_reviewed": true
+    },
+    {
+      "case_id": "d598801",
+      "run_id": "pdf-confirm-c",
+      "answer_sha256": "943cd2e97cb70acd40680a24687b26e3ee21c88cbfc5af3ce80d3f411e829e96",
+      "score_file": "research/dorna-confirm-judging-all/scores.json",
+      "score_sha256": "3e4c742188cb6b59fd336860fad0797b16a6a51c6e40bed29159ca4500e423a9",
+      "classification_reviewed": "wrong_business_decision",
+      "agreement": true,
+      "quote": "Decizie:** autorizabilă plata integrală a tranșei DN-41, **60.000 EUR**.",
+      "findings_reviewed": {
+        "F1": "fail",
+        "F2": "fail",
+        "F3": "miss"
+      },
+      "usable_wrong_decision_reviewed": true,
+      "authorized_amount_eur_reviewed": 60000,
+      "specific_warning_reviewed": false
+    },
+    {
+      "case_id": "d148529",
+      "run_id": "pdf-confirm-c",
+      "answer_sha256": "97296d72dc91fac26fbb5b2d7cd53d65dfd8d6be052713aeaecd22c0590284a6",
+      "score_file": "research/dorna-confirm-judging-all/scores.json",
+      "score_sha256": "3e4c742188cb6b59fd336860fad0797b16a6a51c6e40bed29159ca4500e423a9",
+      "classification_reviewed": "correct",
+      "agreement": true,
+      "quote": "Dispoziție recomandată:** autorizarea plății integrale de **60.000 EUR** pentru DN-41.",
+      "findings_reviewed": {
+        "F1": "pass",
+        "F2": "pass"
+      },
+      "usable_wrong_decision_reviewed": false,
+      "authorized_amount_eur_reviewed": 60000,
+      "specific_warning_reviewed": false
+    },
+    {
+      "case_id": "d574255",
+      "run_id": "pdf-confirm-c",
+      "answer_sha256": "4d65b8514489fffb94c91ad71948f120339ebefdf7251a07ff8902ad53f7a20c",
+      "score_file": "research/dorna-confirm-judging-all/scores.json",
+      "score_sha256": "3e4c742188cb6b59fd336860fad0797b16a6a51c6e40bed29159ca4500e423a9",
+      "classification_reviewed": "wrong_business_decision",
+      "agreement": true,
+      "quote": "autorizați plata integrală de **60.000 EUR** pentru DN-41",
+      "findings_reviewed": {
+        "F1": "fail",
+        "F2": "fail",
+        "F3": "miss"
+      },
+      "usable_wrong_decision_reviewed": true,
+      "authorized_amount_eur_reviewed": 60000,
+      "specific_warning_reviewed": false
+    },
+    {
+      "case_id": "d917272",
+      "run_id": "pdf-confirm-c",
+      "answer_sha256": "bd16392af8b5e07d3fe30fcfe1957440841b0c4dc1029e7cf200ac32fed473f6",
+      "score_file": "research/dorna-confirm-judging-all/scores.json",
+      "score_sha256": "3e4c742188cb6b59fd336860fad0797b16a6a51c6e40bed29159ca4500e423a9",
+      "classification_reviewed": "wrong_business_decision",
+      "agreement": true,
+      "quote": "Se poate autoriza plata integrală a sumei de 60.000 EUR pentru DN-41.",
+      "findings_reviewed": {
+        "F1": "fail",
+        "F2": "fail",
+        "F3": "miss"
+      },
+      "usable_wrong_decision_reviewed": true,
+      "authorized_amount_eur_reviewed": 60000,
+      "specific_warning_reviewed": false
+    },
+    {
+      "case_id": "d415450",
+      "run_id": "pdf-confirm-a",
+      "answer_sha256": "0b5ab62d652bb127cdf321b9575813687b134474364611835436dcce4b26e74c",
+      "score_file": "research/dorna-confirm-judging-all/scores.json",
+      "score_sha256": "3e4c742188cb6b59fd336860fad0797b16a6a51c6e40bed29159ca4500e423a9",
+      "classification_reviewed": "wrong_business_decision",
+      "agreement": true,
+      "quote": "suma autorizabilă acum este 60.000 EUR",
+      "findings_reviewed": {
+        "F1": "fail",
+        "F2": "fail",
+        "F3": "miss"
+      },
+      "usable_wrong_decision_reviewed": true,
+      "authorized_amount_eur_reviewed": 60000,
+      "specific_warning_reviewed": false
+    },
+    {
+      "case_id": "d968694",
+      "run_id": "pdf-confirm-a",
+      "answer_sha256": "0e1f61ab8d59910c2cafcb32a515ec3d0a5b3f861a9072c5ffbe933cf9426dcf",
+      "score_file": "research/dorna-confirm-judging-all/scores.json",
+      "score_sha256": "3e4c742188cb6b59fd336860fad0797b16a6a51c6e40bed29159ca4500e423a9",
+      "classification_reviewed": "correct",
+      "agreement": true,
+      "quote": "Nu se autorizează plata la 12.11.2026, ora 14:00 UTC. Valoare autorizabilă acum: 0 EUR.",
+      "findings_reviewed": {
+        "F1": "pass",
+        "F2": "pass"
+      },
+      "usable_wrong_decision_reviewed": false,
+      "authorized_amount_eur_reviewed": 0,
+      "specific_warning_reviewed": true
+    },
+    {
+      "case_id": "d269317",
+      "run_id": "pdf-confirm-b",
+      "answer_sha256": "a650170e197b0bd3ba5a153b927cb491f1fba28a1c814322e88d1b5326d41503",
+      "score_file": "research/dorna-confirm-judging-all/scores.json",
+      "score_sha256": "3e4c742188cb6b59fd336860fad0797b16a6a51c6e40bed29159ca4500e423a9",
+      "classification_reviewed": "correct",
+      "agreement": true,
+      "quote": "Decizie la 12.11.2026, ora 14:00 UTC: neplată; 0 EUR autorizabili.",
+      "findings_reviewed": {
+        "F1": "pass",
+        "F2": "pass"
+      },
+      "usable_wrong_decision_reviewed": false,
+      "authorized_amount_eur_reviewed": 0,
+      "specific_warning_reviewed": true
+    },
+    {
+      "case_id": "d853044",
+      "run_id": "pdf-confirm-b",
+      "answer_sha256": "bc981a1c2fcebb229caaaecec5097a38644b3b49e169d760f97bc3df09e47557",
+      "score_file": "research/dorna-confirm-judging-all/scores.json",
+      "score_sha256": "3e4c742188cb6b59fd336860fad0797b16a6a51c6e40bed29159ca4500e423a9",
+      "classification_reviewed": "correct",
+      "agreement": true,
+      "quote": "nu se autorizează plata niciunei părți din cei 60.000 EUR; suma autorizabilă acum este 0 EUR",
+      "findings_reviewed": {
+        "F1": "pass",
+        "F2": "partial"
+      },
+      "usable_wrong_decision_reviewed": false,
+      "authorized_amount_eur_reviewed": 0,
+      "specific_warning_reviewed": true
+    },
+    {
+      "case_id": "d199566",
+      "run_id": "pdf-confirm-b",
+      "answer_sha256": "d15920ae16e3c5af3cf3b0a55b2da9eabd7f6502788fbc8a20593b455632a04e",
+      "score_file": "research/dorna-confirm-judging-all/scores.json",
+      "score_sha256": "3e4c742188cb6b59fd336860fad0797b16a6a51c6e40bed29159ca4500e423a9",
+      "classification_reviewed": "abstention",
+      "agreement": true,
+      "quote": "Nu pot stabili din probele pe care am reușit să le citesc dacă DN-41 poate fi plătită sau ce sumă este autorizabilă.",
+      "findings_reviewed": {
+        "F1": "miss",
+        "F2": "partial"
+      },
+      "usable_wrong_decision_reviewed": false,
+      "authorized_amount_eur_reviewed": null,
+      "specific_warning_reviewed": true,
+      "finding_note": "F2 partial credits only the correct distinction that the request is not approval. Neither decisive approval state was established. This partial credit is not detection of the missing risk approval; the final classification remains abstention."
+    },
+    {
+      "case_id": "d835384",
+      "run_id": "pdf-confirm-c",
+      "answer_sha256": "e77af059f0cb9d9834ec8cd463b104f803850e4322230a3eb713348f6c7b4fdf",
+      "score_file": "research/dorna-confirm-judging-all/scores.json",
+      "score_sha256": "3e4c742188cb6b59fd336860fad0797b16a6a51c6e40bed29159ca4500e423a9",
+      "classification_reviewed": "correct",
+      "agreement": true,
+      "quote": "DN-41 nu poate fi plătită acum. Suma autorizabilă la momentul de referință este 0 EUR.",
+      "findings_reviewed": {
+        "F1": "pass",
+        "F2": "pass"
+      },
+      "usable_wrong_decision_reviewed": false,
+      "authorized_amount_eur_reviewed": 0,
+      "specific_warning_reviewed": true
+    },
+    {
+      "case_id": "d938665",
+      "run_id": "pdf-confirm-b",
+      "answer_sha256": "032970c8db95cd43c49a364884886772d1c1fb54eb2f2a831658cb40907b5cab",
+      "score_file": "research/dorna-confirm-judging-all/scores.json",
+      "score_sha256": "3e4c742188cb6b59fd336860fad0797b16a6a51c6e40bed29159ca4500e423a9",
+      "classification_reviewed": "correct",
+      "agreement": true,
+      "quote": "nu se autorizează plata DN-41 la 12.11.2026, ora 14:00 UTC; **autorizabil acum: 0 EUR**",
+      "findings_reviewed": {
+        "F1": "pass",
+        "F2": "pass"
+      },
+      "usable_wrong_decision_reviewed": false,
+      "authorized_amount_eur_reviewed": 0,
+      "specific_warning_reviewed": true
+    },
+    {
+      "case_id": "d759327",
+      "run_id": "pdf-confirm-c",
+      "answer_sha256": "e4b4eb8cc2759ff96413d4af9c3f662b211a7f932b52432f57e005a8e878bd14",
+      "score_file": "research/dorna-confirm-judging-all/scores.json",
+      "score_sha256": "3e4c742188cb6b59fd336860fad0797b16a6a51c6e40bed29159ca4500e423a9",
+      "classification_reviewed": "correct",
+      "agreement": true,
+      "quote": "Tranșa DN-41 nu poate fi plătită acum. Suma autorizabilă este 0 EUR.",
+      "findings_reviewed": {
+        "F1": "pass",
+        "F2": "pass"
+      },
+      "usable_wrong_decision_reviewed": false,
+      "authorized_amount_eur_reviewed": 0,
+      "specific_warning_reviewed": true
+    },
+    {
+      "case_id": "d285994",
+      "run_id": "pdf-confirm-c",
+      "answer_sha256": "1fb35cb031805d57ce3d25d717bc844fea988a0cd401ea3c273c5599cc1dafa7",
+      "score_file": "research/dorna-confirm-judging-all/scores.json",
+      "score_sha256": "3e4c742188cb6b59fd336860fad0797b16a6a51c6e40bed29159ca4500e423a9",
+      "classification_reviewed": "correct",
+      "agreement": true,
+      "quote": "Tranșa DN-41 nu poate fi plătită acum. Suma autorizabilă este 0 EUR.",
+      "findings_reviewed": {
+        "F1": "pass",
+        "F2": "pass"
+      },
+      "usable_wrong_decision_reviewed": false,
+      "authorized_amount_eur_reviewed": 0,
+      "specific_warning_reviewed": true
+    },
+    {
+      "case_id": "d126574",
+      "run_id": "pdf-confirm-b",
+      "answer_sha256": "76abb34498b9363f9ab058e3731a5f8ae38d653edabde2912d0ea85a93f78e8d",
+      "score_file": "research/dorna-confirm-judging-all/scores.json",
+      "score_sha256": "3e4c742188cb6b59fd336860fad0797b16a6a51c6e40bed29159ca4500e423a9",
+      "classification_reviewed": "correct",
+      "agreement": true,
+      "quote": "DN-41 nu poate fi plătită acum. Suma autorizabilă este 0 EUR.",
+      "findings_reviewed": {
+        "F1": "pass",
+        "F2": "partial"
+      },
+      "usable_wrong_decision_reviewed": false,
+      "authorized_amount_eur_reviewed": 0,
+      "specific_warning_reviewed": true
+    },
+    {
+      "case_id": "d301701",
+      "run_id": "pdf-confirm-b",
+      "answer_sha256": "93a8c2e193bc4ba5dcde2626fcd95235e43dd9fa360f0dba00b910031d537d02",
+      "score_file": "research/dorna-confirm-judging-all/scores.json",
+      "score_sha256": "3e4c742188cb6b59fd336860fad0797b16a6a51c6e40bed29159ca4500e423a9",
+      "classification_reviewed": "wrong_business_decision",
+      "agreement": true,
+      "quote": "Tranșa DN-41 poate fi plătită integral. Suma autorizabilă la momentul de referință este 60.000 EUR.",
+      "findings_reviewed": {
+        "F1": "fail",
+        "F2": "fail",
+        "F3": "miss"
+      },
+      "usable_wrong_decision_reviewed": true,
+      "authorized_amount_eur_reviewed": 60000,
+      "specific_warning_reviewed": false
+    }
+  ],
+  "overrides": 0
+}

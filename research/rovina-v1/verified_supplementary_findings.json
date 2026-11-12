@@ -1,0 +1,316 @@
+{
+  "created_at": "2026-11-12T15:10:04.143434+00:00",
+  "reviewer": "source_audit author/adjudicator; full answers read, model identity visible; not independent human review",
+  "source_freeze_sha256": "ac87d5e812d332f04f714429d2a4aa2d2be3cb4f2107389e09549b1d8e38ed3c",
+  "scope": "Supplementary claims checked against the synthetic rules. No automatic grading; no new independent cases. Conditional settlement uncertainty is distinguished from a definite liability and from the financing limit.",
+  "records": [
+    {
+      "case_id": "d788012",
+      "run_id": "language-luna",
+      "answer_sha256": "e2c00bbeb157bbe1c4b8bcee4fc7d6546c32660c45cfdd3176d79849f512ddf9",
+      "quote": "Documentele disponibile nu arată dacă această sumă a fost restituită, compensată sau a rămas de regularizat.",
+      "claim": "Stingerea efectului notei de credit nu este documentată.",
+      "author_status": "verified_conditional_documentary_limit",
+      "reason": "Borderoul descrie transferul din 12 octombrie; nota de credit este din 20 octombrie. Dosarul nu descrie o restituire sau compensare. Registrul complet privește modificările de preț, nu toate decontările. Răspunsul păstrează plafonul corect de 81000 și nu afirmă o obligație restantă certă.",
+      "evidence": [
+        "02_registru.md#F1",
+        "02_registru.md#F2",
+        "02_registru.md#F3",
+        "03_borderou.md#B1",
+        "03_borderou.md#B3"
+      ],
+      "changes_final_business_decision": false
+    },
+    {
+      "case_id": "d971041",
+      "run_id": "language-sol",
+      "answer_sha256": "baf6124b038daaebe628c4d0751a46f8fb728bc83b9fcce8dc4b0dd56430cdc6",
+      "quote": "Dosarul nu precizează modalitatea de stingere a diferenței de 14.400 EUR, inclusiv TVA, rezultată din reducere.",
+      "claim": "Efectul reducerii, inclusiv TVA, este 14400 EUR; modalitatea stingerii nu este descrisă.",
+      "author_status": "verified_conditional_documentary_limit",
+      "reason": "12000×1,20=14400; aceeași limită documentară ca în raportul Luna clean. Nu dovedește o rambursare restantă sau un impediment de eligibilitate. Raportul afirmă explicit că lipsa detaliului nu schimbă calculul.",
+      "evidence": [
+        "02_registru.md#F1",
+        "02_registru.md#F2",
+        "03_borderou.md#B1",
+        "03_borderou.md#B3"
+      ],
+      "changes_final_business_decision": false
+    },
+    {
+      "case_id": "d971041",
+      "run_id": "language-luna",
+      "answer_sha256": "7f919a954990a3e46d07090be82f063836ef6cc81f2cdbf76ed72aae37101822",
+      "quote": "Astfel, prețul facturat după reducere ar fi **129.600 EUR cu TVA**, iar transferul înregistrat depășește această valoare cu **6.400 EUR**.",
+      "claim": "Comparația numerică 136000−129600=6400 este adevărată, dar compară fluxul după comision cu prețul inclusiv TVA.",
+      "author_status": "qualified_comparison_not_established_liability",
+      "reason": "Aritmetica este corectă. Diferența de 6400 nu este prin ea însăși suma de restituit: reducerea inclusiv TVA este 14400, iar comisionul separat de 8000 explică diferența dintre bazele comparate. Raportul nu ordonă o plată de 6400 și nu afirmă că aceasta este cert restantă; cere o clarificare de decontare. Titlul «Problemă materială de reconciliere» poate supraevalua o comparație între indicatori diferiți, dar nu stabilește o decizie materială falsă.",
+      "evidence": [
+        "02_registru.md#F1",
+        "02_registru.md#F2",
+        "03_borderou.md#B1",
+        "03_borderou.md#B2",
+        "03_borderou.md#B3"
+      ],
+      "changes_final_business_decision": false
+    },
+    {
+      "case_id": "d971041",
+      "run_id": "language-luna",
+      "answer_sha256": "7f919a954990a3e46d07090be82f063836ef6cc81f2cdbf76ed72aae37101822",
+      "quote": "**Nu schimbă plafonul calculat potrivit acordului**",
+      "claim": "Clarificarea de decontare nu condiționează plafonul final de 81000 EUR.",
+      "author_status": "verified_no_material_decision_error",
+      "reason": "Propoziția delimitează explicit observația suplimentară de concluzia de finanțare. Nu recodificăm o solicitare condițională de clarificare ca obligație materială certă și nu o promovăm la eșec al mecanismului lexical.",
+      "evidence": [
+        "01_acord.md#P1",
+        "01_acord.md#P3",
+        "01_acord.md#P5"
+      ],
+      "changes_final_business_decision": false
+    },
+    {
+      "case_id": "d459538",
+      "run_id": "language-luna",
+      "answer_sha256": "a5cf69f54d33d7a6fb57e40044eba1f125e09a194a77cd06695a80e6ad19037b",
+      "quote": "**Comisionul de 8.000 EUR nu se scade din valoarea eligibilă.**",
+      "claim": "Raportul contrafactual exclude comisionul și documentul de decontare ca document de preț.",
+      "author_status": "partial_finding_coverage",
+      "reason": "Concluzia finală 78000 este corectă, iar excluderea comisionului și a TVA este justificată. Raportul nu reproduce sau identifică explicit netul istoric de 136000 și calculul său 144000−8000. Auditul autorului marchează conservator F3 partial, nu wrong_business_decision.",
+      "evidence": [
+        "01_acord.md#P4",
+        "01_acord.md#P5",
+        "03_borderou.md#B1",
+        "03_borderou.md#B2",
+        "03_borderou.md#B3"
+      ],
+      "changes_final_business_decision": false
+    },
+    {
+      "case_id": "d788012",
+      "run_id": "language-sol",
+      "answer_sha256": "335e24c7d1e8cf49e2edcd87da7a55a90703965c61a2992faaa771ae08f3c01d",
+      "quote": "Reducerea implică o regularizare TVA de 2.400 EUR; valoarea serviciilor după reducere, inclusiv TVA, este de 129.600 EUR.",
+      "claim": "Regularizarea TVA și prețul total ajustat sunt calculate corect.",
+      "author_status": "verified_supported",
+      "reason": "Registrul stabilește 20% și aceeași cotă pentru credit: 12000×20%=2400; 108000×1,20=129600. Acestea sunt calcule auxiliare, nu baza finanțabilă și nici constatări ale unui transfer ulterior.",
+      "evidence": [
+        "02_registru.md#F1",
+        "02_registru.md#F2",
+        "01_acord.md#P5"
+      ],
+      "changes_final_business_decision": false
+    },
+    {
+      "case_id": "d971041",
+      "run_id": "language-sol",
+      "answer_sha256": "baf6124b038daaebe628c4d0751a46f8fb728bc83b9fcce8dc4b0dd56430cdc6",
+      "quote": "Calcularea finanțării ca 75% × 136.000 ar conduce la 102.000 EUR, cu **21.000 EUR peste maximul permis**.",
+      "claim": "Supraevaluarea într-un calcul alternativ incorect ar fi 21000 EUR.",
+      "author_status": "verified_supported",
+      "reason": "136000×0,75=102000, iar 102000−81000=21000. Răspunsul indică această sumă ca eroare contrafactuală, nu ca recomandare.",
+      "evidence": [
+        "03_borderou.md#B2",
+        "01_acord.md#P2",
+        "01_acord.md#P3",
+        "01_acord.md#P5"
+      ],
+      "changes_final_business_decision": false
+    },
+    {
+      "case_id": "d459538",
+      "run_id": "language-sol",
+      "answer_sha256": "22bcc37fdd042f0fbe7e223375f2b4b7c60362c7b3c56ba57769797329bf6344",
+      "quote": "După reducere, TVA aferentă este de 20.800 EUR: (120.000 − 16.000) × 20%; aceasta nu se adaugă bazei finanțabile.",
+      "claim": "TVA ajustată în contrafactual este 20800 EUR.",
+      "author_status": "verified_supported",
+      "reason": "104000×20%=20800; aplicarea cotei este autorizată de F2, iar P5 exclude TVA din baza de finanțare.",
+      "evidence": [
+        "02_registru.md#F1",
+        "02_registru.md#F2",
+        "01_acord.md#P5"
+      ],
+      "changes_final_business_decision": false
+    },
+    {
+      "case_id": "d788012",
+      "run_id": "language-terra",
+      "answer_sha256": "57dc32477144b46239c7189262f2265919756b19bfd20b95ac693ab9647564d0",
+      "score_file": "research/rovina-judging-terra/scores.json",
+      "score_sha256": "6358c89a161167b64055e3699ebf5a533ab852d990c14bc3ba17ac38bf09e5ed",
+      "claim": "Condițiile nevalorice, bugetul și contribuția proprie sunt disponibile conform dosarului.",
+      "quote": "Acordul precizează că serviciile eligibile sunt cele din registru, că recepția și condițiile fără caracter valoric sunt îndeplinite, că bugetul este suficient și că beneficiarul poate asigura contribuția proprie.",
+      "reason": "Afirmația este susținută de acord.",
+      "evidence": [
+        "01_acord.md#P1",
+        "01_acord.md#P4"
+      ],
+      "author_status": "verified_supported",
+      "author_reason": "Verificat după citirea completă: mandatul și borderoul susțin explicit tratarea separată a comisionului sau îndeplinirea condițiilor; nu este un mecanism nou.",
+      "changes_final_business_decision": false
+    },
+    {
+      "case_id": "d971041",
+      "run_id": "language-terra",
+      "answer_sha256": "291931810f62eb69d5f0869b6f9c25660955d7ddad407df739c7625d0f31e142",
+      "score_file": "research/rovina-judging-terra/scores.json",
+      "score_sha256": "6358c89a161167b64055e3699ebf5a533ab852d990c14bc3ba17ac38bf09e5ed",
+      "claim": "Condițiile nevalorice și disponibilitatea resurselor sunt îndeplinite.",
+      "quote": "Condițiile pentru acordarea finanțării sunt îndeplinite potrivit dosarului.",
+      "reason": "Acordul confirmă condițiile, bugetul și capacitatea de contribuție proprie.",
+      "evidence": [
+        "01_acord.md#P1",
+        "01_acord.md#P4",
+        "02_registru.md#F1"
+      ],
+      "author_status": "verified_supported",
+      "author_reason": "Verificat după citirea completă: mandatul și borderoul susțin explicit tratarea separată a comisionului sau îndeplinirea condițiilor; nu este un mecanism nou.",
+      "changes_final_business_decision": false
+    },
+    {
+      "case_id": "d313654",
+      "run_id": "language-terra",
+      "answer_sha256": "c020712e142ed63339fce06ae4dbc4d7b3e308583f88daad3a786bef7d3ef2af",
+      "score_file": "research/rovina-judging-terra/scores.json",
+      "score_sha256": "6358c89a161167b64055e3699ebf5a533ab852d990c14bc3ba17ac38bf09e5ed",
+      "claim": "Comisionul administrativ nu se deduce din baza eligibilă.",
+      "quote": "Comisionul este o cheltuială administrativă, în afara serviciilor eligibile; prin urmare, nu se deduce din baza eligibilă.",
+      "reason": "Comisionul nu este o reducere a prețului serviciilor.",
+      "evidence": [
+        "01_acord.md#P4",
+        "01_acord.md#P5",
+        "03_borderou.md#B3"
+      ],
+      "author_status": "verified_supported",
+      "author_reason": "Verificat după citirea completă: mandatul și borderoul susțin explicit tratarea separată a comisionului sau îndeplinirea condițiilor; nu este un mecanism nou.",
+      "changes_final_business_decision": false
+    },
+    {
+      "case_id": "d459538",
+      "run_id": "language-terra",
+      "answer_sha256": "1abf08a44b51b4bca5d2bd7a24aa7f2a43720838a45a818b691b235addedc1f7",
+      "score_file": "research/rovina-judging-terra/scores.json",
+      "score_sha256": "6358c89a161167b64055e3699ebf5a533ab852d990c14bc3ba17ac38bf09e5ed",
+      "claim": "Comisionul este în afara serviciilor eligibile.",
+      "quote": "Comisionul de 8.000 EUR nu se adaugă la proiectul eligibil.",
+      "reason": "Acordul îl tratează drept cheltuială administrativă, iar borderoul confirmă înregistrarea separată.",
+      "evidence": [
+        "01_acord.md#P4",
+        "03_borderou.md#B3"
+      ],
+      "author_status": "verified_supported",
+      "author_reason": "Verificat după citirea completă: mandatul și borderoul susțin explicit tratarea separată a comisionului sau îndeplinirea condițiilor; nu este un mecanism nou.",
+      "changes_final_business_decision": false
+    },
+    {
+      "case_id": "d788012",
+      "run_id": "language-sol",
+      "answer_sha256": "335e24c7d1e8cf49e2edcd87da7a55a90703965c61a2992faaa771ae08f3c01d",
+      "score_file": "research/rovina-judging-sol/scores.json",
+      "score_sha256": "06d1be0cf48b54d03a711bd2dd261742a70b7efd4ffcd67578f4e30c444dcd2e",
+      "claim": "Comisionul este neeligibil și nu reprezintă o reducere a prețului serviciilor.",
+      "quote": "Comisionul nu este nici reducere de preț a serviciilor, deci nu se scade din baza contractuală de 108.000 EUR.",
+      "reason": "Comisionul este o cheltuială administrativă separată, exclusă din serviciile eligibile.",
+      "evidence": [
+        "01_acord.md#P4",
+        "01_acord.md#P5",
+        "03_borderou.md#B3"
+      ],
+      "author_status": "verified_supported",
+      "author_reason": "Verificat după citirea completă: mandatul și borderoul susțin explicit tratarea separată a comisionului sau îndeplinirea condițiilor; nu este un mecanism nou.",
+      "changes_final_business_decision": false
+    },
+    {
+      "case_id": "d971041",
+      "run_id": "language-sol",
+      "answer_sha256": "baf6124b038daaebe628c4d0751a46f8fb728bc83b9fcce8dc4b0dd56430cdc6",
+      "score_file": "research/rovina-judging-sol/scores.json",
+      "score_sha256": "06d1be0cf48b54d03a711bd2dd261742a70b7efd4ffcd67578f4e30c444dcd2e",
+      "claim": "Comisionul este neeligibil și nu se scade ca reducere a prețului serviciilor.",
+      "quote": "Comisionul de 8.000 EUR este neeligibil și nu reduce baza contractuală a serviciilor.",
+      "reason": "Acordul îl clasifică drept cheltuială administrativă, iar borderoul confirmă înregistrarea separată.",
+      "evidence": [
+        "01_acord.md#P4",
+        "01_acord.md#P5",
+        "03_borderou.md#B3"
+      ],
+      "author_status": "verified_supported",
+      "author_reason": "Verificat după citirea completă: mandatul și borderoul susțin explicit tratarea separată a comisionului sau îndeplinirea condițiilor; nu este un mecanism nou.",
+      "changes_final_business_decision": false
+    },
+    {
+      "case_id": "d313654",
+      "run_id": "language-sol",
+      "answer_sha256": "aa3e8024bb73741e96d00a77393c45ec5af13396a56ebb88ef13802011b5e316",
+      "score_file": "research/rovina-judging-sol/scores.json",
+      "score_sha256": "06d1be0cf48b54d03a711bd2dd261742a70b7efd4ffcd67578f4e30c444dcd2e",
+      "claim": "Comisionul administrativ nu majorează și nu reduce baza eligibilă.",
+      "quote": "El nici nu majorează costul eligibil, nici nu se scade suplimentar din valoarea netă contractuală de 108.000 EUR.",
+      "reason": "Acordul exclude comisionul din serviciile eligibile, iar acesta nu este o reducere de preț.",
+      "evidence": [
+        "01_acord.md#P4",
+        "01_acord.md#P5",
+        "03_borderou.md#B3"
+      ],
+      "author_status": "verified_supported",
+      "author_reason": "Verificat după citirea completă: mandatul și borderoul susțin explicit tratarea separată a comisionului sau îndeplinirea condițiilor; nu este un mecanism nou.",
+      "changes_final_business_decision": false
+    },
+    {
+      "case_id": "d459538",
+      "run_id": "language-sol",
+      "answer_sha256": "22bcc37fdd042f0fbe7e223375f2b4b7c60362c7b3c56ba57769797329bf6344",
+      "score_file": "research/rovina-judging-sol/scores.json",
+      "score_sha256": "06d1be0cf48b54d03a711bd2dd261742a70b7efd4ffcd67578f4e30c444dcd2e",
+      "claim": "Comisionul este exclus din serviciile eligibile și nu se scade din valoarea netă contractuală.",
+      "quote": "Comisionul de 8.000 EUR este înregistrat separat drept cheltuială administrativă și este exclus expres din serviciile eligibile; nu se adaugă și nici nu se scade din valoarea netă definită contractual.",
+      "reason": "Comisionul este administrativ, nu o reducere de preț confirmată prin notă de credit.",
+      "evidence": [
+        "01_acord.md#P4",
+        "01_acord.md#P5",
+        "03_borderou.md#B3"
+      ],
+      "author_status": "verified_supported",
+      "author_reason": "Verificat după citirea completă: mandatul și borderoul susțin explicit tratarea separată a comisionului sau îndeplinirea condițiilor; nu este un mecanism nou.",
+      "changes_final_business_decision": false
+    },
+    {
+      "case_id": "d788012",
+      "run_id": "language-luna",
+      "answer_sha256": "e2c00bbeb157bbe1c4b8bcee4fc7d6546c32660c45cfdd3176d79849f512ddf9",
+      "score_file": "research/rovina-judging-luna/scores.json",
+      "score_sha256": "1f019581108b31d360558acbf5fde6d9eb899cb2845bf329c578ee092f01c109",
+      "claim": "Stingerea efectului financiar al notei de credit nu este documentată în dosar.",
+      "quote": "Dosarul susține calculul valorii nete contractuale, dar nu documentează stingerea efectului financiar al notei de credit.",
+      "reason": "Încasarea integrală precedă nota de credit, iar documentele nu indică restituirea sau compensarea reducerii.",
+      "evidence": [
+        "03_borderou.md#B1",
+        "03_borderou.md#B3",
+        "02_registru.md#F1",
+        "02_registru.md#F2"
+      ],
+      "author_status": "verified_conditional_documentary_limit",
+      "author_reason": "Acord cu limita documentară, fără a deduce datorie certă, sumă de restituit sau blocare a finanțării. Calificarea separată a comparației Luna de 6400 EUR este păstrată în registru.",
+      "changes_final_business_decision": false
+    },
+    {
+      "case_id": "d971041",
+      "run_id": "language-luna",
+      "answer_sha256": "7f919a954990a3e46d07090be82f063836ef6cc81f2cdbf76ed72aae37101822",
+      "score_file": "research/rovina-judging-luna/scores.json",
+      "score_sha256": "1f019581108b31d360558acbf5fde6d9eb899cb2845bf329c578ee092f01c109",
+      "claim": "Efectul financiar al notei de credit asupra decontului nu este documentat complet.",
+      "quote": "Această neconcordanță justifică o clarificare contabilă privind suma transferată și efectul notei de credit asupra decontului.",
+      "reason": "Încasarea precedă reducerea confirmată, iar documentele nu arată stingerea efectului acesteia.",
+      "evidence": [
+        "03_borderou.md#B1",
+        "03_borderou.md#B3",
+        "02_registru.md#F1",
+        "02_registru.md#F2"
+      ],
+      "author_status": "verified_conditional_documentary_limit",
+      "author_reason": "Acord cu limita documentară, fără a deduce datorie certă, sumă de restituit sau blocare a finanțării. Calificarea separată a comparației Luna de 6400 EUR este păstrată în registru.",
+      "changes_final_business_decision": false
+    }
+  ]
+}

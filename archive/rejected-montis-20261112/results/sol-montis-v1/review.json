@@ -1,0 +1,36 @@
+{
+  "run_id": "sol-montis-v1",
+  "model": "gpt-6.1-sol",
+  "require_current_inputs": true,
+  "limitations": "O sesiune strict izolată, efort medium. Caz construit adaptiv; evaluatorul este și autorul. Toate findingurile sunt rezolvate corect, inclusiv de Luna; candidatul se retrage, fără a fabrica un eșec.",
+  "cases": {
+    "03_montis_garantii": {
+      "findings": {
+        "F1": {
+          "status": "pass",
+          "quote": "Grupul N–E–V solicită 120 și are acces numai la GA + GB = 100.",
+          "reason": "Identifică grupul N/E/V cu cerere 120 și capacitate eligibilă 100, reutilizarea capacităților în controalele individuale și neaprobabilitatea pachetului."
+        },
+        "F2": {
+          "status": "pass",
+          "quote": "acoperirea maximă este 180, iar expunerea minimă neacoperită este exact 20",
+          "reason": "Demonstrează atât limita superioară a acoperirii (180), cât și o alocare fezabilă care o atinge; deficitul minim este exact 20."
+        },
+        "F3": {
+          "status": "pass",
+          "quote": "totalul nominal crește cu 20, dar acoperirea maximă a pachetului nu crește deloc.",
+          "reason": "Arată că oferta exclusiv pentru S nu mărește capacitatea N/E/V și păstrează deficitul minim de 20."
+        },
+        "F4": {
+          "status": "pass",
+          "quote": "Oferta pentru N permite acoperirea integrală; cea pentru S nu.",
+          "reason": "Oferă o alocare completă validă cu garanția nouă pentru N și distinge corect ofertele, condiționat de incorporarea ofertei."
+        }
+      },
+      "additional_errors": [],
+      "additional_findings": [],
+      "outcome": "correct",
+      "notes": "Toate cele patru findinguri sunt demonstrate corect. Alocările alternative oferite de model au fost verificate: respectă eligibilitățile, capacitățile și principalul fiecărui credit. Nu am identificat erori materiale. Observația că ofertele nu sunt încă incorporate explicitează condiționalitatea F4, fără a fi un finding nou distinct."
+    }
+  }
+}

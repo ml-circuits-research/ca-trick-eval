@@ -1,0 +1,2006 @@
+{
+  "created_at": "2026-11-12T14:27:33.895308+00:00",
+  "status": "passed",
+  "script_sha256": "c7269e24bb58e6271efa066227c32f70eb3f5a13beb0eca0aec86d090d3bbca3",
+  "completed_sessions": 106,
+  "unique_threads": 106,
+  "roles": {
+    "business_review": 92,
+    "anonymous_judging": 14
+  },
+  "cli_versions": {
+    "codex-cli 0.167.1": 52,
+    "codex-cli 0.167.2": 54
+  },
+  "unlaunched_allocations": [
+    {
+      "suite": "pilot-v1",
+      "run_id": "pilot-luna",
+      "case_id": "d9278",
+      "reason": "Conditional discovery branch not launched; recorded in phase-one report."
+    },
+    {
+      "suite": "pilot-v1",
+      "run_id": "pilot-luna",
+      "case_id": "d8770",
+      "reason": "Conditional discovery branch not launched; recorded in phase-one report."
+    },
+    {
+      "suite": "pilot-v1",
+      "run_id": "pilot-luna",
+      "case_id": "d2897",
+      "reason": "Conditional discovery branch not launched; recorded in phase-one report."
+    },
+    {
+      "suite": "pilot-v1",
+      "run_id": "pilot-luna",
+      "case_id": "d3881",
+      "reason": "Conditional discovery branch not launched; recorded in phase-one report."
+    },
+    {
+      "suite": "pilot-v1",
+      "run_id": "pilot-luna",
+      "case_id": "d4366",
+      "reason": "Conditional discovery branch not launched; recorded in phase-one report."
+    },
+    {
+      "suite": "pilot-v1",
+      "run_id": "pilot-luna",
+      "case_id": "d5092",
+      "reason": "Conditional discovery branch not launched; recorded in phase-one report."
+    },
+    {
+      "suite": "pilot-v1",
+      "run_id": "pilot-luna",
+      "case_id": "d4452",
+      "reason": "Conditional discovery branch not launched; recorded in phase-one report."
+    },
+    {
+      "suite": "pilot-v1",
+      "run_id": "pilot-luna",
+      "case_id": "d6801",
+      "reason": "Conditional discovery branch not launched; recorded in phase-one report."
+    },
+    {
+      "suite": "pilot-v1",
+      "run_id": "pilot-luna",
+      "case_id": "d4989",
+      "reason": "Conditional discovery branch not launched; recorded in phase-one report."
+    },
+    {
+      "suite": "pilot-v1",
+      "run_id": "pilot-luna",
+      "case_id": "d8133",
+      "reason": "Conditional discovery branch not launched; recorded in phase-one report."
+    },
+    {
+      "suite": "pilot-v1",
+      "run_id": "pilot-luna",
+      "case_id": "d9895",
+      "reason": "Conditional discovery branch not launched; recorded in phase-one report."
+    },
+    {
+      "suite": "pilot-v1",
+      "run_id": "pilot-luna",
+      "case_id": "d7266",
+      "reason": "Conditional discovery branch not launched; recorded in phase-one report."
+    }
+  ],
+  "private_runtime_directories_remaining": 0,
+  "limitations": [
+    "Technical integrity only; semantic judgments are separate.",
+    "Repeated inputs are not independent business dossiers.",
+    "Requested model ID and CLI version are recorded; backend identity is not independently attested.",
+    "This does not certify complete network isolation or prove the internal use of pixels."
+  ],
+  "records": [
+    {
+      "suite": "pilot-v1",
+      "role": "business_review",
+      "case_id": "d9278",
+      "run_id": "pilot-terra",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfcd-86af-73d2-9cde-a95b9949130d",
+      "receipt_sha256": "2a59646d28b784084066714d3057a4373bf80fd8f1c991878fac4d083a233b56",
+      "answer_sha256": "d49639ee39cebe8a42ea82ac3dbe81592260c5e88e47768c9a6a2d27b24133f7",
+      "freeze_sha256": "c171a39fe8b5e5fd621fd5fe73f21926e1fa8ba5634b278492dff3dca6aee146",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "pilot-v1",
+      "role": "business_review",
+      "case_id": "d8770",
+      "run_id": "pilot-terra",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfcd-f40e-72b3-813d-4ab62c8cc807",
+      "receipt_sha256": "c63062c6293b409ef9120f7df7cfca3ceb939d5c5ce260d458bbf5e5578e3200",
+      "answer_sha256": "9e914253c16bc96389b261b833dcf597bac28448f6baa9feb07fef53b44c9b20",
+      "freeze_sha256": "c171a39fe8b5e5fd621fd5fe73f21926e1fa8ba5634b278492dff3dca6aee146",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "pilot-v1",
+      "role": "business_review",
+      "case_id": "d2897",
+      "run_id": "pilot-terra",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfce-5834-7ca3-b790-9ce4e0d43064",
+      "receipt_sha256": "65c562c9bd9c0e55920af9a932b9ec9ba4ae87fa865fbcd2f054cc7ab1513783",
+      "answer_sha256": "33931d3386b0eaf33e3fefeb605fd17ec21831a8d89cb242da06f5c9ee343df1",
+      "freeze_sha256": "c171a39fe8b5e5fd621fd5fe73f21926e1fa8ba5634b278492dff3dca6aee146",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "pilot-v1",
+      "role": "business_review",
+      "case_id": "d3881",
+      "run_id": "pilot-terra",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfce-ce95-7dc0-8ba2-3674ffe54e44",
+      "receipt_sha256": "ebcce58a09e1d33e53c904403dd1947253df8195d80ce24429fa94b2d14190db",
+      "answer_sha256": "9617fac3435211b831b285d124a33ad4d84bcb7a3633b1200e62ec28d1cca804",
+      "freeze_sha256": "c171a39fe8b5e5fd621fd5fe73f21926e1fa8ba5634b278492dff3dca6aee146",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "pilot-v1",
+      "role": "business_review",
+      "case_id": "d4366",
+      "run_id": "pilot-terra",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfcf-2476-7f13-8513-453251ef6f5e",
+      "receipt_sha256": "6aa68728c4f6e5ebda1b5e778a1d0773b9234dc5cca687b8919c34a17c006030",
+      "answer_sha256": "b599849bbd48936cc2ef99eea4d9a5488dae872abc8dcccde41a024669f7a9e3",
+      "freeze_sha256": "c171a39fe8b5e5fd621fd5fe73f21926e1fa8ba5634b278492dff3dca6aee146",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "pilot-v1",
+      "role": "business_review",
+      "case_id": "d5092",
+      "run_id": "pilot-terra",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfcf-9333-7231-acc8-4cdd3a0e8bea",
+      "receipt_sha256": "7774bdc876bc7f4c20ca0d770bd97d883956551d3e7b491740a78ea6c423050f",
+      "answer_sha256": "ee9b86217739bcc54bd4ae37bd1d2b3a9e5fd76abd116a383349591183d67b1a",
+      "freeze_sha256": "c171a39fe8b5e5fd621fd5fe73f21926e1fa8ba5634b278492dff3dca6aee146",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "pilot-v1",
+      "role": "business_review",
+      "case_id": "d4452",
+      "run_id": "pilot-terra",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfd0-089c-72a3-9abb-91850fcbba0b",
+      "receipt_sha256": "59f09f8c0e3ef15e6c261db7ff6fcec926c38f394c5a3ea99338709f5ce9bb2e",
+      "answer_sha256": "170d55e3fee674e3c9f3f55b74797273aec7f1601c202a830fc9a7c4e5c24e22",
+      "freeze_sha256": "c171a39fe8b5e5fd621fd5fe73f21926e1fa8ba5634b278492dff3dca6aee146",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "pilot-v1",
+      "role": "business_review",
+      "case_id": "d6801",
+      "run_id": "pilot-terra",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfd0-7987-7a62-8b02-567704934114",
+      "receipt_sha256": "db04da811a39939dd2f00234a472663d0686bd51fc617715254801cb03852b56",
+      "answer_sha256": "bc575218efbbe37bda189e8d20d07040ce000f7684cd87816f14da86d3d23830",
+      "freeze_sha256": "c171a39fe8b5e5fd621fd5fe73f21926e1fa8ba5634b278492dff3dca6aee146",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "pilot-v1",
+      "role": "business_review",
+      "case_id": "d4989",
+      "run_id": "pilot-terra",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfd0-d508-7101-8553-672013b8ddd2",
+      "receipt_sha256": "a19f6fb31e21eff0e2522bd100951bd0476e9a961ebaac913f87904bdbc6401e",
+      "answer_sha256": "53f1e187fea8c7d9eeb7b602d5bf017d695c87b3ad85090ea8950af7288e39e6",
+      "freeze_sha256": "c171a39fe8b5e5fd621fd5fe73f21926e1fa8ba5634b278492dff3dca6aee146",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "pilot-v1",
+      "role": "business_review",
+      "case_id": "d8133",
+      "run_id": "pilot-terra",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfd1-467b-7e13-9dd6-2024888bf1f5",
+      "receipt_sha256": "6d32d09e559f6dd1ad8c1ce6d3f1ec2347e557150c0320d87d96c1f84eebca50",
+      "answer_sha256": "478a5eea766202848e6643bec6b1e3ac64cc848bcc0fadd03faed0ce2e9e6638",
+      "freeze_sha256": "c171a39fe8b5e5fd621fd5fe73f21926e1fa8ba5634b278492dff3dca6aee146",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "pilot-v1",
+      "role": "business_review",
+      "case_id": "d9895",
+      "run_id": "pilot-terra",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfd1-a8d1-77e2-aa1c-b1b73bbd6a4e",
+      "receipt_sha256": "33ee77789716eea26957eda80309e5dae47a456a0dc8c3b52ee4a5d7f64006bf",
+      "answer_sha256": "fe8488de21219d75a4e19770bfaf9271ca13a22b8e8a57cdf194938158b05a49",
+      "freeze_sha256": "c171a39fe8b5e5fd621fd5fe73f21926e1fa8ba5634b278492dff3dca6aee146",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "pilot-v1",
+      "role": "business_review",
+      "case_id": "d7266",
+      "run_id": "pilot-terra",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfd2-0b69-75a1-99e6-6b372531d432",
+      "receipt_sha256": "3aebfcc50dd404cceece7dc5ea90b49a953d103b1dca62de52f816ef0251296c",
+      "answer_sha256": "121889174ad3865d9e1fd2437b74f6acd81b95e2f6cce0c7040cc96e8e55f2c1",
+      "freeze_sha256": "c171a39fe8b5e5fd621fd5fe73f21926e1fa8ba5634b278492dff3dca6aee146",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "pilot-v1",
+      "role": "business_review",
+      "case_id": "d9278",
+      "run_id": "pilot-sol",
+      "model_requested": "gpt-6.1-sol",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfcd-86ae-7a71-ac1a-b7dc223a008a",
+      "receipt_sha256": "ac54c4ea3e32740a01eed8bd98f7b7f2c4fe8b2c83c8b242874e3f5b8f72f2f0",
+      "answer_sha256": "a897e2db113ef907a8af61e1da08fa804f2752c03d8b0a0741028cf7a23e72bf",
+      "freeze_sha256": "c171a39fe8b5e5fd621fd5fe73f21926e1fa8ba5634b278492dff3dca6aee146",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "pilot-v1",
+      "role": "business_review",
+      "case_id": "d8770",
+      "run_id": "pilot-sol",
+      "model_requested": "gpt-6.1-sol",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfce-3499-7520-ba3c-99df2386b468",
+      "receipt_sha256": "82f3c0bf86a74679cb5c0c82ff61e6a053b4f1e8a1d72ee131e3d9dd88b0704c",
+      "answer_sha256": "517692c1322f57321de38aa2fae37838ec1f57105a4a62af3f96084c56f3e760",
+      "freeze_sha256": "c171a39fe8b5e5fd621fd5fe73f21926e1fa8ba5634b278492dff3dca6aee146",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "pilot-v1",
+      "role": "business_review",
+      "case_id": "d2897",
+      "run_id": "pilot-sol",
+      "model_requested": "gpt-6.1-sol",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfce-df92-7f72-9067-ddd0f64298e3",
+      "receipt_sha256": "90b42613c37a4c44a0bfe1c49e98d421eceae6126b634d81371ec0488633bd95",
+      "answer_sha256": "ba81c8bed726c8b299d48d12109199e7835f74dc64412296e1d31130a8ec9903",
+      "freeze_sha256": "c171a39fe8b5e5fd621fd5fe73f21926e1fa8ba5634b278492dff3dca6aee146",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 6
+      }
+    },
+    {
+      "suite": "pilot-v1",
+      "role": "business_review",
+      "case_id": "d3881",
+      "run_id": "pilot-sol",
+      "model_requested": "gpt-6.1-sol",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfcf-7e74-7b10-a197-9bc13aef0191",
+      "receipt_sha256": "4eb326fb599b6e60925232abcfe992a64c9f9bdc21588bc9ad0ae308ad857241",
+      "answer_sha256": "a82d41001123b9abe7f339cf0afc656f99881f45e7a3f6581bc0157ff5d05c43",
+      "freeze_sha256": "c171a39fe8b5e5fd621fd5fe73f21926e1fa8ba5634b278492dff3dca6aee146",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 6
+      }
+    },
+    {
+      "suite": "pilot-v1",
+      "role": "business_review",
+      "case_id": "d4366",
+      "run_id": "pilot-sol",
+      "model_requested": "gpt-6.1-sol",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfd0-07c1-7d60-8814-5d7840a49d05",
+      "receipt_sha256": "7f46b8558d297639567a1bd790d4892d4af0ace6dfaf8b1b0e246eaee758873e",
+      "answer_sha256": "7614353090d8a3169bc82eb04a91650b5857a11d4cdd676e9227ce96366b2f1e",
+      "freeze_sha256": "c171a39fe8b5e5fd621fd5fe73f21926e1fa8ba5634b278492dff3dca6aee146",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "pilot-v1",
+      "role": "business_review",
+      "case_id": "d5092",
+      "run_id": "pilot-sol",
+      "model_requested": "gpt-6.1-sol",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfd0-af42-7132-94a6-7cef6bce1cc1",
+      "receipt_sha256": "5661344080a0ac8eff48f9cd369184db73d0dbc88734ca9eb32e3c96094ea6ea",
+      "answer_sha256": "9303b251dd6120e05b76bab9db8cc3b1b283bb83fc04e865af2173f1e879d94d",
+      "freeze_sha256": "c171a39fe8b5e5fd621fd5fe73f21926e1fa8ba5634b278492dff3dca6aee146",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "pilot-v1",
+      "role": "business_review",
+      "case_id": "d4452",
+      "run_id": "pilot-sol",
+      "model_requested": "gpt-6.1-sol",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfd1-4b87-7cc1-9ed5-288ff2bdc286",
+      "receipt_sha256": "aca0a9d8c3259f8aa282a1ef0573a7c9240db9f28a928eb5cd645214fa3cc774",
+      "answer_sha256": "2d17ecf4c9b307e0df18a5795c30b086792f3ef5b8077f42c8a5fa1376f8ff0c",
+      "freeze_sha256": "c171a39fe8b5e5fd621fd5fe73f21926e1fa8ba5634b278492dff3dca6aee146",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "pilot-v1",
+      "role": "business_review",
+      "case_id": "d6801",
+      "run_id": "pilot-sol",
+      "model_requested": "gpt-6.1-sol",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfd1-ecd2-7cb3-bc5a-5a40efe9ce9f",
+      "receipt_sha256": "898547ed3df0a0b77e1069b383362b4f8ff0e33a8c7ee726f048fa4d79d343de",
+      "answer_sha256": "eaf95ea317b35c00cd472ee1f6e56e0f38266f0bc8ccc5ca68c3ab8c40772672",
+      "freeze_sha256": "c171a39fe8b5e5fd621fd5fe73f21926e1fa8ba5634b278492dff3dca6aee146",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "pilot-v1",
+      "role": "business_review",
+      "case_id": "d4989",
+      "run_id": "pilot-sol",
+      "model_requested": "gpt-6.1-sol",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfd2-6fe2-7070-8886-214de4c6e202",
+      "receipt_sha256": "40a70068afa1a9a0994da73638d0f07c88561bb3cec441e53b52c5cbeea7c52c",
+      "answer_sha256": "a08fc1674bd15bf4e1c06aa26524316151b41366e407db8c03237be52b52a169",
+      "freeze_sha256": "c171a39fe8b5e5fd621fd5fe73f21926e1fa8ba5634b278492dff3dca6aee146",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 6
+      }
+    },
+    {
+      "suite": "pilot-v1",
+      "role": "business_review",
+      "case_id": "d8133",
+      "run_id": "pilot-sol",
+      "model_requested": "gpt-6.1-sol",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfd3-244e-7623-8104-2ecd6830bcd5",
+      "receipt_sha256": "98fa5761398975bd4102b4b913f85d5e3d62474104ec675dd3ea16dbf1b38c57",
+      "answer_sha256": "d13ebe873a39fb816fadded9368df0d6a0f205268e9c22145f94b7a905f1a080",
+      "freeze_sha256": "c171a39fe8b5e5fd621fd5fe73f21926e1fa8ba5634b278492dff3dca6aee146",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 4
+      }
+    },
+    {
+      "suite": "pilot-v1",
+      "role": "business_review",
+      "case_id": "d9895",
+      "run_id": "pilot-sol",
+      "model_requested": "gpt-6.1-sol",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfd3-ce17-7ef2-9987-48fad31805ab",
+      "receipt_sha256": "ddb30dfd741f6706abcdccc1703a0e2508f70c1b75084585bd0a437cee6f0208",
+      "answer_sha256": "33093ae05266bea57c2e1308e94b3c6123d5f2fdbdec60a7081589be19837587",
+      "freeze_sha256": "c171a39fe8b5e5fd621fd5fe73f21926e1fa8ba5634b278492dff3dca6aee146",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "pilot-v1",
+      "role": "business_review",
+      "case_id": "d7266",
+      "run_id": "pilot-sol",
+      "model_requested": "gpt-6.1-sol",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfd4-5089-70d1-a03c-d1942298580b",
+      "receipt_sha256": "f1e463648948ba5c58740a3be60d696e40bade0102e264f850a6fa36c7ba27b5",
+      "answer_sha256": "1728842e0ff0a5700caaf534fb67c5044264d7de5b9e1d6ba7548a4771881032",
+      "freeze_sha256": "c171a39fe8b5e5fd621fd5fe73f21926e1fa8ba5634b278492dff3dca6aee146",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "orizont-confirm-v1",
+      "role": "business_review",
+      "case_id": "d352609",
+      "run_id": "confirm-a",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfdc-6e15-77a2-93ee-6874a65e6be0",
+      "receipt_sha256": "0f390d80e70a74825febe7ce2fc1f68091e91d5a68d85ff1bafca906c61ef366",
+      "answer_sha256": "fd606dcfb1c928248d14b9a311440d25f2e051ca51403e8943dcb4299792aaee",
+      "freeze_sha256": "d29cb5e1590655611ff503ea62aa4ed0dad1fe40ddd3d91488c120e06c0e79cd",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "orizont-confirm-v1",
+      "role": "business_review",
+      "case_id": "d167186",
+      "run_id": "confirm-a",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfdc-f8e1-7ce3-b12e-541393f0f495",
+      "receipt_sha256": "c263ff9b1d53931cf737b1648355c9b52e49b3585c4d93bf89c735c45811269a",
+      "answer_sha256": "61fc8d224a42cffb9b9fe7c42cbe927c1109a1e8298efca70103fbd92ac7c46b",
+      "freeze_sha256": "d29cb5e1590655611ff503ea62aa4ed0dad1fe40ddd3d91488c120e06c0e79cd",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "orizont-confirm-v1",
+      "role": "business_review",
+      "case_id": "d550757",
+      "run_id": "confirm-a",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfdd-659d-7592-943a-56a721888eed",
+      "receipt_sha256": "ec49ff06aea81261e56a7ae27a6d055f4bd6e0f44065bec37161b82a654c560a",
+      "answer_sha256": "baeb56083925f870eb90f9b2c9fcffda238f59e9f2599348f1f392b11a0510bb",
+      "freeze_sha256": "d29cb5e1590655611ff503ea62aa4ed0dad1fe40ddd3d91488c120e06c0e79cd",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "orizont-confirm-v1",
+      "role": "business_review",
+      "case_id": "d715463",
+      "run_id": "confirm-a",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfdd-d68a-7a73-9c2b-d24962ebc03b",
+      "receipt_sha256": "0ad33ff08f1dfe1e781a3c6f6188d15672de3707fe645477f5003ef304314f8d",
+      "answer_sha256": "cc8050dd69dc160c3157cad9aa40250dbffb3c41808f33655fae6cd6e8018952",
+      "freeze_sha256": "d29cb5e1590655611ff503ea62aa4ed0dad1fe40ddd3d91488c120e06c0e79cd",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "orizont-confirm-v1",
+      "role": "business_review",
+      "case_id": "d558839",
+      "run_id": "confirm-a",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfde-403d-74b3-b75b-78dfad8cea6b",
+      "receipt_sha256": "278f6e80ee1a79baa9b3af13a316c73cec0d4d05be5f2af05698477f8ea4ccda",
+      "answer_sha256": "91fd84cced75c08b92df135e57ec915221b1284085f4600a0371ceb24ce6b55c",
+      "freeze_sha256": "d29cb5e1590655611ff503ea62aa4ed0dad1fe40ddd3d91488c120e06c0e79cd",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "orizont-confirm-v1",
+      "role": "business_review",
+      "case_id": "d261273",
+      "run_id": "confirm-a",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfde-aa69-7322-9d9c-6c6646d2e376",
+      "receipt_sha256": "f690bd1506688a8fc792834de55013962cbb3c92b18a450e4df74c4100d6ba14",
+      "answer_sha256": "3c2a0e0d9c8a0143e0060c6c33d36c0e0a23361729e7feb32dab7b4c1569d70f",
+      "freeze_sha256": "d29cb5e1590655611ff503ea62aa4ed0dad1fe40ddd3d91488c120e06c0e79cd",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "orizont-confirm-v1",
+      "role": "business_review",
+      "case_id": "d541114",
+      "run_id": "confirm-a",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfdf-1c5e-72b1-89ca-562e9adc689e",
+      "receipt_sha256": "e2fa90555cf7f2083d516fe6d607cff466fde75d92223e157da5994a28465ae3",
+      "answer_sha256": "33557ca7482bc343806c0620ee48d4e0787f1e4fcdf6242bdef7d7d66028ba6e",
+      "freeze_sha256": "d29cb5e1590655611ff503ea62aa4ed0dad1fe40ddd3d91488c120e06c0e79cd",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "orizont-confirm-v1",
+      "role": "business_review",
+      "case_id": "d972933",
+      "run_id": "confirm-a",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfdf-7b74-76c0-982d-d4b940890924",
+      "receipt_sha256": "5616917c75ff9c89666576fb005f38d2dfeb58b8630bf27084856336d93f510c",
+      "answer_sha256": "0b9e74e5ac3558ad0e9413bd50dcb379eae8f314bbbfe4c9a035f674f009b74d",
+      "freeze_sha256": "d29cb5e1590655611ff503ea62aa4ed0dad1fe40ddd3d91488c120e06c0e79cd",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "orizont-confirm-v1",
+      "role": "business_review",
+      "case_id": "d921310",
+      "run_id": "confirm-b",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfdc-6e20-7ae1-8aa7-00cef1630ef4",
+      "receipt_sha256": "5cb5f2d4cb8ae9933f9ed275996f5431991f0bc9499d2b087c14d830774cd561",
+      "answer_sha256": "b16fcacc525c811b3cf59a249fdaa0963de2bc152e537e1466bddf8fbf8a9512",
+      "freeze_sha256": "d29cb5e1590655611ff503ea62aa4ed0dad1fe40ddd3d91488c120e06c0e79cd",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "orizont-confirm-v1",
+      "role": "business_review",
+      "case_id": "d347868",
+      "run_id": "confirm-b",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfdc-ec4c-7fe1-becc-fca9167f60e8",
+      "receipt_sha256": "49782497c57ca611f9d58ee858022afa5ad3a8f67762b6d0c90863e2a8426060",
+      "answer_sha256": "18658e6800cf1fae94df5e7f7d83ece81f2dba6847bc4db505c93e12e65a3e43",
+      "freeze_sha256": "d29cb5e1590655611ff503ea62aa4ed0dad1fe40ddd3d91488c120e06c0e79cd",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "orizont-confirm-v1",
+      "role": "business_review",
+      "case_id": "d990041",
+      "run_id": "confirm-b",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfdd-565d-76a2-9088-bc75fe2d498d",
+      "receipt_sha256": "29c345acc07a9ed96cf5ee8445547fbd262bcbc03a3c26a02daab6137336f2e1",
+      "answer_sha256": "c753769e9a71115e49fa61fe09e1956f1bece35742ca18e9b8e901cf7d508da4",
+      "freeze_sha256": "d29cb5e1590655611ff503ea62aa4ed0dad1fe40ddd3d91488c120e06c0e79cd",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "orizont-confirm-v1",
+      "role": "business_review",
+      "case_id": "d125751",
+      "run_id": "confirm-b",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfdd-c2c9-7ed2-bc76-bac69a65e4d2",
+      "receipt_sha256": "36874691b46083ad700d00b3f093968ac2601edda6b372aa7be617b1cf2d306f",
+      "answer_sha256": "c63341b42a722c62aa32bd2d2a20fc406ecb7949f90004dfe7a768931eafc58f",
+      "freeze_sha256": "d29cb5e1590655611ff503ea62aa4ed0dad1fe40ddd3d91488c120e06c0e79cd",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "orizont-confirm-v1",
+      "role": "business_review",
+      "case_id": "d680425",
+      "run_id": "confirm-b",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfde-29c8-7773-9734-8a2e8c7fcb3e",
+      "receipt_sha256": "e1d028803092499cc04855ebccdb09959b0519a8c6a982dd5a5062f100662e40",
+      "answer_sha256": "5b441c2e7ccff7325e351d1b39df93b1d85c65ea19e7eb8cacdbd3a21010da83",
+      "freeze_sha256": "d29cb5e1590655611ff503ea62aa4ed0dad1fe40ddd3d91488c120e06c0e79cd",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "orizont-confirm-v1",
+      "role": "business_review",
+      "case_id": "d235227",
+      "run_id": "confirm-b",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfde-9a7b-79e2-93b3-6ec48b9f6005",
+      "receipt_sha256": "4c9bf85f68a468b884b6154a9806a610f0bed6eca1e264860801c98208b72a92",
+      "answer_sha256": "b632d61987f6a747fb7a5cac37022fbebf7f0b9c0cab0f4e83f242af33831b8f",
+      "freeze_sha256": "d29cb5e1590655611ff503ea62aa4ed0dad1fe40ddd3d91488c120e06c0e79cd",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "orizont-confirm-v1",
+      "role": "business_review",
+      "case_id": "d985633",
+      "run_id": "confirm-b",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfdf-0be7-78c1-8022-20d5e4b3a763",
+      "receipt_sha256": "c066b8536191da2899fa36c82eb75e6b66b5f1d5dfec91ea55f6c56188ac70d1",
+      "answer_sha256": "10b9f0e47beb74e8705a11353404b35db2783ff182cc21d48f9902c2bb844f4b",
+      "freeze_sha256": "d29cb5e1590655611ff503ea62aa4ed0dad1fe40ddd3d91488c120e06c0e79cd",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "orizont-confirm-v1",
+      "role": "business_review",
+      "case_id": "d607877",
+      "run_id": "confirm-c",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfdc-6e15-75b1-b788-ca1903ec1a36",
+      "receipt_sha256": "9aa9eaa89d2e7a2f23c6898b19412165fa06d75e437def68e290ff1d86d2e6c7",
+      "answer_sha256": "56a3ad75aac9bf23332fa89fc54dad906cd0e18c926644ee537587d44da69198",
+      "freeze_sha256": "d29cb5e1590655611ff503ea62aa4ed0dad1fe40ddd3d91488c120e06c0e79cd",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "orizont-confirm-v1",
+      "role": "business_review",
+      "case_id": "d901608",
+      "run_id": "confirm-c",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfdc-ed27-7533-8eae-bb5550ae66ca",
+      "receipt_sha256": "a049830887d07fec51aac196562e50724c14b842924cfee3b5474512b9870baa",
+      "answer_sha256": "4a01eef018e05e302b594a8944d5a6247ecd5bf230654bde1dc4458c4a789cf9",
+      "freeze_sha256": "d29cb5e1590655611ff503ea62aa4ed0dad1fe40ddd3d91488c120e06c0e79cd",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "orizont-confirm-v1",
+      "role": "business_review",
+      "case_id": "d629927",
+      "run_id": "confirm-c",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfdd-528f-7c03-8c73-c8559f50c0ce",
+      "receipt_sha256": "453a21aaef14d267eb9a493ce464c71b5ec0b7d329e14725fcca480b21065da8",
+      "answer_sha256": "5b8756b8c12a6a114b371f7e17b579ae02dfe7dc83fbf1295ea0571839c01e12",
+      "freeze_sha256": "d29cb5e1590655611ff503ea62aa4ed0dad1fe40ddd3d91488c120e06c0e79cd",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "orizont-confirm-v1",
+      "role": "business_review",
+      "case_id": "d743581",
+      "run_id": "confirm-c",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfdd-c02d-7de0-ab27-d6824adf772a",
+      "receipt_sha256": "d7e102db386f5cf2a3b93e06befdd91e003e12fe69c7bd1dcc229f8eecbee3ba",
+      "answer_sha256": "d68e0d4ab4baae2b81fb3edd8a2d97006ae2b59655ced2ecf79cc71f4e82cb6e",
+      "freeze_sha256": "d29cb5e1590655611ff503ea62aa4ed0dad1fe40ddd3d91488c120e06c0e79cd",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "orizont-confirm-v1",
+      "role": "business_review",
+      "case_id": "d876039",
+      "run_id": "confirm-c",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfde-2b4a-7b53-8224-cba4c68caae8",
+      "receipt_sha256": "ba9d0ef7dcc6322bf5ea00376fe5c852eb4d452536ee056998eafcf86b7f81d2",
+      "answer_sha256": "d227079dc5f2d63363a6f0a0fa7bfd8c8ef13cf6abee20737004650a830e7953",
+      "freeze_sha256": "d29cb5e1590655611ff503ea62aa4ed0dad1fe40ddd3d91488c120e06c0e79cd",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "orizont-confirm-v1",
+      "role": "business_review",
+      "case_id": "d621340",
+      "run_id": "confirm-c",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfde-968a-7f83-865b-fb03416f8327",
+      "receipt_sha256": "70aea5aa7bcc73c2cd67dbc345dbbaa335dd946a3f0e0fe769efb2d11432dbea",
+      "answer_sha256": "c1aee2934a394d67a6c2281a0f194fd1f218bede954fb4db454d5e4244f4ed82",
+      "freeze_sha256": "d29cb5e1590655611ff503ea62aa4ed0dad1fe40ddd3d91488c120e06c0e79cd",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "orizont-confirm-v1",
+      "role": "business_review",
+      "case_id": "d127806",
+      "run_id": "confirm-c",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfde-f91b-7cd0-9d77-5e6f18888247",
+      "receipt_sha256": "2e76b006a0677812b7f80e6fbe65b6fba67c89a22cb972c8a65f21f7ce04d16e",
+      "answer_sha256": "bc2625bad946cc4e521e05ed0f6e1671909b56878d0ff3c63464cd50ed38d745",
+      "freeze_sha256": "d29cb5e1590655611ff503ea62aa4ed0dad1fe40ddd3d91488c120e06c0e79cd",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "dorna-pdf-v1",
+      "role": "business_review",
+      "case_id": "d5104",
+      "run_id": "pdf-terra",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d013-e554-77e2-90af-3d69ca137cdd",
+      "receipt_sha256": "3b9cd947e6f01cc84c162688f9f1c93c406697ea62a5d30b043f4bca358c3faf",
+      "answer_sha256": "b76ac125f2638e83fc8c90625b1d77cc5773c19f4f5fbef84baa030ca00eee64",
+      "freeze_sha256": "645ddd3231ae7269ce0f1aa7b6a7cf77b7ca1279f90e7cac83a58fd5765fe2f8",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 6
+      }
+    },
+    {
+      "suite": "dorna-pdf-v1",
+      "role": "business_review",
+      "case_id": "d5102",
+      "run_id": "pdf-terra",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d014-615e-7661-8838-15c4af6ab2d2",
+      "receipt_sha256": "6514a022a2119e51413adb3326686c8673d1e50221509fa0b9508b0385c33337",
+      "answer_sha256": "b279146b221d23350fbb8d225372b7263ca8811ea013866e9854ee70e60f6840",
+      "freeze_sha256": "645ddd3231ae7269ce0f1aa7b6a7cf77b7ca1279f90e7cac83a58fd5765fe2f8",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 3,
+        "command_execution": 6
+      }
+    },
+    {
+      "suite": "dorna-pdf-v1",
+      "role": "business_review",
+      "case_id": "d5101",
+      "run_id": "pdf-terra",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d014-ceea-7a32-a993-02bb416192a7",
+      "receipt_sha256": "2041a4802cf5a37e3471a8a5a96808a580b2c62a9ddf4a0c1cdd5df1098eddea",
+      "answer_sha256": "005d5661c8ee3bc95980d6897ad9a3073c3599ce22fbe5d76a57e5a7143712d8",
+      "freeze_sha256": "645ddd3231ae7269ce0f1aa7b6a7cf77b7ca1279f90e7cac83a58fd5765fe2f8",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 6
+      }
+    },
+    {
+      "suite": "dorna-pdf-v1",
+      "role": "business_review",
+      "case_id": "d5103",
+      "run_id": "pdf-terra",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d015-351e-7552-b356-e23235e5d198",
+      "receipt_sha256": "911065c3d39cb531ff138e160fcc923079e3d5b7c57b1dfa9797235d67582d07",
+      "answer_sha256": "46bdf2c2028eb9a4d5fc0540e4393c7f7cb7614dac31fb8acb4f11d5370ed5ff",
+      "freeze_sha256": "645ddd3231ae7269ce0f1aa7b6a7cf77b7ca1279f90e7cac83a58fd5765fe2f8",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 9
+      }
+    },
+    {
+      "suite": "dorna-pdf-v1",
+      "role": "business_review",
+      "case_id": "d5104",
+      "run_id": "pdf-sol",
+      "model_requested": "gpt-6.1-sol",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d013-e552-7723-982f-b0ede8b97cee",
+      "receipt_sha256": "7ac23f713be46a31d66f6f5b4bc31fa055a1339537a351d811e5f638fa777e57",
+      "answer_sha256": "7ac771562a2a9312f268c047054af18a5ef557ffc772525f9932a6bc26305b4b",
+      "freeze_sha256": "645ddd3231ae7269ce0f1aa7b6a7cf77b7ca1279f90e7cac83a58fd5765fe2f8",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 8
+      }
+    },
+    {
+      "suite": "dorna-pdf-v1",
+      "role": "business_review",
+      "case_id": "d5102",
+      "run_id": "pdf-sol",
+      "model_requested": "gpt-6.1-sol",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d014-9beb-7381-a556-b7c116437d44",
+      "receipt_sha256": "ef8bb43e4a29c24fd22f8f3ff659ad94e9b9e188f64e8fab693af34273a2ad3b",
+      "answer_sha256": "c721789fb6951263d57c4a60d42cd9257eb4f2531a73325c2013419f913d8826",
+      "freeze_sha256": "645ddd3231ae7269ce0f1aa7b6a7cf77b7ca1279f90e7cac83a58fd5765fe2f8",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 5
+      }
+    },
+    {
+      "suite": "dorna-pdf-v1",
+      "role": "business_review",
+      "case_id": "d5101",
+      "run_id": "pdf-sol",
+      "model_requested": "gpt-6.1-sol",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d015-553a-71c2-b713-5bf948cc1b57",
+      "receipt_sha256": "0d9c2d83d07d68fad1b814dfecdc57e62f052890084d71fe82df81d387a11fc5",
+      "answer_sha256": "a9db8111ec54903e8460e2e95a174748ae57a9453db875ef9dc32d4735c12312",
+      "freeze_sha256": "645ddd3231ae7269ce0f1aa7b6a7cf77b7ca1279f90e7cac83a58fd5765fe2f8",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 9
+      }
+    },
+    {
+      "suite": "dorna-pdf-v1",
+      "role": "business_review",
+      "case_id": "d5103",
+      "run_id": "pdf-sol",
+      "model_requested": "gpt-6.1-sol",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d016-2e5a-7f41-b10e-cf154163da90",
+      "receipt_sha256": "bc17c85bb3ffc8fbacec3534b077f8493553674e86099c0e0010fde4c53821ab",
+      "answer_sha256": "e2babed4f86cba4d2c79078146e01c951e499f4582e8975b906b0fd72d5fab51",
+      "freeze_sha256": "645ddd3231ae7269ce0f1aa7b6a7cf77b7ca1279f90e7cac83a58fd5765fe2f8",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 3,
+        "command_execution": 8
+      }
+    },
+    {
+      "suite": "dorna-pdf-v1",
+      "role": "business_review",
+      "case_id": "d5104",
+      "run_id": "pdf-luna",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d013-e550-7b13-902d-1904f2f7e4fb",
+      "receipt_sha256": "31eb0c8624ac51ffee1ed909ada5f3994522392391c6fcf6bd00d2ee395b09ba",
+      "answer_sha256": "cb1cfa806d76781c5992d7138712ddb5c8c9b2dae755fb9a4eb0806da2d54ff6",
+      "freeze_sha256": "645ddd3231ae7269ce0f1aa7b6a7cf77b7ca1279f90e7cac83a58fd5765fe2f8",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "dorna-pdf-v1",
+      "role": "business_review",
+      "case_id": "d5102",
+      "run_id": "pdf-luna",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d014-530e-7410-b1cb-3e3d7a9d163f",
+      "receipt_sha256": "f8d4cf1ae750173380e17bb9a68eb096349df043e0a0689bebe35b66bb6a6b5c",
+      "answer_sha256": "189760c100dfb77f7d4acd7f84a3ef7218574355d2d5f5fcf5dfb21a484d20c3",
+      "freeze_sha256": "645ddd3231ae7269ce0f1aa7b6a7cf77b7ca1279f90e7cac83a58fd5765fe2f8",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "dorna-pdf-v1",
+      "role": "business_review",
+      "case_id": "d5101",
+      "run_id": "pdf-luna",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d014-b0e6-7fa0-807f-59fe8c39b76e",
+      "receipt_sha256": "9b3c8d5a69b6d572d8a0213d4617a14c862372ab8b680e9b453c772f18b17adc",
+      "answer_sha256": "42bf6c5fecad5b64bf6529af655867990cd37aa5ba84e80ba81ac4ab676d00a4",
+      "freeze_sha256": "645ddd3231ae7269ce0f1aa7b6a7cf77b7ca1279f90e7cac83a58fd5765fe2f8",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 10
+      }
+    },
+    {
+      "suite": "dorna-pdf-v1",
+      "role": "business_review",
+      "case_id": "d5103",
+      "run_id": "pdf-luna",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d015-c3c3-7791-8758-5909478a9eb9",
+      "receipt_sha256": "184bae96e191f45b4883a2f4dd1a9b114e778d36440b4d74b6ad2ef0b5cff992",
+      "answer_sha256": "c0ecd960fa6d7538fd1e08e740c377ab906621e5b35a5e51ca0cc47be20bb806",
+      "freeze_sha256": "645ddd3231ae7269ce0f1aa7b6a7cf77b7ca1279f90e7cac83a58fd5765fe2f8",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 5
+      }
+    },
+    {
+      "suite": "dorna-confirm-v1",
+      "role": "business_review",
+      "case_id": "d793205",
+      "run_id": "pdf-confirm-a",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d01b-9256-7c70-b281-dd74a7c06fc8",
+      "receipt_sha256": "9c933a8f71faa56a8e96e2465d711500882e32b38653110c0125bd9ec7dbb615",
+      "answer_sha256": "4aa38f8e1bbecfe34362b38c4a1d52ba58bed3a92b93e0c477ae6c1fda0e8769",
+      "freeze_sha256": "5ef05453f70f5eb0dcb79b37461a0d6565def97ba1ea27ac9ba822bbc4bd9fec",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 4
+      }
+    },
+    {
+      "suite": "dorna-confirm-v1",
+      "role": "business_review",
+      "case_id": "d415450",
+      "run_id": "pdf-confirm-a",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d01c-2199-7d53-8445-8c6d1913ca17",
+      "receipt_sha256": "73ce4fa095d74ce1aa4292780055887bbd0b6d5e1e9dfc44dfff22f9df1794fa",
+      "answer_sha256": "0b5ab62d652bb127cdf321b9575813687b134474364611835436dcce4b26e74c",
+      "freeze_sha256": "5ef05453f70f5eb0dcb79b37461a0d6565def97ba1ea27ac9ba822bbc4bd9fec",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 4
+      }
+    },
+    {
+      "suite": "dorna-confirm-v1",
+      "role": "business_review",
+      "case_id": "d836469",
+      "run_id": "pdf-confirm-a",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d01c-d422-7941-9619-5c5f11cc16d8",
+      "receipt_sha256": "aa4fbfd63092b434bf358b87e102460873666ee6d3fd81f09fb9a70d04cc1592",
+      "answer_sha256": "236828d2abab44ea75c2fb4efe14c2f83eb0354f13788e22b5c0ef38be2f9a22",
+      "freeze_sha256": "5ef05453f70f5eb0dcb79b37461a0d6565def97ba1ea27ac9ba822bbc4bd9fec",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "dorna-confirm-v1",
+      "role": "business_review",
+      "case_id": "d468698",
+      "run_id": "pdf-confirm-a",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d01d-4b5a-7871-9cbe-72268442a9ee",
+      "receipt_sha256": "dc90864ec5b01e6496174ab2f8e7be3bed23c8d43b7839ddc4001a69acba87a1",
+      "answer_sha256": "feb172f74cb879c233d9fe6a50e88dd073fdc085246d45e7ab2e92bc01cef665",
+      "freeze_sha256": "5ef05453f70f5eb0dcb79b37461a0d6565def97ba1ea27ac9ba822bbc4bd9fec",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 6
+      }
+    },
+    {
+      "suite": "dorna-confirm-v1",
+      "role": "business_review",
+      "case_id": "d831303",
+      "run_id": "pdf-confirm-a",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d01d-cf80-7a42-b842-22e572a1a69f",
+      "receipt_sha256": "7854d05ebb7897e1596d34235bc15c5a25e09a4c4d3cb7ec507b36d6e5c0212d",
+      "answer_sha256": "c7041c01348bdb42da428af3b7a742466b47bbd478421ee3eb867390bacfcfa8",
+      "freeze_sha256": "5ef05453f70f5eb0dcb79b37461a0d6565def97ba1ea27ac9ba822bbc4bd9fec",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 3,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "dorna-confirm-v1",
+      "role": "business_review",
+      "case_id": "d877061",
+      "run_id": "pdf-confirm-a",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d01e-582b-7e70-a9da-9ae4003542c1",
+      "receipt_sha256": "5762592d6b746e404b156c07568e445e1f2601b85d52c34a24f302f449e2a9e3",
+      "answer_sha256": "c5e710f1ef47a03845d3110bbec59ac5522965d8079dd2ac7e3fc54bae7ca1f7",
+      "freeze_sha256": "5ef05453f70f5eb0dcb79b37461a0d6565def97ba1ea27ac9ba822bbc4bd9fec",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "dorna-confirm-v1",
+      "role": "business_review",
+      "case_id": "d903475",
+      "run_id": "pdf-confirm-a",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d01e-afd3-7ed0-ab98-3d26b176398c",
+      "receipt_sha256": "5de4a673d17a93f4a524fa263bdefb3f34dab41a70978cd80697a2f92c5dba17",
+      "answer_sha256": "bb62019c77b511baa83122ca3e48d81f729e374f5edcdc5d55dcc76af9024c83",
+      "freeze_sha256": "5ef05453f70f5eb0dcb79b37461a0d6565def97ba1ea27ac9ba822bbc4bd9fec",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 4
+      }
+    },
+    {
+      "suite": "dorna-confirm-v1",
+      "role": "business_review",
+      "case_id": "d968694",
+      "run_id": "pdf-confirm-a",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d01f-3abe-7a20-8e69-9cb546288f4b",
+      "receipt_sha256": "72d07b8b83a025a6f5bd948ce805a5071d3e7f12b10bea1c2d839205bfeb69e7",
+      "answer_sha256": "0e1f61ab8d59910c2cafcb32a515ec3d0a5b3f861a9072c5ffbe933cf9426dcf",
+      "freeze_sha256": "5ef05453f70f5eb0dcb79b37461a0d6565def97ba1ea27ac9ba822bbc4bd9fec",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "dorna-confirm-v1",
+      "role": "business_review",
+      "case_id": "d301701",
+      "run_id": "pdf-confirm-b",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d01b-924a-7570-98c3-bec795a6d4e9",
+      "receipt_sha256": "dbc17ed49307a5bb682a00e71297d6de4450810cbba808fdd0eb275bfaef431b",
+      "answer_sha256": "93a8c2e193bc4ba5dcde2626fcd95235e43dd9fa360f0dba00b910031d537d02",
+      "freeze_sha256": "5ef05453f70f5eb0dcb79b37461a0d6565def97ba1ea27ac9ba822bbc4bd9fec",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 4
+      }
+    },
+    {
+      "suite": "dorna-confirm-v1",
+      "role": "business_review",
+      "case_id": "d126574",
+      "run_id": "pdf-confirm-b",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d01c-0c9d-7f23-b674-2e730e4e5a10",
+      "receipt_sha256": "110d875697c3df6b11ec6ca655562a98a7aa652a1abe65b1b26b8594cf4f00cb",
+      "answer_sha256": "76abb34498b9363f9ab058e3731a5f8ae38d653edabde2912d0ea85a93f78e8d",
+      "freeze_sha256": "5ef05453f70f5eb0dcb79b37461a0d6565def97ba1ea27ac9ba822bbc4bd9fec",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "dorna-confirm-v1",
+      "role": "business_review",
+      "case_id": "d269317",
+      "run_id": "pdf-confirm-b",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d01c-5f1c-77d0-a1eb-3066cd70f9c2",
+      "receipt_sha256": "cb03da15d832e4566b3b9bbb92936110c8d3d4298721cfec615edaf73ca45a58",
+      "answer_sha256": "a650170e197b0bd3ba5a153b927cb491f1fba28a1c814322e88d1b5326d41503",
+      "freeze_sha256": "5ef05453f70f5eb0dcb79b37461a0d6565def97ba1ea27ac9ba822bbc4bd9fec",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "dorna-confirm-v1",
+      "role": "business_review",
+      "case_id": "d199566",
+      "run_id": "pdf-confirm-b",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d01c-db8b-77e3-ae5f-de1c285f33dc",
+      "receipt_sha256": "3eb2d56607e6e603c8c8bc1fa8010f58d314810099755f765729e660d5417827",
+      "answer_sha256": "d15920ae16e3c5af3cf3b0a55b2da9eabd7f6502788fbc8a20593b455632a04e",
+      "freeze_sha256": "5ef05453f70f5eb0dcb79b37461a0d6565def97ba1ea27ac9ba822bbc4bd9fec",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 12
+      }
+    },
+    {
+      "suite": "dorna-confirm-v1",
+      "role": "business_review",
+      "case_id": "d734398",
+      "run_id": "pdf-confirm-b",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d01d-ee7a-7293-9e50-1a9723f5b30d",
+      "receipt_sha256": "fe008334dc1dd58ab94dc07eb26c6a9cd82a909fcf7a8712f038749d2b1e09b2",
+      "answer_sha256": "6268733e635427fb58b8dcc9bc8da2f91d88d93d7062f33b1d9b1e3e0a8240a8",
+      "freeze_sha256": "5ef05453f70f5eb0dcb79b37461a0d6565def97ba1ea27ac9ba822bbc4bd9fec",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "dorna-confirm-v1",
+      "role": "business_review",
+      "case_id": "d938665",
+      "run_id": "pdf-confirm-b",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d01e-70ef-7932-9fb8-6a238ad30523",
+      "receipt_sha256": "1a2f87771f67b26883280735858b92829d6c58c06168ff04c0f2baf215047407",
+      "answer_sha256": "032970c8db95cd43c49a364884886772d1c1fb54eb2f2a831658cb40907b5cab",
+      "freeze_sha256": "5ef05453f70f5eb0dcb79b37461a0d6565def97ba1ea27ac9ba822bbc4bd9fec",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 4
+      }
+    },
+    {
+      "suite": "dorna-confirm-v1",
+      "role": "business_review",
+      "case_id": "d853044",
+      "run_id": "pdf-confirm-b",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d01e-f802-7153-a484-9cfe736c6696",
+      "receipt_sha256": "a569717ef526a1003fa647af9f68dbe0836341be3fbae0291aa43f9bbbaec70e",
+      "answer_sha256": "bc981a1c2fcebb229caaaecec5097a38644b3b49e169d760f97bc3df09e47557",
+      "freeze_sha256": "5ef05453f70f5eb0dcb79b37461a0d6565def97ba1ea27ac9ba822bbc4bd9fec",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "dorna-confirm-v1",
+      "role": "business_review",
+      "case_id": "d148529",
+      "run_id": "pdf-confirm-c",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d01b-9252-70d3-9bcd-c3b214f585bb",
+      "receipt_sha256": "73400701ec32165c28f40a988bfc08a99218b02a9d54d616f33be0c11955849c",
+      "answer_sha256": "97296d72dc91fac26fbb5b2d7cd53d65dfd8d6be052713aeaecd22c0590284a6",
+      "freeze_sha256": "5ef05453f70f5eb0dcb79b37461a0d6565def97ba1ea27ac9ba822bbc4bd9fec",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "dorna-confirm-v1",
+      "role": "business_review",
+      "case_id": "d917272",
+      "run_id": "pdf-confirm-c",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d01b-f64e-7d32-8512-ce8e38c046e6",
+      "receipt_sha256": "8512f6bd1941608d9e1d1f1b94928bec8a6bb3b14d58d7280963bd21dd943860",
+      "answer_sha256": "bd16392af8b5e07d3fe30fcfe1957440841b0c4dc1029e7cf200ac32fed473f6",
+      "freeze_sha256": "5ef05453f70f5eb0dcb79b37461a0d6565def97ba1ea27ac9ba822bbc4bd9fec",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "dorna-confirm-v1",
+      "role": "business_review",
+      "case_id": "d759327",
+      "run_id": "pdf-confirm-c",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d01c-685d-7f63-ae19-69b225de1d62",
+      "receipt_sha256": "62ab201524cb7d9b1f68075ed2460f46a38debdf5be6bba1c766a09795bf8882",
+      "answer_sha256": "e4b4eb8cc2759ff96413d4af9c3f662b211a7f932b52432f57e005a8e878bd14",
+      "freeze_sha256": "5ef05453f70f5eb0dcb79b37461a0d6565def97ba1ea27ac9ba822bbc4bd9fec",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "dorna-confirm-v1",
+      "role": "business_review",
+      "case_id": "d285994",
+      "run_id": "pdf-confirm-c",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d01c-bade-7860-895b-884f62c187cc",
+      "receipt_sha256": "5bf19b6de5834bf4e46adda4b917fdfe5bb180bc13bed1a2fc7e3e3784232879",
+      "answer_sha256": "1fb35cb031805d57ce3d25d717bc844fea988a0cd401ea3c273c5599cc1dafa7",
+      "freeze_sha256": "5ef05453f70f5eb0dcb79b37461a0d6565def97ba1ea27ac9ba822bbc4bd9fec",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 5
+      }
+    },
+    {
+      "suite": "dorna-confirm-v1",
+      "role": "business_review",
+      "case_id": "d835384",
+      "run_id": "pdf-confirm-c",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d01d-2d84-7873-ae23-9306065f885d",
+      "receipt_sha256": "aeeaedecc7d2e8e9c9c3dec1faf532c70ad786a618f300b15e6ef4673e8415df",
+      "answer_sha256": "e77af059f0cb9d9834ec8cd463b104f803850e4322230a3eb713348f6c7b4fdf",
+      "freeze_sha256": "5ef05453f70f5eb0dcb79b37461a0d6565def97ba1ea27ac9ba822bbc4bd9fec",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "dorna-confirm-v1",
+      "role": "business_review",
+      "case_id": "d598801",
+      "run_id": "pdf-confirm-c",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d01d-8b67-7412-9c3a-e6647ac6a492",
+      "receipt_sha256": "7ea9d04a085a91f3ec0d8c84ec3687dd04fb8a3c6d2c40177d8d55013811dee1",
+      "answer_sha256": "943cd2e97cb70acd40680a24687b26e3ee21c88cbfc5af3ce80d3f411e829e96",
+      "freeze_sha256": "5ef05453f70f5eb0dcb79b37461a0d6565def97ba1ea27ac9ba822bbc4bd9fec",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "dorna-confirm-v1",
+      "role": "business_review",
+      "case_id": "d574255",
+      "run_id": "pdf-confirm-c",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d01d-e586-7d01-84a2-3b9c37da4220",
+      "receipt_sha256": "c2356402a00fbe9476ddb029154dd2f23d48873029c9c78917cdabb78a6e3ddc",
+      "answer_sha256": "4d65b8514489fffb94c91ad71948f120339ebefdf7251a07ff8902ad53f7a20c",
+      "freeze_sha256": "5ef05453f70f5eb0dcb79b37461a0d6565def97ba1ea27ac9ba822bbc4bd9fec",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 4
+      }
+    },
+    {
+      "suite": "atria-v1",
+      "role": "business_review",
+      "case_id": "d37573",
+      "run_id": "interval-terra",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d020-339b-7453-8726-ceb4dae7170e",
+      "receipt_sha256": "c4bd1c116c63b728b5ba3f81159ccb0d29893f82de0facfa215ecb3908fbe9f2",
+      "answer_sha256": "3d7461da74c12c3d78f4b355e42691849456b33dd2ddb9c4d1d47a0b508e8a6e",
+      "freeze_sha256": "55b172e11581637ee9eb83f52e6c432988cf3610f6052745271b65c528001a71",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "atria-v1",
+      "role": "business_review",
+      "case_id": "d38045",
+      "run_id": "interval-terra",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d020-8e2c-77c0-996e-7f781f743059",
+      "receipt_sha256": "af399d0ff4c9443aba1cdb4374f21dee6c490663d64f9b61880538ebdbe89760",
+      "answer_sha256": "d962a7de883360592efbcda24abf12f42ed171ec68a87faccd02ec134504ecb0",
+      "freeze_sha256": "55b172e11581637ee9eb83f52e6c432988cf3610f6052745271b65c528001a71",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "atria-v1",
+      "role": "business_review",
+      "case_id": "d63022",
+      "run_id": "interval-terra",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d020-f0d5-73a3-8e40-a2d926b7134b",
+      "receipt_sha256": "24ebc89ce3b9e8db2b22a9e098cab8a81eed531cb10f895d59627d7c71f1074a",
+      "answer_sha256": "b1d482bfffc75e5c2c5c1edf1e5e21e7240ae67ff8c8afae58d50ade38b7fcd6",
+      "freeze_sha256": "55b172e11581637ee9eb83f52e6c432988cf3610f6052745271b65c528001a71",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "atria-v1",
+      "role": "business_review",
+      "case_id": "d93288",
+      "run_id": "interval-terra",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d021-4c08-7c41-b9aa-f906eabd78d9",
+      "receipt_sha256": "e66856ba6ab1ad76842629f4fda786c94304cf0df5ea46cc8ab1331f2299f485",
+      "answer_sha256": "1cc499a6a685409288a68fc8e92f1c8ac1e33ee6eadb44e298af65c36b802092",
+      "freeze_sha256": "55b172e11581637ee9eb83f52e6c432988cf3610f6052745271b65c528001a71",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "atria-v1",
+      "role": "business_review",
+      "case_id": "d37573",
+      "run_id": "interval-sol",
+      "model_requested": "gpt-6.1-sol",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d020-339b-78d0-b282-e1582c18da28",
+      "receipt_sha256": "223e30f1c6bfd38fcdbd3a86937454238b123a61d3667045c180449217c2c7d9",
+      "answer_sha256": "c5e437f057d5d08947ef2c69cd5923648354796c1e747fd350ae04c2ee1789f8",
+      "freeze_sha256": "55b172e11581637ee9eb83f52e6c432988cf3610f6052745271b65c528001a71",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 4
+      }
+    },
+    {
+      "suite": "atria-v1",
+      "role": "business_review",
+      "case_id": "d38045",
+      "run_id": "interval-sol",
+      "model_requested": "gpt-6.1-sol",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d020-c2d1-7fd0-a3d8-b43018e918bd",
+      "receipt_sha256": "7f66066ed45833ecf80302503546a41adddcd5e1144c4a0de46bff5e0d9637c6",
+      "answer_sha256": "5f130487de00161b642fc6b8479eab8527d263c4223dbb186984d4dcf3410139",
+      "freeze_sha256": "55b172e11581637ee9eb83f52e6c432988cf3610f6052745271b65c528001a71",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 5
+      }
+    },
+    {
+      "suite": "atria-v1",
+      "role": "business_review",
+      "case_id": "d63022",
+      "run_id": "interval-sol",
+      "model_requested": "gpt-6.1-sol",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d021-6f37-7611-9b85-23f528aedd67",
+      "receipt_sha256": "e0a223cbf4fd182db1caca4382ec1b871160122f8cdbfd2805552ac2a2ac7efc",
+      "answer_sha256": "8e0ced2dc30a726c6c814f4cb9a4a880bce53214def7598ddad91d3da39680a5",
+      "freeze_sha256": "55b172e11581637ee9eb83f52e6c432988cf3610f6052745271b65c528001a71",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "atria-v1",
+      "role": "business_review",
+      "case_id": "d93288",
+      "run_id": "interval-sol",
+      "model_requested": "gpt-6.1-sol",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d021-f9e5-7fa2-a7ce-f85e680df091",
+      "receipt_sha256": "5f32de2d4c882db2cc5a5533d56a30927edc1419c4f3c5198efd191fa227b4d6",
+      "answer_sha256": "467332557dc5bac2b166409fae54141ea51e3a70b9ab0e51b75ceb9c4099eb62",
+      "freeze_sha256": "55b172e11581637ee9eb83f52e6c432988cf3610f6052745271b65c528001a71",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 4
+      }
+    },
+    {
+      "suite": "atria-v1",
+      "role": "business_review",
+      "case_id": "d37573",
+      "run_id": "interval-luna",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d020-3399-75f2-b2e1-19320a6205c8",
+      "receipt_sha256": "0cb081252a08d7f1da7c935db4380b95fe1e476bf0f856189722e7f809a6246b",
+      "answer_sha256": "020104299d84310cf29a0371853464905a6c552325d9f6c0c7a790259f99fffb",
+      "freeze_sha256": "55b172e11581637ee9eb83f52e6c432988cf3610f6052745271b65c528001a71",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "atria-v1",
+      "role": "business_review",
+      "case_id": "d38045",
+      "run_id": "interval-luna",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d020-9030-7e70-90ef-fe643bedb0a7",
+      "receipt_sha256": "eead78cd0bd4d7e12f35b0f1ee81632df38eca564f832c7cb92778fdeab306cf",
+      "answer_sha256": "8863a4d12de0a4b5861141e5446be444c496bfb6bd9367a29169f7437ed188d6",
+      "freeze_sha256": "55b172e11581637ee9eb83f52e6c432988cf3610f6052745271b65c528001a71",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "atria-v1",
+      "role": "business_review",
+      "case_id": "d63022",
+      "run_id": "interval-luna",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d021-0277-7fd0-bc5a-160117df797b",
+      "receipt_sha256": "d3b2d01455d4806c2ae1b0862cf2c4e1ef9f972eca8637577277f461de0e3010",
+      "answer_sha256": "249f79b14608f5dde21efaebdfd246c1369eb4e5024b17190b880c40b6d00744",
+      "freeze_sha256": "55b172e11581637ee9eb83f52e6c432988cf3610f6052745271b65c528001a71",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "atria-v1",
+      "role": "business_review",
+      "case_id": "d93288",
+      "run_id": "interval-luna",
+      "model_requested": "gpt-6-luna",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d021-6e90-79b2-862c-e0b95ab7905e",
+      "receipt_sha256": "bc02f1289085cc1ce5f99345a70192895c52560a8fca6cad6b9b7d29a9d31f44",
+      "answer_sha256": "da8331d8e0d56ca9f180cbaee62201b23818739c08b8ed868ae3ccf340a219fc",
+      "freeze_sha256": "55b172e11581637ee9eb83f52e6c432988cf3610f6052745271b65c528001a71",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "pilot-judging",
+      "role": "anonymous_judging",
+      "case_id": "review_001",
+      "run_id": "judge1",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfd5-162c-79a2-b658-9ad36e4d7d99",
+      "receipt_sha256": "fc0f2f51057330792c5040808a958ef723db88af4277a847c821a9a08d6002d6",
+      "answer_sha256": "8bf013eb82cc9165b912706e76757c33ff6a6877f294f60d14bf05e5aab20f80",
+      "freeze_sha256": "aaa1b92a045ea01741f7f2188736639d9a0718edac7fba15bf19d40efc20fbf3",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 5
+      }
+    },
+    {
+      "suite": "pilot-judging",
+      "role": "anonymous_judging",
+      "case_id": "review_002",
+      "run_id": "judge2",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfd5-1636-7e11-9a3e-4bebbab724f2",
+      "receipt_sha256": "0de11d0399f721b23cd7002340b82da0a2a9fee09ed66d6f73ac1e48cbd4ac10",
+      "answer_sha256": "79a570222e1ad2b4e2c0fba3acfc69ac4d6c563ae38e724df6bd78f36475c821",
+      "freeze_sha256": "aaa1b92a045ea01741f7f2188736639d9a0718edac7fba15bf19d40efc20fbf3",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 4
+      }
+    },
+    {
+      "suite": "pilot-judging",
+      "role": "anonymous_judging",
+      "case_id": "review_003",
+      "run_id": "judge3",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfd5-1634-7830-9a14-a9643e34f614",
+      "receipt_sha256": "6e16efdd6a2a5118ab4bbddba14425a7a58d172422a848c8daf66ade31a3c683",
+      "answer_sha256": "0c47cfa39bc47ff4dae0169cc7cb0c58e5bb28b17e0bd6effc42bdafccd06bec",
+      "freeze_sha256": "aaa1b92a045ea01741f7f2188736639d9a0718edac7fba15bf19d40efc20fbf3",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 4
+      }
+    },
+    {
+      "suite": "confirm-judging-a",
+      "role": "anonymous_judging",
+      "case_id": "review_001",
+      "run_id": "judge1",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfe0-12ae-7060-8dba-040a83d42593",
+      "receipt_sha256": "54661642d77e667d53a476cf35ae1ad75f508945afe340ee721d887543d42048",
+      "answer_sha256": "279f05668e624afb9f4660c9365b7456bb7ec172dc096cbb60c8c5511cd92230",
+      "freeze_sha256": "64a573b9a48cc43060f5520b41e24f4ca3cd3a32c696d4e3f29d2c0036f019b1",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 5
+      }
+    },
+    {
+      "suite": "confirm-judging-b",
+      "role": "anonymous_judging",
+      "case_id": "review_001",
+      "run_id": "judge1",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfdf-f63a-7571-a479-b99b9877155f",
+      "receipt_sha256": "697a1bf5cf5e27da260c679656267ad53ee46428be372cc2c2b52b035ddf47f7",
+      "answer_sha256": "5baa8c9465a9e749545bc1da04f793c4099516b2e0684f72167bb7c1ec023a44",
+      "freeze_sha256": "53e93524f683e2a8437d3423c4d2632cc5908da40f7b09ec2b6db39b40bd5a1f",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 5
+      }
+    },
+    {
+      "suite": "confirm-judging-c",
+      "role": "anonymous_judging",
+      "case_id": "review_001",
+      "run_id": "judge1",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.1",
+      "thread_id": "01a1cfdf-f63a-7402-b4a1-f731174e50f2",
+      "receipt_sha256": "2deed57d2d78bf5eda67ec3f846cad1b9c0132b43db47ff063f809e113469c66",
+      "answer_sha256": "5428f720b7e66b97c4efac1a04ab240edfc7988394a350f94e7cf718d947ad45",
+      "freeze_sha256": "9e8eeedc7a784833a915d0c76340066edd15bb36e88ceee89ad397521027ee16",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "command_execution": 4,
+        "agent_message": 1
+      }
+    },
+    {
+      "suite": "dorna-judging-terra",
+      "role": "anonymous_judging",
+      "case_id": "review_001",
+      "run_id": "judge1",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d018-6ffa-75d3-b3d6-ba737820af78",
+      "receipt_sha256": "2157714651d993179078275203c72ac496edd86223783ac6811dd571530d6aaf",
+      "answer_sha256": "e41fa42db4b31fa225c0a120674b71256228c7ad9d8636a39615871c23fcb91b",
+      "freeze_sha256": "48935e2f7f6617d932d275ff77dc172efbdf90f5f65d26c954a76bdb0b0a4b23",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 2
+      }
+    },
+    {
+      "suite": "dorna-judging-sol",
+      "role": "anonymous_judging",
+      "case_id": "review_001",
+      "run_id": "judge1",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d018-6ffa-7361-a50d-1fe205583a27",
+      "receipt_sha256": "1c2ced77a9846f59bfc4552ffeebaa8a31ed397bc7c38d7ec3b7f61ae286e0c0",
+      "answer_sha256": "166af07cf12906e7561fad9e431e5fd455ea10ad32a5f36e0f58cc012fb1df7b",
+      "freeze_sha256": "e4d1e15231773ea6758a7eb25fe0c8bd240342304606323ba7705866d42a44b8",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "command_execution": 3,
+        "agent_message": 1
+      }
+    },
+    {
+      "suite": "dorna-judging-luna",
+      "role": "anonymous_judging",
+      "case_id": "review_001",
+      "run_id": "judge1",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d018-6ffa-70a2-9dce-f0ee474f15eb",
+      "receipt_sha256": "1b0ae91803eee7e71ce225b23ea5720f5ee89957a76ad65ae8e2e2c1f931f013",
+      "answer_sha256": "d57864765d9158ab1b8e443dd8d338052dcbcebfaed526dbecdb41035799ba0e",
+      "freeze_sha256": "faa0a56a6d629a28fa7ecb5114991db3f9f5a3086bb448fa74b6e4c84cd3d37f",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "command_execution": 1,
+        "agent_message": 1
+      }
+    },
+    {
+      "suite": "dorna-confirm-judging-all",
+      "role": "anonymous_judging",
+      "case_id": "review_001",
+      "run_id": "judge1",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d020-7f52-7761-b548-057b42cd684c",
+      "receipt_sha256": "6f0db10afcf2e1627600a298102b9e0abfcb7f35211c0c971d132e658e41f0ad",
+      "answer_sha256": "ef42d4c0e92abff79224d704c31415e45db7b4a8302c21a48dc7bb310ed8f59b",
+      "freeze_sha256": "03cf4ac10ad7d0f433156ee19cf185cd68d8790311284093a5443818c65bddfd",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 3,
+        "command_execution": 7
+      }
+    },
+    {
+      "suite": "dorna-confirm-judging-b",
+      "role": "anonymous_judging",
+      "case_id": "review_001",
+      "run_id": "judge1",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d01f-a508-7893-859c-edce0a2ac9e4",
+      "receipt_sha256": "4a070e9801b186c06f609387667d7138ee48ddd71538ee84707546534308ccc8",
+      "answer_sha256": "56232ac136a60c50c42e92aead73eaa64ff404e7e3121a4933ba9966a89d4765",
+      "freeze_sha256": "2a6b4e15f1de7f9ef6505ba880b476feb2449e94f5f8a479fcfb1440e07b12bd",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 4
+      }
+    },
+    {
+      "suite": "atria-judging-terra",
+      "role": "anonymous_judging",
+      "case_id": "review_001",
+      "run_id": "judge1",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d021-fe1c-7f41-9b73-7db32f2bdfce",
+      "receipt_sha256": "08a3452f72dcaffc6f902f942b21a38d173e470fef0d4414b18d51869ddb544b",
+      "answer_sha256": "dca2a196d048056752bb38bcb591d105367b1111d8bc54f83ed3f4756e134621",
+      "freeze_sha256": "b63778a06cb0203f97a8743467322347c2db5828f32358ac61cef5e387d45fd9",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "atria-judging-sol",
+      "role": "anonymous_judging",
+      "case_id": "review_001",
+      "run_id": "judge1",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d023-086e-7880-8b5b-50b458fce785",
+      "receipt_sha256": "c9dd6c2341251da5026d8d9468f763ac6ea5a7d35ff9604c6f1604b33b595c19",
+      "answer_sha256": "ea2d81a64a32172defd729cb5247e96e151a9bebf582031e23d515b3346d5600",
+      "freeze_sha256": "cf70b59c36ab07eae296117509b238512f020773c1b12a4c2d1819b9a7f15aa3",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    },
+    {
+      "suite": "atria-judging-luna",
+      "role": "anonymous_judging",
+      "case_id": "review_001",
+      "run_id": "judge1",
+      "model_requested": "gpt-6.1-terra",
+      "cli_version": "codex-cli 0.167.2",
+      "thread_id": "01a1d022-9ed3-7c00-a2fd-77524709af3f",
+      "receipt_sha256": "37691b0c1fbe4da33a970eb961bc8a7b06fb7e37e191a55d7874800ff9499a9d",
+      "answer_sha256": "556e3327f7cf5e832037c2de07d8003ae2796010fa4c62b6c26c8e89c3d3ffe8",
+      "freeze_sha256": "ef8cab12344e76a95b4175710e8d73654986477a87d8d4ed1e6c35e51ef4b6cb",
+      "strict_read_and_environment_isolation": true,
+      "inputs_and_prompt_match_frozen_allocation": true,
+      "completed_item_types": {
+        "agent_message": 2,
+        "command_execution": 3
+      }
+    }
+  ]
+}

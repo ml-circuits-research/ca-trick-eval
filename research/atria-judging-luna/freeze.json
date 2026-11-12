@@ -1,0 +1,57 @@
+{
+  "campaign_id": "atria-judging-luna",
+  "created_at": "2026-11-12T14:21:31.459771+00:00",
+  "purpose": "Anonymous LLM judgment; not an additional model robustness trial",
+  "rubric_version": 2,
+  "source_freeze_sha256": "55b172e11581637ee9eb83f52e6c432988cf3610f6052745271b65c528001a71",
+  "case_ids": [
+    "review_001"
+  ],
+  "selected_source_run_ids": [
+    "interval-luna"
+  ],
+  "allocation": [
+    {
+      "run_id": "judge1",
+      "model": "gpt-6.1-terra",
+      "case_ids": [
+        "review_001"
+      ],
+      "phase": "anonymous-judgment"
+    }
+  ],
+  "prompt_profile": "standard",
+  "reasoning_effort": "medium",
+  "timeout_seconds": 600,
+  "prompt_sha256": {
+    "review_001": "54cc8e8249bb0795f7517456940820b6bb19d38a06c9dd522b04ec1b89747123"
+  },
+  "runtime_sources": {
+    "scripts/run_eval.py": "e730581a5703f50218675ae7232effc4f8547457310e6e046aa41c24a4cd3a85",
+    "scripts/isolation.py": "f0e80db68e510a7d58e4e601a090bc401a690df3c1b897878ff2f59d9b9cc571",
+    "scripts/campaign_integrity.py": "4f6efb005939ac2959c39c782cec5059282ec9a4ab9710478476228068e39c32"
+  },
+  "limitations": [
+    "The judge is an LLM, not an independent human or an independent model architecture.",
+    "Anonymity removes model/run/variant metadata; document content may reveal its experimental condition.",
+    "Responses from one family are grouped; judgments within a package are not independent.",
+    "Schema and exact-quote validation do not establish semantic correctness of the judgment.",
+    "Four hidden fixed-answer fixtures audit simple judge mistakes and instruction following; passing does not establish general judge robustness.",
+    "Only source runs completed at preparation time are included; later runs require a new judging campaign.",
+    "PDF judges receive independently audited frozen visual transcriptions, not original PDFs or rendered page images. They do not independently certify the pixels.",
+    "Extractor text is labelled separately and cannot override the visible-authority rule. The [OCR] anchor belongs to the judging adapter, not necessarily to the PDF.",
+    "Version 2 scores the final operative decision; an explicitly corrected false opening remains a separately evidenced error."
+  ],
+  "files": {
+    "manifest.json": "bfcd15ce961f206cc03dc701f99be72525bc1a264fb1f4fedf99827c5e336734",
+    "mapping.json": "bb703d190bfe36a3298ed5df6ddd3491f8743f6bb7926006afe4e1918ab9ecfc",
+    "source_rubric.json": "fb3d23ab0b5b536e660e231594199a3529e90852614cbded4b56d618d1e12743",
+    "source/scripts/run_eval.py": "e730581a5703f50218675ae7232effc4f8547457310e6e046aa41c24a4cd3a85",
+    "source/scripts/isolation.py": "f0e80db68e510a7d58e4e601a090bc401a690df3c1b897878ff2f59d9b9cc571",
+    "source/scripts/campaign_integrity.py": "4f6efb005939ac2959c39c782cec5059282ec9a4ab9710478476228068e39c32",
+    "source/research/blind_review_v2.py": "658de04517db9d48da99d4bc978e4a4234869d036534639748696ee70a8112a0",
+    "results/review_001/reference.md": "9cf3771eace04bf77b7ce789245ea09cdd4f287c5aec8516a16ae272a425eee0",
+    "eval/review_001/package.json": "c9adc07b3b244fc17d5df2e43e07a264cda4ff11d6642299da0e2f7c5ca3cad8",
+    "eval/review_001/rubric.md": "42464e8abc670425feb7b10f34541271368e83acdd42b3db3bcaf542d78de10d"
+  }
+}

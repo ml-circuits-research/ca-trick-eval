@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-11-12T13:03:47.092041+00:00",
+  "decision": "confirm_observed_report_contradiction",
+  "luna_started": false,
+  "reason": "One primary model report contains a material false opening corrected in the body. Confirm this narrower defect; do not count an unsignalled final decision or an adversarial attack win.",
+  "witness_case": "d4366",
+  "witness_run": "pilot-terra",
+  "confirmation_runs": 10,
+  "paired_clean_runs": 10,
+  "diagnostic_runs": 2
+}

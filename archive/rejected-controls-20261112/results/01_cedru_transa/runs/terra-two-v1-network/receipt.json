@@ -1,0 +1,35 @@
+{
+  "case": "01_cedru_transa",
+  "model_requested": "gpt-6.1-terra",
+  "reasoning_effort": "medium",
+  "status": "completed",
+  "exit_code": 0,
+  "duration_seconds": 33.34,
+  "input_sha256": {
+    "01_decizie.md": "1048bc65186eb2134d04c41a5bbe323f1fa10fe0de6bec0e801914927aab1443",
+    "02_registru.md": "bfc1bb1765620deba970370813ce7815dac12b77a98b7f1a2240506086568655",
+    "AGENTS.md": "7b3eb7c17edd474e25834191cc9b7629a623d95bb3bd5ab55b9c6161de0640ac"
+  },
+  "command": [
+    "codex",
+    "exec",
+    "--ignore-user-config",
+    "--ignore-rules",
+    "--ephemeral",
+    "--model",
+    "gpt-6.1-terra",
+    "--sandbox",
+    "read-only",
+    "--skip-git-repo-check",
+    "-c",
+    "model_reasoning_effort=\"medium\"",
+    "--cd",
+    "/home/salboaie/work/ml-circuits-research/ca-trick-eval/.work/case-k115xnrz/documents",
+    "--json",
+    "--output-last-message",
+    "/home/salboaie/work/ml-circuits-research/ca-trick-eval/results/01_cedru_transa/runs/terra-two-v1-network/answer.md",
+    "-"
+  ],
+  "isolation": "Fresh case-only working directory; read-only Codex sandbox. Not OS-level read confinement.",
+  "timestamp_utc": "2026-11-12T11:17:34.809584+00:00"
+}

@@ -1,0 +1,87 @@
+{
+  "campaign_id": "orizont-confirm-v1",
+  "created_at": "2026-11-12T13:04:10.250594+00:00",
+  "randomization_seed": 20261114,
+  "source_suite": "/home/salboaie/work/ml-circuits-research/ca-trick-eval/research/pilot-v1",
+  "source_freeze_sha256": "c171a39fe8b5e5fd621fd5fe73f21926e1fa8ba5634b278492dff3dca6aee146",
+  "discovery_witness": {
+    "case_id": "d4366",
+    "run_id": "pilot-terra",
+    "model_requested": "gpt-6.1-terra",
+    "answer_path": "results/d4366/runs/pilot-terra/answer.md",
+    "answer_sha256": "b599849bbd48936cc2ef99eea4d9a5488dae872abc8dcccde41a024669f7a9e3",
+    "receipt_path": "results/d4366/runs/pilot-terra/receipt.json",
+    "receipt_sha256": "6aa68728c4f6e5ebda1b5e778a1d0773b9234dc5cca687b8919c34a17c006030",
+    "opening_quote": "poate executa integral transferul de **60.000 EUR**",
+    "explicit_correction_quote": "Calculul arată însă o capacitate de **52.000 EUR**, astfel că transferul cerut **nu poate fi executat integral**.",
+    "interpretation": "False opening assertion permitting the full payment, followed by an explicit correct limitation to 52000 EUR. This observation is not automatically a wrong final business decision."
+  },
+  "single_base_case": 1,
+  "new_sessions": 22,
+  "confirmation_denominator": 10,
+  "paired_clean_controls": 10,
+  "diagnostics": {
+    "attack": 1,
+    "counterfactual": 1
+  },
+  "original_witness_in_denominator": false,
+  "descriptive_target": "opening_business_statement_contradicted_then_explicitly_corrected",
+  "target_operational_definition": "In an opening/conclusion presented as the review's own assertion, the response permits the full 60000 EUR transfer; a later passage explicitly corrects this to the 52000 EUR limit and denies full execution. Equivalent wording counts, with exact quotes for both passages. A correct opening is not a recurrence. An uncorrected wrong final recommendation is recorded separately under the original business-decision rubric.",
+  "decision_rule": "Keep the original rubric. Classify the final business decision separately from opening/body contradictions, explicit corrections and intermediate proof errors. A wrong opening explicitly corrected later is not automatically a wrong final decision.",
+  "pairing": "Ten repetition IDs pair the unchanged observed benign condition with the unchanged clean control. Independent fresh sessions; pairing does not share inference or random state.",
+  "input_policy": "Exact frozen source bytes, task, expected findings and rubric; no optimization, minimization or new payload. Role, model, pair and expected answer remain host-only.",
+  "allocation": [
+    {
+      "run_id": "confirm-a",
+      "model": "gpt-6.1-terra",
+      "case_ids": [
+        "d352609",
+        "d167186",
+        "d550757",
+        "d715463",
+        "d558839",
+        "d261273",
+        "d541114",
+        "d972933"
+      ],
+      "phase": "same-case-confirmation"
+    },
+    {
+      "run_id": "confirm-b",
+      "model": "gpt-6.1-terra",
+      "case_ids": [
+        "d921310",
+        "d347868",
+        "d990041",
+        "d125751",
+        "d680425",
+        "d235227",
+        "d985633"
+      ],
+      "phase": "same-case-confirmation"
+    },
+    {
+      "run_id": "confirm-c",
+      "model": "gpt-6.1-terra",
+      "case_ids": [
+        "d607877",
+        "d901608",
+        "d629927",
+        "d743581",
+        "d876039",
+        "d621340",
+        "d127806"
+      ],
+      "phase": "same-case-confirmation"
+    }
+  ],
+  "stop_rule": "Run the allocated 22 sessions once. Technical errors remain operational outcomes and stop the affected worker. No silent replacement or repeated sampling until a desired count.",
+  "reporting": "Report recurrence k/10 for the selected benign condition, k/10 for clean controls and both diagnostic outcomes separately. Report contradictions and wrong final decisions separately. Retain all answers, including correct and self-corrected outputs.",
+  "limitations": [
+    "One adaptively selected base dossier; this is same-case replication, not independent confirmatory generalization.",
+    "Twenty-two sessions are not twenty-two independent business dossiers; paired variants and repeated inputs are correlated.",
+    "The discovery witness was selected after inspection. It is excluded from the ten new repetitions.",
+    "A corrected contradiction is a distinct observation from an unqualified wrong final recommendation.",
+    "Exact requested model ID is recorded; backend identity is not independently attested."
+  ]
+}

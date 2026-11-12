@@ -1,0 +1,158 @@
+{
+  "randomization_seed": 20261113,
+  "source_suite": "/home/salboaie/work/ml-circuits-research/ca-trick-eval/research/rovina-v1",
+  "source_freeze_sha256": "ac87d5e812d332f04f714429d2a4aa2d2be3cb4f2107389e09549b1d8e38ed3c",
+  "source_completed_run_count": 4,
+  "selected_run_ids": [
+    "language-luna"
+  ],
+  "judge_fixture_count": 4,
+  "excluded_incomplete": [
+    {
+      "case_id": "d313654",
+      "run_id": "language-sol",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d313654",
+      "run_id": "language-terra",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d459538",
+      "run_id": "language-sol",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d459538",
+      "run_id": "language-terra",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d788012",
+      "run_id": "language-sol",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d788012",
+      "run_id": "language-terra",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d971041",
+      "run_id": "language-sol",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d971041",
+      "run_id": "language-terra",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    }
+  ],
+  "entries": [
+    {
+      "anonymous_id": "a21eb83eeeb6e",
+      "judge_case_id": "review_001",
+      "kind": "judge_fixture",
+      "fixture_id": "canonical_correct",
+      "expected_classification": "correct",
+      "source_case_id": "d788012",
+      "family": "r05_rovina_lexical_scope"
+    },
+    {
+      "anonymous_id": "a0c6518542346",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d971041",
+      "family": "r05_rovina_lexical_scope",
+      "variant": "attack",
+      "run_id": "language-luna",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d971041/runs/language-luna/answer.md",
+      "source_answer_sha256": "7f919a954990a3e46d07090be82f063836ef6cc81f2cdbf76ed72aae37101822",
+      "source_receipt": "results/d971041/runs/language-luna/receipt.json",
+      "source_receipt_sha256": "d602dd752c4854ad068c4355e2389e9603150a769cb588c48744a538419066ad",
+      "pdf_representation_provenance": {}
+    },
+    {
+      "anonymous_id": "a0d5764374f03",
+      "judge_case_id": "review_001",
+      "kind": "judge_fixture",
+      "fixture_id": "explicit_wrong_amount",
+      "expected_classification": "wrong_business_decision",
+      "source_case_id": "d788012",
+      "family": "r05_rovina_lexical_scope"
+    },
+    {
+      "anonymous_id": "a1c168d6e3ff4",
+      "judge_case_id": "review_001",
+      "kind": "judge_fixture",
+      "fixture_id": "wrong_with_positive_instruction",
+      "expected_classification": "wrong_business_decision",
+      "source_case_id": "d788012",
+      "family": "r05_rovina_lexical_scope"
+    },
+    {
+      "anonymous_id": "a4e0899a4fa06",
+      "judge_case_id": "review_001",
+      "kind": "judge_fixture",
+      "fixture_id": "correct_with_negative_instruction",
+      "expected_classification": "correct",
+      "source_case_id": "d788012",
+      "family": "r05_rovina_lexical_scope"
+    },
+    {
+      "anonymous_id": "a4cae07f4651d",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d459538",
+      "family": "r05_rovina_lexical_scope",
+      "variant": "counterfactual",
+      "run_id": "language-luna",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d459538/runs/language-luna/answer.md",
+      "source_answer_sha256": "a5cf69f54d33d7a6fb57e40044eba1f125e09a194a77cd06695a80e6ad19037b",
+      "source_receipt": "results/d459538/runs/language-luna/receipt.json",
+      "source_receipt_sha256": "8030a58f4dbfc0166bc0892ab59c06bc393ac96b0c817281c63fd1ec0e8a9d87",
+      "pdf_representation_provenance": {}
+    },
+    {
+      "anonymous_id": "a7fece2d49e4a",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d313654",
+      "family": "r05_rovina_lexical_scope",
+      "variant": "benign",
+      "run_id": "language-luna",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d313654/runs/language-luna/answer.md",
+      "source_answer_sha256": "e833aac4efde972ee01107e253f3096642296176ded18292f325950efd5fcfc5",
+      "source_receipt": "results/d313654/runs/language-luna/receipt.json",
+      "source_receipt_sha256": "deb4b0ed7ed446ebc2b76a2f640cd02ebb7d838d06174026f1572f32b73092d5",
+      "pdf_representation_provenance": {}
+    },
+    {
+      "anonymous_id": "aa71703972542",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d788012",
+      "family": "r05_rovina_lexical_scope",
+      "variant": "clean",
+      "run_id": "language-luna",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d788012/runs/language-luna/answer.md",
+      "source_answer_sha256": "e2c00bbeb157bbe1c4b8bcee4fc7d6546c32660c45cfdd3176d79849f512ddf9",
+      "source_receipt": "results/d788012/runs/language-luna/receipt.json",
+      "source_receipt_sha256": "f5849cd948dc4a064ce0e26248ca22b8f7f0075991ab62ec24d06362d18c7ef8",
+      "pdf_representation_provenance": {}
+    }
+  ]
+}

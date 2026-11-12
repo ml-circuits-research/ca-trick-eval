@@ -1,0 +1,109 @@
+{
+  "checked_date": "2026-11-12",
+  "scope": "Șase surse prioritare din sinteza utilizatorului; nu reprezintă auditul tuturor celor 34 de referințe.",
+  "method": "Rezolvare și lectură prin web a paginilor primare, publicațiilor și repository-urilor autorilor. check-reference a fost încercat pe un extras temporar, dar nu recunoaște cheile S01–S34; verificarea semantică este manuală. Nu s-au importat sau executat cod ori date externe.",
+  "status_definitions": {
+    "verified": "Afirmațiile prioritare și identitatea sursei sunt susținute de paginile primare consultate; rezultatele nu au fost reproduse de noi.",
+    "partial": "Sursa există, dar sunt corecții sau limite relevante pentru integrare ori metadate.",
+    "unverified": "Nu s-a putut verifica suficient în acest audit."
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "status": "verified",
+      "claimed": "Zhang et al., Beyond Instruction Override, 5 nov. 2026; 90 cazuri, cinci LLM-uri; detectare/eliminare: 2,4% obiectiv, 9,5% observații, 12,1% stare.",
+      "verified": "Titlu: Beyond Instruction Override: Benchmarking Indirect Prompt Injection with Task-Tampering Attacks. Rongting Zhang, Martin Bertran, Sandeep Avula, Chia-Jung Lee, Vanessa Murdock. arXiv v1, 2026-11-05. Rezumatul confirmă cifrele citate; sunt rezultate ale configurațiilor autorilor.",
+      "links": {
+        "paper": "https://arxiv.org/abs/2611.07640v1",
+        "repository": "https://github.com/amazon-science/task-tampering-prompt-injection",
+        "license": "https://raw.githubusercontent.com/amazon-science/task-tampering-prompt-injection/main/LICENSE"
+      },
+      "license": "CC BY-NC 4.0 pentru materialele Amazon; componentele terțe au licențe separate.",
+      "methodological_use": "Sursa autoritativă care decide fiecare chestiune trebuie declarată; atacul poate altera o regulă sau stare fără imperativ.",
+      "replication": "Replicare conceptuală în dosarele noastre. Reproducerea exactă necesită commit înghețat, cele trei medii originale, modele și setări originale, scoreri și adaptarea Bedrock documentată; acestea nu au fost rulate sau validate aici.",
+      "checked_date": "2026-11-12"
+    },
+    {
+      "id": "S02",
+      "status": "verified",
+      "claimed": "Lazy Grounding, EMNLP oct. 2026; 12 combinații, scădere medie 5,9 puncte și maximă 17,3.",
+      "verified": "Lazy Grounding: Attacking Search Agents with Factual Evidence. Yulin Zhang, Yukun Huang, Sanxing Chen, Tianyi Lin, Ziang Yang, Xunjian Yin, Bhuwan Dhingra. ACL Anthology confirmă EMNLP 2026, octombrie și cifrele. Preprintul inițial este din 2026-08-31.",
+      "links": {
+        "paper": "https://aclanthology.org/2026.emnlp-main.2600/",
+        "preprint": "https://arxiv.org/abs/2608.30303",
+        "repository": "https://github.com/frankyzha/lazy-grounding",
+        "license": "https://github.com/frankyzha/lazy-grounding/blob/main/LICENSE"
+      },
+      "license": "Apache-2.0 pentru codul original; modelele, benchmarkurile și rezultatele căutării păstrează termenii proprii.",
+      "methodological_use": "Aceeași întrebare în control și atac; dovezi adevărate pentru o întrebare vecină cu răspuns diferit. Separăm recuperarea pasajului de adoptarea concluziei.",
+      "replication": "Dosarul local este transfer conceptual, nu reproducerea sistemului de căutare. Reproducerea exactă cere corpusul recuperabil, rerankingul, configurația originală și backendurile fixate; nu au fost executate aici.",
+      "checked_date": "2026-11-12"
+    },
+    {
+      "id": "S07",
+      "status": "partial",
+      "claimed": "CrackedPDFs, Thienpreecha și Subramanian, iulie 2026/revizie 2 august; 29.322 PDF-uri și controale comparabile.",
+      "verified": "Titlul, autorii, 29.322 PDF-uri, 4.983 documente de bază și datele 2026-07-03 / 2026-08-02 sunt confirmate. Există însă un erratum ulterior privind geometria și comparabilitatea controalelor v1.",
+      "links": {
+        "paper": "https://arxiv.org/abs/2607.19396v2",
+        "repository": "https://github.com/volkthienpreecha/crackedpdfs",
+        "dataset": "https://zenodo.org/records/21735803",
+        "erratum": "https://github.com/volkthienpreecha/crackedpdfs/blob/main/paper-v1/ERRATA.md"
+      },
+      "license": "MIT pentru cod și documentația originală din repo; licența completă a fiecărei componente a datasetului nu a fost verificată separat.",
+      "corrections": [
+        "În v1, poziția etichetată era cea cerută, nu cea realizată. Majoritatea payloadurilor ajung sub pagină; controalele mai diferă prin marker și lungime.",
+        "README indică erratum 2026-09-13, pagina ERRATA.md indică publicare 2026-09-14.",
+        "README distinge 95,9% classification accuracy de paired ranking; nu reutilizăm procentul fără definiția metricii."
+      ],
+      "methodological_use": "Păstrăm controalele perechi și splitul pe document de bază; verificăm independent geometria, extracția și indiciile artificiale înaintea oricărei integrări.",
+      "replication": "Reproducerea tabelului din features înghețate este o sarcină separată de validarea PDF-urilor. Niciuna nu a fost rulată. Dosarele noi ar fi replicare conceptuală.",
+      "checked_date": "2026-11-12"
+    },
+    {
+      "id": "S11",
+      "status": "verified",
+      "claimed": "PhantomLint, Toby Murray, aug. 2025/revizie oct. 2025; comparație text extras–randare.",
+      "verified": "PhantomLint: Principled Detection of Hidden LLM Prompts in Structured Documents. Toby Murray. arXiv v1 2025-08-25, v2 2025-10-23. Repository-ul descrie comparația extracției textuale cu OCR-ul paginilor randate.",
+      "links": {
+        "paper": "https://arxiv.org/abs/2508.17884v2",
+        "repository": "https://github.com/tobycmurray/phantom-lint",
+        "license": "https://github.com/tobycmurray/phantom-lint/blob/main/LICENSE"
+      },
+      "license": "BSD-3-Clause pentru cod; proveniența și drepturile documentelor reale incluse necesită verificare separată dacă sunt redistribuite.",
+      "methodological_use": "Diagnostic al canalului de intrare: aceeași pagină vizibilă versus conținut extras. Textul ascuns detectat nu dovedește adoptarea instrucțiunii de model.",
+      "replication": "Teste originale și dependențe fixate sunt disponibile în repository; commitul și mediul nu au fost înghețate sau executate aici. Reproducerea detectorului și compromiterea verdictului de business sunt rezultate distincte.",
+      "checked_date": "2026-11-12"
+    },
+    {
+      "id": "S23",
+      "status": "verified",
+      "claimed": "ContractNLI, Koreeda și Manning, Findings EMNLP 2021; negații prin excepții și trei stări ale dovezii.",
+      "verified": "ContractNLI: A Dataset for Document-level Natural Language Inference for Contracts. Yuta Koreeda, Christopher Manning; Findings EMNLP, noiembrie 2021. Pagina autorilor descrie 607 NDA-uri, 17 ipoteze fixe, Entailment/Contradiction/NotMentioned și spanuri probatorii.",
+      "links": {
+        "paper": "https://aclanthology.org/2021.findings-emnlp.164/",
+        "project": "https://stanfordnlp.github.io/contract-nli/",
+        "repository": "https://github.com/stanfordnlp/contract-nli"
+      },
+      "license": "CC BY 4.0 pentru dataset, conform paginii proiectului. Codul baseline are repository separat; licența lui nu a fost verificată aici.",
+      "methodological_use": "Etalon trivalent; perechi de un singur fapt pentru excepții. Lipsa unei dovezi poate însemna nedeterminat, nu negație.",
+      "replication": "Evaluarea pe datele originale păstrând spliturile este posibilă după înghețarea artefactelor. Contractele sintetice noi reprezintă extensie conceptuală; nu afirmăm rezultate originale reproduse.",
+      "checked_date": "2026-11-12"
+    },
+    {
+      "id": "S10",
+      "status": "partial",
+      "claimed": "Nasr et al., The Attacker Moves Second; preprint 10 octombrie 2025; 12 apărări, succes peste 90% pentru majoritatea.",
+      "verified": "Titlu complet: The Attacker Moves Second: Stronger Adaptive Attacks Bypass Defenses Against LLM Jailbreaks and Prompt Injections. Milad Nasr et al.; arXiv v1 2025-10-10. Cifrele sunt confirmate de abstract. Există acum și pagina oficială USENIX Security 2026, deci eticheta exclusiv «preprint» este depășită.",
+      "links": {
+        "paper": "https://arxiv.org/abs/2510.09023v1",
+        "publication": "https://www.usenix.org/conference/usenixsecurity26/presentation/nasr"
+      },
+      "license": "Textul arXiv HTML indică CC BY 4.0; un repository unitar și licența codului nu au fost validate în acest audit.",
+      "methodological_use": "Buget adaptiv explicit, păstrarea tuturor încercărilor și confirmare separată. Rezultatele includ jailbreaks și prompt injection, nu doar review de documente.",
+      "replication": "Preluăm metodologia de căutare. Reproducerea celor 12 apărări necesită artefacte, modele, acces și bugete individuale nevalidate aici; nicio reproducere exactă nu este declarată.",
+      "checked_date": "2026-11-12"
+    }
+  ],
+  "overall": "Sursele prioritare există și susțin ideile centrale. Nu există încă rezultate reproduse de noi. Cele mai potrivite prime transferuri sunt autoritatea regulilor, relevanța dovezilor și excepțiile cu etalon trivalent. Integrarea CrackedPDFs v1 necesită auditul erratumului."
+}

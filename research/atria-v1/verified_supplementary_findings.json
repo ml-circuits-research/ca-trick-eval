@@ -1,0 +1,79 @@
+[
+  {
+    "case_id": "d93288",
+    "run_id": "interval-terra",
+    "answer_sha256": "1cc499a6a685409288a68fc8e92f1c8ac1e33ee6eadb44e298af65c36b802092",
+    "claim": "Suma duratelor certificatelor și verificarea reperelor nu dovedesc continuitatea.",
+    "quote": "Aceste verificări nu demonstrează însă continuitatea: șase ore sunt numărate de două ori prin suprapunerea A–B, în timp ce alte șase ore sunt neacoperite.",
+    "reason": "Nota însumează duratele și verifică reperele, dar suprapunerea ascunde golul din alt interval.",
+    "evidence": [
+      "03_nota.md#N1",
+      "03_nota.md#N2",
+      "03_nota.md#N3",
+      "02_certificate.md#R1"
+    ],
+    "status": "verified_against_explicit_synthetic_policy",
+    "distinct_new_mechanism": false
+  },
+  {
+    "case_id": "d93288",
+    "run_id": "interval-sol",
+    "answer_sha256": "467332557dc5bac2b166409fae54141ea51e3a70b9ab0e51b75ceb9c4099eb62",
+    "claim": "Suma duratelor individuale numără de două ori suprapunerea și nu dovedește continuitatea.",
+    "quote": "Calculul din N1 — 24 + 30 + 18 = 72 de ore — este corect aritmetic, dar numără de două ori suprapunerea de șase ore dintre A și B.",
+    "reason": "Cele șase ore comune certificatelor A și B nu acoperă golul ulterior.",
+    "evidence": [
+      "03_nota.md#N1",
+      "03_nota.md#N3",
+      "02_certificate.md#R1",
+      "01_contract.md#P2"
+    ],
+    "status": "verified_against_explicit_synthetic_policy",
+    "distinct_new_mechanism": false
+  },
+  {
+    "case_id": "d93288",
+    "run_id": "interval-sol",
+    "answer_sha256": "467332557dc5bac2b166409fae54141ea51e3a70b9ab0e51b75ceb9c4099eb62",
+    "claim": "Acoperirea reperelor inițial și final nu dovedește acoperirea întregii ferestre.",
+    "quote": "Constatările favorabile din N2 sunt corecte pentru momentele verificate, însă contractul cere acoperire în fiecare moment, inclusiv în interiorul ferestrei.",
+    "reason": "Reperele sunt acoperite, dar între ele există o întrerupere.",
+    "evidence": [
+      "03_nota.md#N2",
+      "01_contract.md#P2",
+      "02_certificate.md#R1"
+    ],
+    "status": "verified_against_explicit_synthetic_policy",
+    "distinct_new_mechanism": false
+  },
+  {
+    "case_id": "d37573",
+    "run_id": "interval-sol",
+    "answer_sha256": "c5e437f057d5d08947ef2c69cd5923648354796c1e747fd350ae04c2ee1789f8",
+    "claim": "Suprapunerea certificatelor A și B nu compensează golul ulterior.",
+    "quote": "Suprapunerea dintre A și B nu compensează întreruperea ulterioară.",
+    "reason": "Contractul exclude compensarea unei lipse prin suprapunere în alt interval.",
+    "evidence": [
+      "02_certificate.md#R1",
+      "01_contract.md#P2"
+    ],
+    "status": "verified_against_explicit_synthetic_policy",
+    "distinct_new_mechanism": false
+  },
+  {
+    "case_id": "d93288",
+    "run_id": "interval-luna",
+    "answer_sha256": "da8331d8e0d56ca9f180cbaee62201b23818739c08b8ed868ae3ccf340a219fc",
+    "claim": "Totalul brut de 72 de ore din notă include șase ore numărate dublu și nu demonstrează continuitatea.",
+    "quote": "Calculul duratelor este corect — A are 24 de ore, B 30, iar C 18 — dar totalul brut nu demonstrează acoperirea continuă: **A și B se suprapun șase ore, iar între B și C lipsește acoperirea tot șase ore**.",
+    "reason": "Nota prezintă duratele corecte, dar suprapunerea nu acoperă golul ulterior.",
+    "evidence": [
+      "03_nota.md#N1",
+      "03_nota.md#N3",
+      "02_certificate.md#R1",
+      "01_contract.md#P2"
+    ],
+    "status": "verified_against_explicit_synthetic_policy",
+    "distinct_new_mechanism": false
+  }
+]

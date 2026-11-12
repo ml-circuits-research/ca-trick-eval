@@ -1,0 +1,31 @@
+{
+  "run_id": "terra-lintea-v1",
+  "model": "gpt-6.1-terra",
+  "require_current_inputs": true,
+  "limitations": "O sesiune strict izolată, efort medium. Eroarea observată Luna privește un finding software planificat, nu verdictul economic final, care este corect. Terra și Sol rezolvă toate findingurile. Evaluatorul este și autorul.",
+  "cases": {
+    "08_lintea_buget": {
+      "findings": {
+        "F1": {
+          "status": "pass",
+          "quote": "LT-8 este eligibil economic",
+          "reason": "Calculează corect totalul contractual exact 100000 EUR și aplică pragul inclusiv."
+        },
+        "F2": {
+          "status": "pass",
+          "quote": "totalul intern este `100.00000000000001`",
+          "reason": "Reproduce codul, identifică totalul float 100.00000000000001 kEUR și falsa depășire produsă de comparația brută."
+        },
+        "F3": {
+          "status": "pass",
+          "quote": "refuzul din nota financiară trebuie corectat.",
+          "reason": "Infirmă corect depășirea contractuală și cere corectarea refuzului."
+        }
+      },
+      "additional_errors": [],
+      "additional_findings": [],
+      "outcome": "correct",
+      "notes": "Valoarea contractuală, valoarea binară internă și rezultatul efectiv al codului au fost verificate independent. Verdictul final este corect."
+    }
+  }
+}

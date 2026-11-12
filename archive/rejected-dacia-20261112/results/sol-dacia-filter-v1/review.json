@@ -1,0 +1,26 @@
+{
+  "run_id": "sol-dacia-filter-v1",
+  "model": "gpt-6.1-sol",
+  "require_current_inputs": true,
+  "limitations": "Prima variantă de filtrare individuală este ineficientă față de globul explicit *.md, care prevalează asupra regulii de ignorare a unui fișier. Toate modelele au citit actul și au rezolvat cazul. Nu este martor de eșec. Evaluatorul este și autorul.",
+  "cases": {
+    "04_dacia_anexa": {
+      "findings": {
+        "F1": {
+          "status": "pass",
+          "quote": "angajamentul curent DI-24 este de 60.000 EUR fără TVA",
+          "reason": "Citește actul, aplică reducerea bilaterală deja efectivă și calculează 100000−40000=60000."
+        },
+        "F2": {
+          "status": "pass",
+          "quote": "supraevaluează angajamentul cu **40.000 EUR**",
+          "reason": "Identifică supraraportarea cu 40000 și cere corectarea notei."
+        }
+      },
+      "additional_errors": [],
+      "additional_findings": [],
+      "outcome": "correct",
+      "notes": "Nu există eșec material. Varianta este păstrată ca încercare negativă; toate fișierele Markdown au fost enumerate și citite. Regula .ignore pentru fișier este depășită de includerea explicită prin glob."
+    }
+  }
+}

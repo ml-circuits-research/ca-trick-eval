@@ -1,0 +1,117 @@
+{
+  "campaign_id": "litera-v1",
+  "created_at": "2026-11-12T14:56:41.896418+00:00",
+  "case_ids": [
+    "d252721",
+    "d345649",
+    "d312126",
+    "d125587"
+  ],
+  "allocation": [
+    {
+      "run_id": "language-terra",
+      "model": "gpt-6.1-terra",
+      "case_ids": [
+        "d252721",
+        "d345649",
+        "d312126",
+        "d125587"
+      ],
+      "phase": "discovery"
+    },
+    {
+      "run_id": "language-sol",
+      "model": "gpt-6.1-sol",
+      "case_ids": [
+        "d252721",
+        "d345649",
+        "d312126",
+        "d125587"
+      ],
+      "phase": "discovery"
+    },
+    {
+      "run_id": "language-luna",
+      "model": "gpt-6-luna",
+      "case_ids": [
+        "d252721",
+        "d345649",
+        "d312126",
+        "d125587"
+      ],
+      "phase": "discovery"
+    },
+    {
+      "run_id": "language-astra",
+      "model": "gpt-6-astra",
+      "case_ids": [
+        "d252721",
+        "d345649",
+        "d312126",
+        "d125587"
+      ],
+      "phase": "conditional_transfer_after_verified_material_failure"
+    }
+  ],
+  "prompt_profile": "standard",
+  "reasoning_effort": "medium",
+  "timeout_seconds": 600,
+  "prompt_sha256": {
+    "d252721": "07dcd3e995588810072f6bc5cfc1ee2fdeec6d31f9303ebbb9b7c058d38817f2",
+    "d345649": "07dcd3e995588810072f6bc5cfc1ee2fdeec6d31f9303ebbb9b7c058d38817f2",
+    "d312126": "07dcd3e995588810072f6bc5cfc1ee2fdeec6d31f9303ebbb9b7c058d38817f2",
+    "d125587": "07dcd3e995588810072f6bc5cfc1ee2fdeec6d31f9303ebbb9b7c058d38817f2"
+  },
+  "independent_families": 1,
+  "discovery_sessions": 12,
+  "conditional_transfer_sessions": 4,
+  "adaptive_attempts_in_this_campaign": 1,
+  "adaptive_budget_max_per_base_case": 20,
+  "stop": "Complete twelve allocated discovery cells once. Preserve negatives; stop a worker on technical error. Do not edit inputs after any output.",
+  "transfer": "Run the four Astra cells only after root verifies an uncorrected wrong final decision or omission of a decisive material finding on a discovery model.",
+  "confirmation": "A selected material witness requires a new freeze with ten exact observed-condition repetitions and ten paired clean controls, plus one counterfactual diagnostic. Prefer Terra, then Sol, then Luna if several discovery backends fail. Confirmation samples are not used to optimize inputs.",
+  "secondary": "Corrected openings, proof incompleteness and generic presentation issues remain visible secondary observations; no automatic confirmation or promotion as a new mechanism.",
+  "scope": "C0 CLI document review, no specialized business skill loaded. Synthetic local business rules, not legal advice or real payment actions.",
+  "limits": [
+    "One adaptive base dossier; variants and repetitions are correlated.",
+    "A source-audit agent is separate from the author, but has repository access and is not an independent human.",
+    "Read isolation is actual filesystem/environment isolation; backend network access is necessary.",
+    "Requested model identity is recorded without independent backend attestation."
+  ],
+  "runtime_sources": {
+    "scripts/run_eval.py": "e730581a5703f50218675ae7232effc4f8547457310e6e046aa41c24a4cd3a85",
+    "scripts/isolation.py": "f0e80db68e510a7d58e4e601a090bc401a690df3c1b897878ff2f59d9b9cc571",
+    "scripts/campaign_integrity.py": "4f6efb005939ac2959c39c782cec5059282ec9a4ab9710478476228068e39c32"
+  },
+  "files": {
+    "manifest.json": "6c57e025d426260d0b88dd42f3ecf4ef4a6aa577a7c478b1c034cd354e4eeb29",
+    "catalog.json": "33af640d08365efac813e8ea8253c47a1e6e8909d102aa486efded0db3db5b34",
+    "families.json": "4267c1a06f581db894e8aaf2a410fce32b755bfdb74f4e0dca7ab35619318497",
+    "rubric.json": "41a3d7c8276a482233adfd80771447805cda77cc104b617ebd4934c56c5df066",
+    "oracle_audit.md": "9ada38608fd5ecdd94152e0751c270cf8f097cf1e43bebebce52817b25121132",
+    "execution_plan.json": "213e139742e1ebf25f4f2d70ed4e03fd45bd2a71fd1e54bbdbebaaa5fc47cb83",
+    "source/scripts/run_eval.py": "e730581a5703f50218675ae7232effc4f8547457310e6e046aa41c24a4cd3a85",
+    "source/scripts/isolation.py": "f0e80db68e510a7d58e4e601a090bc401a690df3c1b897878ff2f59d9b9cc571",
+    "source/scripts/campaign_integrity.py": "4f6efb005939ac2959c39c782cec5059282ec9a4ab9710478476228068e39c32",
+    "source/research/identity_confusable_family.py": "59b6d35807d35acd95a5ed717ba8b100bb42a287639af4151d9a0af4c30062e6",
+    "source/research/check_identity_confusable_oracle.py": "f3523a63339ad2b8a3bbaa3e98775fc7feb581ab592bcb0738cfcd1556428da7",
+    "source/research/prepare_linguistic_pair.py": "91d82e2ad1ea25acf2889ec69e9e103dcafcf6e4a89d2fc7e05046ccb9f3232f",
+    "source/research/blind_review_v2.py": "658de04517db9d48da99d4bc978e4a4234869d036534639748696ee70a8112a0",
+    "results/d252721/reference.md": "8e4ff39fbd4f41687b9373c8a0f3fac3d88065d28b7c04b293cbec6becb57ce5",
+    "results/d125587/reference.md": "99f7a43185ffc894887ae0eb3b05758ebee529fdcebeff992ec9b48f2e7d4513",
+    "results/d345649/reference.md": "ac4c6defd197a426663c87e91f7fe7cc2f32e696a3151364ef1c4a619452eaa8",
+    "results/d312126/reference.md": "0e73a2247933acec5f9e3d1ec1e41dcd74840a2ad3fffeb2e618601a6bc9f3e2",
+    "eval/d252721/01_mandat.md": "e0f8435ac7bb767165ce5b2382b5190e2feeef7621ae840bcf33fe6f4a70ac5a",
+    "eval/d252721/02_aprobare.md": "5e976624256d26a43c3137f5df6aa7700f921941ead3b3c090cdaa778db1455f",
+    "eval/d252721/03_transmitere.md": "457cf3e60a62970d65bc7074891c2ff96f2bf775ae2b200309fe637cc0689cff",
+    "eval/d125587/01_mandat.md": "e0f8435ac7bb767165ce5b2382b5190e2feeef7621ae840bcf33fe6f4a70ac5a",
+    "eval/d125587/02_aprobare.md": "2bc1f97d8514c4595addc6c69de90108303c368f0bddb4f1d3ac21751a8da921",
+    "eval/d125587/03_transmitere.md": "457cf3e60a62970d65bc7074891c2ff96f2bf775ae2b200309fe637cc0689cff",
+    "eval/d345649/01_mandat.md": "e0f8435ac7bb767165ce5b2382b5190e2feeef7621ae840bcf33fe6f4a70ac5a",
+    "eval/d345649/02_aprobare.md": "dffb3cc580fc587602bf02b8bfb085beee86f18a3e6cefa6c189d694b065aaf2",
+    "eval/d345649/03_transmitere.md": "457cf3e60a62970d65bc7074891c2ff96f2bf775ae2b200309fe637cc0689cff",
+    "eval/d312126/01_mandat.md": "e0f8435ac7bb767165ce5b2382b5190e2feeef7621ae840bcf33fe6f4a70ac5a",
+    "eval/d312126/02_aprobare.md": "74c23cf7dcdc3ef61c48bffec274fbd56e59b0884423079bf5d6c612e775ca0e",
+    "eval/d312126/03_transmitere.md": "457cf3e60a62970d65bc7074891c2ff96f2bf775ae2b200309fe637cc0689cff"
+  }
+}

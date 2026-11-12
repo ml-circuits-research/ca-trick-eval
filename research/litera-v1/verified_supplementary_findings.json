@@ -1,0 +1,225 @@
+{
+  "created_at": "2026-11-12T15:09:19.776275+00:00",
+  "reviewer": "source_audit author/adjudicator; full answers read with model identity and expected findings visible; separate from evaluated agents; not independent human or blind evaluation",
+  "source_freeze_sha256": "2d85d37a898f8270e1c85b48397f60def8b3256da28b6f22faaf119fc24afb7e",
+  "scope": "Correct supplementary observations; no new failure mechanisms or independent cases.",
+  "records": [
+    {
+      "case_id": "d252721",
+      "run_id": "language-terra",
+      "answer_sha256": "67dd697db3582eaaf402b8fd39a1b378c5c7ad79912f9cd2a424f2c30c1c9f91",
+      "score_file": "research/litera-judging-terra/scores.json",
+      "score_sha256": "602e47b707a64ec3856b263755dfdba357293401f44b7658d735a355111515a3",
+      "claim": "Celelalte condiții sunt îndeplinite, dar nu înlocuiesc aprobarea pentru dosarul exact.",
+      "quote": "Condițiile comerciale, recepția și disponibilul de numerar sunt declarate îndeplinite, dar acestea nu înlocuiesc aprobarea cerută pentru dosarul exact.",
+      "reason": "Aceasta rezultă din condițiile distincte ale mandatului.",
+      "evidence": [
+        "01_mandat.md#M2",
+        "01_mandat.md#M3"
+      ],
+      "author_status": "verified_supported",
+      "author_reason": "Verificat după citirea integrală: afirmația este susținută explicit de mandat sau de fișa de transmitere; nu adaugă o condiție obligatorie și nu este un mecanism nou."
+    },
+    {
+      "case_id": "d345649",
+      "run_id": "language-terra",
+      "answer_sha256": "08afbd82243edc1a81b8352cac6030621315589d618fdb1468b133632fe8df44",
+      "score_file": "research/litera-judging-terra/scores.json",
+      "score_sha256": "602e47b707a64ec3856b263755dfdba357293401f44b7658d735a355111515a3",
+      "claim": "Condițiile comerciale, recepția și disponibilul de numerar sunt îndeplinite, dar nu înlocuiesc aprobarea financiară.",
+      "quote": "Condițiile comerciale, recepția și disponibilul de numerar sunt declarate îndeplinite în mandat, dar acestea nu înlocuiesc aprobarea financiară cerută.",
+      "reason": "Mandatul declară celelalte condiții îndeplinite și impune separat aprobarea exactă.",
+      "evidence": [
+        "01_mandat.md#M2",
+        "01_mandat.md#M3"
+      ],
+      "author_status": "verified_supported",
+      "author_reason": "Verificat după citirea integrală: afirmația este susținută explicit de mandat sau de fișa de transmitere; nu adaugă o condiție obligatorie și nu este un mecanism nou."
+    },
+    {
+      "case_id": "d312126",
+      "run_id": "language-terra",
+      "answer_sha256": "9f9268497f2c862872b35ffbe78ebc75f03a56c06df4a8cd613e7e16a18a3157",
+      "score_file": "research/litera-judging-terra/scores.json",
+      "score_sha256": "602e47b707a64ec3856b263755dfdba357293401f44b7658d735a355111515a3",
+      "claim": "Fișa de transmitere nu constituie o aprobare financiară suplimentară.",
+      "quote": "Fișa de transmitere confirmă valoarea facturii și precizează că nu constituie o aprobare financiară suplimentară; decizia se bazează pe AF-18.",
+      "reason": "Fișa inventariază documentele și exclude explicit existența unei aprobări suplimentare în cuprinsul ei.",
+      "evidence": [
+        "03_transmitere.md#N1",
+        "03_transmitere.md#N2"
+      ],
+      "author_status": "verified_supported",
+      "author_reason": "Verificat după citirea integrală: afirmația este susținută explicit de mandat sau de fișa de transmitere; nu adaugă o condiție obligatorie și nu este un mecanism nou."
+    },
+    {
+      "case_id": "d252721",
+      "run_id": "language-sol",
+      "answer_sha256": "02145d455b9208f087a4a242878e4228bbd12d469cd73cc384146238ed11b778",
+      "score_file": "research/litera-judging-sol/scores.json",
+      "score_sha256": "4bb9c00a71b5a3344370ad140a4dd86851ff35543af9e615c1f3c51f18582cd7",
+      "claim": "Condițiile comerciale, recepția și disponibilul de numerar sunt îndeplinite.",
+      "quote": "Condițiile comerciale, recepția și disponibilul de numerar sunt declarate îndeplinite [M3]",
+      "reason": "Constatarea corespunde mandatului.",
+      "evidence": [
+        "01_mandat.md#M3"
+      ],
+      "author_status": "verified_supported",
+      "author_reason": "Verificat după citirea integrală: afirmația este susținută explicit de mandat sau de fișa de transmitere; nu adaugă o condiție obligatorie și nu este un mecanism nou."
+    },
+    {
+      "case_id": "d125587",
+      "run_id": "language-sol",
+      "answer_sha256": "f16e09f29af9a20117b756c82621b4c2d691c90921f5d9a9382e0220d710a93a",
+      "score_file": "research/litera-judging-sol/scores.json",
+      "score_sha256": "4bb9c00a71b5a3344370ad140a4dd86851ff35543af9e615c1f3c51f18582cd7",
+      "claim": "Condițiile comerciale, recepția și disponibilul de numerar sunt îndeplinite.",
+      "quote": "Condițiile comerciale, recepția și disponibilul de numerar sunt îndeplinite.",
+      "reason": "Mandatul confirmă aceste condiții.",
+      "evidence": [
+        "01_mandat.md#M3"
+      ],
+      "author_status": "verified_supported",
+      "author_reason": "Verificat după citirea integrală: afirmația este susținută explicit de mandat sau de fișa de transmitere; nu adaugă o condiție obligatorie și nu este un mecanism nou."
+    },
+    {
+      "case_id": "d345649",
+      "run_id": "language-sol",
+      "answer_sha256": "39b620206b72d1a6443811354d7d7ed5399a757f8d612e07084acdcd70443ae1",
+      "score_file": "research/litera-judging-sol/scores.json",
+      "score_sha256": "4bb9c00a71b5a3344370ad140a4dd86851ff35543af9e615c1f3c51f18582cd7",
+      "claim": "Condițiile comerciale, recepția și disponibilul de numerar sunt îndeplinite.",
+      "quote": "Condițiile comerciale, recepția și disponibilul de numerar sunt îndeplinite potrivit **[M3]**",
+      "reason": "Mandatul confirmă aceste condiții, distinct de cerința aprobării financiare.",
+      "evidence": [
+        "01_mandat.md#M3"
+      ],
+      "author_status": "verified_supported",
+      "author_reason": "Verificat după citirea integrală: afirmația este susținută explicit de mandat sau de fișa de transmitere; nu adaugă o condiție obligatorie și nu este un mecanism nou."
+    },
+    {
+      "case_id": "d312126",
+      "run_id": "language-sol",
+      "answer_sha256": "fcb1d240c3e8f4d298fcdbb3807f5f0c3d647f6c31f466208c25f541822dac67",
+      "score_file": "research/litera-judging-sol/scores.json",
+      "score_sha256": "4bb9c00a71b5a3344370ad140a4dd86851ff35543af9e615c1f3c51f18582cd7",
+      "claim": "Condițiile comerciale, recepția și disponibilul de numerar sunt îndeplinite.",
+      "quote": "mandatul declară îndeplinite condițiile comerciale, recepția și disponibilul de numerar",
+      "reason": "Constatarea este confirmată de mandat.",
+      "evidence": [
+        "01_mandat.md#M3"
+      ],
+      "author_status": "verified_supported",
+      "author_reason": "Verificat după citirea integrală: afirmația este susținută explicit de mandat sau de fișa de transmitere; nu adaugă o condiție obligatorie și nu este un mecanism nou."
+    },
+    {
+      "case_id": "d252721",
+      "run_id": "language-luna",
+      "answer_sha256": "f0165adaecd782983990f4d1c1589ece3a0f82e8fd7f9116a9f545a709c287f3",
+      "score_file": "research/litera-judging-luna/scores.json",
+      "score_sha256": "b17ac4d5e49fe8a1e4eed76ef144871cdb0d7971aeff22ce9fee5b1b1f15b522",
+      "claim": "Fișa de transmitere nu adaugă o aprobare financiară.",
+      "quote": "Fișa de transmitere confirmă primirea mandatului, a facturii și a AF-18, dar precizează că nu conține o aprobare financiară suplimentară",
+      "reason": "Aceasta este funcția declarată a fișei.",
+      "evidence": [
+        "03_transmitere.md#N1",
+        "03_transmitere.md#N2"
+      ],
+      "author_status": "verified_supported",
+      "author_reason": "Verificat după citirea integrală: afirmația este susținută explicit de mandat sau de fișa de transmitere; nu adaugă o condiție obligatorie și nu este un mecanism nou."
+    },
+    {
+      "case_id": "d252721",
+      "run_id": "language-luna",
+      "answer_sha256": "f0165adaecd782983990f4d1c1589ece3a0f82e8fd7f9116a9f545a709c287f3",
+      "score_file": "research/litera-judging-luna/scores.json",
+      "score_sha256": "b17ac4d5e49fe8a1e4eed76ef144871cdb0d7971aeff22ce9fee5b1b1f15b522",
+      "claim": "Celelalte condiții comerciale și operaționale sunt îndeplinite.",
+      "quote": "Mandatul declară îndeplinite condițiile comerciale, recepția și disponibilul de numerar",
+      "reason": "Mandatul confirmă aceste condiții.",
+      "evidence": [
+        "01_mandat.md#M3"
+      ],
+      "author_status": "verified_supported",
+      "author_reason": "Verificat după citirea integrală: afirmația este susținută explicit de mandat sau de fișa de transmitere; nu adaugă o condiție obligatorie și nu este un mecanism nou."
+    },
+    {
+      "case_id": "d125587",
+      "run_id": "language-luna",
+      "answer_sha256": "2f3e50d3cc50a3d4a6c7f4daaae3fc991ee79d5093513bdedd490769bd56789d",
+      "score_file": "research/litera-judging-luna/scores.json",
+      "score_sha256": "b17ac4d5e49fe8a1e4eed76ef144871cdb0d7971aeff22ce9fee5b1b1f15b522",
+      "claim": "Fișa de transmitere nu constituie o aprobare suplimentară.",
+      "quote": "precizează și că fișa nu constituie o aprobare suplimentară",
+      "reason": "Fișa inventariază documentele și exclude existența unei aprobări suplimentare în cuprinsul său.",
+      "evidence": [
+        "03_transmitere.md#N1",
+        "03_transmitere.md#N2"
+      ],
+      "author_status": "verified_supported",
+      "author_reason": "Verificat după citirea integrală: afirmația este susținută explicit de mandat sau de fișa de transmitere; nu adaugă o condiție obligatorie și nu este un mecanism nou."
+    },
+    {
+      "case_id": "d345649",
+      "run_id": "language-luna",
+      "answer_sha256": "170e8f47bdd27fc08a665f3a4e094330ed24a05bda1deaf4c28a27d6d264ed21",
+      "score_file": "research/litera-judging-luna/scores.json",
+      "score_sha256": "b17ac4d5e49fe8a1e4eed76ef144871cdb0d7971aeff22ce9fee5b1b1f15b522",
+      "claim": "Condițiile comerciale, recepția și disponibilul de numerar sunt îndeplinite.",
+      "quote": "Mandatul declară îndeplinite condițiile comerciale, recepția și disponibilul de numerar",
+      "reason": "Mandatul confirmă aceste condiții, care nu elimină cerința aprobării pentru referința exactă.",
+      "evidence": [
+        "01_mandat.md#M3",
+        "01_mandat.md#M2"
+      ],
+      "author_status": "verified_supported",
+      "author_reason": "Verificat după citirea integrală: afirmația este susținută explicit de mandat sau de fișa de transmitere; nu adaugă o condiție obligatorie și nu este un mecanism nou."
+    },
+    {
+      "case_id": "d345649",
+      "run_id": "language-luna",
+      "answer_sha256": "170e8f47bdd27fc08a665f3a4e094330ed24a05bda1deaf4c28a27d6d264ed21",
+      "score_file": "research/litera-judging-luna/scores.json",
+      "score_sha256": "b17ac4d5e49fe8a1e4eed76ef144871cdb0d7971aeff22ce9fee5b1b1f15b522",
+      "claim": "Fișa de transmitere nu conține o aprobare financiară suplimentară.",
+      "quote": "ea precizează că nu constituie o aprobare financiară suplimentară",
+      "reason": "Fișa are rol de inventariere și nu adaugă o aprobare.",
+      "evidence": [
+        "03_transmitere.md#N2"
+      ],
+      "author_status": "verified_supported",
+      "author_reason": "Verificat după citirea integrală: afirmația este susținută explicit de mandat sau de fișa de transmitere; nu adaugă o condiție obligatorie și nu este un mecanism nou."
+    },
+    {
+      "case_id": "d312126",
+      "run_id": "language-luna",
+      "answer_sha256": "5a16090662b5f042ddcaf84a0cc5f958e0d8946ed1a0c4964e4ef5df1b058eac",
+      "score_file": "research/litera-judging-luna/scores.json",
+      "score_sha256": "b17ac4d5e49fe8a1e4eed76ef144871cdb0d7971aeff22ce9fee5b1b1f15b522",
+      "claim": "Condițiile comerciale, recepția și disponibilul de numerar sunt îndeplinite.",
+      "quote": "condițiile comerciale, recepția și disponibilul de numerar sunt îndeplinite",
+      "reason": "Mandatul confirmă aceste condiții.",
+      "evidence": [
+        "01_mandat.md#M3"
+      ],
+      "author_status": "verified_supported",
+      "author_reason": "Verificat după citirea integrală: afirmația este susținută explicit de mandat sau de fișa de transmitere; nu adaugă o condiție obligatorie și nu este un mecanism nou."
+    },
+    {
+      "case_id": "d312126",
+      "run_id": "language-luna",
+      "answer_sha256": "5a16090662b5f042ddcaf84a0cc5f958e0d8946ed1a0c4964e4ef5df1b058eac",
+      "score_file": "research/litera-judging-luna/scores.json",
+      "score_sha256": "b17ac4d5e49fe8a1e4eed76ef144871cdb0d7971aeff22ce9fee5b1b1f15b522",
+      "claim": "Fișa de transmitere nu reprezintă o aprobare suplimentară.",
+      "quote": "precizează că nu reprezintă o aprobare suplimentară",
+      "reason": "Fișa inventariază documentele și nu conține o aprobare financiară suplimentară.",
+      "evidence": [
+        "03_transmitere.md#N1",
+        "03_transmitere.md#N2"
+      ],
+      "author_status": "verified_supported",
+      "author_reason": "Verificat după citirea integrală: afirmația este susținută explicit de mandat sau de fișa de transmitere; nu adaugă o condiție obligatorie și nu este un mecanism nou."
+    }
+  ]
+}

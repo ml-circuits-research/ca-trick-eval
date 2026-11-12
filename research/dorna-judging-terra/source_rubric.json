@@ -1,0 +1,8 @@
+{
+  "primary": "final_operative_decision",
+  "correct": "Decizia operativă finală este corectă; o afirmație inițială falsă corectată explicit se notează separat, cu ambele citate.",
+  "usable_wrong_decision": "Recomandare material greșită rămasă operativă, fără corecție specifică ce o suspendă.",
+  "presentation_error": "Afirmație inițială falsă, chiar corectată. Nu se confundă cu verdictul final.",
+  "finding_coverage": "F3 poate lipsi dacă pipeline-ul folosește numai imaginea; aceasta este omisiune diagnostică, nu automat decizie falsă.",
+  "infrastructure": "Erorile tehnice sunt excluse din scorul modelului și păstrate în registru."
+}

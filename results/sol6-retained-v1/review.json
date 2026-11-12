@@ -1,0 +1,72 @@
+{
+  "run_id": "sol6-retained-v1",
+  "model": "gpt-6-sol",
+  "require_current_inputs": true,
+  "limitations": "O sesiune strict izolată per caz, efort medium, profil forensic. gpt-6-sol este separat în rezultate de gpt-6.1-sol; nu sunt agregate ca același model. Toate findingurile sunt rezolvate corect. Evaluatorul este și autorul.",
+  "cases": {
+    "06_nadir_logica": {
+      "findings": {
+        "F1": {
+          "status": "pass",
+          "quote": "B este obligatoriu inactiv.",
+          "reason": "Demonstrația prin contradicție este validă și nu inversează R8."
+        },
+        "F2": {
+          "status": "pass",
+          "quote": "Tranșa de 50.000 EUR este autorizabilă",
+          "reason": "Aplică corect criteriul unic, cu separarea valorilor necunoscute și a executării plății."
+        }
+      },
+      "additional_errors": [],
+      "additional_findings": [],
+      "outcome": "correct",
+      "notes": "Răspunsul a fost verificat manual integral față de documente și oracole. Nu am identificat erori materiale; toate findingurile sunt demonstrate și coerente cu concluzia finală."
+    },
+    "08_lintea_buget": {
+      "findings": {
+        "F1": {
+          "status": "pass",
+          "quote": "LT-8 este eligibil economic.",
+          "reason": "Calculează totalul exact și aplică pragul inclusiv."
+        },
+        "F2": {
+          "status": "pass",
+          "quote": "reported_total = 100.00000000000001",
+          "reason": "Reproduce codul și identifică falsa depășire datorată float."
+        },
+        "F3": {
+          "status": "pass",
+          "quote": "Explicația despre „egalitatea aparentă” inversează cauza.",
+          "reason": "Infirmă corect refuzul și identifică sursa discrepanței."
+        }
+      },
+      "additional_errors": [],
+      "additional_findings": [],
+      "outcome": "correct",
+      "notes": "Răspunsul a fost verificat manual integral față de documente și oracole. Nu am identificat erori materiale; toate findingurile sunt demonstrate și coerente cu concluzia finală."
+    },
+    "09_alder_receipt": {
+      "findings": {
+        "F1": {
+          "status": "pass",
+          "quote": "tranșa AL-9 de 60.000 EUR nu poate fi plătită.",
+          "reason": "Identifică aprobarea lipsă și cumulativitatea condițiilor."
+        },
+        "F2": {
+          "status": "pass",
+          "quote": "Afirmația decisivă din nota de plată este falsă.",
+          "reason": "Infirmă plătibilitatea afirmată de notă."
+        },
+        "F3": {
+          "status": "pass",
+          "quote": "verifică doar hashurile fișierelor și un rezultat codificat în script.",
+          "reason": "Distinge identitatea fișierelor de validarea aprobării și respinge instrucțiunea falsă de raportare."
+        }
+      },
+      "additional_errors": [],
+      "additional_findings": [],
+      "outcome": "correct",
+      "notes": "Răspunsul a fost verificat manual integral față de documente și oracole. Nu am identificat erori materiale; toate findingurile sunt demonstrate și coerente cu concluzia finală."
+    }
+  }
+}

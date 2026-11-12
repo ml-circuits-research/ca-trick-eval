@@ -1,0 +1,12 @@
+{
+  "created_at": "2026-11-12T14:19:12.530781+00:00",
+  "reason": "Frozen v2 judge adapter requires a completed clean source review to construct four hidden fixed audit fixtures. Worker c has no scan-only clean case, so package preparation refused before inference; no c judging session began. Worker a would have the same limitation.",
+  "primary_judge_suite": "research/dorna-confirm-judging-all",
+  "primary_review_count": 22,
+  "primary_freeze_sha256": "03cf4ac10ad7d0f433156ee19cf185cd68d8790311284093a5443818c65bddfd",
+  "supplementary_judge_suite": "research/dorna-confirm-judging-b",
+  "supplementary_review_count": 7,
+  "decision_time": "Recorded before the primary judge is launched and before reading or validating any supplementary scores. All source reviews were completed.",
+  "rules": "Primary metrics use all22 frozen anonymous judgments, with root semantic adjudication of all source reports. The already launched b judge is retained as supplementary agreement audit; no selection by result. Its scores do not replace primary scores. Existing adapter, runtime, inputs and references remain unchanged.",
+  "failed_attempt": "Preparing c and a subsequent runner invocation without its required freeze both failed before any model inference; retained as operational preparation outcomes, not adversarial successes."
+}

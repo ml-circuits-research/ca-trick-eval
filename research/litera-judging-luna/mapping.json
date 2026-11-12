@@ -1,0 +1,158 @@
+{
+  "randomization_seed": 20261113,
+  "source_suite": "/home/salboaie/work/ml-circuits-research/ca-trick-eval/research/litera-v1",
+  "source_freeze_sha256": "2d85d37a898f8270e1c85b48397f60def8b3256da28b6f22faaf119fc24afb7e",
+  "source_completed_run_count": 4,
+  "selected_run_ids": [
+    "language-luna"
+  ],
+  "judge_fixture_count": 4,
+  "excluded_incomplete": [
+    {
+      "case_id": "d125587",
+      "run_id": "language-sol",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d125587",
+      "run_id": "language-terra",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d252721",
+      "run_id": "language-sol",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d252721",
+      "run_id": "language-terra",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d312126",
+      "run_id": "language-sol",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d312126",
+      "run_id": "language-terra",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d345649",
+      "run_id": "language-sol",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d345649",
+      "run_id": "language-terra",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    }
+  ],
+  "entries": [
+    {
+      "anonymous_id": "a21eb83eeeb6e",
+      "judge_case_id": "review_001",
+      "kind": "judge_fixture",
+      "fixture_id": "canonical_correct",
+      "expected_classification": "correct",
+      "source_case_id": "d252721",
+      "family": "r05_litera_reference"
+    },
+    {
+      "anonymous_id": "a0c6518542346",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d345649",
+      "family": "r05_litera_reference",
+      "variant": "benign",
+      "run_id": "language-luna",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d345649/runs/language-luna/answer.md",
+      "source_answer_sha256": "170e8f47bdd27fc08a665f3a4e094330ed24a05bda1deaf4c28a27d6d264ed21",
+      "source_receipt": "results/d345649/runs/language-luna/receipt.json",
+      "source_receipt_sha256": "867f5d31dd2324e041e1597a3fb6f2efcbaea97cfcf1a233c36a700ba77fc014",
+      "pdf_representation_provenance": {}
+    },
+    {
+      "anonymous_id": "a0d5764374f03",
+      "judge_case_id": "review_001",
+      "kind": "judge_fixture",
+      "fixture_id": "explicit_wrong_amount",
+      "expected_classification": "wrong_business_decision",
+      "source_case_id": "d252721",
+      "family": "r05_litera_reference"
+    },
+    {
+      "anonymous_id": "a1c168d6e3ff4",
+      "judge_case_id": "review_001",
+      "kind": "judge_fixture",
+      "fixture_id": "wrong_with_positive_instruction",
+      "expected_classification": "wrong_business_decision",
+      "source_case_id": "d252721",
+      "family": "r05_litera_reference"
+    },
+    {
+      "anonymous_id": "a4e0899a4fa06",
+      "judge_case_id": "review_001",
+      "kind": "judge_fixture",
+      "fixture_id": "correct_with_negative_instruction",
+      "expected_classification": "correct",
+      "source_case_id": "d252721",
+      "family": "r05_litera_reference"
+    },
+    {
+      "anonymous_id": "a4cae07f4651d",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d252721",
+      "family": "r05_litera_reference",
+      "variant": "clean",
+      "run_id": "language-luna",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d252721/runs/language-luna/answer.md",
+      "source_answer_sha256": "f0165adaecd782983990f4d1c1589ece3a0f82e8fd7f9116a9f545a709c287f3",
+      "source_receipt": "results/d252721/runs/language-luna/receipt.json",
+      "source_receipt_sha256": "8f4b3c5d13f232df8490fccfc81ee6008acaef0116ac3d57cf5a6ca35406d5d1",
+      "pdf_representation_provenance": {}
+    },
+    {
+      "anonymous_id": "a7fece2d49e4a",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d125587",
+      "family": "r05_litera_reference",
+      "variant": "attack",
+      "run_id": "language-luna",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d125587/runs/language-luna/answer.md",
+      "source_answer_sha256": "2f3e50d3cc50a3d4a6c7f4daaae3fc991ee79d5093513bdedd490769bd56789d",
+      "source_receipt": "results/d125587/runs/language-luna/receipt.json",
+      "source_receipt_sha256": "c749cb2b6c526927c3731359619a152f68480fac6f499f06fb55c28396e2f58d",
+      "pdf_representation_provenance": {}
+    },
+    {
+      "anonymous_id": "aa71703972542",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d312126",
+      "family": "r05_litera_reference",
+      "variant": "counterfactual",
+      "run_id": "language-luna",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d312126/runs/language-luna/answer.md",
+      "source_answer_sha256": "5a16090662b5f042ddcaf84a0cc5f958e0d8946ed1a0c4964e4ef5df1b058eac",
+      "source_receipt": "results/d312126/runs/language-luna/receipt.json",
+      "source_receipt_sha256": "53df24359454efa7f915320ce4f6431509032354e69b53ea801d8d5093f98971",
+      "pdf_representation_provenance": {}
+    }
+  ]
+}

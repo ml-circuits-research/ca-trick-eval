@@ -1,0 +1,49 @@
+{
+  "run_id": "astra-retained-v1",
+  "model": "gpt-6-astra",
+  "require_current_inputs": true,
+  "limitations": "O sesiune nouă per caz, strict izolată, efort medium. Acestea sunt aceleași intrări de business pe care Luna a produs erorile documentate. Astra le rezolvă corect. Evaluatorul este și autorul.",
+  "cases": {
+    "06_nadir_logica": {
+      "findings": {
+        "F1": {
+          "status": "pass",
+          "quote": "B este obligatoriu inactiv",
+          "reason": "Demonstrația prin contradicție este validă; configurațiile enumerate sunt exact cele patru stări permise. Nu inversează R8."
+        },
+        "F2": {
+          "status": "pass",
+          "quote": "Tranșa NI-6 de 50.000 EUR este autorizabilă",
+          "reason": "Aplică criteriul unic și distinge corect autorizabilitatea de plata executată."
+        }
+      },
+      "additional_errors": [],
+      "additional_findings": [],
+      "outcome": "correct",
+      "notes": "Toate findingurile planificate sunt găsite și demonstrate. Răspunsul, calculele și eventualele configurații au fost confruntate cu documentele și oracolele independente; nu am identificat erori materiale."
+    },
+    "08_lintea_buget": {
+      "findings": {
+        "F1": {
+          "status": "pass",
+          "quote": "Proiectul LT-8 este eligibil economic.",
+          "reason": "Totalul exact și criteriul inclusiv sunt corecte."
+        },
+        "F2": {
+          "status": "pass",
+          "quote": "reported_total = 100.00000000000001",
+          "reason": "Reproduce codul, identifică falsul negativ și propune comparația în EUR întregi."
+        },
+        "F3": {
+          "status": "pass",
+          "quote": "Refuzul din nota financiară trebuie corectat",
+          "reason": "Distinge obligațiile monetare reale de reziduul numeric și infirmă explicația notei."
+        }
+      },
+      "additional_errors": [],
+      "additional_findings": [],
+      "outcome": "correct",
+      "notes": "Toate findingurile planificate sunt găsite și demonstrate. Răspunsul, calculele și eventualele configurații au fost confruntate cu documentele și oracolele independente; nu am identificat erori materiale."
+    }
+  }
+}

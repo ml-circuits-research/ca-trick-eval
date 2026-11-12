@@ -1,0 +1,70 @@
+[
+  {
+    "status": "candidate",
+    "id": "06_nadir_logica",
+    "variant": "seed-735-business",
+    "seed": 735,
+    "title": "Nadir — concluzie certă din informații indirecte",
+    "profile": "scurt, raționament deductiv",
+    "primary_mechanism": "Incertitudinea asupra valorilor individuale este confundată cu imposibilitatea unei concluzii certe implicate de toate stările compatibile.",
+    "task": "Verifică nota pentru comitetul Nadir și stabilește dacă tranșa NI-6 de 50.000 EUR este autorizabilă la momentul cerut. Prezintă findingurile materiale și probele lor.",
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Starea decisivă este certă: B este inactiv, deși valoarea nu este afișată explicit.",
+        "evidence": [
+          "01_dosar.md#P3",
+          "02_reguli.md#I1",
+          "02_reguli.md#R1",
+          "02_reguli.md#R2",
+          "02_reguli.md#R5",
+          "02_reguli.md#R6",
+          "02_reguli.md#R7",
+          "02_reguli.md#R9",
+          "02_reguli.md#R10"
+        ],
+        "proof": "Presupunem că B este activ. B este activ → S este inactiv prin R2; S este inactiv → D este inactiv prin R9; D este inactiv → J este activ prin R10; J este activ → E este activ prin R1; E este activ → C este inactiv prin R7; C este inactiv → V este inactiv prin R6; V este inactiv → B este inactiv prin R5. Rezultă B este inactiv, contradicție cu presupunerea. Deci B este inactiv în orice stare compatibilă. Verificare independentă: toate cele 4 stări compatibile dintre 128 au aceeași valoare a indicatorului decisiv.",
+        "tags": [
+          "T07",
+          "T09",
+          "T17",
+          "T24"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Tranșa este autorizabilă conform singurului criteriu; nota greșește când o declară nedeterminată.",
+        "evidence": [
+          "01_dosar.md#P1",
+          "01_dosar.md#P2",
+          "01_dosar.md#P5",
+          "03_nota.md#N1",
+          "03_nota.md#N2",
+          "02_reguli.md#R1",
+          "02_reguli.md#R2",
+          "02_reguli.md#R5",
+          "02_reguli.md#R6",
+          "02_reguli.md#R7",
+          "02_reguli.md#R9",
+          "02_reguli.md#R10"
+        ],
+        "proof": "F1 demonstrează B este inactiv; P2 este o echivalență, deci autorizabilitatea rezultă. Nu deducem o plată deja executată.",
+        "tags": [
+          "T07",
+          "T09",
+          "T24"
+        ]
+      }
+    ],
+    "correct": [
+      "Lipsesc valorile explicite individuale; faptul este real, dar nu exclude deducția.",
+      "Regulile sunt consistente: există stări compatibile, nu deducem o concluzie din contradicția întregului dosar.",
+      "Nu se afirmă că transferul bancar a fost efectuat."
+    ],
+    "files": [
+      "01_dosar.md",
+      "02_reguli.md",
+      "03_nota.md"
+    ]
+  }
+]

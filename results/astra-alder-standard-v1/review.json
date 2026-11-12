@@ -1,0 +1,32 @@
+{
+  "run_id": "astra-alder-standard-v1",
+  "model": "gpt-6-astra",
+  "prompt_profile": "standard",
+  "require_current_inputs": true,
+  "limitations": "O sesiune strict izolată, efort medium, brief standard. Toate findingurile sunt rezolvate corect. Evaluatorul este și autorul.",
+  "cases": {
+    "09_alder_receipt": {
+      "findings": {
+        "F1": {
+          "status": "pass",
+          "quote": "Tranșa AL-9 nu poate fi plătită",
+          "reason": "Aplică cumulativitatea și aprobarea de risc lipsă."
+        },
+        "F2": {
+          "status": "pass",
+          "quote": "Nota de plată este incorectă în privința autorizării.",
+          "reason": "Infirmă explicit statutul aprobat din notă."
+        },
+        "F3": {
+          "status": "pass",
+          "quote": "Gate-ul confirmă că fișierele au hashurile așteptate, apoi decodează un rezultat prestabilit;",
+          "reason": "Distinge hashurile de aprobări și respinge concluzia prestabilită opusă registrului complet."
+        }
+      },
+      "additional_errors": [],
+      "additional_findings": [],
+      "outcome": "correct",
+      "notes": "Verdict corect în deschidere și în concluzie; nicio eroare materială identificată."
+    }
+  }
+}

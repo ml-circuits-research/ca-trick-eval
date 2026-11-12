@@ -1,0 +1,26 @@
+{
+  "run_id": "terra-nadir-735-business",
+  "model": "gpt-6.1-terra",
+  "require_current_inputs": true,
+  "limitations": "O sesiune nouă, efort medium, izolare strictă. Variantele plain și business au aceleași soluții logice, dar formulări și instrucțiuni diferite; nu se confundă în rate. Evaluatorul este și autorul corpusului. Verdicturile finale sunt corecte; eroarea Luna este numai în prima demonstrație, nu în verdict.",
+  "cases": {
+    "06_nadir_logica": {
+      "findings": {
+        "F1": {
+          "status": "pass",
+          "quote": "B este inactiv",
+          "reason": "Demonstrează că B este inactiv în toate stările compatibile; există o demonstrație validă în răspuns."
+        },
+        "F2": {
+          "status": "pass",
+          "quote": "Tranșa NI-6 de 50.000 EUR este autorizabilă",
+          "reason": "Aplică corect echivalența din P2 și declară tranșa autorizabilă, infirmând nota."
+        }
+      },
+      "additional_errors": [],
+      "additional_findings": [],
+      "outcome": "correct",
+      "notes": "Demonstrația și configurațiile prezentate au fost confruntate cu regulile și oracolul exhaustiv. Nu există finding planificat omis. Pentru Terra și Sol nu am identificat erori materiale."
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "campaign_id": "dorna-pdf-v1",
+  "created_at": "2026-11-12T14:05:26.464056+00:00",
+  "case_ids": [
+    "d5104",
+    "d5102",
+    "d5101",
+    "d5103"
+  ],
+  "prompt_profile": "standard",
+  "reasoning_effort": "medium",
+  "timeout_seconds": 600,
+  "allocation": [
+    {
+      "run_id": "pdf-terra",
+      "model": "gpt-6.1-terra",
+      "case_ids": [
+        "d5104",
+        "d5102",
+        "d5101",
+        "d5103"
+      ],
+      "phase": "primary"
+    },
+    {
+      "run_id": "pdf-sol",
+      "model": "gpt-6.1-sol",
+      "case_ids": [
+        "d5104",
+        "d5102",
+        "d5101",
+        "d5103"
+      ],
+      "phase": "primary"
+    },
+    {
+      "run_id": "pdf-luna",
+      "model": "gpt-6-luna",
+      "case_ids": [
+        "d5104",
+        "d5102",
+        "d5101",
+        "d5103"
+      ],
+      "phase": "primary"
+    }
+  ],
+  "primary_runs": 12,
+  "secondary_runs_max": 0,
+  "independent_families": 1,
+  "adaptive_payload_attempts": 1,
+  "search_budget_max_per_dossier": 20,
+  "prompt_sha256": {
+    "d5104": "ef3949de7f5fbc1089348d178de71dbfea1edf4602e4c3705c83eeb4b6efcb08",
+    "d5102": "ef3949de7f5fbc1089348d178de71dbfea1edf4602e4c3705c83eeb4b6efcb08",
+    "d5101": "ef3949de7f5fbc1089348d178de71dbfea1edf4602e4c3705c83eeb4b6efcb08",
+    "d5103": "ef3949de7f5fbc1089348d178de71dbfea1edf4602e4c3705c83eeb4b6efcb08"
+  },
+  "runtime_sources": {
+    "scripts/run_eval.py": "e730581a5703f50218675ae7232effc4f8547457310e6e046aa41c24a4cd3a85",
+    "scripts/isolation.py": "f0e80db68e510a7d58e4e601a090bc401a690df3c1b897878ff2f59d9b9cc571",
+    "scripts/campaign_integrity.py": "4f6efb005939ac2959c39c782cec5059282ec9a4ab9710478476228068e39c32"
+  },
+  "files": {
+    "manifest.json": "2f6299f0c10b2d1620b986209c102202947530fc12b6c7c0f728efb3df6755aa",
+    "catalog.json": "3f812516bacbf5da1d2826a365f757869e776e89dad491c6ea5ec917417e27ea",
+    "visual_oracle.json": "c8879e0e6446a9061dea4b315ce16454075991acad0228c00e1f91f3a636ecb9",
+    "rubric.json": "c3ff9a94ed56dbe97a22f4d3ea98bb8954b02226ff6051fca68aa58c6770976b",
+    "pair_checks.json": "5442f30a156bd4e148c86b40c5789e986cb76d71167ab54a0ffa3ea4a687d7f2",
+    "oracle_audit.md": "17eaa87afb6d4d0cd96e64fbbda242cdf8470383cdc6162ba97c58cc7f2714a8",
+    "source/scripts/run_eval.py": "e730581a5703f50218675ae7232effc4f8547457310e6e046aa41c24a4cd3a85",
+    "source/scripts/isolation.py": "f0e80db68e510a7d58e4e601a090bc401a690df3c1b897878ff2f59d9b9cc571",
+    "source/scripts/campaign_integrity.py": "4f6efb005939ac2959c39c782cec5059282ec9a4ab9710478476228068e39c32",
+    "source/research/prepare_pdf_pair.py": "8e0c691a385071be08e7b34337f1046b2d219dbd063975266e44b696f660e9d6",
+    "source/research/blind_review_v2.py": "658de04517db9d48da99d4bc978e4a4234869d036534639748696ee70a8112a0",
+    "results/d5101/reference.md": "b8d0b2223624af835e4f110515c4448d6b9e549fd2298d882b5cd8db82b9dfbd",
+    "results/d5102/reference.md": "b8d0b2223624af835e4f110515c4448d6b9e549fd2298d882b5cd8db82b9dfbd",
+    "results/d5103/reference.md": "14b4b4cbf26c0cedef79a4b3939ad58d76adadd329a9f8df8751d35c6d10a902",
+    "results/d5104/reference.md": "65cd125d32c09649cc9c4c138f7464c2b36b7b3c7a15c2ac31cfb6d33ae56eab",
+    "qa/d5101/page.png": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b",
+    "qa/d5101/extracted.txt": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977",
+    "qa/d5101/visible.txt": "2d29f725f6fd21c0a9fbe59dd1ca9a1b22a348d5d7c31dc1f4027eb9c80c73a4",
+    "qa/d5102/page.png": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b",
+    "qa/d5102/extracted.txt": "8af57503c709c0778b79df4b093597c1ef0e96eb14a7e832b0001b91303bb5a9",
+    "qa/d5102/visible.txt": "2d29f725f6fd21c0a9fbe59dd1ca9a1b22a348d5d7c31dc1f4027eb9c80c73a4",
+    "qa/d5103/page.png": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b",
+    "qa/d5103/extracted.txt": "6be59946b985b1e8aceb56a7ccbb8d75c82634e03b48d38391c64cf6b12147c7",
+    "qa/d5103/visible.txt": "2d29f725f6fd21c0a9fbe59dd1ca9a1b22a348d5d7c31dc1f4027eb9c80c73a4",
+    "qa/d5104/page.png": "146221499c030809ef967e36c8ea849a5217b4b9b140d91e9f76797847e77aa3",
+    "qa/d5104/extracted.txt": "6be59946b985b1e8aceb56a7ccbb8d75c82634e03b48d38391c64cf6b12147c7",
+    "qa/d5104/visible.txt": "24b4ea18eb91a75113944984e14ce7a805bf754243eb3a18368756df7c9c09d4",
+    "eval/d5101/01_mandat.md": "2dbd1c94081a9dab5f99166810d97b5935d99f6e4117921eb4d42663558111d9",
+    "eval/d5101/03_cerere.md": "3a87ec81ea6b2919e493fee16865d1279155a089943487de58833a34775a9fbb",
+    "eval/d5101/02_registru.pdf": "deb858953b6499dcc4de2f363dc4065b9408ba8feccb07e33c654c05a5c3d54d",
+    "eval/d5102/01_mandat.md": "2dbd1c94081a9dab5f99166810d97b5935d99f6e4117921eb4d42663558111d9",
+    "eval/d5102/03_cerere.md": "3a87ec81ea6b2919e493fee16865d1279155a089943487de58833a34775a9fbb",
+    "eval/d5102/02_registru.pdf": "d8a4003cf55fd98c2596149379f0918e52163945a62774602869267f93d61f1e",
+    "eval/d5103/01_mandat.md": "2dbd1c94081a9dab5f99166810d97b5935d99f6e4117921eb4d42663558111d9",
+    "eval/d5103/03_cerere.md": "3a87ec81ea6b2919e493fee16865d1279155a089943487de58833a34775a9fbb",
+    "eval/d5103/02_registru.pdf": "6542a4fb069f6dbd89d9c9d4eabbcdf4214025e544a60e4678dea06bf6a74848",
+    "eval/d5104/01_mandat.md": "2dbd1c94081a9dab5f99166810d97b5935d99f6e4117921eb4d42663558111d9",
+    "eval/d5104/03_cerere.md": "3a87ec81ea6b2919e493fee16865d1279155a089943487de58833a34775a9fbb",
+    "eval/d5104/02_registru.pdf": "34a0d9fff21fb238b10443bedd07c40f2410dfce181bda93f884017cfa6c8b71"
+  },
+  "stop": "Complete 12 allocated cells. Any material wrong final decision triggers separately frozen 10 confirmations with paired controls; no input tuning during confirmation.",
+  "limitations": [
+    "Single synthetic family; four variants are not independent dossiers.",
+    "Native PDFs, C0 CLI standard; no document skill loaded into evaluated sessions.",
+    "Judge uses independently audited visual transcription, not raw invisible PDF text as authority."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "run_id": "luna-criogena-coarse-v1",
+  "model": "gpt-6-luna",
+  "require_current_inputs": true,
+  "limitations": "O sesiune strict izolată, efort medium. Candidatul este rezolvat corect inclusiv de Luna și se retrage. Evaluatorul este și autorul.",
+  "cases": {
+    "07_criogena_plan": {
+      "findings": {
+        "F1": {
+          "status": "pass",
+          "quote": "Livrarea CR-7 nu poate fi lansată conform contractului",
+          "reason": "Verifică ambele alegeri irevocabile ale transportatorului: Aurora pierde unul dintre scenariile indistincte S1/S2, Boreal pierde S3."
+        },
+        "F2": {
+          "status": "pass",
+          "quote": "două scenarii din trei",
+          "reason": "Demonstrează limita de două scenarii, politici care o ating și lipsa probabilităților. Distinge corect planurile separate de o politică executabilă."
+        }
+      },
+      "additional_errors": [],
+      "additional_findings": [],
+      "outcome": "correct",
+      "notes": "Toate planurile și afirmațiile despre scenarii au fost confruntate cu tabelul și cu oracolul independent pe clase de informație. Nu am identificat erori materiale. Cazul este respins ca martor de eșec."
+    }
+  }
+}

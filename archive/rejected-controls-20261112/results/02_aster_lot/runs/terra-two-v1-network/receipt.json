@@ -1,0 +1,39 @@
+{
+  "case": "02_aster_lot",
+  "model_requested": "gpt-6.1-terra",
+  "reasoning_effort": "medium",
+  "status": "completed",
+  "exit_code": 0,
+  "duration_seconds": 52.31,
+  "input_sha256": {
+    "01_mandat.md": "254ac504774b2c5a8c7f2b41aa58f6718d894a59513a9ce1e7095fa72716b9da",
+    "02_lot.md": "b4223db6e6299a48c1fc2d1c67ed62f2bd47508b82316d70314397e4295b957d",
+    "03_furnizor_finante.md": "deba4547f39f11102ea04d264e5cda9fcf63a3f11c360b01e1d614340e681681",
+    "04_indicatori_incident.md": "5bc9d2512c7b4d9892017af092cdd3985d991cc02f2760aafee752c7b15191af",
+    "05_contract_stoc.md": "f3cce5553909d96a7001a49d31af09871f54a1658ee7300ae5b8d577f5dab000",
+    "06_nota_executiva.md": "019890e5d979a905414cfdcc88fad3edbcfb12f22b1d988dd1a8c723732a9a77",
+    "AGENTS.md": "2f769e2033e85eabf93acfe56c3f97495b54dbbb25812859187d143c4b62df9b"
+  },
+  "command": [
+    "codex",
+    "exec",
+    "--ignore-user-config",
+    "--ignore-rules",
+    "--ephemeral",
+    "--model",
+    "gpt-6.1-terra",
+    "--sandbox",
+    "read-only",
+    "--skip-git-repo-check",
+    "-c",
+    "model_reasoning_effort=\"medium\"",
+    "--cd",
+    "/home/salboaie/work/ml-circuits-research/ca-trick-eval/.work/case-3slyon0s/documents",
+    "--json",
+    "--output-last-message",
+    "/home/salboaie/work/ml-circuits-research/ca-trick-eval/results/02_aster_lot/runs/terra-two-v1-network/answer.md",
+    "-"
+  ],
+  "isolation": "Fresh case-only working directory; read-only Codex sandbox. Not OS-level read confinement.",
+  "timestamp_utc": "2026-11-12T11:18:27.161647+00:00"
+}

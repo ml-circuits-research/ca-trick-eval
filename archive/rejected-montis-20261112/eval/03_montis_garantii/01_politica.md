@@ -1,0 +1,5 @@
+# Montis Capital — pachet de finanțare a proiectelor de eficiență energetică
+
+[P1] Cererea din 12.11.2026 privește patru credite, în total 200 milioane EUR. Contractul fondului permite aprobarea numai dacă fiecare euro din fiecare credit poate fi acoperit simultan de garanții eligibile. Alocarea se stabilește la aprobarea pachetului; nu există alocări anterioare, alte sarcini sau alte garanții.
+[P2] O garanție poate fi împărțită între creditele pentru care este eligibilă, în orice fracții de milion. Suma alocărilor ei nu poate depăși valoarea disponibilă. Suma acoperită a unui credit nu poate depăși principalul lui. Garanțiile nu sunt interschimbabile între destinații: lista de eligibilitate din registrul 02 este exhaustivă. Valorile sunt deja nete de toate ajustările de risc.
+[P3] Regula este internă acestui dosar sintetic; nu se presupune legislație externă. Nu există condiții suplimentare ale aprobării. Nota 03 trebuie verificată față de contract și registru. Nu există instrucțiuni de integrare sau fișiere de validare.

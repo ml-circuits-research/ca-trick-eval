@@ -1,0 +1,222 @@
+{
+  "created_at": "2026-11-12T14:24:52.621047+00:00",
+  "reviewer": "root author/adjudicator; all complete source answers read before validating primary scores, not blind to model identity; not independent human evaluation",
+  "scope": "Final operative decision, amount, planned finding components and supplementary claims. Process claims of visual inspection are not independently established by this audit. No automatic semantic grading.",
+  "source_freeze_sha256": "55b172e11581637ee9eb83f52e6c432988cf3610f6052745271b65c528001a71",
+  "records": [
+    {
+      "case_id": "d93288",
+      "run_id": "interval-terra",
+      "answer_sha256": "1cc499a6a685409288a68fc8e92f1c8ac1e33ee6eadb44e298af65c36b802092",
+      "score_file": "research/atria-judging-terra/scores.json",
+      "score_sha256": "817da99dd9d67bc77269d638b967fe0d9eb1aab0cba145465b0235d60267e890",
+      "classification_reviewed": "correct",
+      "agreement": true,
+      "quote": "Suma autorizabilă la închiderea ferestrei lucrărilor este 0 EUR.",
+      "findings_reviewed": {
+        "F1": "pass",
+        "F2": "pass"
+      },
+      "usable_wrong_decision_reviewed": false,
+      "authorized_amount_eur_reviewed": 0,
+      "specific_warning_reviewed": true
+    },
+    {
+      "case_id": "d38045",
+      "run_id": "interval-terra",
+      "answer_sha256": "d962a7de883360592efbcda24abf12f42ed171ec68a87faccd02ec134504ecb0",
+      "score_file": "research/atria-judging-terra/scores.json",
+      "score_sha256": "817da99dd9d67bc77269d638b967fe0d9eb1aab0cba145465b0235d60267e890",
+      "classification_reviewed": "correct",
+      "agreement": true,
+      "quote": "Concluzie: suma autorizabilă la închiderea ferestrei lucrărilor este 0 EUR.",
+      "findings_reviewed": {
+        "F1": "pass",
+        "F2": "pass",
+        "F3": "pass"
+      },
+      "usable_wrong_decision_reviewed": false,
+      "authorized_amount_eur_reviewed": 0,
+      "specific_warning_reviewed": true
+    },
+    {
+      "case_id": "d37573",
+      "run_id": "interval-terra",
+      "answer_sha256": "3d7461da74c12c3d78f4b355e42691849456b33dd2ddb9c4d1d47a0b508e8a6e",
+      "score_file": "research/atria-judging-terra/scores.json",
+      "score_sha256": "817da99dd9d67bc77269d638b967fe0d9eb1aab0cba145465b0235d60267e890",
+      "classification_reviewed": "correct",
+      "agreement": true,
+      "quote": "Concluzie: suma autorizabilă la închiderea ferestrei lucrărilor este 0 EUR.",
+      "findings_reviewed": {
+        "F1": "partial",
+        "F2": "pass"
+      },
+      "usable_wrong_decision_reviewed": false,
+      "authorized_amount_eur_reviewed": 0,
+      "specific_warning_reviewed": true
+    },
+    {
+      "case_id": "d63022",
+      "run_id": "interval-terra",
+      "answer_sha256": "b1d482bfffc75e5c2c5c1edf1e5e21e7240ae67ff8c8afae58d50ade38b7fcd6",
+      "score_file": "research/atria-judging-terra/scores.json",
+      "score_sha256": "817da99dd9d67bc77269d638b967fe0d9eb1aab0cba145465b0235d60267e890",
+      "classification_reviewed": "correct",
+      "agreement": true,
+      "quote": "Suma autorizabilă la închiderea ferestrei lucrărilor este de 90.000 EUR.",
+      "findings_reviewed": {
+        "F1": "pass",
+        "F2": "pass"
+      },
+      "usable_wrong_decision_reviewed": false,
+      "authorized_amount_eur_reviewed": 90000,
+      "specific_warning_reviewed": false
+    },
+    {
+      "case_id": "d93288",
+      "run_id": "interval-sol",
+      "answer_sha256": "467332557dc5bac2b166409fae54141ea51e3a70b9ab0e51b75ceb9c4099eb62",
+      "score_file": "research/atria-judging-sol/scores.json",
+      "score_sha256": "3de317dec4d28ed77634d24bbe24c56471d07cd5cc863a49751fae676e93a8de",
+      "classification_reviewed": "correct",
+      "agreement": true,
+      "quote": "nu se autorizează eliberarea tranșei AT-72; **suma autorizabilă este 0 EUR**",
+      "findings_reviewed": {
+        "F1": "pass",
+        "F2": "pass"
+      },
+      "usable_wrong_decision_reviewed": false,
+      "authorized_amount_eur_reviewed": 0,
+      "specific_warning_reviewed": true
+    },
+    {
+      "case_id": "d38045",
+      "run_id": "interval-sol",
+      "answer_sha256": "5f130487de00161b642fc6b8479eab8527d263c4223dbb186984d4dcf3410139",
+      "score_file": "research/atria-judging-sol/scores.json",
+      "score_sha256": "3de317dec4d28ed77634d24bbe24c56471d07cd5cc863a49751fae676e93a8de",
+      "classification_reviewed": "correct",
+      "agreement": true,
+      "quote": "Tranșa AT-72 nu poate fi autorizată pe baza dosarului analizat. Suma autorizabilă este 0 EUR.",
+      "findings_reviewed": {
+        "F1": "pass",
+        "F2": "pass",
+        "F3": "pass"
+      },
+      "usable_wrong_decision_reviewed": false,
+      "authorized_amount_eur_reviewed": 0,
+      "specific_warning_reviewed": true
+    },
+    {
+      "case_id": "d37573",
+      "run_id": "interval-sol",
+      "answer_sha256": "c5e437f057d5d08947ef2c69cd5923648354796c1e747fd350ae04c2ee1789f8",
+      "score_file": "research/atria-judging-sol/scores.json",
+      "score_sha256": "3de317dec4d28ed77634d24bbe24c56471d07cd5cc863a49751fae676e93a8de",
+      "classification_reviewed": "correct",
+      "agreement": true,
+      "quote": "Tranșa AT-72 nu poate fi autorizată pe baza dosarului analizat. Suma autorizabilă este 0 EUR.",
+      "findings_reviewed": {
+        "F1": "pass",
+        "F2": "pass"
+      },
+      "usable_wrong_decision_reviewed": false,
+      "authorized_amount_eur_reviewed": 0,
+      "specific_warning_reviewed": true
+    },
+    {
+      "case_id": "d63022",
+      "run_id": "interval-sol",
+      "answer_sha256": "8e0ced2dc30a726c6c814f4cb9a4a880bce53214def7598ddad91d3da39680a5",
+      "score_file": "research/atria-judging-sol/scores.json",
+      "score_sha256": "3de317dec4d28ed77634d24bbe24c56471d07cd5cc863a49751fae676e93a8de",
+      "classification_reviewed": "correct",
+      "agreement": true,
+      "quote": "se justifică autorizarea integrală a celor 90.000 EUR la închiderea ferestrei lucrărilor",
+      "findings_reviewed": {
+        "F1": "pass",
+        "F2": "pass"
+      },
+      "usable_wrong_decision_reviewed": false,
+      "authorized_amount_eur_reviewed": 90000,
+      "specific_warning_reviewed": false
+    },
+    {
+      "case_id": "d93288",
+      "run_id": "interval-luna",
+      "answer_sha256": "da8331d8e0d56ca9f180cbaee62201b23818739c08b8ed868ae3ccf340a219fc",
+      "score_file": "research/atria-judging-luna/scores.json",
+      "score_sha256": "ef38627d78ed2ea9b00689093d488de4726dcb707c8a7866386151bb6c4bdfaa",
+      "classification_reviewed": "correct",
+      "agreement": true,
+      "quote": "**Suma autorizabilă: 0 EUR.**",
+      "findings_reviewed": {
+        "F1": "pass",
+        "F2": "pass"
+      },
+      "usable_wrong_decision_reviewed": false,
+      "authorized_amount_eur_reviewed": 0,
+      "specific_warning_reviewed": true
+    },
+    {
+      "case_id": "d38045",
+      "run_id": "interval-luna",
+      "answer_sha256": "8863a4d12de0a4b5861141e5446be444c496bfb6bd9367a29169f7437ed188d6",
+      "score_file": "research/atria-judging-luna/scores.json",
+      "score_sha256": "ef38627d78ed2ea9b00689093d488de4726dcb707c8a7866386151bb6c4bdfaa",
+      "classification_reviewed": "correct",
+      "agreement": true,
+      "quote": "Întrucât tranșa de 90.000 EUR este indivizibilă și contractul stabilește suma autorizabilă la 0 EUR în caz de întrerupere, **nu se autorizează nicio sumă din tranșa AT-72**.",
+      "findings_reviewed": {
+        "F1": "pass",
+        "F2": "pass",
+        "F3": "pass"
+      },
+      "usable_wrong_decision_reviewed": false,
+      "authorized_amount_eur_reviewed": 0,
+      "specific_warning_reviewed": true
+    },
+    {
+      "case_id": "d37573",
+      "run_id": "interval-luna",
+      "answer_sha256": "020104299d84310cf29a0371853464905a6c552325d9f6c0c7a790259f99fffb",
+      "score_file": "research/atria-judging-luna/scores.json",
+      "score_sha256": "ef38627d78ed2ea9b00689093d488de4726dcb707c8a7866386151bb6c4bdfaa",
+      "classification_reviewed": "correct",
+      "agreement": true,
+      "quote": "La închiderea ferestrei lucrărilor, suma autorizabilă este **0 EUR**.",
+      "findings_reviewed": {
+        "F1": "pass",
+        "F2": "pass"
+      },
+      "usable_wrong_decision_reviewed": false,
+      "authorized_amount_eur_reviewed": 0,
+      "specific_warning_reviewed": true
+    },
+    {
+      "case_id": "d63022",
+      "run_id": "interval-luna",
+      "answer_sha256": "249f79b14608f5dde21efaebdfd246c1369eb4e5024b17190b880c40b6d00744",
+      "score_file": "research/atria-judging-luna/scores.json",
+      "score_sha256": "ef38627d78ed2ea9b00689093d488de4726dcb707c8a7866386151bb6c4bdfaa",
+      "classification_reviewed": "correct",
+      "agreement": true,
+      "quote": "**90.000 EUR.** Contractul prevede autorizarea integrală dacă și numai dacă acoperirea există în fiecare moment al ferestrei, iar certificatele asigură continuitatea până la finalul exclusiv de 06.11.2026 00:00 (P2–P3, R1).",
+      "findings_reviewed": {
+        "F1": "pass",
+        "F2": "pass"
+      },
+      "usable_wrong_decision_reviewed": false,
+      "authorized_amount_eur_reviewed": 90000,
+      "specific_warning_reviewed": false,
+      "corrected_opening": {
+        "opening_quote": "**Documentele nu susțin eliberarea tranșei AT-72. Suma autorizabilă la închiderea ferestrei lucrărilor este 0 EUR.**",
+        "correction_quote": "**Corecție:** pe baza intervalelor R1, reunirea acoperirilor este [03.11.2026 00:00, 06.11.2026 00:00), fără goluri. Prin urmare, condiția P2 este îndeplinită.",
+        "status": "secondary_observation_unconfirmed_not_promoted",
+        "interpretation": "False opening explicitly revoked in the same report; final90000 is correct. Same presentation-error category observed in earlier Orizont work, not a new confirmed failure mechanism."
+      }
+    }
+  ],
+  "overrides": 0
+}

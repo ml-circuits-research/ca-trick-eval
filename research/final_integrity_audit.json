@@ -1,0 +1,42 @@
+{
+  "verified_at": "2026-11-12T13:13:32.782853+00:00",
+  "sessions": 52,
+  "business_review_sessions": 46,
+  "judging_sessions": 6,
+  "unique_threads": 52,
+  "private_workspaces_empty": true,
+  "frozen_sources_inputs_prompts_and_allocations_match": true,
+  "suites": [
+    {
+      "suite": "pilot-v1",
+      "completed": 24,
+      "freeze_sha256": "c171a39fe8b5e5fd621fd5fe73f21926e1fa8ba5634b278492dff3dca6aee146"
+    },
+    {
+      "suite": "pilot-judging",
+      "completed": 3,
+      "freeze_sha256": "aaa1b92a045ea01741f7f2188736639d9a0718edac7fba15bf19d40efc20fbf3"
+    },
+    {
+      "suite": "orizont-confirm-v1",
+      "completed": 22,
+      "freeze_sha256": "d29cb5e1590655611ff503ea62aa4ed0dad1fe40ddd3d91488c120e06c0e79cd"
+    },
+    {
+      "suite": "confirm-judging-a",
+      "completed": 1,
+      "freeze_sha256": "64a573b9a48cc43060f5520b41e24f4ca3cd3a32c696d4e3f29d2c0036f019b1"
+    },
+    {
+      "suite": "confirm-judging-b",
+      "completed": 1,
+      "freeze_sha256": "53e93524f683e2a8437d3423c4d2632cc5908da40f7b09ec2b6db39b40bd5a1f"
+    },
+    {
+      "suite": "confirm-judging-c",
+      "completed": 1,
+      "freeze_sha256": "9e8eeedc7a784833a915d0c76340066edd15bb36e88ceee89ad397521027ee16"
+    }
+  ],
+  "limitations": "Read/environment confinement verified. This audit does not attest backend identity or universal network isolation."
+}

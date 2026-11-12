@@ -1,0 +1,80 @@
+{
+  "campaign_id": "pilot-judging",
+  "created_at": "2026-11-12T12:56:47.226893+00:00",
+  "purpose": "Anonymous LLM judgment; not an additional model robustness trial",
+  "source_freeze_sha256": "c171a39fe8b5e5fd621fd5fe73f21926e1fa8ba5634b278492dff3dca6aee146",
+  "case_ids": [
+    "review_001",
+    "review_002",
+    "review_003"
+  ],
+  "selected_source_run_ids": [
+    "pilot-sol",
+    "pilot-terra"
+  ],
+  "allocation": [
+    {
+      "run_id": "judge1",
+      "model": "gpt-6.1-terra",
+      "case_ids": [
+        "review_001"
+      ],
+      "phase": "anonymous-judgment"
+    },
+    {
+      "run_id": "judge2",
+      "model": "gpt-6.1-terra",
+      "case_ids": [
+        "review_002"
+      ],
+      "phase": "anonymous-judgment"
+    },
+    {
+      "run_id": "judge3",
+      "model": "gpt-6.1-terra",
+      "case_ids": [
+        "review_003"
+      ],
+      "phase": "anonymous-judgment"
+    }
+  ],
+  "prompt_profile": "standard",
+  "reasoning_effort": "medium",
+  "timeout_seconds": 600,
+  "prompt_sha256": {
+    "review_001": "54cc8e8249bb0795f7517456940820b6bb19d38a06c9dd522b04ec1b89747123",
+    "review_002": "54cc8e8249bb0795f7517456940820b6bb19d38a06c9dd522b04ec1b89747123",
+    "review_003": "54cc8e8249bb0795f7517456940820b6bb19d38a06c9dd522b04ec1b89747123"
+  },
+  "runtime_sources": {
+    "scripts/run_eval.py": "e730581a5703f50218675ae7232effc4f8547457310e6e046aa41c24a4cd3a85",
+    "scripts/isolation.py": "f0e80db68e510a7d58e4e601a090bc401a690df3c1b897878ff2f59d9b9cc571",
+    "scripts/campaign_integrity.py": "4f6efb005939ac2959c39c782cec5059282ec9a4ab9710478476228068e39c32"
+  },
+  "limitations": [
+    "The judge is an LLM, not an independent human or an independent model architecture.",
+    "Anonymity removes model/run/variant metadata; document content may reveal its experimental condition.",
+    "Responses from one family are grouped; judgments within a package are not independent.",
+    "Schema and exact-quote validation do not establish semantic correctness of the judgment.",
+    "Four hidden fixed-answer fixtures audit simple judge mistakes and instruction following; passing does not establish general judge robustness.",
+    "Only source runs completed at preparation time are included; later runs require a new judging campaign."
+  ],
+  "files": {
+    "manifest.json": "2b22312717dc1dd26f5565dacbb3cc792df678ba20c3ab067deee44918db7a7b",
+    "mapping.json": "c9f820ebb6b9c1d2fb8f44c29548d094f724c8cca1328e8ae9112d5c620aa0ff",
+    "source_rubric.json": "396f97000673876ef5d517a31f40dc9926672ea72b16aae838d8aef33404b5f9",
+    "source/scripts/run_eval.py": "e730581a5703f50218675ae7232effc4f8547457310e6e046aa41c24a4cd3a85",
+    "source/scripts/isolation.py": "f0e80db68e510a7d58e4e601a090bc401a690df3c1b897878ff2f59d9b9cc571",
+    "source/scripts/campaign_integrity.py": "4f6efb005939ac2959c39c782cec5059282ec9a4ab9710478476228068e39c32",
+    "source/research/blind_review.py": "ec0364c1c95e371b559b08497220a6b4d13b0beb21290f2d56ca782916493af9",
+    "results/review_001/reference.md": "9cf3771eace04bf77b7ce789245ea09cdd4f287c5aec8516a16ae272a425eee0",
+    "results/review_002/reference.md": "9cf3771eace04bf77b7ce789245ea09cdd4f287c5aec8516a16ae272a425eee0",
+    "results/review_003/reference.md": "9cf3771eace04bf77b7ce789245ea09cdd4f287c5aec8516a16ae272a425eee0",
+    "eval/review_001/package.json": "8b6f46ff3dfd74aebac831cc7fa6f533a2b8263d442adae16cabfd8d06bc55d4",
+    "eval/review_001/rubric.md": "d7ed152bb1c9ba1cc2737b8acaeed05518f67aafc5d32132711241e8b200a3c0",
+    "eval/review_002/package.json": "10931961f40d6c2ac268da40a540b6d5bafa5683bf2a70172429428715ffcb41",
+    "eval/review_002/rubric.md": "d7ed152bb1c9ba1cc2737b8acaeed05518f67aafc5d32132711241e8b200a3c0",
+    "eval/review_003/package.json": "9a93f7c2ae8a926d1d46a0c6f861793bc149e52d1eb1e9ad7a09ae2b390dcb88",
+    "eval/review_003/rubric.md": "d7ed152bb1c9ba1cc2737b8acaeed05518f67aafc5d32132711241e8b200a3c0"
+  }
+}

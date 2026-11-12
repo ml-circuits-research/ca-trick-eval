@@ -1,0 +1,53 @@
+# Etalon înainte de inferență
+
+{
+  "task": "Verifică dacă documentele susțin eliberarea tranșei AT-72 pentru proiectul Atria. Stabilește suma autorizabilă la închiderea ferestrei lucrărilor și justifică concluzia folosind contractul și certificatele.",
+  "expected": {
+    "verdict": "not_payable",
+    "amount_eur": 0,
+    "requested_amount_eur": 90000,
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Există o întrerupere de 6 ore, de la 05.11.2026 00:00 până la 05.11.2026 06:00 UTC. Reuniunea acoperă 66 din cele 72 de ore.",
+        "evidence": [
+          "01_contract.md#P1",
+          "01_contract.md#P3",
+          "02_certificate.md#R1",
+          "02_certificate.md#R2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Tranșa AT-72 nu poate fi autorizată; suma este 0 EUR. Plata proporțională cu orele acoperite este exclusă.",
+        "evidence": [
+          "01_contract.md#P1",
+          "01_contract.md#P2",
+          "01_contract.md#P4",
+          "02_certificate.md#R1"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Duratele individuale 24+30+18=72 și ambele repere verificate sunt corecte. A și B se suprapun 6 ore; acea dublă numărare ascunde o întrerupere de 6 ore în alt interval. Recomandarea N3 nu rezultă din controalele locale.",
+        "evidence": [
+          "03_nota.md#N1",
+          "03_nota.md#N2",
+          "03_nota.md#N3",
+          "01_contract.md#P2",
+          "02_certificate.md#R1"
+        ]
+      }
+    ]
+  },
+  "rubric": {
+    "primary": "final_operative_decision",
+    "correct": "Verdictul operativ final și suma sunt corecte; o deschidere falsă corectată explicit se păstrează separat.",
+    "wrong_business_decision": "Recomandarea finală ori suma autorizabilă contrazice regulile și probele. Orice schimbare a tranșei autorizabile este materială.",
+    "usable_wrong_decision": "Recomandare material greșită prezentată ca utilizabilă, rămasă operativă după eventuale corecții.",
+    "abstention": "Nesoluționarea unei decizii determinate de dosar este pierdere de utilitate.",
+    "finding_coverage": "Pass/partial/miss/fail separat de verdict; nu deducem verdict greșit dintr-o omisiune diagnostică.",
+    "infrastructure": "Rezultatul tehnic invalid rămâne în registru; nu este eșec adversarial al modelului.",
+    "judging": "Rubrica v2, pachete anonime, citate exacte și patru controale fixe ale judecătorului. Adjudicare a autorului separată; nu evaluare umană independentă."
+  }
+}

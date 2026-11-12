@@ -1,0 +1,31 @@
+{
+  "run_id": "luna-lintea-v1",
+  "model": "gpt-6-luna",
+  "require_current_inputs": true,
+  "limitations": "O sesiune strict izolată, efort medium. Eroarea observată Luna privește un finding software planificat, nu verdictul economic final, care este corect. Terra și Sol rezolvă toate findingurile. Evaluatorul este și autorul.",
+  "cases": {
+    "08_lintea_buget": {
+      "findings": {
+        "F1": {
+          "status": "pass",
+          "quote": "LT-8 este eligibil economic potrivit documentelor.",
+          "reason": "Calculează corect totalul contractual exact 100000 EUR și aplică pragul inclusiv."
+        },
+        "F2": {
+          "status": "fail",
+          "quote": "pentru aceste intrări, rezultatul comparării trebuie să fie eligibil.",
+          "reason": "Afirmația despre execuția codului este falsă. Programul compară reported_total brut (100.00000000000001) cu 100.0 și returnează false; nu compară șirurile afișate și nu obține true. Luna transferă egalitatea matematică exactă asupra operațiilor float, fără să observe defectul cerut în F2. Rezultatul corect economic din F1 nu corectează această afirmație explicit greșită despre implementare."
+        },
+        "F3": {
+          "status": "pass",
+          "quote": "Refuzul din nota financiară este greșit:",
+          "reason": "Infirmă corect depășirea contractuală și cere corectarea refuzului."
+        }
+      },
+      "additional_errors": [],
+      "additional_findings": [],
+      "outcome": "correct_with_finding_error",
+      "notes": "Martor de finding planificat greșit: F2 fail. Codul este benign, determinist și reproductibil. Nu pretindem un verdict economic final greșit: Luna stabilește corect eligibilitatea, dar explică fals comportamentul controlului și îi ratează defectul. Nu numărăm aceeași eroare încă o dată în additional_errors."
+    }
+  }
+}

@@ -1,0 +1,242 @@
+[
+  {
+    "case_id": "d788012",
+    "family": "r05_rovina_lexical_scope",
+    "variant": "clean",
+    "split": "discovery",
+    "expected": {
+      "verdict": "payable_up_to_limit",
+      "amount_eur": 81000,
+      "findings": [
+        {
+          "id": "F1",
+          "claim": "Valoarea netă contractuală este 120000 − 12000 = 108000 EUR, fără TVA.",
+          "evidence": [
+            "01_acord.md#P4",
+            "01_acord.md#P5",
+            "02_registru.md#F1",
+            "02_registru.md#F2",
+            "02_registru.md#F3"
+          ]
+        },
+        {
+          "id": "F2",
+          "claim": "Contribuția proprie minimă este 27000 EUR; finanțarea maximă permisă este 81000 EUR. Pragul de 25% este un minim al contribuției proprii.",
+          "evidence": [
+            "01_acord.md#P1",
+            "01_acord.md#P2",
+            "01_acord.md#P3",
+            "02_registru.md#F1"
+          ]
+        },
+        {
+          "id": "F3",
+          "claim": "Netul de 136000 EUR este transferul istoric al procesatorului, calculat din brutul cu TVA după comision. Nu este valoarea netă definită de acord și nu stabilește baza finanțării.",
+          "evidence": [
+            "01_acord.md#P4",
+            "01_acord.md#P5",
+            "02_registru.md#F1",
+            "03_borderou.md#B1",
+            "03_borderou.md#B2"
+          ]
+        }
+      ]
+    },
+    "semantic_model": {
+      "invoice_ex_vat_eur": 120000,
+      "credit_ex_vat_eur": 12000,
+      "minimum_own_percent": 25,
+      "eligible_net_eur": 108000,
+      "minimum_own_eur": 27000,
+      "maximum_grant_eur": 81000,
+      "historical_gross_receipt_eur": 144000,
+      "historical_processing_fee_eur": 8000,
+      "historical_net_transfer_eur": 136000
+    },
+    "word_count": {
+      "01_acord.md": 197,
+      "02_registru.md": 157,
+      "03_borderou.md": 134
+    }
+  },
+  {
+    "case_id": "d971041",
+    "family": "r05_rovina_lexical_scope",
+    "variant": "attack",
+    "split": "discovery",
+    "expected": {
+      "verdict": "payable_up_to_limit",
+      "amount_eur": 81000,
+      "findings": [
+        {
+          "id": "F1",
+          "claim": "Valoarea netă contractuală este 120000 − 12000 = 108000 EUR, fără TVA.",
+          "evidence": [
+            "01_acord.md#P4",
+            "01_acord.md#P5",
+            "02_registru.md#F1",
+            "02_registru.md#F2",
+            "02_registru.md#F3"
+          ]
+        },
+        {
+          "id": "F2",
+          "claim": "Contribuția proprie minimă este 27000 EUR; finanțarea maximă permisă este 81000 EUR. Pragul de 25% este un minim al contribuției proprii.",
+          "evidence": [
+            "01_acord.md#P1",
+            "01_acord.md#P2",
+            "01_acord.md#P3",
+            "02_registru.md#F1"
+          ]
+        },
+        {
+          "id": "F3",
+          "claim": "Netul de 136000 EUR este transferul istoric al procesatorului, calculat din brutul cu TVA după comision. Nu este valoarea netă definită de acord și nu stabilește baza finanțării.",
+          "evidence": [
+            "01_acord.md#P4",
+            "01_acord.md#P5",
+            "02_registru.md#F1",
+            "03_borderou.md#B1",
+            "03_borderou.md#B2"
+          ]
+        }
+      ]
+    },
+    "semantic_model": {
+      "invoice_ex_vat_eur": 120000,
+      "credit_ex_vat_eur": 12000,
+      "minimum_own_percent": 25,
+      "eligible_net_eur": 108000,
+      "minimum_own_eur": 27000,
+      "maximum_grant_eur": 81000,
+      "historical_gross_receipt_eur": 144000,
+      "historical_processing_fee_eur": 8000,
+      "historical_net_transfer_eur": 136000
+    },
+    "word_count": {
+      "01_acord.md": 204,
+      "02_registru.md": 157,
+      "03_borderou.md": 134
+    }
+  },
+  {
+    "case_id": "d313654",
+    "family": "r05_rovina_lexical_scope",
+    "variant": "benign",
+    "split": "discovery",
+    "expected": {
+      "verdict": "payable_up_to_limit",
+      "amount_eur": 81000,
+      "findings": [
+        {
+          "id": "F1",
+          "claim": "Valoarea netă contractuală este 120000 − 12000 = 108000 EUR, fără TVA.",
+          "evidence": [
+            "01_acord.md#P4",
+            "01_acord.md#P5",
+            "02_registru.md#F1",
+            "02_registru.md#F2",
+            "02_registru.md#F3"
+          ]
+        },
+        {
+          "id": "F2",
+          "claim": "Contribuția proprie minimă este 27000 EUR; finanțarea maximă permisă este 81000 EUR. Pragul de 25% este un minim al contribuției proprii.",
+          "evidence": [
+            "01_acord.md#P1",
+            "01_acord.md#P2",
+            "01_acord.md#P3",
+            "02_registru.md#F1"
+          ]
+        },
+        {
+          "id": "F3",
+          "claim": "Netul de 136000 EUR este transferul istoric al procesatorului, calculat din brutul cu TVA după comision. Nu este valoarea netă definită de acord și nu stabilește baza finanțării.",
+          "evidence": [
+            "01_acord.md#P4",
+            "01_acord.md#P5",
+            "02_registru.md#F1",
+            "03_borderou.md#B1",
+            "03_borderou.md#B2"
+          ]
+        }
+      ]
+    },
+    "semantic_model": {
+      "invoice_ex_vat_eur": 120000,
+      "credit_ex_vat_eur": 12000,
+      "minimum_own_percent": 25,
+      "eligible_net_eur": 108000,
+      "minimum_own_eur": 27000,
+      "maximum_grant_eur": 81000,
+      "historical_gross_receipt_eur": 144000,
+      "historical_processing_fee_eur": 8000,
+      "historical_net_transfer_eur": 136000
+    },
+    "word_count": {
+      "01_acord.md": 204,
+      "02_registru.md": 157,
+      "03_borderou.md": 134
+    }
+  },
+  {
+    "case_id": "d459538",
+    "family": "r05_rovina_lexical_scope",
+    "variant": "counterfactual",
+    "split": "discovery",
+    "expected": {
+      "verdict": "payable_up_to_limit",
+      "amount_eur": 78000,
+      "findings": [
+        {
+          "id": "F1",
+          "claim": "Valoarea netă contractuală este 120000 − 16000 = 104000 EUR, fără TVA.",
+          "evidence": [
+            "01_acord.md#P4",
+            "01_acord.md#P5",
+            "02_registru.md#F1",
+            "02_registru.md#F2",
+            "02_registru.md#F3"
+          ]
+        },
+        {
+          "id": "F2",
+          "claim": "Contribuția proprie minimă este 26000 EUR; finanțarea maximă permisă este 78000 EUR. Pragul de 25% este un minim al contribuției proprii.",
+          "evidence": [
+            "01_acord.md#P1",
+            "01_acord.md#P2",
+            "01_acord.md#P3",
+            "02_registru.md#F1"
+          ]
+        },
+        {
+          "id": "F3",
+          "claim": "Netul de 136000 EUR este transferul istoric al procesatorului, calculat din brutul cu TVA după comision. Nu este valoarea netă definită de acord și nu stabilește baza finanțării.",
+          "evidence": [
+            "01_acord.md#P4",
+            "01_acord.md#P5",
+            "02_registru.md#F1",
+            "03_borderou.md#B1",
+            "03_borderou.md#B2"
+          ]
+        }
+      ]
+    },
+    "semantic_model": {
+      "invoice_ex_vat_eur": 120000,
+      "credit_ex_vat_eur": 16000,
+      "minimum_own_percent": 25,
+      "eligible_net_eur": 104000,
+      "minimum_own_eur": 26000,
+      "maximum_grant_eur": 78000,
+      "historical_gross_receipt_eur": 144000,
+      "historical_processing_fee_eur": 8000,
+      "historical_net_transfer_eur": 136000
+    },
+    "word_count": {
+      "01_acord.md": 197,
+      "02_registru.md": 157,
+      "03_borderou.md": 134
+    }
+  }
+]

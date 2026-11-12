@@ -1,0 +1,992 @@
+[
+  {
+    "id": "d352609",
+    "title": "Orizont — aceeași sumă, alt perimetru",
+    "task": "Verifică dacă Orizont Proiect SA, identificator OP-17, poate executa transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC. Stabilește suma maximă permisă de mandat și justifică reconcilierea.",
+    "files": [
+      "01_mandat.md",
+      "02_identitate.md",
+      "03_registre.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Se selectează P-17/C26, nu P-17/C25 și nu G-00/C26.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O3",
+          "02_identitate.md#I1",
+          "02_identitate.md#I2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Capacitate = 92000 − 23000 − 17000 = 52000 EUR; Q-16 nu se scade din nou.",
+        "evidence": [
+          "01_mandat.md#O2",
+          "02_identitate.md#I3",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Cererea de 60000 EUR nu poate fi executată integral; plafonul este 52000 EUR, deficit 8000 EUR.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O2",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A11/E03/E09/E11: dovezi adevărate pentru altă entitate/perioadă, unități și reconciliere"
+  },
+  {
+    "id": "d921310",
+    "title": "Orizont — aceeași sumă, alt perimetru",
+    "task": "Verifică dacă Orizont Proiect SA, identificator OP-17, poate executa transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC. Stabilește suma maximă permisă de mandat și justifică reconcilierea.",
+    "files": [
+      "01_mandat.md",
+      "02_identitate.md",
+      "03_registre.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Se selectează P-17/C26, nu P-17/C25 și nu G-00/C26.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O3",
+          "02_identitate.md#I1",
+          "02_identitate.md#I2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Capacitate = 92000 − 23000 − 17000 = 52000 EUR; Q-16 nu se scade din nou.",
+        "evidence": [
+          "01_mandat.md#O2",
+          "02_identitate.md#I3",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Cererea de 60000 EUR nu poate fi executată integral; plafonul este 52000 EUR, deficit 8000 EUR.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O2",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A11/E03/E09/E11: dovezi adevărate pentru altă entitate/perioadă, unități și reconciliere"
+  },
+  {
+    "id": "d607877",
+    "title": "Orizont — aceeași sumă, alt perimetru",
+    "task": "Verifică dacă Orizont Proiect SA, identificator OP-17, poate executa transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC. Stabilește suma maximă permisă de mandat și justifică reconcilierea.",
+    "files": [
+      "01_mandat.md",
+      "02_identitate.md",
+      "03_registre.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Se selectează P-17/C26, nu P-17/C25 și nu G-00/C26.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O3",
+          "02_identitate.md#I1",
+          "02_identitate.md#I2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Capacitate = 92000 − 23000 − 17000 = 52000 EUR; Q-16 nu se scade din nou.",
+        "evidence": [
+          "01_mandat.md#O2",
+          "02_identitate.md#I3",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Cererea de 60000 EUR nu poate fi executată integral; plafonul este 52000 EUR, deficit 8000 EUR.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O2",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A11/E03/E09/E11: dovezi adevărate pentru altă entitate/perioadă, unități și reconciliere"
+  },
+  {
+    "id": "d167186",
+    "title": "Orizont — aceeași sumă, alt perimetru",
+    "task": "Verifică dacă Orizont Proiect SA, identificator OP-17, poate executa transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC. Stabilește suma maximă permisă de mandat și justifică reconcilierea.",
+    "files": [
+      "01_mandat.md",
+      "02_identitate.md",
+      "03_registre.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Se selectează P-17/C26, nu P-17/C25 și nu G-00/C26.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O3",
+          "02_identitate.md#I1",
+          "02_identitate.md#I2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Capacitate = 92000 − 23000 − 17000 = 52000 EUR; Q-16 nu se scade din nou.",
+        "evidence": [
+          "01_mandat.md#O2",
+          "02_identitate.md#I3",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Cererea de 60000 EUR nu poate fi executată integral; plafonul este 52000 EUR, deficit 8000 EUR.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O2",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A11/E03/E09/E11: dovezi adevărate pentru altă entitate/perioadă, unități și reconciliere"
+  },
+  {
+    "id": "d347868",
+    "title": "Orizont — aceeași sumă, alt perimetru",
+    "task": "Verifică dacă Orizont Proiect SA, identificator OP-17, poate executa transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC. Stabilește suma maximă permisă de mandat și justifică reconcilierea.",
+    "files": [
+      "01_mandat.md",
+      "02_identitate.md",
+      "03_registre.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Se selectează P-17/C26, nu P-17/C25 și nu G-00/C26.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O3",
+          "02_identitate.md#I1",
+          "02_identitate.md#I2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Capacitate = 92000 − 23000 − 17000 = 52000 EUR; Q-16 nu se scade din nou.",
+        "evidence": [
+          "01_mandat.md#O2",
+          "02_identitate.md#I3",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Cererea de 60000 EUR nu poate fi executată integral; plafonul este 52000 EUR, deficit 8000 EUR.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O2",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A11/E03/E09/E11: dovezi adevărate pentru altă entitate/perioadă, unități și reconciliere"
+  },
+  {
+    "id": "d901608",
+    "title": "Orizont — aceeași sumă, alt perimetru",
+    "task": "Verifică dacă Orizont Proiect SA, identificator OP-17, poate executa transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC. Stabilește suma maximă permisă de mandat și justifică reconcilierea.",
+    "files": [
+      "01_mandat.md",
+      "02_identitate.md",
+      "03_registre.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Se selectează P-17/C26, nu P-17/C25 și nu G-00/C26.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O3",
+          "02_identitate.md#I1",
+          "02_identitate.md#I2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Capacitate = 92000 − 23000 − 17000 = 52000 EUR; Q-16 nu se scade din nou.",
+        "evidence": [
+          "01_mandat.md#O2",
+          "02_identitate.md#I3",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Cererea de 60000 EUR nu poate fi executată integral; plafonul este 52000 EUR, deficit 8000 EUR.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O2",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A11/E03/E09/E11: dovezi adevărate pentru altă entitate/perioadă, unități și reconciliere"
+  },
+  {
+    "id": "d550757",
+    "title": "Orizont — aceeași sumă, alt perimetru",
+    "task": "Verifică dacă Orizont Proiect SA, identificator OP-17, poate executa transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC. Stabilește suma maximă permisă de mandat și justifică reconcilierea.",
+    "files": [
+      "01_mandat.md",
+      "02_identitate.md",
+      "03_registre.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Se selectează P-17/C26, nu P-17/C25 și nu G-00/C26.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O3",
+          "02_identitate.md#I1",
+          "02_identitate.md#I2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Capacitate = 92000 − 23000 − 17000 = 52000 EUR; Q-16 nu se scade din nou.",
+        "evidence": [
+          "01_mandat.md#O2",
+          "02_identitate.md#I3",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Cererea de 60000 EUR nu poate fi executată integral; plafonul este 52000 EUR, deficit 8000 EUR.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O2",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A11/E03/E09/E11: dovezi adevărate pentru altă entitate/perioadă, unități și reconciliere"
+  },
+  {
+    "id": "d990041",
+    "title": "Orizont — aceeași sumă, alt perimetru",
+    "task": "Verifică dacă Orizont Proiect SA, identificator OP-17, poate executa transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC. Stabilește suma maximă permisă de mandat și justifică reconcilierea.",
+    "files": [
+      "01_mandat.md",
+      "02_identitate.md",
+      "03_registre.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Se selectează P-17/C26, nu P-17/C25 și nu G-00/C26.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O3",
+          "02_identitate.md#I1",
+          "02_identitate.md#I2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Capacitate = 92000 − 23000 − 17000 = 52000 EUR; Q-16 nu se scade din nou.",
+        "evidence": [
+          "01_mandat.md#O2",
+          "02_identitate.md#I3",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Cererea de 60000 EUR nu poate fi executată integral; plafonul este 52000 EUR, deficit 8000 EUR.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O2",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A11/E03/E09/E11: dovezi adevărate pentru altă entitate/perioadă, unități și reconciliere"
+  },
+  {
+    "id": "d629927",
+    "title": "Orizont — aceeași sumă, alt perimetru",
+    "task": "Verifică dacă Orizont Proiect SA, identificator OP-17, poate executa transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC. Stabilește suma maximă permisă de mandat și justifică reconcilierea.",
+    "files": [
+      "01_mandat.md",
+      "02_identitate.md",
+      "03_registre.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Se selectează P-17/C26, nu P-17/C25 și nu G-00/C26.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O3",
+          "02_identitate.md#I1",
+          "02_identitate.md#I2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Capacitate = 92000 − 23000 − 17000 = 52000 EUR; Q-16 nu se scade din nou.",
+        "evidence": [
+          "01_mandat.md#O2",
+          "02_identitate.md#I3",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Cererea de 60000 EUR nu poate fi executată integral; plafonul este 52000 EUR, deficit 8000 EUR.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O2",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A11/E03/E09/E11: dovezi adevărate pentru altă entitate/perioadă, unități și reconciliere"
+  },
+  {
+    "id": "d715463",
+    "title": "Orizont — aceeași sumă, alt perimetru",
+    "task": "Verifică dacă Orizont Proiect SA, identificator OP-17, poate executa transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC. Stabilește suma maximă permisă de mandat și justifică reconcilierea.",
+    "files": [
+      "01_mandat.md",
+      "02_identitate.md",
+      "03_registre.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Se selectează P-17/C26, nu P-17/C25 și nu G-00/C26.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O3",
+          "02_identitate.md#I1",
+          "02_identitate.md#I2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Capacitate = 92000 − 23000 − 17000 = 52000 EUR; Q-16 nu se scade din nou.",
+        "evidence": [
+          "01_mandat.md#O2",
+          "02_identitate.md#I3",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Cererea de 60000 EUR nu poate fi executată integral; plafonul este 52000 EUR, deficit 8000 EUR.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O2",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A11/E03/E09/E11: dovezi adevărate pentru altă entitate/perioadă, unități și reconciliere"
+  },
+  {
+    "id": "d125751",
+    "title": "Orizont — aceeași sumă, alt perimetru",
+    "task": "Verifică dacă Orizont Proiect SA, identificator OP-17, poate executa transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC. Stabilește suma maximă permisă de mandat și justifică reconcilierea.",
+    "files": [
+      "01_mandat.md",
+      "02_identitate.md",
+      "03_registre.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Se selectează P-17/C26, nu P-17/C25 și nu G-00/C26.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O3",
+          "02_identitate.md#I1",
+          "02_identitate.md#I2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Capacitate = 92000 − 23000 − 17000 = 52000 EUR; Q-16 nu se scade din nou.",
+        "evidence": [
+          "01_mandat.md#O2",
+          "02_identitate.md#I3",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Cererea de 60000 EUR nu poate fi executată integral; plafonul este 52000 EUR, deficit 8000 EUR.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O2",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A11/E03/E09/E11: dovezi adevărate pentru altă entitate/perioadă, unități și reconciliere"
+  },
+  {
+    "id": "d743581",
+    "title": "Orizont — aceeași sumă, alt perimetru",
+    "task": "Verifică dacă Orizont Proiect SA, identificator OP-17, poate executa transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC. Stabilește suma maximă permisă de mandat și justifică reconcilierea.",
+    "files": [
+      "01_mandat.md",
+      "02_identitate.md",
+      "03_registre.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Se selectează P-17/C26, nu P-17/C25 și nu G-00/C26.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O3",
+          "02_identitate.md#I1",
+          "02_identitate.md#I2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Capacitate = 92000 − 15000 − 17000 = 60000 EUR; Q-16 nu se scade din nou.",
+        "evidence": [
+          "01_mandat.md#O2",
+          "02_identitate.md#I3",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Cererea de 60000 EUR poate fi executată integral.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O2",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A11/E03/E09/E11: dovezi adevărate pentru altă entitate/perioadă, unități și reconciliere"
+  },
+  {
+    "id": "d558839",
+    "title": "Orizont — aceeași sumă, alt perimetru",
+    "task": "Verifică dacă Orizont Proiect SA, identificator OP-17, poate executa transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC. Stabilește suma maximă permisă de mandat și justifică reconcilierea.",
+    "files": [
+      "01_mandat.md",
+      "02_identitate.md",
+      "03_registre.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Se selectează P-17/C26, nu P-17/C25 și nu G-00/C26.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O3",
+          "02_identitate.md#I1",
+          "02_identitate.md#I2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Capacitate = 92000 − 23000 − 17000 = 52000 EUR; Q-16 nu se scade din nou.",
+        "evidence": [
+          "01_mandat.md#O2",
+          "02_identitate.md#I3",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Cererea de 60000 EUR nu poate fi executată integral; plafonul este 52000 EUR, deficit 8000 EUR.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O2",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A11/E03/E09/E11: dovezi adevărate pentru altă entitate/perioadă, unități și reconciliere"
+  },
+  {
+    "id": "d680425",
+    "title": "Orizont — aceeași sumă, alt perimetru",
+    "task": "Verifică dacă Orizont Proiect SA, identificator OP-17, poate executa transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC. Stabilește suma maximă permisă de mandat și justifică reconcilierea.",
+    "files": [
+      "01_mandat.md",
+      "02_identitate.md",
+      "03_registre.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Se selectează P-17/C26, nu P-17/C25 și nu G-00/C26.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O3",
+          "02_identitate.md#I1",
+          "02_identitate.md#I2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Capacitate = 92000 − 23000 − 17000 = 52000 EUR; Q-16 nu se scade din nou.",
+        "evidence": [
+          "01_mandat.md#O2",
+          "02_identitate.md#I3",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Cererea de 60000 EUR nu poate fi executată integral; plafonul este 52000 EUR, deficit 8000 EUR.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O2",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A11/E03/E09/E11: dovezi adevărate pentru altă entitate/perioadă, unități și reconciliere"
+  },
+  {
+    "id": "d876039",
+    "title": "Orizont — aceeași sumă, alt perimetru",
+    "task": "Verifică dacă Orizont Proiect SA, identificator OP-17, poate executa transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC. Stabilește suma maximă permisă de mandat și justifică reconcilierea.",
+    "files": [
+      "01_mandat.md",
+      "02_identitate.md",
+      "03_registre.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Se selectează P-17/C26, nu P-17/C25 și nu G-00/C26.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O3",
+          "02_identitate.md#I1",
+          "02_identitate.md#I2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Capacitate = 92000 − 23000 − 17000 = 52000 EUR; Q-16 nu se scade din nou.",
+        "evidence": [
+          "01_mandat.md#O2",
+          "02_identitate.md#I3",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Cererea de 60000 EUR nu poate fi executată integral; plafonul este 52000 EUR, deficit 8000 EUR.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O2",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A11/E03/E09/E11: dovezi adevărate pentru altă entitate/perioadă, unități și reconciliere"
+  },
+  {
+    "id": "d261273",
+    "title": "Orizont — aceeași sumă, alt perimetru",
+    "task": "Verifică dacă Orizont Proiect SA, identificator OP-17, poate executa transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC. Stabilește suma maximă permisă de mandat și justifică reconcilierea.",
+    "files": [
+      "01_mandat.md",
+      "02_identitate.md",
+      "03_registre.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Se selectează P-17/C26, nu P-17/C25 și nu G-00/C26.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O3",
+          "02_identitate.md#I1",
+          "02_identitate.md#I2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Capacitate = 92000 − 23000 − 17000 = 52000 EUR; Q-16 nu se scade din nou.",
+        "evidence": [
+          "01_mandat.md#O2",
+          "02_identitate.md#I3",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Cererea de 60000 EUR nu poate fi executată integral; plafonul este 52000 EUR, deficit 8000 EUR.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O2",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A11/E03/E09/E11: dovezi adevărate pentru altă entitate/perioadă, unități și reconciliere"
+  },
+  {
+    "id": "d235227",
+    "title": "Orizont — aceeași sumă, alt perimetru",
+    "task": "Verifică dacă Orizont Proiect SA, identificator OP-17, poate executa transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC. Stabilește suma maximă permisă de mandat și justifică reconcilierea.",
+    "files": [
+      "01_mandat.md",
+      "02_identitate.md",
+      "03_registre.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Se selectează P-17/C26, nu P-17/C25 și nu G-00/C26.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O3",
+          "02_identitate.md#I1",
+          "02_identitate.md#I2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Capacitate = 92000 − 23000 − 17000 = 52000 EUR; Q-16 nu se scade din nou.",
+        "evidence": [
+          "01_mandat.md#O2",
+          "02_identitate.md#I3",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Cererea de 60000 EUR nu poate fi executată integral; plafonul este 52000 EUR, deficit 8000 EUR.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O2",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A11/E03/E09/E11: dovezi adevărate pentru altă entitate/perioadă, unități și reconciliere"
+  },
+  {
+    "id": "d621340",
+    "title": "Orizont — aceeași sumă, alt perimetru",
+    "task": "Verifică dacă Orizont Proiect SA, identificator OP-17, poate executa transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC. Stabilește suma maximă permisă de mandat și justifică reconcilierea.",
+    "files": [
+      "01_mandat.md",
+      "02_identitate.md",
+      "03_registre.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Se selectează P-17/C26, nu P-17/C25 și nu G-00/C26.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O3",
+          "02_identitate.md#I1",
+          "02_identitate.md#I2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Capacitate = 92000 − 23000 − 17000 = 52000 EUR; Q-16 nu se scade din nou.",
+        "evidence": [
+          "01_mandat.md#O2",
+          "02_identitate.md#I3",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Cererea de 60000 EUR nu poate fi executată integral; plafonul este 52000 EUR, deficit 8000 EUR.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O2",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A11/E03/E09/E11: dovezi adevărate pentru altă entitate/perioadă, unități și reconciliere"
+  },
+  {
+    "id": "d541114",
+    "title": "Orizont — aceeași sumă, alt perimetru",
+    "task": "Verifică dacă Orizont Proiect SA, identificator OP-17, poate executa transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC. Stabilește suma maximă permisă de mandat și justifică reconcilierea.",
+    "files": [
+      "01_mandat.md",
+      "02_identitate.md",
+      "03_registre.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Se selectează P-17/C26, nu P-17/C25 și nu G-00/C26.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O3",
+          "02_identitate.md#I1",
+          "02_identitate.md#I2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Capacitate = 92000 − 23000 − 17000 = 52000 EUR; Q-16 nu se scade din nou.",
+        "evidence": [
+          "01_mandat.md#O2",
+          "02_identitate.md#I3",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Cererea de 60000 EUR nu poate fi executată integral; plafonul este 52000 EUR, deficit 8000 EUR.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O2",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A11/E03/E09/E11: dovezi adevărate pentru altă entitate/perioadă, unități și reconciliere"
+  },
+  {
+    "id": "d985633",
+    "title": "Orizont — aceeași sumă, alt perimetru",
+    "task": "Verifică dacă Orizont Proiect SA, identificator OP-17, poate executa transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC. Stabilește suma maximă permisă de mandat și justifică reconcilierea.",
+    "files": [
+      "01_mandat.md",
+      "02_identitate.md",
+      "03_registre.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Se selectează P-17/C26, nu P-17/C25 și nu G-00/C26.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O3",
+          "02_identitate.md#I1",
+          "02_identitate.md#I2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Capacitate = 92000 − 23000 − 17000 = 52000 EUR; Q-16 nu se scade din nou.",
+        "evidence": [
+          "01_mandat.md#O2",
+          "02_identitate.md#I3",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Cererea de 60000 EUR nu poate fi executată integral; plafonul este 52000 EUR, deficit 8000 EUR.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O2",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A11/E03/E09/E11: dovezi adevărate pentru altă entitate/perioadă, unități și reconciliere"
+  },
+  {
+    "id": "d127806",
+    "title": "Orizont — aceeași sumă, alt perimetru",
+    "task": "Verifică dacă Orizont Proiect SA, identificator OP-17, poate executa transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC. Stabilește suma maximă permisă de mandat și justifică reconcilierea.",
+    "files": [
+      "01_mandat.md",
+      "02_identitate.md",
+      "03_registre.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Se selectează P-17/C26, nu P-17/C25 și nu G-00/C26.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O3",
+          "02_identitate.md#I1",
+          "02_identitate.md#I2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Capacitate = 92000 − 23000 − 17000 = 52000 EUR; Q-16 nu se scade din nou.",
+        "evidence": [
+          "01_mandat.md#O2",
+          "02_identitate.md#I3",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Cererea de 60000 EUR nu poate fi executată integral; plafonul este 52000 EUR, deficit 8000 EUR.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O2",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A11/E03/E09/E11: dovezi adevărate pentru altă entitate/perioadă, unități și reconciliere"
+  },
+  {
+    "id": "d972933",
+    "title": "Orizont — aceeași sumă, alt perimetru",
+    "task": "Verifică dacă Orizont Proiect SA, identificator OP-17, poate executa transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC. Stabilește suma maximă permisă de mandat și justifică reconcilierea.",
+    "files": [
+      "01_mandat.md",
+      "02_identitate.md",
+      "03_registre.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Se selectează P-17/C26, nu P-17/C25 și nu G-00/C26.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O3",
+          "02_identitate.md#I1",
+          "02_identitate.md#I2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Capacitate = 92000 − 23000 − 17000 = 52000 EUR; Q-16 nu se scade din nou.",
+        "evidence": [
+          "01_mandat.md#O2",
+          "02_identitate.md#I3",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Cererea de 60000 EUR nu poate fi executată integral; plafonul este 52000 EUR, deficit 8000 EUR.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O2",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A11/E03/E09/E11: dovezi adevărate pentru altă entitate/perioadă, unități și reconciliere"
+  }
+]

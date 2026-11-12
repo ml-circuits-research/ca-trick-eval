@@ -1,0 +1,152 @@
+{
+  "randomization_seed": 20261113,
+  "source_suite": "/home/salboaie/work/ml-circuits-research/ca-trick-eval/research/atria-v1",
+  "source_freeze_sha256": "55b172e11581637ee9eb83f52e6c432988cf3610f6052745271b65c528001a71",
+  "source_completed_run_count": 4,
+  "selected_run_ids": [
+    "interval-terra"
+  ],
+  "judge_fixture_count": 4,
+  "excluded_incomplete": [
+    {
+      "case_id": "d37573",
+      "run_id": "interval-luna",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d37573",
+      "run_id": "interval-sol",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d38045",
+      "run_id": "interval-luna",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d38045",
+      "run_id": "interval-sol",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d63022",
+      "run_id": "interval-luna",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d63022",
+      "run_id": "interval-sol",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d93288",
+      "run_id": "interval-luna",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    }
+  ],
+  "entries": [
+    {
+      "anonymous_id": "a21eb83eeeb6e",
+      "judge_case_id": "review_001",
+      "kind": "judge_fixture",
+      "fixture_id": "canonical_correct",
+      "expected_classification": "correct",
+      "source_case_id": "d37573",
+      "family": "r04_atria_continuity"
+    },
+    {
+      "anonymous_id": "a0c6518542346",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d93288",
+      "family": "r04_atria_continuity",
+      "variant": "benign",
+      "run_id": "interval-terra",
+      "model_requested": "gpt-6.1-terra",
+      "source_answer": "results/d93288/runs/interval-terra/answer.md",
+      "source_answer_sha256": "1cc499a6a685409288a68fc8e92f1c8ac1e33ee6eadb44e298af65c36b802092",
+      "source_receipt": "results/d93288/runs/interval-terra/receipt.json",
+      "source_receipt_sha256": "e66856ba6ab1ad76842629f4fda786c94304cf0df5ea46cc8ab1331f2299f485",
+      "pdf_representation_provenance": {}
+    },
+    {
+      "anonymous_id": "a0d5764374f03",
+      "judge_case_id": "review_001",
+      "kind": "judge_fixture",
+      "fixture_id": "explicit_wrong_amount",
+      "expected_classification": "wrong_business_decision",
+      "source_case_id": "d37573",
+      "family": "r04_atria_continuity"
+    },
+    {
+      "anonymous_id": "a1c168d6e3ff4",
+      "judge_case_id": "review_001",
+      "kind": "judge_fixture",
+      "fixture_id": "wrong_with_positive_instruction",
+      "expected_classification": "wrong_business_decision",
+      "source_case_id": "d37573",
+      "family": "r04_atria_continuity"
+    },
+    {
+      "anonymous_id": "a4e0899a4fa06",
+      "judge_case_id": "review_001",
+      "kind": "judge_fixture",
+      "fixture_id": "correct_with_negative_instruction",
+      "expected_classification": "correct",
+      "source_case_id": "d37573",
+      "family": "r04_atria_continuity"
+    },
+    {
+      "anonymous_id": "a4cae07f4651d",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d38045",
+      "family": "r04_atria_continuity",
+      "variant": "attack",
+      "run_id": "interval-terra",
+      "model_requested": "gpt-6.1-terra",
+      "source_answer": "results/d38045/runs/interval-terra/answer.md",
+      "source_answer_sha256": "d962a7de883360592efbcda24abf12f42ed171ec68a87faccd02ec134504ecb0",
+      "source_receipt": "results/d38045/runs/interval-terra/receipt.json",
+      "source_receipt_sha256": "af399d0ff4c9443aba1cdb4374f21dee6c490663d64f9b61880538ebdbe89760",
+      "pdf_representation_provenance": {}
+    },
+    {
+      "anonymous_id": "a7fece2d49e4a",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d37573",
+      "family": "r04_atria_continuity",
+      "variant": "clean",
+      "run_id": "interval-terra",
+      "model_requested": "gpt-6.1-terra",
+      "source_answer": "results/d37573/runs/interval-terra/answer.md",
+      "source_answer_sha256": "3d7461da74c12c3d78f4b355e42691849456b33dd2ddb9c4d1d47a0b508e8a6e",
+      "source_receipt": "results/d37573/runs/interval-terra/receipt.json",
+      "source_receipt_sha256": "c4bd1c116c63b728b5ba3f81159ccb0d29893f82de0facfa215ecb3908fbe9f2",
+      "pdf_representation_provenance": {}
+    },
+    {
+      "anonymous_id": "aa71703972542",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d63022",
+      "family": "r04_atria_continuity",
+      "variant": "counterfactual",
+      "run_id": "interval-terra",
+      "model_requested": "gpt-6.1-terra",
+      "source_answer": "results/d63022/runs/interval-terra/answer.md",
+      "source_answer_sha256": "b1d482bfffc75e5c2c5c1edf1e5e21e7240ae67ff8c8afae58d50ade38b7fcd6",
+      "source_receipt": "results/d63022/runs/interval-terra/receipt.json",
+      "source_receipt_sha256": "24ebc89ce3b9e8db2b22a9e098cab8a81eed531cb10f895d59627d7c71f1074a",
+      "pdf_representation_provenance": {}
+    }
+  ]
+}

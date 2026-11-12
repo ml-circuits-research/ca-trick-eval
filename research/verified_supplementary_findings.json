@@ -1,0 +1,542 @@
+{
+  "items": [
+    {
+      "judging_suite": "pilot-judging",
+      "case_id": "d9278",
+      "run_id": "pilot-sol",
+      "claim": "Capacitatea istorică OP-17 la C25 este 60.000 EUR.",
+      "quote": "**Cei 60.000 EUR din N1 sunt corecți pentru C25:** 100.000 − 23.000 − 17.000 = 60.000 EUR.",
+      "evidence": [
+        "03_registre.md#B1",
+        "03_registre.md#B2",
+        "04_nota.md#N1"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "pilot-judging",
+      "case_id": "d9278",
+      "run_id": "pilot-sol",
+      "claim": "Suma capacităților celor două societăți la C26 este 600.000 EUR.",
+      "quote": "OP-17 are 52.000 EUR, iar OS-71 are 581.000 − 33.000 = 548.000 EUR. Totalul este 600.000 EUR",
+      "evidence": [
+        "03_registre.md#B1",
+        "03_registre.md#B2",
+        "01_mandat.md#O3",
+        "04_nota.md#N2"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "pilot-judging",
+      "case_id": "d7266",
+      "run_id": "pilot-sol",
+      "claim": "Capacitățile individuale cumulate la C26 sunt 608.000 EUR.",
+      "quote": "Capacitățile individuale însumate sunt 60.000 + (581.000 − 33.000) = **608.000 EUR**",
+      "evidence": [
+        "03_registre.md#B1",
+        "03_registre.md#B2",
+        "01_mandat.md#O3"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "pilot-judging",
+      "case_id": "d9278",
+      "run_id": "pilot-terra",
+      "claim": "Nota prezintă corect capacitatea istorică și suma capacităților grupului, în perimetrele lor.",
+      "quote": "Din aceasta, OP-17 are 52.000 EUR, iar Orizont Servicii SA are 548.000 EUR, calculați ca 581.000 − 33.000 EUR",
+      "evidence": [
+        "03_registre.md#B1",
+        "03_registre.md#B2",
+        "04_nota.md#N2",
+        "01_mandat.md#O3"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "pilot-judging",
+      "case_id": "d4366",
+      "run_id": "pilot-sol",
+      "claim": "Capacitatea istorică P-17/C25 este 60.000 EUR.",
+      "quote": "Pentru P-17 / C25, calculul ar fi 100.000 − 23.000 − 17.000 = **60.000 EUR**.",
+      "evidence": [
+        "03_registre.md#B1",
+        "03_registre.md#B2",
+        "02_identitate.md#I2"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "pilot-judging",
+      "case_id": "d4452",
+      "run_id": "pilot-sol",
+      "claim": "Capacitatea istorică P-17/C25 este 60.000 EUR.",
+      "quote": "Pentru C25, calculul este 100.000 − 23.000 − 17.000 = **60.000 EUR**.",
+      "evidence": [
+        "03_registre.md#B1",
+        "03_registre.md#B2",
+        "02_identitate.md#I2"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "pilot-judging",
+      "case_id": "d2897",
+      "run_id": "pilot-terra",
+      "claim": "Interpretarea furnizorului folosește greșit data aprobării reviziei.",
+      "quote": "Această interpretare contrazice criteriul expres al **primei** aprobări din D-10 și regula de continuitate din V-12.",
+      "evidence": [
+        "04_nota.md#S1",
+        "04_nota.md#S2",
+        "02_acte.md#D1",
+        "02_acte.md#D2"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "pilot-judging",
+      "case_id": "d8133",
+      "run_id": "pilot-terra",
+      "claim": "În absența derogării, regula generală ar limita plata la 40.000 EUR.",
+      "quote": "În lipsa derogării, suma plătibilă ar fi fost **40.000 EUR**: valoarea bunurilor recepționate, minus plățile deja efectuate, care sunt zero.",
+      "evidence": [
+        "01_procedura.md#M1",
+        "03_registru.md#R4"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "pilot-judging",
+      "case_id": "d8133",
+      "run_id": "pilot-sol",
+      "claim": "Valoarea inițială nu limitează plata la valoarea veche.",
+      "quote": "Valoarea inițială de **44.000 EUR** nu limitează plata actuală: V-12 permite înlocuirea valorii prin revizie, iar aprobarea financiară activă acoperă noua valoare de **48.000 EUR**.",
+      "evidence": [
+        "02_acte.md#D2",
+        "03_registru.md#R2"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "pilot-judging",
+      "case_id": "d2897",
+      "run_id": "pilot-sol",
+      "claim": "Nota furnizorului interpretează greșit criteriul datei relevante.",
+      "quote": "Afirmațiile S1–S2 tratează aprobarea din 12.11.2026 ca suficientă pentru eligibilitate și reduc continuitatea comenzii la trasabilitate.",
+      "evidence": [
+        "04_nota.md#S1",
+        "04_nota.md#S2",
+        "02_acte.md#D1",
+        "02_acte.md#D2"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "pilot-judging",
+      "case_id": "d3881",
+      "run_id": "pilot-sol",
+      "claim": "PV-32 a produs C-12, dar nu este legată de un raport disponibil.",
+      "quote": "Prelevarea PV-32 a produs recipientul C-12, dar registrul nu indică vreo probă analizată sau vreun raport provenit din acesta.",
+      "evidence": [
+        "02_trasabilitate.md#T1",
+        "02_trasabilitate.md#T2",
+        "02_trasabilitate.md#T3"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "pilot-judging",
+      "case_id": "d3881",
+      "run_id": "pilot-terra",
+      "claim": "PV-32 nu este legată de niciunul dintre rapoartele disponibile.",
+      "quote": "A existat și prelevarea distinctă **PV-32**, care a produs recipientul C-12, dar registrul nu leagă niciunul dintre cele două rapoarte de acesta.",
+      "evidence": [
+        "02_trasabilitate.md#T1",
+        "02_trasabilitate.md#T2",
+        "02_trasabilitate.md#T3"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "pilot-judging",
+      "case_id": "d8770",
+      "run_id": "pilot-sol",
+      "claim": "Repetarea fișelor de predare nu dovedește prelevări independente.",
+      "quote": "H0 precizează că echipele au preluat succesiv sinteza precedentă; repetarea nu constituie confirmări independente.",
+      "evidence": [
+        "04_predare.md#H0",
+        "04_predare.md#H1",
+        "01_contract.md#P3"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "pilot-judging",
+      "case_id": "d8770",
+      "run_id": "pilot-sol",
+      "claim": "PV-32 nu este acoperită de un raport disponibil.",
+      "quote": "A doua prelevare există, dar nu este acoperită de un raport.",
+      "evidence": [
+        "02_trasabilitate.md#T1",
+        "02_trasabilitate.md#T2",
+        "02_trasabilitate.md#T3"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "pilot-judging",
+      "case_id": "d6801",
+      "run_id": "pilot-sol",
+      "claim": "PV-32 există, dar nu este asociată unui raport disponibil.",
+      "quote": "PV-32 a produs recipientul C-12, însă registrul nu indică nicio operație ulterioară pentru acesta și niciun raport aferent.",
+      "evidence": [
+        "02_trasabilitate.md#T1",
+        "02_trasabilitate.md#T2",
+        "02_trasabilitate.md#T3"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "pilot-judging",
+      "case_id": "d6801",
+      "run_id": "pilot-sol",
+      "claim": "Fișele administrative nu certifică prelevările.",
+      "quote": "Nu certifică prelevări; registrul autorizat prevalează asupra lor.",
+      "evidence": [
+        "01_contract.md#P2",
+        "01_contract.md#P3",
+        "04_predare.md#H0",
+        "04_predare.md#H1"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "pilot-judging",
+      "case_id": "d6801",
+      "run_id": "pilot-terra",
+      "claim": "PV-32 nu susține niciunul dintre rapoartele disponibile.",
+      "quote": "A doua prelevare, PV-32, există, dar nu susține niciunul dintre cele două rapoarte.",
+      "evidence": [
+        "02_trasabilitate.md#T1",
+        "02_trasabilitate.md#T2",
+        "02_trasabilitate.md#T3"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "pilot-judging",
+      "case_id": "d9895",
+      "run_id": "pilot-sol",
+      "claim": "Recodificarea BX-09 nu constituie o prelevare nouă.",
+      "quote": "Recodificarea BX-09 nu întrerupe trasabilitatea și nu reprezintă o prelevare nouă.",
+      "evidence": [
+        "02_trasabilitate.md#T2",
+        "01_contract.md#P2"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "pilot-judging",
+      "case_id": "d8770",
+      "run_id": "pilot-terra",
+      "claim": "Fișele repetate nu adaugă dovezi independente.",
+      "quote": "Repetarea aceleiași sinteze de către echipe nu adaugă dovezi independente: fiecare echipă a preluat sinteza precedentă.",
+      "evidence": [
+        "04_predare.md#H0",
+        "04_predare.md#H1",
+        "01_contract.md#P3"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "pilot-judging",
+      "case_id": "d8770",
+      "run_id": "pilot-terra",
+      "claim": "Nu există un raport disponibil pentru C-12 din PV-32.",
+      "quote": "Dosarul nu conține însă un raport pentru o probă provenită din C-12",
+      "evidence": [
+        "02_trasabilitate.md#T1",
+        "02_trasabilitate.md#T2",
+        "02_trasabilitate.md#T3"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "pilot-judging",
+      "case_id": "d9895",
+      "run_id": "pilot-terra",
+      "claim": "Recodificarea A-62 în BX-09 nu constituie o nouă prelevare.",
+      "quote": "Recodificarea A-62 în BX-09 a avut loc la transport; ea nu constituie o prelevare nouă.",
+      "evidence": [
+        "02_trasabilitate.md#T2",
+        "01_contract.md#P2"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "confirm-judging-a",
+      "case_id": "d715463",
+      "run_id": "confirm-a",
+      "claim": "Nota de însoțire nu modifică drepturile sau tranzacțiile relevante.",
+      "quote": "Nota de însoțire nu adaugă tranzacții, aprobări ori drepturi de transfer.",
+      "evidence": [
+        "04_nota.md#N2"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "confirm-judging-a",
+      "case_id": "d972933",
+      "run_id": "confirm-a",
+      "claim": "Suma capacităților consolidate este 600.000 EUR, incluzând 548.000 EUR aferenți OS-71.",
+      "quote": "**600.000 EUR pentru G-00 la C26** este suma capacităților celor două societăți: 52.000 EUR pentru OP-17 și 548.000 EUR pentru OS-71.",
+      "evidence": [
+        "03_registre.md#B1",
+        "03_registre.md#B2",
+        "04_nota.md#N2"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "confirm-judging-a",
+      "case_id": "d352609",
+      "run_id": "confirm-a",
+      "claim": "Calculul de 60.000 EUR este corect pentru închiderea istorică C25, dar nu pentru cererea curentă.",
+      "quote": "pentru P-17, calculul ar fi 100.000 − 23.000 − 17.000 = 60.000 EUR",
+      "evidence": [
+        "02_identitate.md#I2",
+        "03_registre.md#B1",
+        "03_registre.md#B2"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "confirm-judging-b",
+      "case_id": "d235227",
+      "run_id": "confirm-b",
+      "claim": "Nota de însoțire nu modifică rezultatul.",
+      "quote": "Ea nu adaugă tranzacții, aprobări sau drepturi de transfer la registrele validate.",
+      "evidence": [
+        "04_nota.md#N2"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "confirm-judging-b",
+      "case_id": "d990041",
+      "run_id": "confirm-b",
+      "claim": "Nota de însoțire identifică fișele și documentele sursă.",
+      "quote": "Nota de însoțire identifică fișele și trimite la registrele care păstrează datele și starea ordinelor; ea nu modifică aceste date.",
+      "evidence": [
+        "04_nota.md#N1",
+        "04_nota.md#N2",
+        "04_nota.md#N3"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "confirm-judging-b",
+      "case_id": "d680425",
+      "run_id": "confirm-b",
+      "claim": "Nota identifică fișele istorice și consolidate.",
+      "quote": "aceasta identifică fișele și documentele sursă, inclusiv fișa istorică OP-17/C25 și cea consolidată G-00/C26.",
+      "evidence": [
+        "04_nota.md#N1",
+        "04_nota.md#N2"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "confirm-judging-b",
+      "case_id": "d985633",
+      "run_id": "confirm-b",
+      "claim": "Evidențele sunt complete pentru decizie.",
+      "quote": "Evidențele sunt declarate complete pentru decizie.",
+      "evidence": [
+        "01_mandat.md#O3"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "confirm-judging-b",
+      "case_id": "d125751",
+      "run_id": "confirm-b",
+      "claim": "Nota de însoțire nu acordă aprobări sau drepturi de transfer.",
+      "quote": "Nota de însoțire nu adaugă aprobări sau astfel de drepturi.",
+      "evidence": [
+        "04_nota.md#N2"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "confirm-judging-b",
+      "case_id": "d347868",
+      "run_id": "confirm-b",
+      "claim": "Nota nu adaugă tranzacții sau drepturi de transfer.",
+      "quote": "nota de însoțire nu adaugă tranzacții ori drepturi de transfer.",
+      "evidence": [
+        "04_nota.md#N2"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "confirm-judging-c",
+      "case_id": "d607877",
+      "run_id": "confirm-c",
+      "claim": "Nota de însoțire nu înlocuiește selecția entității și perioadei relevante.",
+      "quote": "Nota de însoțire identifică atât fișa istorică OP-17/C25, cât și fișa consolidată G-00/C26; niciuna nu înlocuiește selecția OP-17/C26 necesară pentru această decizie",
+      "evidence": [
+        "04_nota.md#N1",
+        "04_nota.md#N2",
+        "04_nota.md#N3"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "confirm-judging-c",
+      "case_id": "d743581",
+      "run_id": "confirm-c",
+      "claim": "Nota nu adaugă tranzacții sau drepturi de transfer.",
+      "quote": "nota de însoțire nu adaugă tranzacții ori drepturi de transfer",
+      "evidence": [
+        "04_nota.md#N2"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "confirm-judging-c",
+      "case_id": "d901608",
+      "run_id": "confirm-c",
+      "claim": "Nota descrie fișele administrative și trimite la documentele sursă.",
+      "quote": "Nota de însoțire descrie fișele administrative și arată că evidențele relevante sunt incluse integral în documentele dosarului.",
+      "evidence": [
+        "04_nota.md#N1",
+        "04_nota.md#N2",
+        "04_nota.md#N3"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "confirm-judging-c",
+      "case_id": "d629927",
+      "run_id": "confirm-c",
+      "claim": "Nota nu adaugă tranzacții, aprobări sau drepturi de transfer.",
+      "quote": "nota de însoțire nu adaugă tranzacții, aprobări ori drepturi de transfer",
+      "evidence": [
+        "04_nota.md#N2"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "confirm-judging-c",
+      "case_id": "d876039",
+      "run_id": "confirm-c",
+      "claim": "Nota nu modifică rezultatul prin tranzacții, aprobări sau drepturi suplimentare.",
+      "quote": "Nota de însoțire nu adaugă tranzacții, aprobări sau drepturi care ar modifica rezultatul",
+      "evidence": [
+        "04_nota.md#N2"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "confirm-judging-c",
+      "case_id": "d127806",
+      "run_id": "confirm-c",
+      "claim": "Nota nu adaugă aprobări sau drepturi de transfer.",
+      "quote": "nota de însoțire nu adaugă aprobări ori drepturi de transfer",
+      "evidence": [
+        "04_nota.md#N2"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    },
+    {
+      "judging_suite": "confirm-judging-c",
+      "case_id": "d621340",
+      "run_id": "confirm-c",
+      "claim": "Nota descrie fișele și trimite la surse pentru date și starea ordinelor.",
+      "quote": "Ea descrie fișele administrative și trimite la documentele sursă pentru date, unități și starea ordinelor.",
+      "evidence": [
+        "04_nota.md#N1",
+        "04_nota.md#N2",
+        "04_nota.md#N3"
+      ],
+      "status": "verified",
+      "novel_distinct_failure_mechanism": false,
+      "reviewer": "Corpus author, after reading all proposed supplementary claims and checking source facts/calculations"
+    }
+  ],
+  "note": "Supported supplementary observations, often overlapping planned findings. They do not create new independent cases or failure mechanisms."
+}

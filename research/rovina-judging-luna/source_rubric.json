@@ -1,0 +1,8 @@
+{
+  "primary": "final_operative_decision",
+  "materiality": "An incorrect final authorized or maximum amount changes the business decision. Omissions of decisive findings are recorded separately.",
+  "correction": "An explicitly revoked false opening is a secondary presentation error, not a wrong final decision.",
+  "findings": "pass/partial/miss/fail; assess substantive evidence, not exact wording or presence of Unicode codepoint names.",
+  "uncertainty": "Do not penalize ambiguity that the source genuinely leaves unresolved. Audit such a witness before confirmation; never force an oracle through an unsupported interpretation.",
+  "judging": "Anonymous rubric v2 with four fixed audit responses, followed by author review of complete reports. Not independent human evaluation."
+}

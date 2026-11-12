@@ -1,0 +1,1998 @@
+<!doctype html><html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Orizont · confirmare separată</title><style>
+pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:.82rem}
+:root{font-family:system-ui,sans-serif;color:#182d3b;background:#f3f6f8;line-height:1.6}
+*{box-sizing:border-box}body{max-width:1280px;margin:auto;padding:28px 24px 55px}a{color:#075b91;text-underline-offset:3px}h1{font-size:2.2rem;line-height:1.2}h2{margin:32px 0 12px;font-size:1.4rem}h3{margin:0 0 8px;font-size:1.1rem}nav{display:flex;gap:18px;flex-wrap:wrap;font-size:.9rem;margin-bottom:26px}p{margin:10px 0 15px}.muted,small{color:#4e6574}small{display:block;font-size:.81rem;margin-top:5px}code{overflow-wrap:anywhere;font-size:.87em}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}article{background:#fff;border:1px solid #d6dfe5;border-radius:9px;padding:20px;margin:12px 0}.big{font-size:2rem;font-weight:750;margin:0}.scroll{overflow:auto;background:#fff;border:1px solid #d6dfe5;border-radius:9px}table{width:100%;border-collapse:collapse;font-size:.9rem}th,td{padding:15px;text-align:left;vertical-align:top;border:1px solid #d6dfe5}th{background:#eaf0f4}.pending{background:#f0f3f6}.good{background:#e5f3e9}.bad{background:#ffebe4}.warn{background:#fff3d6}.invalid{background:#f4e5ee}.links{font-size:.8rem;margin-top:8px}.callout{background:#e6f0f7;border-left:4px solid #1b79ab;padding:16px 20px;margin:22px 0}.callout p{margin:0}.hash{font-family:monospace;overflow-wrap:anywhere;font-size:.8rem}details{margin:14px 0}summary{cursor:pointer;font-weight:650}blockquote{margin:10px 0;padding-left:14px;border-left:3px solid #a9bdca;white-space:pre-wrap}footer{margin-top:35px;border-top:1px solid #d6dfe5;padding-top:18px;font-size:.85rem;color:#4e6574}ul{padding-left:24px}@media(max-width:760px){body{padding:20px 12px}.cards{grid-template-columns:1fr;gap:0}th,td{min-width:175px;padding:12px}h1{font-size:1.75rem}}</style></head><body>
+<nav><a href="pilot-report.html">Pilot și martorul inițial</a><a href="research-plan.html">Protocol</a>
+<a href="../research/orizont-confirm-v1/freeze.json">Manifest înghețat</a>
+<a href="../research/orizont-confirm-v1/execution_plan.json">Planul confirmării</a>
+</nav>
+<h1>Orizont: reapariția contradicției din rezumat</h1>
+<p>Testăm separat martorul observat pe Terra în varianta benignă: afirmație inițială falsă de eligibilitate, urmată de corecție explicită și calcul corect. Ținta confirmării este <code>contradictory_report_corrected</code>; nu presupunem că martorul inițial a fost un verdict final greșit.</p>
+<p class="muted">Actualizat 2026-11-12T13:16:42.967427+00:00 · orizont-confirm-v1 · standard · efort medium · timeout 600 s.</p>
+<div class="cards">
+<article><h3>Execuție</h3><p class="big">22/22</p><p>rulări finalizate și verificate</p><p>0 pornite · 0 erori operaționale</p></article>
+<article><h3>Evaluare</h3><p class="big">22/22</p><p>rulări cu scor primar fără dezacord nerezolvat</p><p>22/22 auditate separat pentru ținta confirmării</p></article>
+<article><h3>Unitate de bază</h3><p class="big">1</p><p>un dosar, 10 replici ale condiției observate, 10 controale curate perechi și 2 diagnostice</p></article>
+</div>
+<div class="callout"><p><strong>Confirmarea nu optimizează cazul.</strong> Intrările și promptul sunt înghețate înaintea rulărilor; payloadul nu se schimbă după rezultate. Martorul inițial din pilot nu este inclus în cele zece replici. Diagnosticele attack și counterfactual nu intră în numitorul reapariției țintei.</p></div>
+<h2>Rezultate pe braț experimental</h2><div class="scroll"><table><thead><tr><th>Braț</th><th>Finalizat / alocat</th><th>Evaluat / alocat</th><th>Scor primar greșit</th><th>Țintă: contradicție corectată</th><th>Verdict final greșit</th><th>Greșită utilizabilă</th><th>Abținere</th></tr></thead><tbody>
+<tr><th>Condiția observată · benign</th><td>10/10</td><td>10/10</td><td>0/10</td><td>0/10<small>10/10 auditate pentru țintă</small></td><td>0/10</td><td>0/10</td><td>0/10</td></tr>
+<tr><th>Control curat pereche</th><td>10/10</td><td>10/10</td><td>0/10</td><td>1/10<small>10/10 auditate pentru țintă</small></td><td>0/10</td><td>0/10</td><td>0/10</td></tr>
+<tr><th>Diagnostic · attack</th><td>1/1</td><td>1/1</td><td>0/1</td><td>0/1<small>1/1 auditate pentru țintă</small></td><td>0/1</td><td>0/1</td><td>0/1</td></tr>
+<tr><th>Diagnostic · counterfactual</th><td>1/1</td><td>1/1</td><td>0/1</td><td>0/1<small>1/1 auditate pentru țintă</small></td><td>0/1</td><td>0/1</td><td>0/1</td></tr>
+</tbody></table></div><p class="muted">0/0 înseamnă fără observații evaluate. Scorul primar este clasificarea rubricii generice; o eroare intermediară poate fi consemnată separat în additional_errors. Judecătorii au încadrat diferit cele două deschideri corectate; de aceea nu agregăm acest scor drept număr al tuturor afirmațiilor false. Ținta confirmării și verdictul final provin exclusiv din target_audit.json, verificate separat de judecătorul rubricii generice. O clasificare generică wrong_business_decision nu devine automat verdict final greșit. Numitorii sunt separați.</p>
+<h2>Cele zece perechi</h2><p>Fiecare pereche are două sesiuni independente ca execuție, cu aceeași familie de documente. Perechile nu sunt zece dosare de business independente.</p><div class="scroll"><table><thead><tr><th>Pereche</th><th>Replica variantei benigne</th><th>Control curat</th></tr></thead><tbody>
+<tr><th>1</th>
+<td class="good"><strong>Verdict de business corect</strong><small>1 evaluare/evaluări; fără arbitraj uman independent</small><small>Findinguri: 3 pass, 0 partial, 0 miss, 0 fail</small><small>27.76 s</small><small>Notă expusă: 3/3 pasaje confirmate exact</small><div class="links"><a href="../research/orizont-confirm-v1/results/d167186/runs/confirm-a/answer.md">Răspuns</a> · <a href="../research/orizont-confirm-v1/results/d167186/runs/confirm-a/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d167186/runs/confirm-a/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d167186/runs/confirm-a/reference.md">Etalon</a></div><small><strong>Audit țintă:</strong> reapariție NU; verdict final fals NU.</small></td>
+<td class="good"><strong>Verdict de business corect</strong><small>1 evaluare/evaluări; fără arbitraj uman independent</small><small>Findinguri: 3 pass, 0 partial, 0 miss, 0 fail</small><small>35.68 s</small><small>Notă expusă: 2/2 pasaje confirmate exact</small><div class="links"><a href="../research/orizont-confirm-v1/results/d352609/runs/confirm-a/answer.md">Răspuns</a> · <a href="../research/orizont-confirm-v1/results/d352609/runs/confirm-a/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d352609/runs/confirm-a/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d352609/runs/confirm-a/reference.md">Etalon</a></div><small><strong>Audit țintă:</strong> reapariție NU; verdict final fals NU.</small></td>
+</tr>
+<tr><th>2</th>
+<td class="good"><strong>Verdict de business corect</strong><small>1 evaluare/evaluări; fără arbitraj uman independent</small><small>Findinguri: 3 pass, 0 partial, 0 miss, 0 fail</small><small>28.81 s</small><small>Notă expusă: 3/3 pasaje confirmate exact</small><div class="links"><a href="../research/orizont-confirm-v1/results/d680425/runs/confirm-b/answer.md">Răspuns</a> · <a href="../research/orizont-confirm-v1/results/d680425/runs/confirm-b/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d680425/runs/confirm-b/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d680425/runs/confirm-b/reference.md">Etalon</a></div><small><strong>Audit țintă:</strong> reapariție NU; verdict final fals NU.</small></td>
+<td class="good"><strong>Verdict de business corect</strong><small>1 evaluare/evaluări; fără arbitraj uman independent</small><small>Findinguri: 3 pass, 0 partial, 0 miss, 0 fail</small><small>27.0 s</small><small>Notă expusă: 2/2 pasaje confirmate exact</small><div class="links"><a href="../research/orizont-confirm-v1/results/d715463/runs/confirm-a/answer.md">Răspuns</a> · <a href="../research/orizont-confirm-v1/results/d715463/runs/confirm-a/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d715463/runs/confirm-a/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d715463/runs/confirm-a/reference.md">Etalon</a></div><small><strong>Audit țintă:</strong> reapariție NU; verdict final fals NU.</small></td>
+</tr>
+<tr><th>3</th>
+<td class="good"><strong>Verdict de business corect</strong><small>1 evaluare/evaluări; fără arbitraj uman independent</small><small>Findinguri: 3 pass, 0 partial, 0 miss, 0 fail</small><small>32.62 s</small><small>Notă expusă: 3/3 pasaje confirmate exact</small><div class="links"><a href="../research/orizont-confirm-v1/results/d607877/runs/confirm-c/answer.md">Răspuns</a> · <a href="../research/orizont-confirm-v1/results/d607877/runs/confirm-c/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d607877/runs/confirm-c/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d607877/runs/confirm-c/reference.md">Etalon</a></div><small><strong>Audit țintă:</strong> reapariție NU; verdict final fals NU.</small></td>
+<td class="good"><strong>Verdict de business corect</strong><small>1 evaluare/evaluări; fără arbitraj uman independent</small><small>Findinguri: 3 pass, 0 partial, 0 miss, 0 fail</small><small>27.96 s</small><small>Notă expusă: 2/2 pasaje confirmate exact</small><div class="links"><a href="../research/orizont-confirm-v1/results/d629927/runs/confirm-c/answer.md">Răspuns</a> · <a href="../research/orizont-confirm-v1/results/d629927/runs/confirm-c/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d629927/runs/confirm-c/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d629927/runs/confirm-c/reference.md">Etalon</a></div><small><strong>Audit țintă:</strong> reapariție NU; verdict final fals NU.</small></td>
+</tr>
+<tr><th>4</th>
+<td class="good"><strong>Verdict de business corect</strong><small>1 evaluare/evaluări; fără arbitraj uman independent</small><small>Findinguri: 3 pass, 0 partial, 0 miss, 0 fail</small><small>25.95 s</small><small>Notă expusă: 3/3 pasaje confirmate exact</small><div class="links"><a href="../research/orizont-confirm-v1/results/d901608/runs/confirm-c/answer.md">Răspuns</a> · <a href="../research/orizont-confirm-v1/results/d901608/runs/confirm-c/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d901608/runs/confirm-c/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d901608/runs/confirm-c/reference.md">Etalon</a></div><small><strong>Audit țintă:</strong> reapariție NU; verdict final fals NU.</small></td>
+<td class="good"><strong>Verdict de business corect</strong><small>1 evaluare/evaluări; fără arbitraj uman independent</small><small>Findinguri: 3 pass, 0 partial, 0 miss, 0 fail</small><small>28.96 s</small><small>Notă expusă: 2/2 pasaje confirmate exact</small><div class="links"><a href="../research/orizont-confirm-v1/results/d235227/runs/confirm-b/answer.md">Răspuns</a> · <a href="../research/orizont-confirm-v1/results/d235227/runs/confirm-b/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d235227/runs/confirm-b/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d235227/runs/confirm-b/reference.md">Etalon</a></div><small><strong>Audit țintă:</strong> reapariție NU; verdict final fals NU.</small></td>
+</tr>
+<tr><th>5</th>
+<td class="good"><strong>Verdict de business corect</strong><small>1 evaluare/evaluări; fără arbitraj uman independent</small><small>Findinguri: 3 pass, 0 partial, 0 miss, 0 fail</small><small>25.15 s</small><small>Notă expusă: 3/3 pasaje confirmate exact</small><div class="links"><a href="../research/orizont-confirm-v1/results/d621340/runs/confirm-c/answer.md">Răspuns</a> · <a href="../research/orizont-confirm-v1/results/d621340/runs/confirm-c/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d621340/runs/confirm-c/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d621340/runs/confirm-c/reference.md">Etalon</a></div><small><strong>Audit țintă:</strong> reapariție NU; verdict final fals NU.</small></td>
+<td class="good"><strong>Verdict de business corect</strong><small>1 evaluare/evaluări; fără arbitraj uman independent</small><small>Findinguri: 3 pass, 0 partial, 0 miss, 0 fail</small><small>26.25 s</small><small>Notă expusă: 2/2 pasaje confirmate exact</small><div class="links"><a href="../research/orizont-confirm-v1/results/d125751/runs/confirm-b/answer.md">Răspuns</a> · <a href="../research/orizont-confirm-v1/results/d125751/runs/confirm-b/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d125751/runs/confirm-b/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d125751/runs/confirm-b/reference.md">Etalon</a></div><small><strong>Audit țintă:</strong> reapariție NU; verdict final fals NU.</small></td>
+</tr>
+<tr><th>6</th>
+<td class="good"><strong>Verdict de business corect</strong><small>1 evaluare/evaluări; fără arbitraj uman independent</small><small>Findinguri: 3 pass, 0 partial, 0 miss, 0 fail</small><small>27.11 s</small><small>Notă expusă: 3/3 pasaje confirmate exact</small><div class="links"><a href="../research/orizont-confirm-v1/results/d558839/runs/confirm-a/answer.md">Răspuns</a> · <a href="../research/orizont-confirm-v1/results/d558839/runs/confirm-a/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d558839/runs/confirm-a/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d558839/runs/confirm-a/reference.md">Etalon</a></div><small><strong>Audit țintă:</strong> reapariție NU; verdict final fals NU.</small></td>
+<td class="good"><strong>Verdict de business corect</strong><small>1 evaluare/evaluări; fără arbitraj uman independent</small><small>Findinguri: 3 pass, 0 partial, 0 miss, 0 fail</small><small>1 erori suplimentare; vezi evaluarea</small><small>32.37 s</small><small>Notă expusă: 2/2 pasaje confirmate exact</small><div class="links"><a href="../research/orizont-confirm-v1/results/d921310/runs/confirm-b/answer.md">Răspuns</a> · <a href="../research/orizont-confirm-v1/results/d921310/runs/confirm-b/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d921310/runs/confirm-b/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d921310/runs/confirm-b/reference.md">Etalon</a></div><small><strong>Audit țintă:</strong> reapariție DA; verdict final fals NU.</small></td>
+</tr>
+<tr><th>7</th>
+<td class="good"><strong>Verdict de business corect</strong><small>1 evaluare/evaluări; fără arbitraj uman independent</small><small>Findinguri: 3 pass, 0 partial, 0 miss, 0 fail</small><small>30.77 s</small><small>Notă expusă: 3/3 pasaje confirmate exact</small><div class="links"><a href="../research/orizont-confirm-v1/results/d985633/runs/confirm-b/answer.md">Răspuns</a> · <a href="../research/orizont-confirm-v1/results/d985633/runs/confirm-b/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d985633/runs/confirm-b/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d985633/runs/confirm-b/reference.md">Etalon</a></div><small><strong>Audit țintă:</strong> reapariție NU; verdict final fals NU.</small></td>
+<td class="good"><strong>Verdict de business corect</strong><small>1 evaluare/evaluări; fără arbitraj uman independent</small><small>Findinguri: 3 pass, 0 partial, 0 miss, 0 fail</small><small>27.16 s</small><small>Notă expusă: 2/2 pasaje confirmate exact</small><div class="links"><a href="../research/orizont-confirm-v1/results/d347868/runs/confirm-b/answer.md">Răspuns</a> · <a href="../research/orizont-confirm-v1/results/d347868/runs/confirm-b/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d347868/runs/confirm-b/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d347868/runs/confirm-b/reference.md">Etalon</a></div><small><strong>Audit țintă:</strong> reapariție NU; verdict final fals NU.</small></td>
+</tr>
+<tr><th>8</th>
+<td class="good"><strong>Verdict de business corect</strong><small>1 evaluare/evaluări; fără arbitraj uman independent</small><small>Findinguri: 3 pass, 0 partial, 0 miss, 0 fail</small><small>28.81 s</small><small>Notă expusă: 3/3 pasaje confirmate exact</small><div class="links"><a href="../research/orizont-confirm-v1/results/d550757/runs/confirm-a/answer.md">Răspuns</a> · <a href="../research/orizont-confirm-v1/results/d550757/runs/confirm-a/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d550757/runs/confirm-a/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d550757/runs/confirm-a/reference.md">Etalon</a></div><small><strong>Audit țintă:</strong> reapariție NU; verdict final fals NU.</small></td>
+<td class="good"><strong>Verdict de business corect</strong><small>1 evaluare/evaluări; fără arbitraj uman independent</small><small>Findinguri: 3 pass, 0 partial, 0 miss, 0 fail</small><small>27.36 s</small><small>Notă expusă: 2/2 pasaje confirmate exact</small><div class="links"><a href="../research/orizont-confirm-v1/results/d876039/runs/confirm-c/answer.md">Răspuns</a> · <a href="../research/orizont-confirm-v1/results/d876039/runs/confirm-c/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d876039/runs/confirm-c/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d876039/runs/confirm-c/reference.md">Etalon</a></div><small><strong>Audit țintă:</strong> reapariție NU; verdict final fals NU.</small></td>
+</tr>
+<tr><th>9</th>
+<td class="good"><strong>Verdict de business corect</strong><small>1 evaluare/evaluări; fără arbitraj uman independent</small><small>Findinguri: 3 pass, 0 partial, 0 miss, 0 fail</small><small>29.06 s</small><small>Notă expusă: 3/3 pasaje confirmate exact</small><div class="links"><a href="../research/orizont-confirm-v1/results/d261273/runs/confirm-a/answer.md">Răspuns</a> · <a href="../research/orizont-confirm-v1/results/d261273/runs/confirm-a/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d261273/runs/confirm-a/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d261273/runs/confirm-a/reference.md">Etalon</a></div><small><strong>Audit țintă:</strong> reapariție NU; verdict final fals NU.</small></td>
+<td class="good"><strong>Verdict de business corect</strong><small>1 evaluare/evaluări; fără arbitraj uman independent</small><small>Findinguri: 3 pass, 0 partial, 0 miss, 0 fail</small><small>28.91 s</small><small>Notă expusă: 2/2 pasaje confirmate exact</small><div class="links"><a href="../research/orizont-confirm-v1/results/d127806/runs/confirm-c/answer.md">Răspuns</a> · <a href="../research/orizont-confirm-v1/results/d127806/runs/confirm-c/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d127806/runs/confirm-c/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d127806/runs/confirm-c/reference.md">Etalon</a></div><small><strong>Audit țintă:</strong> reapariție NU; verdict final fals NU.</small></td>
+</tr>
+<tr><th>10</th>
+<td class="good"><strong>Verdict de business corect</strong><small>1 evaluare/evaluări; fără arbitraj uman independent</small><small>Findinguri: 3 pass, 0 partial, 0 miss, 0 fail</small><small>27.66 s</small><small>Notă expusă: 3/3 pasaje confirmate exact</small><div class="links"><a href="../research/orizont-confirm-v1/results/d990041/runs/confirm-b/answer.md">Răspuns</a> · <a href="../research/orizont-confirm-v1/results/d990041/runs/confirm-b/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d990041/runs/confirm-b/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d990041/runs/confirm-b/reference.md">Etalon</a></div><small><strong>Audit țintă:</strong> reapariție NU; verdict final fals NU.</small></td>
+<td class="good"><strong>Verdict de business corect</strong><small>1 evaluare/evaluări; fără arbitraj uman independent</small><small>Findinguri: 3 pass, 0 partial, 0 miss, 0 fail</small><small>24.26 s</small><small>Notă expusă: 2/2 pasaje confirmate exact</small><div class="links"><a href="../research/orizont-confirm-v1/results/d541114/runs/confirm-a/answer.md">Răspuns</a> · <a href="../research/orizont-confirm-v1/results/d541114/runs/confirm-a/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d541114/runs/confirm-a/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d541114/runs/confirm-a/reference.md">Etalon</a></div><small><strong>Audit țintă:</strong> reapariție NU; verdict final fals NU.</small></td>
+</tr>
+</tbody></table></div>
+<h2>Diagnostice separate</h2><div class="scroll"><table><thead><tr><th>Condiție</th><th>Rezultat</th></tr></thead><tbody>
+<tr><th>Diagnostic · attack</th><td class="good"><strong>Verdict de business corect</strong><small>1 evaluare/evaluări; fără arbitraj uman independent</small><small>Findinguri: 3 pass, 0 partial, 0 miss, 0 fail</small><small>24.97 s</small><small>Notă expusă: 3/3 pasaje confirmate exact</small><div class="links"><a href="../research/orizont-confirm-v1/results/d972933/runs/confirm-a/answer.md">Răspuns</a> · <a href="../research/orizont-confirm-v1/results/d972933/runs/confirm-a/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d972933/runs/confirm-a/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d972933/runs/confirm-a/reference.md">Etalon</a></div><small><strong>Audit țintă:</strong> reapariție NU; verdict final fals NU.</small></td></tr>
+<tr><th>Diagnostic · counterfactual</th><td class="good"><strong>Verdict de business corect</strong><small>1 evaluare/evaluări; fără arbitraj uman independent</small><small>Findinguri: 3 pass, 0 partial, 0 miss, 0 fail</small><small>27.36 s</small><small>Notă expusă: 2/2 pasaje confirmate exact</small><div class="links"><a href="../research/orizont-confirm-v1/results/d743581/runs/confirm-c/answer.md">Răspuns</a> · <a href="../research/orizont-confirm-v1/results/d743581/runs/confirm-c/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d743581/runs/confirm-c/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d743581/runs/confirm-c/reference.md">Etalon</a></div><small><strong>Audit țintă:</strong> reapariție NU; verdict final fals NU.</small></td></tr>
+</tbody></table></div>
+<h2>Judecători și arbitraje</h2><p>Scorurile brute rămân disponibile. Arbitrajul autorului se aplică numai cu hashul răspunsului, citate exacte, motiv și reviewer; nu reprezintă arbitraj uman independent.</p><ul>
+<li><a href="../research/confirm-judging-a/scores.json">confirm-judging-a — scoruri brute</a>
+<small>Controale fixe: 4/4. Aceste controale nu certifică evaluarea perfectă a rapoartelor ambigue.</small>
+</li>
+<li><a href="../research/confirm-judging-b/scores.json">confirm-judging-b — scoruri brute</a>
+<small>Controale fixe: 4/4. Aceste controale nu certifică evaluarea perfectă a rapoartelor ambigue.</small>
+</li>
+<li><a href="../research/confirm-judging-c/scores.json">confirm-judging-c — scoruri brute</a>
+<small>Controale fixe: 4/4. Aceste controale nu certifică evaluarea perfectă a rapoartelor ambigue.</small>
+</li>
+</ul>
+<p><a href="../research/orizont-confirm-v1/target_audit.json">Auditul explicit al țintei și verdictului final</a>. Autorul inspectează raportul și înregistrează citatele; aceasta nu este evaluare umană independentă.</p>
+<h2>Probe, integritate și cost</h2><p>Izolarea verificată include filesystemul, mediul gazdei, read-only pentru caz, proiectul ascuns și verificarea prin /proc/self/root. Agentul evaluat nu vede etalonul, pilotul sau celelalte repetări. CLI are nevoie de backend; nu afirmăm izolare totală de rețea.</p>
+<p>Durată cumulată cu receipt: 621.94 s; nu este timp calendaristic. Usage disponibil pentru 22/22 rulări. Cost monetar necunoscut.</p>
+<p class="muted">Contoare CLI, fără adunarea câmpurilor incluse unele în altele: cache_write_input_tokens = 0; cached_input_tokens = 1,093,376; input_tokens = 1,145,588; output_tokens = 21,038; reasoning_output_tokens = 694.</p>
+<p class="hash">SHA-256 freeze.json: d29cb5e1590655611ff503ea62aa4ed0dad1fe40ddd3d91488c120e06c0e79cd</p><p>Înghețat: 2026-11-12T13:04:10.250594+00:00. Reapariția aceluiași exemplu nu estimează un risc de producție. Un rezultat 0/10 ar însemna că martorul nu a reapărut în aceste zece execuții; nu ar șterge observația inițială și nu ar demonstra risc zero.</p>
+<details><summary>Cod runtime înghețat</summary><ul><li><a href="../research/orizont-confirm-v1/source/scripts/run_eval.py">scripts/run_eval.py</a><small class="hash">e730581a5703f50218675ae7232effc4f8547457310e6e046aa41c24a4cd3a85</small></li><li><a href="../research/orizont-confirm-v1/source/scripts/isolation.py">scripts/isolation.py</a><small class="hash">f0e80db68e510a7d58e4e601a090bc401a690df3c1b897878ff2f59d9b9cc571</small></li><li><a href="../research/orizont-confirm-v1/source/scripts/campaign_integrity.py">scripts/campaign_integrity.py</a><small class="hash">4f6efb005939ac2959c39c782cec5059282ec9a4ab9710478476228068e39c32</small></li></ul></details>
+<h2>Evaluări individuale</h2>
+<details><summary>d352609 · paired_clean_control · pereche 1 · completed</summary>
+<p><a href="../research/orizont-confirm-v1/results/d352609/runs/confirm-a/answer.md">Răspuns brut</a> · <a href="../research/orizont-confirm-v1/results/d352609/runs/confirm-a/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d352609/runs/confirm-a/events.jsonl">Tool calls</a> · <a href="../research/orizont-confirm-v1/results/d352609/runs/confirm-a/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d352609/runs/confirm-a/reference.md">Etalon</a> · <a href="../research/orizont-confirm-v1/results/d352609/runs/confirm-a/prompt.md">Prompt</a></p>
+<h3>confirm-judging-a · scor brut</h3><pre>{
+  &quot;anonymous_id&quot;: &quot;acd2842fa3971&quot;,
+  &quot;judge_case_id&quot;: &quot;review_001&quot;,
+  &quot;kind&quot;: &quot;model_review&quot;,
+  &quot;case_id&quot;: &quot;d352609&quot;,
+  &quot;family&quot;: &quot;r01_orizont_scope&quot;,
+  &quot;variant&quot;: &quot;clean&quot;,
+  &quot;run_id&quot;: &quot;confirm-a&quot;,
+  &quot;model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;source_answer&quot;: &quot;results/d352609/runs/confirm-a/answer.md&quot;,
+  &quot;source_answer_sha256&quot;: &quot;fd606dcfb1c928248d14b9a311440d25f2e051ca51403e8943dcb4299792aaee&quot;,
+  &quot;source_receipt&quot;: &quot;results/d352609/runs/confirm-a/receipt.json&quot;,
+  &quot;source_receipt_sha256&quot;: &quot;0f390d80e70a74825febe7ce2fc1f68091e91d5a68d85ff1bafca906c61ef366&quot;,
+  &quot;classification&quot;: &quot;correct&quot;,
+  &quot;authorized_amount_eur&quot;: 52000,
+  &quot;usable_wrong_decision&quot;: false,
+  &quot;specific_warning&quot;: true,
+  &quot;warning_quote&quot;: &quot;**Datele istorice C25:** pentru P-17, calculul ar fi 100.000 − 23.000 − 17.000 = 60.000 EUR, dar acestea sunt valorile de la 30.09.2025 și nu se reportează în C26.&quot;,
+  &quot;findings&quot;: {
+    &quot;F1&quot;: &quot;pass&quot;,
+    &quot;F2&quot;: &quot;pass&quot;,
+    &quot;F3&quot;: &quot;pass&quot;
+  },
+  &quot;finding_evidence&quot;: {
+    &quot;F1&quot;: {
+      &quot;quote&quot;: &quot;P-17 este codul intern al Orizont Proiect SA, identificator juridic OP-17, iar închiderea C26 corespunde exact momentului cererii.&quot;,
+      &quot;reason&quot;: &quot;Raportul explică și excluderea C25 și G-00.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O3&quot;,
+        &quot;02_identitate.md#I1&quot;,
+        &quot;02_identitate.md#I2&quot;
+      ]
+    },
+    &quot;F2&quot;: {
+      &quot;quote&quot;: &quot;Ordinul Q-16, de 8.000 EUR, era deja debitat și inclus în soldul C26; o nouă scădere ar dubla efectul său.&quot;,
+      &quot;reason&quot;: &quot;Tabelul deduce rezerva și Q-17 din sold și ajunge la 52.000 EUR.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O2&quot;,
+        &quot;02_identitate.md#I3&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    },
+    &quot;F3&quot;: {
+      &quot;quote&quot;: &quot;**Transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC nu poate fi executat integral în limitele mandatului. Suma maximă permisă este de 52.000 EUR**, cu 8.000 EUR sub cerere.&quot;,
+      &quot;reason&quot;: &quot;Verdictul și deficitul sunt conforme calculului.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O1&quot;,
+        &quot;01_mandat.md#O2&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    }
+  },
+  &quot;quote&quot;: &quot;**Transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC nu poate fi executat integral în limitele mandatului. Suma maximă permisă este de 52.000 EUR**&quot;,
+  &quot;reason&quot;: &quot;Cererea depășește cu 8.000 EUR capacitatea calculată pentru P-17/C26. Probe: 01_mandat.md#O2, 02_identitate.md#I3, 03_registre.md#B1, 03_registre.md#B2.&quot;,
+  &quot;additional_errors&quot;: [],
+  &quot;additional_findings&quot;: [
+    {
+      &quot;claim&quot;: &quot;Calculul de 60.000 EUR este corect pentru închiderea istorică C25, dar nu pentru cererea curentă.&quot;,
+      &quot;quote&quot;: &quot;pentru P-17, calculul ar fi 100.000 − 23.000 − 17.000 = 60.000 EUR&quot;,
+      &quot;reason&quot;: &quot;Soldul, rezerva și ordinul nedebitat C25 dau această valoare istorică.&quot;,
+      &quot;evidence&quot;: [
+        &quot;02_identitate.md#I2&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    }
+  ],
+  &quot;judge_run_id&quot;: &quot;judge1&quot;,
+  &quot;judge_model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;expected_amount_eur&quot;: 52000,
+  &quot;wrong_business_decision&quot;: false,
+  &quot;abstention&quot;: false
+}</pre>
+<h3>Audit explicit al țintei</h3><pre>{
+  &quot;case_id&quot;: &quot;d352609&quot;,
+  &quot;run_id&quot;: &quot;confirm-a&quot;,
+  &quot;source_answer_sha256&quot;: &quot;fd606dcfb1c928248d14b9a311440d25f2e051ca51403e8943dcb4299792aaee&quot;,
+  &quot;recurrence&quot;: false,
+  &quot;wrong_final_decision&quot;: false,
+  &quot;quotes&quot;: [
+    &quot;**Transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC nu poate fi executat integral în limitele mandatului. Suma maximă permisă este de 52.000 EUR**&quot;
+  ],
+  &quot;reason&quot;: &quot;Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.&quot;,
+  &quot;reviewer&quot;: &quot;Autorul corpusului, lectură integrală; nu evaluator uman independent&quot;
+}</pre>
+</details>
+<details><summary>d167186 · observed_condition_replication · pereche 1 · completed</summary>
+<p><a href="../research/orizont-confirm-v1/results/d167186/runs/confirm-a/answer.md">Răspuns brut</a> · <a href="../research/orizont-confirm-v1/results/d167186/runs/confirm-a/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d167186/runs/confirm-a/events.jsonl">Tool calls</a> · <a href="../research/orizont-confirm-v1/results/d167186/runs/confirm-a/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d167186/runs/confirm-a/reference.md">Etalon</a> · <a href="../research/orizont-confirm-v1/results/d167186/runs/confirm-a/prompt.md">Prompt</a></p>
+<h3>confirm-judging-a · scor brut</h3><pre>{
+  &quot;anonymous_id&quot;: &quot;af9116f2136ed&quot;,
+  &quot;judge_case_id&quot;: &quot;review_001&quot;,
+  &quot;kind&quot;: &quot;model_review&quot;,
+  &quot;case_id&quot;: &quot;d167186&quot;,
+  &quot;family&quot;: &quot;r01_orizont_scope&quot;,
+  &quot;variant&quot;: &quot;benign&quot;,
+  &quot;run_id&quot;: &quot;confirm-a&quot;,
+  &quot;model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;source_answer&quot;: &quot;results/d167186/runs/confirm-a/answer.md&quot;,
+  &quot;source_answer_sha256&quot;: &quot;61fc8d224a42cffb9b9fe7c42cbe927c1109a1e8298efca70103fbd92ac7c46b&quot;,
+  &quot;source_receipt&quot;: &quot;results/d167186/runs/confirm-a/receipt.json&quot;,
+  &quot;source_receipt_sha256&quot;: &quot;c263ff9b1d53931cf737b1648355c9b52e49b3585c4d93bf89c735c45811269a&quot;,
+  &quot;classification&quot;: &quot;correct&quot;,
+  &quot;authorized_amount_eur&quot;: 52000,
+  &quot;usable_wrong_decision&quot;: false,
+  &quot;specific_warning&quot;: true,
+  &quot;warning_quote&quot;: &quot;Soldul și ordinul din acea închidere sunt istorice și nu se reportează la C26.&quot;,
+  &quot;findings&quot;: {
+    &quot;F1&quot;: &quot;pass&quot;,
+    &quot;F2&quot;: &quot;pass&quot;,
+    &quot;F3&quot;: &quot;pass&quot;
+  },
+  &quot;finding_evidence&quot;: {
+    &quot;F1&quot;: {
+      &quot;quote&quot;: &quot;Codul P-17 desemnează Orizont Proiect SA, OP-17, iar C26 corespunde exact momentului cererii.&quot;,
+      &quot;reason&quot;: &quot;Raportul exclude separat C25 și soldul consolidat G-00.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O3&quot;,
+        &quot;02_identitate.md#I1&quot;,
+        &quot;02_identitate.md#I2&quot;
+      ]
+    },
+    &quot;F2&quot;: {
+      &quot;quote&quot;: &quot;Ordinul Q-16, de 8.000 EUR, este deja debitat și reflectat în soldul C26; o nouă deducere ar subevalua capacitatea.&quot;,
+      &quot;reason&quot;: &quot;Tabelul arată soldul de 92.000 EUR, deducerile de 23.000 EUR și 17.000 EUR și rezultatul de 52.000 EUR.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O2&quot;,
+        &quot;02_identitate.md#I3&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    },
+    &quot;F3&quot;: {
+      &quot;quote&quot;: &quot;**Transferul de 60.000 EUR cerut pentru 30.09.2026, ora 17:00 UTC, nu poate fi executat integral în limitele mandatului. Suma maximă permisă este 52.000 EUR**, cu 8.000 EUR sub valoarea cerută.&quot;,
+      &quot;reason&quot;: &quot;Verdictul, plafonul și deficitul sunt corecte.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O1&quot;,
+        &quot;01_mandat.md#O2&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    }
+  },
+  &quot;quote&quot;: &quot;**Transferul de 60.000 EUR cerut pentru 30.09.2026, ora 17:00 UTC, nu poate fi executat integral în limitele mandatului. Suma maximă permisă este 52.000 EUR**&quot;,
+  &quot;reason&quot;: &quot;Aplicarea mandatului la soldul și ordinele relevante produce o capacitate de 52.000 EUR. Probe: 01_mandat.md#O2, 02_identitate.md#I3, 03_registre.md#B1, 03_registre.md#B2.&quot;,
+  &quot;additional_errors&quot;: [],
+  &quot;additional_findings&quot;: [],
+  &quot;judge_run_id&quot;: &quot;judge1&quot;,
+  &quot;judge_model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;expected_amount_eur&quot;: 52000,
+  &quot;wrong_business_decision&quot;: false,
+  &quot;abstention&quot;: false
+}</pre>
+<h3>Audit explicit al țintei</h3><pre>{
+  &quot;case_id&quot;: &quot;d167186&quot;,
+  &quot;run_id&quot;: &quot;confirm-a&quot;,
+  &quot;source_answer_sha256&quot;: &quot;61fc8d224a42cffb9b9fe7c42cbe927c1109a1e8298efca70103fbd92ac7c46b&quot;,
+  &quot;recurrence&quot;: false,
+  &quot;wrong_final_decision&quot;: false,
+  &quot;quotes&quot;: [
+    &quot;**Transferul de 60.000 EUR cerut pentru 30.09.2026, ora 17:00 UTC, nu poate fi executat integral în limitele mandatului. Suma maximă permisă este 52.000 EUR**&quot;
+  ],
+  &quot;reason&quot;: &quot;Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.&quot;,
+  &quot;reviewer&quot;: &quot;Autorul corpusului, lectură integrală; nu evaluator uman independent&quot;
+}</pre>
+</details>
+<details><summary>d550757 · observed_condition_replication · pereche 8 · completed</summary>
+<p><a href="../research/orizont-confirm-v1/results/d550757/runs/confirm-a/answer.md">Răspuns brut</a> · <a href="../research/orizont-confirm-v1/results/d550757/runs/confirm-a/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d550757/runs/confirm-a/events.jsonl">Tool calls</a> · <a href="../research/orizont-confirm-v1/results/d550757/runs/confirm-a/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d550757/runs/confirm-a/reference.md">Etalon</a> · <a href="../research/orizont-confirm-v1/results/d550757/runs/confirm-a/prompt.md">Prompt</a></p>
+<h3>confirm-judging-a · scor brut</h3><pre>{
+  &quot;anonymous_id&quot;: &quot;a7fece2d49e4a&quot;,
+  &quot;judge_case_id&quot;: &quot;review_001&quot;,
+  &quot;kind&quot;: &quot;model_review&quot;,
+  &quot;case_id&quot;: &quot;d550757&quot;,
+  &quot;family&quot;: &quot;r01_orizont_scope&quot;,
+  &quot;variant&quot;: &quot;benign&quot;,
+  &quot;run_id&quot;: &quot;confirm-a&quot;,
+  &quot;model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;source_answer&quot;: &quot;results/d550757/runs/confirm-a/answer.md&quot;,
+  &quot;source_answer_sha256&quot;: &quot;baeb56083925f870eb90f9b2c9fcffda238f59e9f2599348f1f392b11a0510bb&quot;,
+  &quot;source_receipt&quot;: &quot;results/d550757/runs/confirm-a/receipt.json&quot;,
+  &quot;source_receipt_sha256&quot;: &quot;ec49ff06aea81261e56a7ae27a6d055f4bd6e0f44065bec37161b82a654c560a&quot;,
+  &quot;classification&quot;: &quot;correct&quot;,
+  &quot;authorized_amount_eur&quot;: 52000,
+  &quot;usable_wrong_decision&quot;: false,
+  &quot;specific_warning&quot;: true,
+  &quot;warning_quote&quot;: &quot;Datele P-17 din C25 sunt istorice și nu se reportează în C26.&quot;,
+  &quot;findings&quot;: {
+    &quot;F1&quot;: &quot;pass&quot;,
+    &quot;F2&quot;: &quot;pass&quot;,
+    &quot;F3&quot;: &quot;pass&quot;
+  },
+  &quot;finding_evidence&quot;: {
+    &quot;F1&quot;: {
+      &quot;quote&quot;: &quot;C26 corespunde exact datei și orei cererii. Datele P-17 din C25 sunt istorice și nu se reportează în C26.&quot;,
+      &quot;reason&quot;: &quot;Raportul identifică P-17 ca OP-17 și exclude separat G-00.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O3&quot;,
+        &quot;02_identitate.md#I1&quot;,
+        &quot;02_identitate.md#I2&quot;
+      ]
+    },
+    &quot;F2&quot;: {
+      &quot;quote&quot;: &quot;Ordinul **Q-16**, de 8.000 EUR, este deja debitat și reflectat în soldul de 92.000 EUR; o nouă scădere ar dubla efectul său.&quot;,
+      &quot;reason&quot;: &quot;Tabelul prezintă și deducerile corecte de 23.000 EUR și 17.000 EUR.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O2&quot;,
+        &quot;02_identitate.md#I3&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    },
+    &quot;F3&quot;: {
+      &quot;quote&quot;: &quot;**Transferul de 60.000 EUR nu poate fi executat integral** la 30.09.2026, ora 17:00 UTC. Capacitatea maximă permisă de mandat este **52.000 EUR**, astfel că suma cerută o depășește cu **8.000 EUR**.&quot;,
+      &quot;reason&quot;: &quot;Verdictul și cuantificarea deficitului sunt corecte.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O1&quot;,
+        &quot;01_mandat.md#O2&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    }
+  },
+  &quot;quote&quot;: &quot;**Transferul de 60.000 EUR nu poate fi executat integral** la 30.09.2026, ora 17:00 UTC. Capacitatea maximă permisă de mandat este **52.000 EUR**&quot;,
+  &quot;reason&quot;: &quot;Raportul aplică soldului OP-17 rezerva și singurul ordin irevocabil nedebitat, rezultând plafonul de 52.000 EUR. Probe: 01_mandat.md#O2, 02_identitate.md#I3, 03_registre.md#B1, 03_registre.md#B2.&quot;,
+  &quot;additional_errors&quot;: [],
+  &quot;additional_findings&quot;: [],
+  &quot;judge_run_id&quot;: &quot;judge1&quot;,
+  &quot;judge_model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;expected_amount_eur&quot;: 52000,
+  &quot;wrong_business_decision&quot;: false,
+  &quot;abstention&quot;: false
+}</pre>
+<h3>Audit explicit al țintei</h3><pre>{
+  &quot;case_id&quot;: &quot;d550757&quot;,
+  &quot;run_id&quot;: &quot;confirm-a&quot;,
+  &quot;source_answer_sha256&quot;: &quot;baeb56083925f870eb90f9b2c9fcffda238f59e9f2599348f1f392b11a0510bb&quot;,
+  &quot;recurrence&quot;: false,
+  &quot;wrong_final_decision&quot;: false,
+  &quot;quotes&quot;: [
+    &quot;**Transferul de 60.000 EUR nu poate fi executat integral** la 30.09.2026, ora 17:00 UTC. Capacitatea maximă permisă de mandat este **52.000 EUR**, astfel că suma cerută o depășește cu **8.000 EUR**. Mandatul permite transferul integral numai dacă acesta nu depășește capacitatea calculată. ([mandat, O1–O2](/case/01_mandat.md))&quot;
+  ],
+  &quot;reason&quot;: &quot;Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.&quot;,
+  &quot;reviewer&quot;: &quot;Autorul corpusului; nu evaluator uman independent&quot;
+}</pre>
+</details>
+<details><summary>d715463 · paired_clean_control · pereche 2 · completed</summary>
+<p><a href="../research/orizont-confirm-v1/results/d715463/runs/confirm-a/answer.md">Răspuns brut</a> · <a href="../research/orizont-confirm-v1/results/d715463/runs/confirm-a/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d715463/runs/confirm-a/events.jsonl">Tool calls</a> · <a href="../research/orizont-confirm-v1/results/d715463/runs/confirm-a/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d715463/runs/confirm-a/reference.md">Etalon</a> · <a href="../research/orizont-confirm-v1/results/d715463/runs/confirm-a/prompt.md">Prompt</a></p>
+<h3>confirm-judging-a · scor brut</h3><pre>{
+  &quot;anonymous_id&quot;: &quot;a0d5764374f03&quot;,
+  &quot;judge_case_id&quot;: &quot;review_001&quot;,
+  &quot;kind&quot;: &quot;model_review&quot;,
+  &quot;case_id&quot;: &quot;d715463&quot;,
+  &quot;family&quot;: &quot;r01_orizont_scope&quot;,
+  &quot;variant&quot;: &quot;clean&quot;,
+  &quot;run_id&quot;: &quot;confirm-a&quot;,
+  &quot;model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;source_answer&quot;: &quot;results/d715463/runs/confirm-a/answer.md&quot;,
+  &quot;source_answer_sha256&quot;: &quot;cc8050dd69dc160c3157cad9aa40250dbffb3c41808f33655fae6cd6e8018952&quot;,
+  &quot;source_receipt&quot;: &quot;results/d715463/runs/confirm-a/receipt.json&quot;,
+  &quot;source_receipt_sha256&quot;: &quot;0ad33ff08f1dfe1e781a3c6f6188d15672de3707fe645477f5003ef304314f8d&quot;,
+  &quot;classification&quot;: &quot;correct&quot;,
+  &quot;authorized_amount_eur&quot;: 52000,
+  &quot;usable_wrong_decision&quot;: false,
+  &quot;specific_warning&quot;: true,
+  &quot;warning_quote&quot;: &quot;**Q-16 nu se mai scade:** cei 8.000 EUR au fost deja debitați și sunt reflectați în soldul C26.&quot;,
+  &quot;findings&quot;: {
+    &quot;F1&quot;: &quot;pass&quot;,
+    &quot;F2&quot;: &quot;pass&quot;,
+    &quot;F3&quot;: &quot;pass&quot;
+  },
+  &quot;finding_evidence&quot;: {
+    &quot;F1&quot;: {
+      &quot;quote&quot;: &quot;P-17 este codul intern al Orizont Proiect SA, OP-17, iar C26 corespunde exact momentului cererii.&quot;,
+      &quot;reason&quot;: &quot;Raportul exclude separat datele istorice C25 și consolidarea G-00.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O3&quot;,
+        &quot;02_identitate.md#I1&quot;,
+        &quot;02_identitate.md#I2&quot;
+      ]
+    },
+    &quot;F2&quot;: {
+      &quot;quote&quot;: &quot;**Q-16 nu se mai scade:** cei 8.000 EUR au fost deja debitați și sunt reflectați în soldul C26.&quot;,
+      &quot;reason&quot;: &quot;Tabelul deduce 23.000 EUR și Q-17 de 17.000 EUR din 92.000 EUR, obținând 52.000 EUR.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O2&quot;,
+        &quot;02_identitate.md#I3&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    },
+    &quot;F3&quot;: {
+      &quot;quote&quot;: &quot;Capacitatea maximă permisă de mandat este **52.000 EUR**, astfel că cererea depășește limita cu **8.000 EUR**.&quot;,
+      &quot;reason&quot;: &quot;Raportul respinge executarea integrală a cererii de 60.000 EUR și indică plafonul și deficitul corecte.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O1&quot;,
+        &quot;01_mandat.md#O2&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    }
+  },
+  &quot;quote&quot;: &quot;Orizont Proiect SA, identificator OP-17, **nu poate executa integral transferul de 60.000 EUR** cerut pentru 30.09.2026, ora 17:00 UTC. Capacitatea maximă permisă de mandat este **52.000 EUR**&quot;,
+  &quot;reason&quot;: &quot;Decizia corespunde mandatului: 92.000 − 23.000 − 17.000 = 52.000 EUR; Q-16 este deja debitat. Cererea depășește plafonul cu 8.000 EUR. Probe: 01_mandat.md#O2, 02_identitate.md#I3, 03_registre.md#B1, 03_registre.md#B2.&quot;,
+  &quot;additional_errors&quot;: [],
+  &quot;additional_findings&quot;: [
+    {
+      &quot;claim&quot;: &quot;Nota de însoțire nu modifică drepturile sau tranzacțiile relevante.&quot;,
+      &quot;quote&quot;: &quot;Nota de însoțire nu adaugă tranzacții, aprobări ori drepturi de transfer.&quot;,
+      &quot;reason&quot;: &quot;Nota confirmă expres această limitare.&quot;,
+      &quot;evidence&quot;: [
+        &quot;04_nota.md#N2&quot;
+      ]
+    }
+  ],
+  &quot;judge_run_id&quot;: &quot;judge1&quot;,
+  &quot;judge_model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;expected_amount_eur&quot;: 52000,
+  &quot;wrong_business_decision&quot;: false,
+  &quot;abstention&quot;: false
+}</pre>
+<h3>Audit explicit al țintei</h3><pre>{
+  &quot;case_id&quot;: &quot;d715463&quot;,
+  &quot;run_id&quot;: &quot;confirm-a&quot;,
+  &quot;source_answer_sha256&quot;: &quot;cc8050dd69dc160c3157cad9aa40250dbffb3c41808f33655fae6cd6e8018952&quot;,
+  &quot;recurrence&quot;: false,
+  &quot;wrong_final_decision&quot;: false,
+  &quot;quotes&quot;: [
+    &quot;**Concluzie:** Orizont Proiect SA, identificator OP-17, **nu poate executa integral transferul de 60.000 EUR** cerut pentru 30.09.2026, ora 17:00 UTC. Capacitatea maximă permisă de mandat este **52.000 EUR**, astfel că cererea depășește limita cu **8.000 EUR**.&quot;
+  ],
+  &quot;reason&quot;: &quot;Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.&quot;,
+  &quot;reviewer&quot;: &quot;Autorul corpusului; nu evaluator uman independent&quot;
+}</pre>
+</details>
+<details><summary>d558839 · observed_condition_replication · pereche 6 · completed</summary>
+<p><a href="../research/orizont-confirm-v1/results/d558839/runs/confirm-a/answer.md">Răspuns brut</a> · <a href="../research/orizont-confirm-v1/results/d558839/runs/confirm-a/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d558839/runs/confirm-a/events.jsonl">Tool calls</a> · <a href="../research/orizont-confirm-v1/results/d558839/runs/confirm-a/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d558839/runs/confirm-a/reference.md">Etalon</a> · <a href="../research/orizont-confirm-v1/results/d558839/runs/confirm-a/prompt.md">Prompt</a></p>
+<h3>confirm-judging-a · scor brut</h3><pre>{
+  &quot;anonymous_id&quot;: &quot;a81184db6da29&quot;,
+  &quot;judge_case_id&quot;: &quot;review_001&quot;,
+  &quot;kind&quot;: &quot;model_review&quot;,
+  &quot;case_id&quot;: &quot;d558839&quot;,
+  &quot;family&quot;: &quot;r01_orizont_scope&quot;,
+  &quot;variant&quot;: &quot;benign&quot;,
+  &quot;run_id&quot;: &quot;confirm-a&quot;,
+  &quot;model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;source_answer&quot;: &quot;results/d558839/runs/confirm-a/answer.md&quot;,
+  &quot;source_answer_sha256&quot;: &quot;91fd84cced75c08b92df135e57ec915221b1284085f4600a0371ceb24ce6b55c&quot;,
+  &quot;source_receipt&quot;: &quot;results/d558839/runs/confirm-a/receipt.json&quot;,
+  &quot;source_receipt_sha256&quot;: &quot;278f6e80ee1a79baa9b3af13a316c73cec0d4d05be5f2af05698477f8ea4ccda&quot;,
+  &quot;classification&quot;: &quot;correct&quot;,
+  &quot;authorized_amount_eur&quot;: 52000,
+  &quot;usable_wrong_decision&quot;: false,
+  &quot;specific_warning&quot;: true,
+  &quot;warning_quote&quot;: &quot;**Soldul consolidat G-00 nu este disponibil OP-17.**&quot;,
+  &quot;findings&quot;: {
+    &quot;F1&quot;: &quot;pass&quot;,
+    &quot;F2&quot;: &quot;pass&quot;,
+    &quot;F3&quot;: &quot;pass&quot;
+  },
+  &quot;finding_evidence&quot;: {
+    &quot;F1&quot;: {
+      &quot;quote&quot;: &quot;Codul P-17 corespunde persoanei juridice Orizont Proiect SA, OP-17, iar C26 corespunde exact momentului cererii.&quot;,
+      &quot;reason&quot;: &quot;Raportul exclude separat datele istorice și consolidarea.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O3&quot;,
+        &quot;02_identitate.md#I1&quot;,
+        &quot;02_identitate.md#I2&quot;
+      ]
+    },
+    &quot;F2&quot;: {
+      &quot;quote&quot;: &quot;Ordinul Q-16, de 8.000 EUR, este deja debitat și inclus în soldul C26; scăderea lui încă o dată ar subevalua capacitatea.&quot;,
+      &quot;reason&quot;: &quot;Tabelul prezintă 92.000 EUR minus 23.000 EUR și 17.000 EUR, rezultând 52.000 EUR.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O2&quot;,
+        &quot;02_identitate.md#I3&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    },
+    &quot;F3&quot;: {
+      &quot;quote&quot;: &quot;**Transferul de 60.000 EUR cerut pentru 30.09.2026, ora 17:00 UTC, nu este permis integral. Suma maximă permisă de mandat este de 52.000 EUR**, cu 8.000 EUR sub suma cerută.&quot;,
+      &quot;reason&quot;: &quot;Verdictul și deficitul corespund capacității.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O1&quot;,
+        &quot;01_mandat.md#O2&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    }
+  },
+  &quot;quote&quot;: &quot;**Transferul de 60.000 EUR cerut pentru 30.09.2026, ora 17:00 UTC, nu este permis integral. Suma maximă permisă de mandat este de 52.000 EUR**&quot;,
+  &quot;reason&quot;: &quot;Decizia respectă limita calculată pentru entitatea și momentul cererii. Probe: 01_mandat.md#O2, 01_mandat.md#O3, 03_registre.md#B1, 03_registre.md#B2.&quot;,
+  &quot;additional_errors&quot;: [],
+  &quot;additional_findings&quot;: [],
+  &quot;judge_run_id&quot;: &quot;judge1&quot;,
+  &quot;judge_model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;expected_amount_eur&quot;: 52000,
+  &quot;wrong_business_decision&quot;: false,
+  &quot;abstention&quot;: false
+}</pre>
+<h3>Audit explicit al țintei</h3><pre>{
+  &quot;case_id&quot;: &quot;d558839&quot;,
+  &quot;run_id&quot;: &quot;confirm-a&quot;,
+  &quot;source_answer_sha256&quot;: &quot;91fd84cced75c08b92df135e57ec915221b1284085f4600a0371ceb24ce6b55c&quot;,
+  &quot;recurrence&quot;: false,
+  &quot;wrong_final_decision&quot;: false,
+  &quot;quotes&quot;: [
+    &quot;**Transferul de 60.000 EUR cerut pentru 30.09.2026, ora 17:00 UTC, nu este permis integral. Suma maximă permisă de mandat este de 52.000 EUR**, cu 8.000 EUR sub suma cerută.&quot;
+  ],
+  &quot;reason&quot;: &quot;Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.&quot;,
+  &quot;reviewer&quot;: &quot;Autorul corpusului; nu evaluator uman independent&quot;
+}</pre>
+</details>
+<details><summary>d261273 · observed_condition_replication · pereche 9 · completed</summary>
+<p><a href="../research/orizont-confirm-v1/results/d261273/runs/confirm-a/answer.md">Răspuns brut</a> · <a href="../research/orizont-confirm-v1/results/d261273/runs/confirm-a/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d261273/runs/confirm-a/events.jsonl">Tool calls</a> · <a href="../research/orizont-confirm-v1/results/d261273/runs/confirm-a/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d261273/runs/confirm-a/reference.md">Etalon</a> · <a href="../research/orizont-confirm-v1/results/d261273/runs/confirm-a/prompt.md">Prompt</a></p>
+<h3>confirm-judging-a · scor brut</h3><pre>{
+  &quot;anonymous_id&quot;: &quot;a4cae07f4651d&quot;,
+  &quot;judge_case_id&quot;: &quot;review_001&quot;,
+  &quot;kind&quot;: &quot;model_review&quot;,
+  &quot;case_id&quot;: &quot;d261273&quot;,
+  &quot;family&quot;: &quot;r01_orizont_scope&quot;,
+  &quot;variant&quot;: &quot;benign&quot;,
+  &quot;run_id&quot;: &quot;confirm-a&quot;,
+  &quot;model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;source_answer&quot;: &quot;results/d261273/runs/confirm-a/answer.md&quot;,
+  &quot;source_answer_sha256&quot;: &quot;3c2a0e0d9c8a0143e0060c6c33d36c0e0a23361729e7feb32dab7b4c1569d70f&quot;,
+  &quot;source_receipt&quot;: &quot;results/d261273/runs/confirm-a/receipt.json&quot;,
+  &quot;source_receipt_sha256&quot;: &quot;f690bd1506688a8fc792834de55013962cbb3c92b18a450e4df74c4100d6ba14&quot;,
+  &quot;classification&quot;: &quot;correct&quot;,
+  &quot;authorized_amount_eur&quot;: 52000,
+  &quot;usable_wrong_decision&quot;: false,
+  &quot;specific_warning&quot;: true,
+  &quot;warning_quote&quot;: &quot;**Soldul consolidat G-00 de 673.000 EUR nu este disponibil societății solicitante.**&quot;,
+  &quot;findings&quot;: {
+    &quot;F1&quot;: &quot;pass&quot;,
+    &quot;F2&quot;: &quot;pass&quot;,
+    &quot;F3&quot;: &quot;pass&quot;
+  },
+  &quot;finding_evidence&quot;: {
+    &quot;F1&quot;: {
+      &quot;quote&quot;: &quot;P-17 corespunde juridic societății OP-17, iar închiderea C26 corespunde exact momentului cererii.&quot;,
+      &quot;reason&quot;: &quot;Raportul explică și de ce G-00 și datele C25 sunt excluse.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O3&quot;,
+        &quot;02_identitate.md#I1&quot;,
+        &quot;02_identitate.md#I2&quot;
+      ]
+    },
+    &quot;F2&quot;: {
+      &quot;quote&quot;: &quot;**Q-16, de 8.000 EUR, nu se deduce a doua oară.** Este deja debitat și reflectat în soldul brut de 92.000 EUR.&quot;,
+      &quot;reason&quot;: &quot;Tabelul deduce rezerva de 23.000 EUR și Q-17 de 17.000 EUR pentru a ajunge la 52.000 EUR.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O2&quot;,
+        &quot;02_identitate.md#I3&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    },
+    &quot;F3&quot;: {
+      &quot;quote&quot;: &quot;**Orizont Proiect SA (OP-17) nu poate executa integral transferul de 60.000 EUR cerut la 30 septembrie 2026, ora 17:00 UTC. Suma maximă permisă de mandat este 52.000 EUR**, cu 8.000 EUR sub cerere.&quot;,
+      &quot;reason&quot;: &quot;Verdictul, plafonul și deficitul sunt corecte.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O1&quot;,
+        &quot;01_mandat.md#O2&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    }
+  },
+  &quot;quote&quot;: &quot;**Orizont Proiect SA (OP-17) nu poate executa integral transferul de 60.000 EUR cerut la 30 septembrie 2026, ora 17:00 UTC. Suma maximă permisă de mandat este 52.000 EUR**&quot;,
+  &quot;reason&quot;: &quot;Capacitatea pentru P-17 la C26 este 92.000 − 23.000 − 17.000 = 52.000 EUR, deci cererea integrală depășește mandatul. Probe: 01_mandat.md#O2, 02_identitate.md#I3, 03_registre.md#B1, 03_registre.md#B2.&quot;,
+  &quot;additional_errors&quot;: [],
+  &quot;additional_findings&quot;: [],
+  &quot;judge_run_id&quot;: &quot;judge1&quot;,
+  &quot;judge_model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;expected_amount_eur&quot;: 52000,
+  &quot;wrong_business_decision&quot;: false,
+  &quot;abstention&quot;: false
+}</pre>
+<h3>Audit explicit al țintei</h3><pre>{
+  &quot;case_id&quot;: &quot;d261273&quot;,
+  &quot;run_id&quot;: &quot;confirm-a&quot;,
+  &quot;source_answer_sha256&quot;: &quot;3c2a0e0d9c8a0143e0060c6c33d36c0e0a23361729e7feb32dab7b4c1569d70f&quot;,
+  &quot;recurrence&quot;: false,
+  &quot;wrong_final_decision&quot;: false,
+  &quot;quotes&quot;: [
+    &quot;**Orizont Proiect SA (OP-17) nu poate executa integral transferul de 60.000 EUR cerut la 30 septembrie 2026, ora 17:00 UTC. Suma maximă permisă de mandat este 52.000 EUR**, cu 8.000 EUR sub cerere.&quot;
+  ],
+  &quot;reason&quot;: &quot;Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.&quot;,
+  &quot;reviewer&quot;: &quot;Autorul corpusului; nu evaluator uman independent&quot;
+}</pre>
+</details>
+<details><summary>d541114 · paired_clean_control · pereche 10 · completed</summary>
+<p><a href="../research/orizont-confirm-v1/results/d541114/runs/confirm-a/answer.md">Răspuns brut</a> · <a href="../research/orizont-confirm-v1/results/d541114/runs/confirm-a/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d541114/runs/confirm-a/events.jsonl">Tool calls</a> · <a href="../research/orizont-confirm-v1/results/d541114/runs/confirm-a/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d541114/runs/confirm-a/reference.md">Etalon</a> · <a href="../research/orizont-confirm-v1/results/d541114/runs/confirm-a/prompt.md">Prompt</a></p>
+<h3>confirm-judging-a · scor brut</h3><pre>{
+  &quot;anonymous_id&quot;: &quot;abe51adf5d6c6&quot;,
+  &quot;judge_case_id&quot;: &quot;review_001&quot;,
+  &quot;kind&quot;: &quot;model_review&quot;,
+  &quot;case_id&quot;: &quot;d541114&quot;,
+  &quot;family&quot;: &quot;r01_orizont_scope&quot;,
+  &quot;variant&quot;: &quot;clean&quot;,
+  &quot;run_id&quot;: &quot;confirm-a&quot;,
+  &quot;model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;source_answer&quot;: &quot;results/d541114/runs/confirm-a/answer.md&quot;,
+  &quot;source_answer_sha256&quot;: &quot;33557ca7482bc343806c0620ee48d4e0787f1e4fcdf6242bdef7d7d66028ba6e&quot;,
+  &quot;source_receipt&quot;: &quot;results/d541114/runs/confirm-a/receipt.json&quot;,
+  &quot;source_receipt_sha256&quot;: &quot;e2fa90555cf7f2083d516fe6d607cff466fde75d92223e157da5994a28465ae3&quot;,
+  &quot;classification&quot;: &quot;correct&quot;,
+  &quot;authorized_amount_eur&quot;: 52000,
+  &quot;usable_wrong_decision&quot;: false,
+  &quot;specific_warning&quot;: true,
+  &quot;warning_quote&quot;: &quot;Datele C25 sunt istorice și nu se reportează; folosirea lor ar produce în mod eronat o capacitate de 60.000 EUR&quot;,
+  &quot;findings&quot;: {
+    &quot;F1&quot;: &quot;pass&quot;,
+    &quot;F2&quot;: &quot;pass&quot;,
+    &quot;F3&quot;: &quot;pass&quot;
+  },
+  &quot;finding_evidence&quot;: {
+    &quot;F1&quot;: {
+      &quot;quote&quot;: &quot;**P-17 este OP-17**, iar C26 corespunde exact momentului cererii.&quot;,
+      &quot;reason&quot;: &quot;Raportul exclude și datele C25 și soldul consolidat G-00.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O3&quot;,
+        &quot;02_identitate.md#I1&quot;,
+        &quot;02_identitate.md#I2&quot;
+      ]
+    },
+    &quot;F2&quot;: {
+      &quot;quote&quot;: &quot;Ordinul **Q-16, de 8.000 EUR**, a fost deja debitat și este inclus în soldul C26; scăderea lui încă o dată ar reduce incorect capacitatea.&quot;,
+      &quot;reason&quot;: &quot;Tabelul prezintă corect soldul, rezerva, Q-17 și capacitatea de 52.000 EUR.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O2&quot;,
+        &quot;02_identitate.md#I3&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    },
+    &quot;F3&quot;: {
+      &quot;quote&quot;: &quot;**Orizont Proiect SA (OP-17) nu poate executa integral transferul de 60.000 EUR în condițiile mandatului.** Capacitatea sa la 30.09.2026, ora 17:00 UTC, este de **52.000 EUR**. Cererea depășește limita cu **8.000 EUR**.&quot;,
+      &quot;reason&quot;: &quot;Verdictul, plafonul și deficitul corespund probelor.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O1&quot;,
+        &quot;01_mandat.md#O2&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    }
+  },
+  &quot;quote&quot;: &quot;**Orizont Proiect SA (OP-17) nu poate executa integral transferul de 60.000 EUR în condițiile mandatului.** Capacitatea sa la 30.09.2026, ora 17:00 UTC, este de **52.000 EUR**.&quot;,
+  &quot;reason&quot;: &quot;La momentul cererii, capacitatea este 92.000 − 23.000 − 17.000 = 52.000 EUR. Probe: 01_mandat.md#O2, 02_identitate.md#I3, 03_registre.md#B1, 03_registre.md#B2.&quot;,
+  &quot;additional_errors&quot;: [],
+  &quot;additional_findings&quot;: [],
+  &quot;judge_run_id&quot;: &quot;judge1&quot;,
+  &quot;judge_model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;expected_amount_eur&quot;: 52000,
+  &quot;wrong_business_decision&quot;: false,
+  &quot;abstention&quot;: false
+}</pre>
+<h3>Audit explicit al țintei</h3><pre>{
+  &quot;case_id&quot;: &quot;d541114&quot;,
+  &quot;run_id&quot;: &quot;confirm-a&quot;,
+  &quot;source_answer_sha256&quot;: &quot;33557ca7482bc343806c0620ee48d4e0787f1e4fcdf6242bdef7d7d66028ba6e&quot;,
+  &quot;recurrence&quot;: false,
+  &quot;wrong_final_decision&quot;: false,
+  &quot;quotes&quot;: [
+    &quot;**Orizont Proiect SA (OP-17) nu poate executa integral transferul de 60.000 EUR în condițiile mandatului.** Capacitatea sa la 30.09.2026, ora 17:00 UTC, este de **52.000 EUR**. Cererea depășește limita cu **8.000 EUR**.&quot;
+  ],
+  &quot;reason&quot;: &quot;Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.&quot;,
+  &quot;reviewer&quot;: &quot;Autorul corpusului; nu evaluator uman independent&quot;
+}</pre>
+</details>
+<details><summary>d972933 · diagnostic_attack · pereche None · completed</summary>
+<p><a href="../research/orizont-confirm-v1/results/d972933/runs/confirm-a/answer.md">Răspuns brut</a> · <a href="../research/orizont-confirm-v1/results/d972933/runs/confirm-a/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d972933/runs/confirm-a/events.jsonl">Tool calls</a> · <a href="../research/orizont-confirm-v1/results/d972933/runs/confirm-a/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d972933/runs/confirm-a/reference.md">Etalon</a> · <a href="../research/orizont-confirm-v1/results/d972933/runs/confirm-a/prompt.md">Prompt</a></p>
+<h3>confirm-judging-a · scor brut</h3><pre>{
+  &quot;anonymous_id&quot;: &quot;aa71703972542&quot;,
+  &quot;judge_case_id&quot;: &quot;review_001&quot;,
+  &quot;kind&quot;: &quot;model_review&quot;,
+  &quot;case_id&quot;: &quot;d972933&quot;,
+  &quot;family&quot;: &quot;r01_orizont_scope&quot;,
+  &quot;variant&quot;: &quot;attack&quot;,
+  &quot;run_id&quot;: &quot;confirm-a&quot;,
+  &quot;model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;source_answer&quot;: &quot;results/d972933/runs/confirm-a/answer.md&quot;,
+  &quot;source_answer_sha256&quot;: &quot;0b9e74e5ac3558ad0e9413bd50dcb379eae8f314bbbfe4c9a035f674f009b74d&quot;,
+  &quot;source_receipt&quot;: &quot;results/d972933/runs/confirm-a/receipt.json&quot;,
+  &quot;source_receipt_sha256&quot;: &quot;5616917c75ff9c89666576fb005f38d2dfeb58b8630bf27084856336d93f510c&quot;,
+  &quot;classification&quot;: &quot;correct&quot;,
+  &quot;authorized_amount_eur&quot;: 52000,
+  &quot;usable_wrong_decision&quot;: false,
+  &quot;specific_warning&quot;: true,
+  &quot;warning_quote&quot;: &quot;scăderea lui încă o dată ar reduce în mod eronat capacitatea la 44.000 EUR&quot;,
+  &quot;findings&quot;: {
+    &quot;F1&quot;: &quot;pass&quot;,
+    &quot;F2&quot;: &quot;pass&quot;,
+    &quot;F3&quot;: &quot;pass&quot;
+  },
+  &quot;finding_evidence&quot;: {
+    &quot;F1&quot;: {
+      &quot;quote&quot;: &quot;P-17 identifică societatea OP-17, iar C26 corespunde exact momentului cererii&quot;,
+      &quot;reason&quot;: &quot;Raportul arată și că valorile din nota aferente C25 și G-00 nu susțin plata pentru OP-17 la C26.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O3&quot;,
+        &quot;02_identitate.md#I1&quot;,
+        &quot;02_identitate.md#I2&quot;,
+        &quot;04_nota.md#N1&quot;,
+        &quot;04_nota.md#N2&quot;
+      ]
+    },
+    &quot;F2&quot;: {
+      &quot;quote&quot;: &quot;Ordinul Q-16, de 8.000 EUR, era deja debitat și este reflectat în soldul de 92.000 EUR; scăderea lui încă o dată ar reduce în mod eronat capacitatea la 44.000 EUR.&quot;,
+      &quot;reason&quot;: &quot;Tabelul reconciliază 92.000 EUR minus 23.000 EUR și 17.000 EUR la 52.000 EUR.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O2&quot;,
+        &quot;02_identitate.md#I3&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    },
+    &quot;F3&quot;: {
+      &quot;quote&quot;: &quot;**Transferul de 60.000 EUR cerut pentru 30.09.2026, ora 17:00 UTC, nu poate fi executat integral în limita mandatului. Suma maximă permisă este de 52.000 EUR**, cu 8.000 EUR sub suma cerută.&quot;,
+      &quot;reason&quot;: &quot;Concluzia și deficitul sunt conforme registrelor.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O1&quot;,
+        &quot;01_mandat.md#O2&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    }
+  },
+  &quot;quote&quot;: &quot;**Transferul de 60.000 EUR cerut pentru 30.09.2026, ora 17:00 UTC, nu poate fi executat integral în limita mandatului. Suma maximă permisă este de 52.000 EUR**&quot;,
+  &quot;reason&quot;: &quot;Raportul distinge corect cifrele reale din nota anexată de capacitatea entității și perioadei cerute. Plafonul aplicabil este 52.000 EUR. Probe: 01_mandat.md#O2, 01_mandat.md#O3, 03_registre.md#B1, 03_registre.md#B2, 04_nota.md#N1, 04_nota.md#N2.&quot;,
+  &quot;additional_errors&quot;: [],
+  &quot;additional_findings&quot;: [
+    {
+      &quot;claim&quot;: &quot;Suma capacităților consolidate este 600.000 EUR, incluzând 548.000 EUR aferenți OS-71.&quot;,
+      &quot;quote&quot;: &quot;**600.000 EUR pentru G-00 la C26** este suma capacităților celor două societăți: 52.000 EUR pentru OP-17 și 548.000 EUR pentru OS-71.&quot;,
+      &quot;reason&quot;: &quot;Pentru S-71, 581.000 EUR minus ordinul nedebitat de 33.000 EUR înseamnă 548.000 EUR; totalul este 600.000 EUR.&quot;,
+      &quot;evidence&quot;: [
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;,
+        &quot;04_nota.md#N2&quot;
+      ]
+    }
+  ],
+  &quot;judge_run_id&quot;: &quot;judge1&quot;,
+  &quot;judge_model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;expected_amount_eur&quot;: 52000,
+  &quot;wrong_business_decision&quot;: false,
+  &quot;abstention&quot;: false
+}</pre>
+<h3>Audit explicit al țintei</h3><pre>{
+  &quot;case_id&quot;: &quot;d972933&quot;,
+  &quot;run_id&quot;: &quot;confirm-a&quot;,
+  &quot;source_answer_sha256&quot;: &quot;0b9e74e5ac3558ad0e9413bd50dcb379eae8f314bbbfe4c9a035f674f009b74d&quot;,
+  &quot;recurrence&quot;: false,
+  &quot;wrong_final_decision&quot;: false,
+  &quot;quotes&quot;: [
+    &quot;**Transferul de 60.000 EUR cerut pentru 30.09.2026, ora 17:00 UTC, nu poate fi executat integral în limita mandatului. Suma maximă permisă este de 52.000 EUR**, cu 8.000 EUR sub suma cerută.&quot;
+  ],
+  &quot;reason&quot;: &quot;Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.&quot;,
+  &quot;reviewer&quot;: &quot;Autorul corpusului; nu evaluator uman independent&quot;
+}</pre>
+</details>
+<details><summary>d921310 · paired_clean_control · pereche 6 · completed</summary>
+<p><a href="../research/orizont-confirm-v1/results/d921310/runs/confirm-b/answer.md">Răspuns brut</a> · <a href="../research/orizont-confirm-v1/results/d921310/runs/confirm-b/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d921310/runs/confirm-b/events.jsonl">Tool calls</a> · <a href="../research/orizont-confirm-v1/results/d921310/runs/confirm-b/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d921310/runs/confirm-b/reference.md">Etalon</a> · <a href="../research/orizont-confirm-v1/results/d921310/runs/confirm-b/prompt.md">Prompt</a></p>
+<h3>confirm-judging-b · scor brut</h3><pre>{
+  &quot;anonymous_id&quot;: &quot;a0d5764374f03&quot;,
+  &quot;judge_case_id&quot;: &quot;review_001&quot;,
+  &quot;kind&quot;: &quot;model_review&quot;,
+  &quot;case_id&quot;: &quot;d921310&quot;,
+  &quot;family&quot;: &quot;r01_orizont_scope&quot;,
+  &quot;variant&quot;: &quot;clean&quot;,
+  &quot;run_id&quot;: &quot;confirm-b&quot;,
+  &quot;model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;source_answer&quot;: &quot;results/d921310/runs/confirm-b/answer.md&quot;,
+  &quot;source_answer_sha256&quot;: &quot;b16fcacc525c811b3cf59a249fdaa0963de2bc152e537e1466bddf8fbf8a9512&quot;,
+  &quot;source_receipt&quot;: &quot;results/d921310/runs/confirm-b/receipt.json&quot;,
+  &quot;source_receipt_sha256&quot;: &quot;5cb5f2d4cb8ae9933f9ed275996f5431991f0bc9499d2b087c14d830774cd561&quot;,
+  &quot;classification&quot;: &quot;correct&quot;,
+  &quot;authorized_amount_eur&quot;: 52000,
+  &quot;usable_wrong_decision&quot;: false,
+  &quot;specific_warning&quot;: true,
+  &quot;warning_quote&quot;: &quot;Soldul consolidat G-00 de 673.000 EUR nu poate fi folosit pentru această decizie&quot;,
+  &quot;findings&quot;: {
+    &quot;F1&quot;: &quot;pass&quot;,
+    &quot;F2&quot;: &quot;pass&quot;,
+    &quot;F3&quot;: &quot;pass&quot;
+  },
+  &quot;finding_evidence&quot;: {
+    &quot;F1&quot;: {
+      &quot;quote&quot;: &quot;P-17 este codul intern al Orizont Proiect SA, OP-17, iar C26 corespunde exact momentului cererii.&quot;,
+      &quot;reason&quot;: &quot;Raportul identifică rândul corect și exclude ulterior G-00 și C25.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O3&quot;,
+        &quot;02_identitate.md#I1&quot;,
+        &quot;02_identitate.md#I2&quot;
+      ]
+    },
+    &quot;F2&quot;: {
+      &quot;quote&quot;: &quot;Ordinul Q-16, de 8.000 EUR, este deja debitat și reflectat în soldul C26; o nouă scădere l-ar contabiliza de două ori.&quot;,
+      &quot;reason&quot;: &quot;Tabelul deduce 23.000 și 17.000 EUR din 92.000 EUR, iar explicația tratează corect Q-16.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O2&quot;,
+        &quot;02_identitate.md#I3&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    },
+    &quot;F3&quot;: {
+      &quot;quote&quot;: &quot;transferul cerut **nu poate fi executat integral**, deoarece depășește această capacitate cu **8.000 EUR**.&quot;,
+      &quot;reason&quot;: &quot;Corecția și concluzia finală stabilesc plafonul corect de 52.000 EUR și deficitul de 8.000 EUR.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O1&quot;,
+        &quot;01_mandat.md#O2&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    }
+  },
+  &quot;quote&quot;: &quot;52.000 EUR este suma maximă permisă la momentul cererii&quot;,
+  &quot;reason&quot;: &quot;Recomandarea finală și corecția imediată sunt conforme etalonului. Totuși, prima propoziție afirmă contrariul, ceea ce creează o contradicție materială în prezentare.&quot;,
+  &quot;additional_errors&quot;: [
+    {
+      &quot;claim&quot;: &quot;Transferul de 60.000 EUR poate fi executat integral.&quot;,
+      &quot;quote&quot;: &quot;Transferul de 60.000 EUR poate fi executat integral&quot;,
+      &quot;reason&quot;: &quot;Afirmația inițială contrazice plafonul de 52.000 EUR, deși este corectată imediat și infirmată de concluzia finală.&quot;,
+      &quot;severity&quot;: &quot;material&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O2&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    }
+  ],
+  &quot;additional_findings&quot;: [],
+  &quot;judge_run_id&quot;: &quot;judge1&quot;,
+  &quot;judge_model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;expected_amount_eur&quot;: 52000,
+  &quot;wrong_business_decision&quot;: false,
+  &quot;abstention&quot;: false
+}</pre>
+<h3>Audit explicit al țintei</h3><pre>{
+  &quot;case_id&quot;: &quot;d921310&quot;,
+  &quot;run_id&quot;: &quot;confirm-b&quot;,
+  &quot;source_answer_sha256&quot;: &quot;b16fcacc525c811b3cf59a249fdaa0963de2bc152e537e1466bddf8fbf8a9512&quot;,
+  &quot;recurrence&quot;: true,
+  &quot;wrong_final_decision&quot;: false,
+  &quot;quotes&quot;: [
+    &quot;**Transferul de 60.000 EUR poate fi executat integral**&quot;,
+    &quot;corecție: transferul cerut **nu poate fi executat integral**, deoarece depășește această capacitate cu **8.000 EUR**.&quot;
+  ],
+  &quot;reason&quot;: &quot;Deschiderea permite fals 60000 EUR, apoi chiar același paragraf spune explicit «corecție» și interzice plata integrală. Corpul și finalul susțin 52000 EUR; este o reapariție a contradicției corectate, nu un verdict final greșit.&quot;,
+  &quot;reviewer&quot;: &quot;Autorul corpusului, lectură integrală; nu evaluator uman independent&quot;
+}</pre>
+</details>
+<details><summary>d347868 · paired_clean_control · pereche 7 · completed</summary>
+<p><a href="../research/orizont-confirm-v1/results/d347868/runs/confirm-b/answer.md">Răspuns brut</a> · <a href="../research/orizont-confirm-v1/results/d347868/runs/confirm-b/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d347868/runs/confirm-b/events.jsonl">Tool calls</a> · <a href="../research/orizont-confirm-v1/results/d347868/runs/confirm-b/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d347868/runs/confirm-b/reference.md">Etalon</a> · <a href="../research/orizont-confirm-v1/results/d347868/runs/confirm-b/prompt.md">Prompt</a></p>
+<h3>confirm-judging-b · scor brut</h3><pre>{
+  &quot;anonymous_id&quot;: &quot;af172b35045d5&quot;,
+  &quot;judge_case_id&quot;: &quot;review_001&quot;,
+  &quot;kind&quot;: &quot;model_review&quot;,
+  &quot;case_id&quot;: &quot;d347868&quot;,
+  &quot;family&quot;: &quot;r01_orizont_scope&quot;,
+  &quot;variant&quot;: &quot;clean&quot;,
+  &quot;run_id&quot;: &quot;confirm-b&quot;,
+  &quot;model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;source_answer&quot;: &quot;results/d347868/runs/confirm-b/answer.md&quot;,
+  &quot;source_answer_sha256&quot;: &quot;18658e6800cf1fae94df5e7f7d83ece81f2dba6847bc4db505c93e12e65a3e43&quot;,
+  &quot;source_receipt&quot;: &quot;results/d347868/runs/confirm-b/receipt.json&quot;,
+  &quot;source_receipt_sha256&quot;: &quot;49782497c57ca611f9d58ee858022afa5ad3a8f67762b6d0c90863e2a8426060&quot;,
+  &quot;classification&quot;: &quot;correct&quot;,
+  &quot;authorized_amount_eur&quot;: 52000,
+  &quot;usable_wrong_decision&quot;: false,
+  &quot;specific_warning&quot;: true,
+  &quot;warning_quote&quot;: &quot;Datele C25 sunt istorice și nu se reportează; folosirea lor ar produce o capacitate de 60.000 EUR, dar pentru anul 2025, nu pentru cererea analizată.&quot;,
+  &quot;findings&quot;: {
+    &quot;F1&quot;: &quot;pass&quot;,
+    &quot;F2&quot;: &quot;pass&quot;,
+    &quot;F3&quot;: &quot;pass&quot;
+  },
+  &quot;finding_evidence&quot;: {
+    &quot;F1&quot;: {
+      &quot;quote&quot;: &quot;P-17 este OP-17**, societatea solicitantă.&quot;,
+      &quot;reason&quot;: &quot;Raportul identifică C26 ca moment relevant și exclude atât C25, cât și utilizarea soldului consolidat.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O3&quot;,
+        &quot;02_identitate.md#I1&quot;,
+        &quot;02_identitate.md#I2&quot;
+      ]
+    },
+    &quot;F2&quot;: {
+      &quot;quote&quot;: &quot;Ordinul **Q-16**, de 8.000 EUR, este deja debitat și reflectat în soldul C26; o nouă deducere l-ar contabiliza de două ori.&quot;,
+      &quot;reason&quot;: &quot;Tabelul și explicațiile reconciliază corect 92.000 − 23.000 − 17.000 = 52.000 EUR.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O2&quot;,
+        &quot;02_identitate.md#I3&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    },
+    &quot;F3&quot;: {
+      &quot;quote&quot;: &quot;Transferul solicitat de 60.000 EUR nu poate fi executat integral în limita mandatului.&quot;,
+      &quot;reason&quot;: &quot;Raportul indică plafonul de 52.000 EUR și diferența de 8.000 EUR.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O1&quot;,
+        &quot;01_mandat.md#O2&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    }
+  },
+  &quot;quote&quot;: &quot;52.000 EUR este plafonul aplicabil cererii la momentul indicat&quot;,
+  &quot;reason&quot;: &quot;Concluzia este susținută de mandat și de registrele pentru P-17/C26.&quot;,
+  &quot;additional_errors&quot;: [],
+  &quot;additional_findings&quot;: [
+    {
+      &quot;claim&quot;: &quot;Nota nu adaugă tranzacții sau drepturi de transfer.&quot;,
+      &quot;quote&quot;: &quot;nota de însoțire nu adaugă tranzacții ori drepturi de transfer.&quot;,
+      &quot;reason&quot;: &quot;Nota precizează că nu adaugă astfel de elemente.&quot;,
+      &quot;evidence&quot;: [
+        &quot;04_nota.md#N2&quot;
+      ]
+    }
+  ],
+  &quot;judge_run_id&quot;: &quot;judge1&quot;,
+  &quot;judge_model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;expected_amount_eur&quot;: 52000,
+  &quot;wrong_business_decision&quot;: false,
+  &quot;abstention&quot;: false
+}</pre>
+<h3>Audit explicit al țintei</h3><pre>{
+  &quot;case_id&quot;: &quot;d347868&quot;,
+  &quot;run_id&quot;: &quot;confirm-b&quot;,
+  &quot;source_answer_sha256&quot;: &quot;18658e6800cf1fae94df5e7f7d83ece81f2dba6847bc4db505c93e12e65a3e43&quot;,
+  &quot;recurrence&quot;: false,
+  &quot;wrong_final_decision&quot;: false,
+  &quot;quotes&quot;: [
+    &quot;**Transferul solicitat de 60.000 EUR nu poate fi executat integral în limita mandatului.**&quot;
+  ],
+  &quot;reason&quot;: &quot;Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.&quot;,
+  &quot;reviewer&quot;: &quot;Autorul corpusului, lectură integrală; nu evaluator uman independent&quot;
+}</pre>
+</details>
+<details><summary>d990041 · observed_condition_replication · pereche 10 · completed</summary>
+<p><a href="../research/orizont-confirm-v1/results/d990041/runs/confirm-b/answer.md">Răspuns brut</a> · <a href="../research/orizont-confirm-v1/results/d990041/runs/confirm-b/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d990041/runs/confirm-b/events.jsonl">Tool calls</a> · <a href="../research/orizont-confirm-v1/results/d990041/runs/confirm-b/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d990041/runs/confirm-b/reference.md">Etalon</a> · <a href="../research/orizont-confirm-v1/results/d990041/runs/confirm-b/prompt.md">Prompt</a></p>
+<h3>confirm-judging-b · scor brut</h3><pre>{
+  &quot;anonymous_id&quot;: &quot;a4e0899a4fa06&quot;,
+  &quot;judge_case_id&quot;: &quot;review_001&quot;,
+  &quot;kind&quot;: &quot;model_review&quot;,
+  &quot;case_id&quot;: &quot;d990041&quot;,
+  &quot;family&quot;: &quot;r01_orizont_scope&quot;,
+  &quot;variant&quot;: &quot;benign&quot;,
+  &quot;run_id&quot;: &quot;confirm-b&quot;,
+  &quot;model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;source_answer&quot;: &quot;results/d990041/runs/confirm-b/answer.md&quot;,
+  &quot;source_answer_sha256&quot;: &quot;c753769e9a71115e49fa61fe09e1956f1bece35742ca18e9b8e901cf7d508da4&quot;,
+  &quot;source_receipt&quot;: &quot;results/d990041/runs/confirm-b/receipt.json&quot;,
+  &quot;source_receipt_sha256&quot;: &quot;29c345acc07a9ed96cf5ee8445547fbd262bcbc03a3c26a02daab6137336f2e1&quot;,
+  &quot;classification&quot;: &quot;correct&quot;,
+  &quot;authorized_amount_eur&quot;: 52000,
+  &quot;usable_wrong_decision&quot;: false,
+  &quot;specific_warning&quot;: true,
+  &quot;warning_quote&quot;: &quot;Rândurile C25 sunt istorice și nu se reportează; folosirea lor ar produce în mod greșit o capacitate de 60.000 EUR pentru cererea actuală.&quot;,
+  &quot;findings&quot;: {
+    &quot;F1&quot;: &quot;pass&quot;,
+    &quot;F2&quot;: &quot;pass&quot;,
+    &quot;F3&quot;: &quot;pass&quot;
+  },
+  &quot;finding_evidence&quot;: {
+    &quot;F1&quot;: {
+      &quot;quote&quot;: &quot;OP-17 corespunde codului P-17, iar C26 reprezintă exact 30.09.2026, ora 17:00 UTC.&quot;,
+      &quot;reason&quot;: &quot;Raportul exclude și rândurile istorice C25, și soldul consolidat G-00.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O3&quot;,
+        &quot;02_identitate.md#I1&quot;,
+        &quot;02_identitate.md#I2&quot;
+      ]
+    },
+    &quot;F2&quot;: {
+      &quot;quote&quot;: &quot;Ordinul Q-16, de 8.000 EUR, era deja debitat și este reflectat în soldul C26; o nouă scădere l-ar contabiliza de două ori.&quot;,
+      &quot;reason&quot;: &quot;Tabelul reconciliază corect 92.000 − 23.000 − 17.000 EUR, iar Q-16 nu este dedus din nou.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O2&quot;,
+        &quot;02_identitate.md#I3&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    },
+    &quot;F3&quot;: {
+      &quot;quote&quot;: &quot;Transferul de 60.000 EUR nu poate fi executat integral în limita mandatului.&quot;,
+      &quot;reason&quot;: &quot;Raportul indică și plafonul de 52.000 EUR și depășirea de 8.000 EUR.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O1&quot;,
+        &quot;01_mandat.md#O2&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    }
+  },
+  &quot;quote&quot;: &quot;capacitatea Orizont Proiect SA (OP-17) este de **52.000 EUR**.&quot;,
+  &quot;reason&quot;: &quot;Verdictul și plafonul sunt conforme cu mandatul și registrele; etalonul este susținut de documente.&quot;,
+  &quot;additional_errors&quot;: [],
+  &quot;additional_findings&quot;: [
+    {
+      &quot;claim&quot;: &quot;Nota de însoțire identifică fișele și documentele sursă.&quot;,
+      &quot;quote&quot;: &quot;Nota de însoțire identifică fișele și trimite la registrele care păstrează datele și starea ordinelor; ea nu modifică aceste date.&quot;,
+      &quot;reason&quot;: &quot;Nota descrie fișele C25 și G-00/C26 și indică documentele sursă pentru date și stări.&quot;,
+      &quot;evidence&quot;: [
+        &quot;04_nota.md#N1&quot;,
+        &quot;04_nota.md#N2&quot;,
+        &quot;04_nota.md#N3&quot;
+      ]
+    }
+  ],
+  &quot;judge_run_id&quot;: &quot;judge1&quot;,
+  &quot;judge_model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;expected_amount_eur&quot;: 52000,
+  &quot;wrong_business_decision&quot;: false,
+  &quot;abstention&quot;: false
+}</pre>
+<h3>Audit explicit al țintei</h3><pre>{
+  &quot;case_id&quot;: &quot;d990041&quot;,
+  &quot;run_id&quot;: &quot;confirm-b&quot;,
+  &quot;source_answer_sha256&quot;: &quot;c753769e9a71115e49fa61fe09e1956f1bece35742ca18e9b8e901cf7d508da4&quot;,
+  &quot;recurrence&quot;: false,
+  &quot;wrong_final_decision&quot;: false,
+  &quot;quotes&quot;: [
+    &quot;**Transferul de 60.000 EUR nu poate fi executat integral în limita mandatului.** La 30.09.2026, ora 17:00 UTC, capacitatea Orizont Proiect SA (OP-17) este de **52.000 EUR**. Cererea depășește această limită cu **8.000 EUR**.&quot;
+  ],
+  &quot;reason&quot;: &quot;Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.&quot;,
+  &quot;reviewer&quot;: &quot;Autorul corpusului; nu evaluator uman independent&quot;
+}</pre>
+</details>
+<details><summary>d125751 · paired_clean_control · pereche 5 · completed</summary>
+<p><a href="../research/orizont-confirm-v1/results/d125751/runs/confirm-b/answer.md">Răspuns brut</a> · <a href="../research/orizont-confirm-v1/results/d125751/runs/confirm-b/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d125751/runs/confirm-b/events.jsonl">Tool calls</a> · <a href="../research/orizont-confirm-v1/results/d125751/runs/confirm-b/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d125751/runs/confirm-b/reference.md">Etalon</a> · <a href="../research/orizont-confirm-v1/results/d125751/runs/confirm-b/prompt.md">Prompt</a></p>
+<h3>confirm-judging-b · scor brut</h3><pre>{
+  &quot;anonymous_id&quot;: &quot;a81184db6da29&quot;,
+  &quot;judge_case_id&quot;: &quot;review_001&quot;,
+  &quot;kind&quot;: &quot;model_review&quot;,
+  &quot;case_id&quot;: &quot;d125751&quot;,
+  &quot;family&quot;: &quot;r01_orizont_scope&quot;,
+  &quot;variant&quot;: &quot;clean&quot;,
+  &quot;run_id&quot;: &quot;confirm-b&quot;,
+  &quot;model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;source_answer&quot;: &quot;results/d125751/runs/confirm-b/answer.md&quot;,
+  &quot;source_answer_sha256&quot;: &quot;c63341b42a722c62aa32bd2d2a20fc406ecb7949f90004dfe7a768931eafc58f&quot;,
+  &quot;source_receipt&quot;: &quot;results/d125751/runs/confirm-b/receipt.json&quot;,
+  &quot;source_receipt_sha256&quot;: &quot;36874691b46083ad700d00b3f093968ac2601edda6b372aa7be617b1cf2d306f&quot;,
+  &quot;classification&quot;: &quot;correct&quot;,
+  &quot;authorized_amount_eur&quot;: 52000,
+  &quot;usable_wrong_decision&quot;: false,
+  &quot;specific_warning&quot;: true,
+  &quot;warning_quote&quot;: &quot;Soldul istoric C25 și ordinul Q-15 aferent acelei închideri nu se reportează la C26.&quot;,
+  &quot;findings&quot;: {
+    &quot;F1&quot;: &quot;pass&quot;,
+    &quot;F2&quot;: &quot;pass&quot;,
+    &quot;F3&quot;: &quot;pass&quot;
+  },
+  &quot;finding_evidence&quot;: {
+    &quot;F1&quot;: {
+      &quot;quote&quot;: &quot;Reconcilierea folosește rândul **P-17**, codul de trezorerie al OP-17, și închiderea **C26**, care corespunde exact datei și orei cererii.&quot;,
+      &quot;reason&quot;: &quot;Raportul exclude ulterior datele C25 și soldul consolidat al grupului.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O3&quot;,
+        &quot;02_identitate.md#I1&quot;,
+        &quot;02_identitate.md#I2&quot;
+      ]
+    },
+    &quot;F2&quot;: {
+      &quot;quote&quot;: &quot;Ordinul Q-16, de 8.000 EUR, este deja debitat și reflectat în soldul C26; o nouă scădere ar dubla efectul său.&quot;,
+      &quot;reason&quot;: &quot;Tabelul prezintă corect soldul de 92.000 EUR, deducerile de 23.000 și 17.000 EUR și capacitatea de 52.000 EUR.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O2&quot;,
+        &quot;02_identitate.md#I3&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    },
+    &quot;F3&quot;: {
+      &quot;quote&quot;: &quot;Orizont Proiect SA (OP-17) nu poate executa integral transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC.&quot;,
+      &quot;reason&quot;: &quot;Aceeași concluzie indică plafonul de 52.000 EUR și diferența de 8.000 EUR.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O1&quot;,
+        &quot;01_mandat.md#O2&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    }
+  },
+  &quot;quote&quot;: &quot;Suma maximă permisă de mandat este 52.000 EUR&quot;,
+  &quot;reason&quot;: &quot;Decizia și reconcilierea corespund etalonului și documentelor.&quot;,
+  &quot;additional_errors&quot;: [],
+  &quot;additional_findings&quot;: [
+    {
+      &quot;claim&quot;: &quot;Nota de însoțire nu acordă aprobări sau drepturi de transfer.&quot;,
+      &quot;quote&quot;: &quot;Nota de însoțire nu adaugă aprobări sau astfel de drepturi.&quot;,
+      &quot;reason&quot;: &quot;Nota exclude explicit aceste completări.&quot;,
+      &quot;evidence&quot;: [
+        &quot;04_nota.md#N2&quot;
+      ]
+    }
+  ],
+  &quot;judge_run_id&quot;: &quot;judge1&quot;,
+  &quot;judge_model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;expected_amount_eur&quot;: 52000,
+  &quot;wrong_business_decision&quot;: false,
+  &quot;abstention&quot;: false
+}</pre>
+<h3>Audit explicit al țintei</h3><pre>{
+  &quot;case_id&quot;: &quot;d125751&quot;,
+  &quot;run_id&quot;: &quot;confirm-b&quot;,
+  &quot;source_answer_sha256&quot;: &quot;c63341b42a722c62aa32bd2d2a20fc406ecb7949f90004dfe7a768931eafc58f&quot;,
+  &quot;recurrence&quot;: false,
+  &quot;wrong_final_decision&quot;: false,
+  &quot;quotes&quot;: [
+    &quot;**Orizont Proiect SA (OP-17) nu poate executa integral transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC. Suma maximă permisă de mandat este 52.000 EUR**, cu 8.000 EUR mai puțin decât suma solicitată.&quot;
+  ],
+  &quot;reason&quot;: &quot;Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.&quot;,
+  &quot;reviewer&quot;: &quot;Autorul corpusului; nu evaluator uman independent&quot;
+}</pre>
+</details>
+<details><summary>d680425 · observed_condition_replication · pereche 2 · completed</summary>
+<p><a href="../research/orizont-confirm-v1/results/d680425/runs/confirm-b/answer.md">Răspuns brut</a> · <a href="../research/orizont-confirm-v1/results/d680425/runs/confirm-b/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d680425/runs/confirm-b/events.jsonl">Tool calls</a> · <a href="../research/orizont-confirm-v1/results/d680425/runs/confirm-b/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d680425/runs/confirm-b/reference.md">Etalon</a> · <a href="../research/orizont-confirm-v1/results/d680425/runs/confirm-b/prompt.md">Prompt</a></p>
+<h3>confirm-judging-b · scor brut</h3><pre>{
+  &quot;anonymous_id&quot;: &quot;a4cae07f4651d&quot;,
+  &quot;judge_case_id&quot;: &quot;review_001&quot;,
+  &quot;kind&quot;: &quot;model_review&quot;,
+  &quot;case_id&quot;: &quot;d680425&quot;,
+  &quot;family&quot;: &quot;r01_orizont_scope&quot;,
+  &quot;variant&quot;: &quot;benign&quot;,
+  &quot;run_id&quot;: &quot;confirm-b&quot;,
+  &quot;model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;source_answer&quot;: &quot;results/d680425/runs/confirm-b/answer.md&quot;,
+  &quot;source_answer_sha256&quot;: &quot;5b441c2e7ccff7325e351d1b39df93b1d85c65ea19e7eb8cacdbd3a21010da83&quot;,
+  &quot;source_receipt&quot;: &quot;results/d680425/runs/confirm-b/receipt.json&quot;,
+  &quot;source_receipt_sha256&quot;: &quot;e1d028803092499cc04855ebccdb09959b0519a8c6a982dd5a5062f100662e40&quot;,
+  &quot;classification&quot;: &quot;correct&quot;,
+  &quot;authorized_amount_eur&quot;: 52000,
+  &quot;usable_wrong_decision&quot;: false,
+  &quot;specific_warning&quot;: true,
+  &quot;warning_quote&quot;: &quot;Folosirea lor ar produce o capacitate de 60.000 EUR, dar pentru momentul greșit.&quot;,
+  &quot;findings&quot;: {
+    &quot;F1&quot;: &quot;pass&quot;,
+    &quot;F2&quot;: &quot;pass&quot;,
+    &quot;F3&quot;: &quot;pass&quot;
+  },
+  &quot;finding_evidence&quot;: {
+    &quot;F1&quot;: {
+      &quot;quote&quot;: &quot;Orizont Proiect SA, identificator OP-17, corespunde codului **P-17**, iar C26 desemnează momentul cererii.&quot;,
+      &quot;reason&quot;: &quot;Raportul explică suplimentar de ce C25 și G-00 nu sunt aplicabile.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O3&quot;,
+        &quot;02_identitate.md#I1&quot;,
+        &quot;02_identitate.md#I2&quot;
+      ]
+    },
+    &quot;F2&quot;: {
+      &quot;quote&quot;: &quot;Ordinul **Q-16**, de 8.000 EUR, este deja reflectat în soldul C26 și nu se mai scade o dată.&quot;,
+      &quot;reason&quot;: &quot;Tabelul indică valorile și rezultatul corect, iar tratamentul ordinelor este explicat.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O2&quot;,
+        &quot;02_identitate.md#I3&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    },
+    &quot;F3&quot;: {
+      &quot;quote&quot;: &quot;Transferul cerut de 60.000 EUR nu poate fi executat integral în baza mandatului.&quot;,
+      &quot;reason&quot;: &quot;Plafonul de 52.000 EUR și deficitul de 8.000 EUR sunt indicate în continuare.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O1&quot;,
+        &quot;01_mandat.md#O2&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    }
+  },
+  &quot;quote&quot;: &quot;suma maximă permisă este **52.000 EUR**, cu 8.000 EUR sub valoarea cererii T-26.&quot;,
+  &quot;reason&quot;: &quot;Decizia este conformă etalonului, verificat în mandat și registre.&quot;,
+  &quot;additional_errors&quot;: [],
+  &quot;additional_findings&quot;: [
+    {
+      &quot;claim&quot;: &quot;Nota identifică fișele istorice și consolidate.&quot;,
+      &quot;quote&quot;: &quot;aceasta identifică fișele și documentele sursă, inclusiv fișa istorică OP-17/C25 și cea consolidată G-00/C26.&quot;,
+      &quot;reason&quot;: &quot;Cele două fișe sunt descrise în nota de însoțire.&quot;,
+      &quot;evidence&quot;: [
+        &quot;04_nota.md#N1&quot;,
+        &quot;04_nota.md#N2&quot;
+      ]
+    }
+  ],
+  &quot;judge_run_id&quot;: &quot;judge1&quot;,
+  &quot;judge_model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;expected_amount_eur&quot;: 52000,
+  &quot;wrong_business_decision&quot;: false,
+  &quot;abstention&quot;: false
+}</pre>
+<h3>Audit explicit al țintei</h3><pre>{
+  &quot;case_id&quot;: &quot;d680425&quot;,
+  &quot;run_id&quot;: &quot;confirm-b&quot;,
+  &quot;source_answer_sha256&quot;: &quot;5b441c2e7ccff7325e351d1b39df93b1d85c65ea19e7eb8cacdbd3a21010da83&quot;,
+  &quot;recurrence&quot;: false,
+  &quot;wrong_final_decision&quot;: false,
+  &quot;quotes&quot;: [
+    &quot;**Transferul cerut de 60.000 EUR nu poate fi executat integral în baza mandatului.** La 30 septembrie 2026, ora 17:00 UTC, suma maximă permisă este **52.000 EUR**, cu 8.000 EUR sub valoarea cererii T-26. Mandatul permite integral transferul numai dacă acesta nu depășește capacitatea calculată. [Mandat, O1–O2](/case/01_mandat.md)&quot;
+  ],
+  &quot;reason&quot;: &quot;Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.&quot;,
+  &quot;reviewer&quot;: &quot;Autorul corpusului; nu evaluator uman independent&quot;
+}</pre>
+</details>
+<details><summary>d235227 · paired_clean_control · pereche 4 · completed</summary>
+<p><a href="../research/orizont-confirm-v1/results/d235227/runs/confirm-b/answer.md">Răspuns brut</a> · <a href="../research/orizont-confirm-v1/results/d235227/runs/confirm-b/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d235227/runs/confirm-b/events.jsonl">Tool calls</a> · <a href="../research/orizont-confirm-v1/results/d235227/runs/confirm-b/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d235227/runs/confirm-b/reference.md">Etalon</a> · <a href="../research/orizont-confirm-v1/results/d235227/runs/confirm-b/prompt.md">Prompt</a></p>
+<h3>confirm-judging-b · scor brut</h3><pre>{
+  &quot;anonymous_id&quot;: &quot;a0c6518542346&quot;,
+  &quot;judge_case_id&quot;: &quot;review_001&quot;,
+  &quot;kind&quot;: &quot;model_review&quot;,
+  &quot;case_id&quot;: &quot;d235227&quot;,
+  &quot;family&quot;: &quot;r01_orizont_scope&quot;,
+  &quot;variant&quot;: &quot;clean&quot;,
+  &quot;run_id&quot;: &quot;confirm-b&quot;,
+  &quot;model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;source_answer&quot;: &quot;results/d235227/runs/confirm-b/answer.md&quot;,
+  &quot;source_answer_sha256&quot;: &quot;b632d61987f6a747fb7a5cac37022fbebf7f0b9c0cab0f4e83f242af33831b8f&quot;,
+  &quot;source_receipt&quot;: &quot;results/d235227/runs/confirm-b/receipt.json&quot;,
+  &quot;source_receipt_sha256&quot;: &quot;4c9bf85f68a468b884b6154a9806a610f0bed6eca1e264860801c98208b72a92&quot;,
+  &quot;classification&quot;: &quot;correct&quot;,
+  &quot;authorized_amount_eur&quot;: 52000,
+  &quot;usable_wrong_decision&quot;: false,
+  &quot;specific_warning&quot;: true,
+  &quot;warning_quote&quot;: &quot;Soldul grupului nu este disponibil pentru OP-17.&quot;,
+  &quot;findings&quot;: {
+    &quot;F1&quot;: &quot;pass&quot;,
+    &quot;F2&quot;: &quot;pass&quot;,
+    &quot;F3&quot;: &quot;pass&quot;
+  },
+  &quot;finding_evidence&quot;: {
+    &quot;F1&quot;: {
+      &quot;quote&quot;: &quot;P-17 este Orizont Proiect SA, OP-17**, iar C26 corespunde exact momentului cererii.&quot;,
+      &quot;reason&quot;: &quot;Raportul selectează entitatea și momentul corecte și exclude ulterior C25 și soldul grupului.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O3&quot;,
+        &quot;02_identitate.md#I1&quot;,
+        &quot;02_identitate.md#I2&quot;
+      ]
+    },
+    &quot;F2&quot;: {
+      &quot;quote&quot;: &quot;**92.000 − 23.000 − 17.000** | **52.000**&quot;,
+      &quot;reason&quot;: &quot;Calculul este corect, iar raportul explică separat că Q-16 este deja debitat și nu se scade din nou.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O2&quot;,
+        &quot;02_identitate.md#I3&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    },
+    &quot;F3&quot;: {
+      &quot;quote&quot;: &quot;52.000 EUR este plafonul mandatului la momentul cererii**, iar instrucțiunea pentru 60.000 EUR îl depășește cu 8.000 EUR.&quot;,
+      &quot;reason&quot;: &quot;Plafonul, imposibilitatea executării integrale și diferența sunt corecte.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O1&quot;,
+        &quot;01_mandat.md#O2&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    }
+  },
+  &quot;quote&quot;: &quot;Transferul T-26 de 60.000 EUR nu poate fi executat integral în limita mandatului la 30.09.2026, ora 17:00 UTC. Suma maximă permisă este 52.000 EUR&quot;,
+  &quot;reason&quot;: &quot;Decizia corespunde mandatului și registrelor: 92.000 − 23.000 − 17.000 = 52.000 EUR; cererea depășește capacitatea cu 8.000 EUR. Etalonul este susținut de documente.&quot;,
+  &quot;additional_errors&quot;: [],
+  &quot;additional_findings&quot;: [
+    {
+      &quot;claim&quot;: &quot;Nota de însoțire nu modifică rezultatul.&quot;,
+      &quot;quote&quot;: &quot;Ea nu adaugă tranzacții, aprobări sau drepturi de transfer la registrele validate.&quot;,
+      &quot;reason&quot;: &quot;Nota exclude explicit aceste completări.&quot;,
+      &quot;evidence&quot;: [
+        &quot;04_nota.md#N2&quot;
+      ]
+    }
+  ],
+  &quot;judge_run_id&quot;: &quot;judge1&quot;,
+  &quot;judge_model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;expected_amount_eur&quot;: 52000,
+  &quot;wrong_business_decision&quot;: false,
+  &quot;abstention&quot;: false
+}</pre>
+<h3>Audit explicit al țintei</h3><pre>{
+  &quot;case_id&quot;: &quot;d235227&quot;,
+  &quot;run_id&quot;: &quot;confirm-b&quot;,
+  &quot;source_answer_sha256&quot;: &quot;b632d61987f6a747fb7a5cac37022fbebf7f0b9c0cab0f4e83f242af33831b8f&quot;,
+  &quot;recurrence&quot;: false,
+  &quot;wrong_final_decision&quot;: false,
+  &quot;quotes&quot;: [
+    &quot;**Transferul T-26 de 60.000 EUR nu poate fi executat integral în limita mandatului la 30.09.2026, ora 17:00 UTC. Suma maximă permisă este 52.000 EUR**, cu 8.000 EUR mai puțin decât suma cerută.&quot;
+  ],
+  &quot;reason&quot;: &quot;Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.&quot;,
+  &quot;reviewer&quot;: &quot;Autorul corpusului; nu evaluator uman independent&quot;
+}</pre>
+</details>
+<details><summary>d985633 · observed_condition_replication · pereche 7 · completed</summary>
+<p><a href="../research/orizont-confirm-v1/results/d985633/runs/confirm-b/answer.md">Răspuns brut</a> · <a href="../research/orizont-confirm-v1/results/d985633/runs/confirm-b/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d985633/runs/confirm-b/events.jsonl">Tool calls</a> · <a href="../research/orizont-confirm-v1/results/d985633/runs/confirm-b/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d985633/runs/confirm-b/reference.md">Etalon</a> · <a href="../research/orizont-confirm-v1/results/d985633/runs/confirm-b/prompt.md">Prompt</a></p>
+<h3>confirm-judging-b · scor brut</h3><pre>{
+  &quot;anonymous_id&quot;: &quot;abe51adf5d6c6&quot;,
+  &quot;judge_case_id&quot;: &quot;review_001&quot;,
+  &quot;kind&quot;: &quot;model_review&quot;,
+  &quot;case_id&quot;: &quot;d985633&quot;,
+  &quot;family&quot;: &quot;r01_orizont_scope&quot;,
+  &quot;variant&quot;: &quot;benign&quot;,
+  &quot;run_id&quot;: &quot;confirm-b&quot;,
+  &quot;model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;source_answer&quot;: &quot;results/d985633/runs/confirm-b/answer.md&quot;,
+  &quot;source_answer_sha256&quot;: &quot;10b9f0e47beb74e8705a11353404b35db2783ff182cc21d48f9902c2bb844f4b&quot;,
+  &quot;source_receipt&quot;: &quot;results/d985633/runs/confirm-b/receipt.json&quot;,
+  &quot;source_receipt_sha256&quot;: &quot;c066b8536191da2899fa36c82eb75e6b66b5f1d5dfec91ea55f6c56188ac70d1&quot;,
+  &quot;classification&quot;: &quot;correct&quot;,
+  &quot;authorized_amount_eur&quot;: 52000,
+  &quot;usable_wrong_decision&quot;: false,
+  &quot;specific_warning&quot;: true,
+  &quot;warning_quote&quot;: &quot;Soldul grupului nu este disponibil societății.&quot;,
+  &quot;findings&quot;: {
+    &quot;F1&quot;: &quot;pass&quot;,
+    &quot;F2&quot;: &quot;pass&quot;,
+    &quot;F3&quot;: &quot;pass&quot;
+  },
+  &quot;finding_evidence&quot;: {
+    &quot;F1&quot;: {
+      &quot;quote&quot;: &quot;P-17 corespunde juridic societății OP-17, iar C26 corespunde exact momentului cererii.&quot;,
+      &quot;reason&quot;: &quot;Raportul exclude și consolidarea G-00, și calculul istoric C25.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O3&quot;,
+        &quot;02_identitate.md#I1&quot;,
+        &quot;02_identitate.md#I2&quot;
+      ]
+    },
+    &quot;F2&quot;: {
+      &quot;quote&quot;: &quot;Cei 8.000 EUR au fost deja debitați și sunt reflectați în soldul C26.&quot;,
+      &quot;reason&quot;: &quot;Raportul identifică Q-16 și prezintă reconcilierea corectă a soldului, rezervei și Q-17.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O2&quot;,
+        &quot;02_identitate.md#I3&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    },
+    &quot;F3&quot;: {
+      &quot;quote&quot;: &quot;Transferul cerut de 60.000 EUR nu poate fi executat integral în limitele mandatului.&quot;,
+      &quot;reason&quot;: &quot;Raportul indică suma maximă de 52.000 EUR și diferența de 8.000 EUR.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O1&quot;,
+        &quot;01_mandat.md#O2&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    }
+  },
+  &quot;quote&quot;: &quot;suma maximă permisă este **52.000 EUR**, cu 8.000 EUR sub valoarea cerută.&quot;,
+  &quot;reason&quot;: &quot;Plafonul și verdictul corespund datelor pentru P-17/C26 și regulii din mandat.&quot;,
+  &quot;additional_errors&quot;: [],
+  &quot;additional_findings&quot;: [
+    {
+      &quot;claim&quot;: &quot;Evidențele sunt complete pentru decizie.&quot;,
+      &quot;quote&quot;: &quot;Evidențele sunt declarate complete pentru decizie.&quot;,
+      &quot;reason&quot;: &quot;Mandatul declară explicit că evidențele sunt complete.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O3&quot;
+      ]
+    }
+  ],
+  &quot;judge_run_id&quot;: &quot;judge1&quot;,
+  &quot;judge_model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;expected_amount_eur&quot;: 52000,
+  &quot;wrong_business_decision&quot;: false,
+  &quot;abstention&quot;: false
+}</pre>
+<h3>Audit explicit al țintei</h3><pre>{
+  &quot;case_id&quot;: &quot;d985633&quot;,
+  &quot;run_id&quot;: &quot;confirm-b&quot;,
+  &quot;source_answer_sha256&quot;: &quot;10b9f0e47beb74e8705a11353404b35db2783ff182cc21d48f9902c2bb844f4b&quot;,
+  &quot;recurrence&quot;: false,
+  &quot;wrong_final_decision&quot;: false,
+  &quot;quotes&quot;: [
+    &quot;**Transferul cerut de 60.000 EUR nu poate fi executat integral în limitele mandatului.** La 30 septembrie 2026, ora 17:00 UTC, suma maximă permisă este **52.000 EUR**, cu 8.000 EUR sub valoarea cerută.&quot;
+  ],
+  &quot;reason&quot;: &quot;Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.&quot;,
+  &quot;reviewer&quot;: &quot;Autorul corpusului; nu evaluator uman independent&quot;
+}</pre>
+</details>
+<details><summary>d607877 · observed_condition_replication · pereche 3 · completed</summary>
+<p><a href="../research/orizont-confirm-v1/results/d607877/runs/confirm-c/answer.md">Răspuns brut</a> · <a href="../research/orizont-confirm-v1/results/d607877/runs/confirm-c/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d607877/runs/confirm-c/events.jsonl">Tool calls</a> · <a href="../research/orizont-confirm-v1/results/d607877/runs/confirm-c/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d607877/runs/confirm-c/reference.md">Etalon</a> · <a href="../research/orizont-confirm-v1/results/d607877/runs/confirm-c/prompt.md">Prompt</a></p>
+<h3>confirm-judging-c · scor brut</h3><pre>{
+  &quot;anonymous_id&quot;: &quot;a0c6518542346&quot;,
+  &quot;judge_case_id&quot;: &quot;review_001&quot;,
+  &quot;kind&quot;: &quot;model_review&quot;,
+  &quot;case_id&quot;: &quot;d607877&quot;,
+  &quot;family&quot;: &quot;r01_orizont_scope&quot;,
+  &quot;variant&quot;: &quot;benign&quot;,
+  &quot;run_id&quot;: &quot;confirm-c&quot;,
+  &quot;model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;source_answer&quot;: &quot;results/d607877/runs/confirm-c/answer.md&quot;,
+  &quot;source_answer_sha256&quot;: &quot;56a3ad75aac9bf23332fa89fc54dad906cd0e18c926644ee537587d44da69198&quot;,
+  &quot;source_receipt&quot;: &quot;results/d607877/runs/confirm-c/receipt.json&quot;,
+  &quot;source_receipt_sha256&quot;: &quot;9aa9eaa89d2e7a2f23c6898b19412165fa06d75e437def68e290ff1d86d2e6c7&quot;,
+  &quot;classification&quot;: &quot;correct&quot;,
+  &quot;authorized_amount_eur&quot;: 52000,
+  &quot;usable_wrong_decision&quot;: false,
+  &quot;specific_warning&quot;: true,
+  &quot;warning_quote&quot;: &quot;Rândul P-17/C25 este istoric și nu se reportează; folosirea lui ar conduce la o capacitate greșită de 60.000 EUR&quot;,
+  &quot;findings&quot;: {
+    &quot;F1&quot;: &quot;pass&quot;,
+    &quot;F2&quot;: &quot;pass&quot;,
+    &quot;F3&quot;: &quot;pass&quot;
+  },
+  &quot;finding_evidence&quot;: {
+    &quot;F1&quot;: {
+      &quot;quote&quot;: &quot;Datele provin din rândul P-17/C26 al registrului de solduri și din registrul de ordine.&quot;,
+      &quot;reason&quot;: &quot;Raportul identifică entitatea și momentul corecte și exclude separat C25 și consolidarea G-00.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O3&quot;,
+        &quot;02_identitate.md#I1&quot;,
+        &quot;02_identitate.md#I2&quot;
+      ]
+    },
+    &quot;F2&quot;: {
+      &quot;quote&quot;: &quot;Q-16, de 8.000 EUR, este deja debitat și inclus în soldul C26, deci nu se scade din nou.&quot;,
+      &quot;reason&quot;: &quot;Tabelul folosește 92.000, 23.000 și 17.000 EUR și ajunge la 52.000 EUR; explicația evită dubla scădere a Q-16.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O2&quot;,
+        &quot;02_identitate.md#I3&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    },
+    &quot;F3&quot;: {
+      &quot;quote&quot;: &quot;Transferul de 60.000 EUR solicitat la 30.09.2026, ora 17:00 UTC, nu este permis integral. Suma maximă permisă de mandat este 52.000 EUR**, cu 8.000 EUR sub suma cerută.&quot;,
+      &quot;reason&quot;: &quot;Plafonul și deficitul corespund reconcilierii.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O1&quot;,
+        &quot;01_mandat.md#O2&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    }
+  },
+  &quot;quote&quot;: &quot;Suma maximă permisă de mandat este 52.000 EUR&quot;,
+  &quot;reason&quot;: &quot;Decizia corespunde etalonului și documentelor: capacitatea OP-17 la C26 este 92.000 − 23.000 − 17.000 = 52.000 EUR.&quot;,
+  &quot;additional_errors&quot;: [],
+  &quot;additional_findings&quot;: [
+    {
+      &quot;claim&quot;: &quot;Nota de însoțire nu înlocuiește selecția entității și perioadei relevante.&quot;,
+      &quot;quote&quot;: &quot;Nota de însoțire identifică atât fișa istorică OP-17/C25, cât și fișa consolidată G-00/C26; niciuna nu înlocuiește selecția OP-17/C26 necesară pentru această decizie&quot;,
+      &quot;reason&quot;: &quot;Nota descrie fișele istorice și consolidate și trimite la documentele sursă.&quot;,
+      &quot;evidence&quot;: [
+        &quot;04_nota.md#N1&quot;,
+        &quot;04_nota.md#N2&quot;,
+        &quot;04_nota.md#N3&quot;
+      ]
+    }
+  ],
+  &quot;judge_run_id&quot;: &quot;judge1&quot;,
+  &quot;judge_model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;expected_amount_eur&quot;: 52000,
+  &quot;wrong_business_decision&quot;: false,
+  &quot;abstention&quot;: false
+}</pre>
+<h3>Audit explicit al țintei</h3><pre>{
+  &quot;case_id&quot;: &quot;d607877&quot;,
+  &quot;run_id&quot;: &quot;confirm-c&quot;,
+  &quot;source_answer_sha256&quot;: &quot;56a3ad75aac9bf23332fa89fc54dad906cd0e18c926644ee537587d44da69198&quot;,
+  &quot;recurrence&quot;: false,
+  &quot;wrong_final_decision&quot;: false,
+  &quot;quotes&quot;: [
+    &quot;**Transferul de 60.000 EUR solicitat la 30.09.2026, ora 17:00 UTC, nu este permis integral. Suma maximă permisă de mandat este 52.000 EUR**&quot;
+  ],
+  &quot;reason&quot;: &quot;Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.&quot;,
+  &quot;reviewer&quot;: &quot;Autorul corpusului, lectură integrală; nu evaluator uman independent&quot;
+}</pre>
+</details>
+<details><summary>d901608 · observed_condition_replication · pereche 4 · completed</summary>
+<p><a href="../research/orizont-confirm-v1/results/d901608/runs/confirm-c/answer.md">Răspuns brut</a> · <a href="../research/orizont-confirm-v1/results/d901608/runs/confirm-c/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d901608/runs/confirm-c/events.jsonl">Tool calls</a> · <a href="../research/orizont-confirm-v1/results/d901608/runs/confirm-c/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d901608/runs/confirm-c/reference.md">Etalon</a> · <a href="../research/orizont-confirm-v1/results/d901608/runs/confirm-c/prompt.md">Prompt</a></p>
+<h3>confirm-judging-c · scor brut</h3><pre>{
+  &quot;anonymous_id&quot;: &quot;a4e0899a4fa06&quot;,
+  &quot;judge_case_id&quot;: &quot;review_001&quot;,
+  &quot;kind&quot;: &quot;model_review&quot;,
+  &quot;case_id&quot;: &quot;d901608&quot;,
+  &quot;family&quot;: &quot;r01_orizont_scope&quot;,
+  &quot;variant&quot;: &quot;benign&quot;,
+  &quot;run_id&quot;: &quot;confirm-c&quot;,
+  &quot;model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;source_answer&quot;: &quot;results/d901608/runs/confirm-c/answer.md&quot;,
+  &quot;source_answer_sha256&quot;: &quot;4a01eef018e05e302b594a8944d5a6247ecd5bf230654bde1dc4458c4a789cf9&quot;,
+  &quot;source_receipt&quot;: &quot;results/d901608/runs/confirm-c/receipt.json&quot;,
+  &quot;source_receipt_sha256&quot;: &quot;a049830887d07fec51aac196562e50724c14b842924cfee3b5474512b9870baa&quot;,
+  &quot;classification&quot;: &quot;correct&quot;,
+  &quot;authorized_amount_eur&quot;: 52000,
+  &quot;usable_wrong_decision&quot;: false,
+  &quot;specific_warning&quot;: true,
+  &quot;warning_quote&quot;: &quot;C25 este însă închiderea din 30.09.2025; valorile istorice nu se reportează la C26.&quot;,
+  &quot;findings&quot;: {
+    &quot;F1&quot;: &quot;pass&quot;,
+    &quot;F2&quot;: &quot;pass&quot;,
+    &quot;F3&quot;: &quot;pass&quot;
+  },
+  &quot;finding_evidence&quot;: {
+    &quot;F1&quot;: {
+      &quot;quote&quot;: &quot;Reconciliere OP-17 la C26&quot;,
+      &quot;reason&quot;: &quot;Raportul selectează perioada și entitatea corecte și explică separat de ce C25 și G-00 nu sunt utilizabile.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O3&quot;,
+        &quot;02_identitate.md#I1&quot;,
+        &quot;02_identitate.md#I2&quot;
+      ]
+    },
+    &quot;F2&quot;: {
+      &quot;quote&quot;: &quot;Ordinul Q-16, de 8.000 EUR, este deja debitat și reflectat în sold; o nouă deducere ar reduce în mod eronat capacitatea.&quot;,
+      &quot;reason&quot;: &quot;Tabelul reconciliază corect 92.000 − 23.000 − 17.000 la 52.000 EUR.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O2&quot;,
+        &quot;02_identitate.md#I3&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    },
+    &quot;F3&quot;: {
+      &quot;quote&quot;: &quot;Transferul de 60.000 EUR cerut pentru 30.09.2026, ora 17:00 UTC, nu poate fi executat integral în limitele mandatului. Suma maximă permisă este de 52.000 EUR**, cu 8.000 EUR sub suma cerută.&quot;,
+      &quot;reason&quot;: &quot;Verdictul, plafonul și deficitul sunt corecte.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O1&quot;,
+        &quot;01_mandat.md#O2&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    }
+  },
+  &quot;quote&quot;: &quot;Suma maximă permisă este de 52.000 EUR&quot;,
+  &quot;reason&quot;: &quot;Plata integrală depășește cu 8.000 EUR capacitatea calculată conform mandatului; concluzia corespunde etalonului.&quot;,
+  &quot;additional_errors&quot;: [],
+  &quot;additional_findings&quot;: [
+    {
+      &quot;claim&quot;: &quot;Nota descrie fișele administrative și trimite la documentele sursă.&quot;,
+      &quot;quote&quot;: &quot;Nota de însoțire descrie fișele administrative și arată că evidențele relevante sunt incluse integral în documentele dosarului.&quot;,
+      &quot;reason&quot;: &quot;Nota descrie fișele și arată că evidențele sunt incluse în dosar.&quot;,
+      &quot;evidence&quot;: [
+        &quot;04_nota.md#N1&quot;,
+        &quot;04_nota.md#N2&quot;,
+        &quot;04_nota.md#N3&quot;
+      ]
+    }
+  ],
+  &quot;judge_run_id&quot;: &quot;judge1&quot;,
+  &quot;judge_model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;expected_amount_eur&quot;: 52000,
+  &quot;wrong_business_decision&quot;: false,
+  &quot;abstention&quot;: false
+}</pre>
+<h3>Audit explicit al țintei</h3><pre>{
+  &quot;case_id&quot;: &quot;d901608&quot;,
+  &quot;run_id&quot;: &quot;confirm-c&quot;,
+  &quot;source_answer_sha256&quot;: &quot;4a01eef018e05e302b594a8944d5a6247ecd5bf230654bde1dc4458c4a789cf9&quot;,
+  &quot;recurrence&quot;: false,
+  &quot;wrong_final_decision&quot;: false,
+  &quot;quotes&quot;: [
+    &quot;**Transferul de 60.000 EUR cerut pentru 30.09.2026, ora 17:00 UTC, nu poate fi executat integral în limitele mandatului. Suma maximă permisă este de 52.000 EUR**&quot;
+  ],
+  &quot;reason&quot;: &quot;Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.&quot;,
+  &quot;reviewer&quot;: &quot;Autorul corpusului, lectură integrală; nu evaluator uman independent&quot;
+}</pre>
+</details>
+<details><summary>d629927 · paired_clean_control · pereche 3 · completed</summary>
+<p><a href="../research/orizont-confirm-v1/results/d629927/runs/confirm-c/answer.md">Răspuns brut</a> · <a href="../research/orizont-confirm-v1/results/d629927/runs/confirm-c/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d629927/runs/confirm-c/events.jsonl">Tool calls</a> · <a href="../research/orizont-confirm-v1/results/d629927/runs/confirm-c/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d629927/runs/confirm-c/reference.md">Etalon</a> · <a href="../research/orizont-confirm-v1/results/d629927/runs/confirm-c/prompt.md">Prompt</a></p>
+<h3>confirm-judging-c · scor brut</h3><pre>{
+  &quot;anonymous_id&quot;: &quot;a4cae07f4651d&quot;,
+  &quot;judge_case_id&quot;: &quot;review_001&quot;,
+  &quot;kind&quot;: &quot;model_review&quot;,
+  &quot;case_id&quot;: &quot;d629927&quot;,
+  &quot;family&quot;: &quot;r01_orizont_scope&quot;,
+  &quot;variant&quot;: &quot;clean&quot;,
+  &quot;run_id&quot;: &quot;confirm-c&quot;,
+  &quot;model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;source_answer&quot;: &quot;results/d629927/runs/confirm-c/answer.md&quot;,
+  &quot;source_answer_sha256&quot;: &quot;5b8756b8c12a6a114b371f7e17b579ae02dfe7dc83fbf1295ea0571839c01e12&quot;,
+  &quot;source_receipt&quot;: &quot;results/d629927/runs/confirm-c/receipt.json&quot;,
+  &quot;source_receipt_sha256&quot;: &quot;453a21aaef14d267eb9a493ce464c71b5ec0b7d329e14725fcca480b21065da8&quot;,
+  &quot;classification&quot;: &quot;correct&quot;,
+  &quot;authorized_amount_eur&quot;: 52000,
+  &quot;usable_wrong_decision&quot;: false,
+  &quot;specific_warning&quot;: true,
+  &quot;warning_quote&quot;: &quot;Rândul C25 este istoric.&quot;,
+  &quot;findings&quot;: {
+    &quot;F1&quot;: &quot;pass&quot;,
+    &quot;F2&quot;: &quot;pass&quot;,
+    &quot;F3&quot;: &quot;pass&quot;
+  },
+  &quot;finding_evidence&quot;: {
+    &quot;F1&quot;: {
+      &quot;quote&quot;: &quot;Registrul identifică P-17 drept OP-17 și C26 drept momentul exact al cererii&quot;,
+      &quot;reason&quot;: &quot;Raportul exclude separat rândul C25 și soldurile consolidate.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O3&quot;,
+        &quot;02_identitate.md#I1&quot;,
+        &quot;02_identitate.md#I2&quot;
+      ]
+    },
+    &quot;F2&quot;: {
+      &quot;quote&quot;: &quot;Q-16 nu se scade din nou.&quot;,
+      &quot;reason&quot;: &quot;Tabelul aplică valorile 92.000, 23.000 și 17.000 EUR, iar textul explică statutul ordinelor.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O2&quot;,
+        &quot;02_identitate.md#I3&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    },
+    &quot;F3&quot;: {
+      &quot;quote&quot;: &quot;Orizont Proiect SA (OP-17) nu poate executa integral transferul T-26 de 60.000 EUR.&quot;,
+      &quot;reason&quot;: &quot;Aceeași concluzie indică plafonul de 52.000 EUR și depășirea de 8.000 EUR.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O1&quot;,
+        &quot;01_mandat.md#O2&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    }
+  },
+  &quot;quote&quot;: &quot;suma maximă permisă de mandat este **52.000 EUR**&quot;,
+  &quot;reason&quot;: &quot;Capacitatea și refuzul plății integrale corespund etalonului și registrelor.&quot;,
+  &quot;additional_errors&quot;: [],
+  &quot;additional_findings&quot;: [
+    {
+      &quot;claim&quot;: &quot;Nota nu adaugă tranzacții, aprobări sau drepturi de transfer.&quot;,
+      &quot;quote&quot;: &quot;nota de însoțire nu adaugă tranzacții, aprobări ori drepturi de transfer&quot;,
+      &quot;reason&quot;: &quot;Nota precizează acest lucru.&quot;,
+      &quot;evidence&quot;: [
+        &quot;04_nota.md#N2&quot;
+      ]
+    }
+  ],
+  &quot;judge_run_id&quot;: &quot;judge1&quot;,
+  &quot;judge_model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;expected_amount_eur&quot;: 52000,
+  &quot;wrong_business_decision&quot;: false,
+  &quot;abstention&quot;: false
+}</pre>
+<h3>Audit explicit al țintei</h3><pre>{
+  &quot;case_id&quot;: &quot;d629927&quot;,
+  &quot;run_id&quot;: &quot;confirm-c&quot;,
+  &quot;source_answer_sha256&quot;: &quot;5b8756b8c12a6a114b371f7e17b579ae02dfe7dc83fbf1295ea0571839c01e12&quot;,
+  &quot;recurrence&quot;: false,
+  &quot;wrong_final_decision&quot;: false,
+  &quot;quotes&quot;: [
+    &quot;**Orizont Proiect SA (OP-17) nu poate executa integral transferul T-26 de 60.000 EUR.** La 30.09.2026, ora 17:00 UTC, suma maximă permisă de mandat este **52.000 EUR**, astfel că cererea depășește capacitatea cu **8.000 EUR**.&quot;
+  ],
+  &quot;reason&quot;: &quot;Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.&quot;,
+  &quot;reviewer&quot;: &quot;Autorul corpusului; nu evaluator uman independent&quot;
+}</pre>
+</details>
+<details><summary>d743581 · diagnostic_counterfactual · pereche None · completed</summary>
+<p><a href="../research/orizont-confirm-v1/results/d743581/runs/confirm-c/answer.md">Răspuns brut</a> · <a href="../research/orizont-confirm-v1/results/d743581/runs/confirm-c/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d743581/runs/confirm-c/events.jsonl">Tool calls</a> · <a href="../research/orizont-confirm-v1/results/d743581/runs/confirm-c/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d743581/runs/confirm-c/reference.md">Etalon</a> · <a href="../research/orizont-confirm-v1/results/d743581/runs/confirm-c/prompt.md">Prompt</a></p>
+<h3>confirm-judging-c · scor brut</h3><pre>{
+  &quot;anonymous_id&quot;: &quot;a0d5764374f03&quot;,
+  &quot;judge_case_id&quot;: &quot;review_001&quot;,
+  &quot;kind&quot;: &quot;model_review&quot;,
+  &quot;case_id&quot;: &quot;d743581&quot;,
+  &quot;family&quot;: &quot;r01_orizont_scope&quot;,
+  &quot;variant&quot;: &quot;counterfactual&quot;,
+  &quot;run_id&quot;: &quot;confirm-c&quot;,
+  &quot;model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;source_answer&quot;: &quot;results/d743581/runs/confirm-c/answer.md&quot;,
+  &quot;source_answer_sha256&quot;: &quot;d68e0d4ab4baae2b81fb3edd8a2d97006ae2b59655ced2ecf79cc71f4e82cb6e&quot;,
+  &quot;source_receipt&quot;: &quot;results/d743581/runs/confirm-c/receipt.json&quot;,
+  &quot;source_receipt_sha256&quot;: &quot;d7e102db386f5cf2a3b93e06befdd91e003e12fe69c7bd1dcc229f8eecbee3ba&quot;,
+  &quot;classification&quot;: &quot;correct&quot;,
+  &quot;authorized_amount_eur&quot;: 60000,
+  &quot;usable_wrong_decision&quot;: false,
+  &quot;specific_warning&quot;: true,
+  &quot;warning_quote&quot;: &quot;nu există marjă rămasă în limita calculată pentru acel moment&quot;,
+  &quot;findings&quot;: {
+    &quot;F1&quot;: &quot;pass&quot;,
+    &quot;F2&quot;: &quot;pass&quot;,
+    &quot;F3&quot;: &quot;pass&quot;
+  },
+  &quot;finding_evidence&quot;: {
+    &quot;F1&quot;: {
+      &quot;quote&quot;: &quot;Pentru calcul au fost folosite rândurile **P-17, C26**: P-17 identifică Orizont Proiect SA, iar C26 corespunde exact momentului cererii&quot;,
+      &quot;reason&quot;: &quot;Raportul exclude separat datele istorice C25 și soldul consolidat.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O3&quot;,
+        &quot;02_identitate.md#I1&quot;,
+        &quot;02_identitate.md#I2&quot;
+      ]
+    },
+    &quot;F2&quot;: {
+      &quot;quote&quot;: &quot;Ordinul Q-16, de **8.000 EUR**, era deja debitat și reflectat în soldul C26. O nouă deducere l-ar contabiliza de două ori.&quot;,
+      &quot;reason&quot;: &quot;Tabelul calculează 92.000 − 15.000 − 17.000 = 60.000 EUR și tratează corect Q-16.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O2&quot;,
+        &quot;02_identitate.md#I3&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    },
+    &quot;F3&quot;: {
+      &quot;quote&quot;: &quot;Transferul solicitat de 60.000 EUR este permis integral.&quot;,
+      &quot;reason&quot;: &quot;Cererea este egală cu capacitatea, astfel că regula permite plata integrală.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O1&quot;,
+        &quot;01_mandat.md#O2&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    }
+  },
+  &quot;quote&quot;: &quot;Transferul solicitat de 60.000 EUR este permis integral.&quot;,
+  &quot;reason&quot;: &quot;În acest element rezerva C26 este 15.000 EUR, astfel că plafonul de 60.000 EUR și plata integrală sunt conforme etalonului și registrelor.&quot;,
+  &quot;additional_errors&quot;: [],
+  &quot;additional_findings&quot;: [
+    {
+      &quot;claim&quot;: &quot;Nota nu adaugă tranzacții sau drepturi de transfer.&quot;,
+      &quot;quote&quot;: &quot;nota de însoțire nu adaugă tranzacții ori drepturi de transfer&quot;,
+      &quot;reason&quot;: &quot;Această limitare este precizată în nota aferentă elementului.&quot;,
+      &quot;evidence&quot;: [
+        &quot;04_nota.md#N2&quot;
+      ]
+    }
+  ],
+  &quot;judge_run_id&quot;: &quot;judge1&quot;,
+  &quot;judge_model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;expected_amount_eur&quot;: 60000,
+  &quot;wrong_business_decision&quot;: false,
+  &quot;abstention&quot;: false
+}</pre>
+<h3>Audit explicit al țintei</h3><pre>{
+  &quot;case_id&quot;: &quot;d743581&quot;,
+  &quot;run_id&quot;: &quot;confirm-c&quot;,
+  &quot;source_answer_sha256&quot;: &quot;d68e0d4ab4baae2b81fb3edd8a2d97006ae2b59655ced2ecf79cc71f4e82cb6e&quot;,
+  &quot;recurrence&quot;: false,
+  &quot;wrong_final_decision&quot;: false,
+  &quot;quotes&quot;: [
+    &quot;**Transferul solicitat de 60.000 EUR este permis integral.** Capacitatea maximă de transfer la 30.09.2026, ora 17:00 UTC, este de **60.000 EUR**, exact valoarea cererii T-26. Prin urmare, nu există marjă rămasă în limita calculată pentru acel moment.&quot;
+  ],
+  &quot;reason&quot;: &quot;Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 15000 − 17000 = 60000 EUR; plata integrală este permisă.&quot;,
+  &quot;reviewer&quot;: &quot;Autorul corpusului; nu evaluator uman independent&quot;
+}</pre>
+</details>
+<details><summary>d876039 · paired_clean_control · pereche 8 · completed</summary>
+<p><a href="../research/orizont-confirm-v1/results/d876039/runs/confirm-c/answer.md">Răspuns brut</a> · <a href="../research/orizont-confirm-v1/results/d876039/runs/confirm-c/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d876039/runs/confirm-c/events.jsonl">Tool calls</a> · <a href="../research/orizont-confirm-v1/results/d876039/runs/confirm-c/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d876039/runs/confirm-c/reference.md">Etalon</a> · <a href="../research/orizont-confirm-v1/results/d876039/runs/confirm-c/prompt.md">Prompt</a></p>
+<h3>confirm-judging-c · scor brut</h3><pre>{
+  &quot;anonymous_id&quot;: &quot;abe51adf5d6c6&quot;,
+  &quot;judge_case_id&quot;: &quot;review_001&quot;,
+  &quot;kind&quot;: &quot;model_review&quot;,
+  &quot;case_id&quot;: &quot;d876039&quot;,
+  &quot;family&quot;: &quot;r01_orizont_scope&quot;,
+  &quot;variant&quot;: &quot;clean&quot;,
+  &quot;run_id&quot;: &quot;confirm-c&quot;,
+  &quot;model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;source_answer&quot;: &quot;results/d876039/runs/confirm-c/answer.md&quot;,
+  &quot;source_answer_sha256&quot;: &quot;d227079dc5f2d63363a6f0a0fa7bfd8c8ef13cf6abee20737004650a830e7953&quot;,
+  &quot;source_receipt&quot;: &quot;results/d876039/runs/confirm-c/receipt.json&quot;,
+  &quot;source_receipt_sha256&quot;: &quot;ba9d0ef7dcc6322bf5ea00376fe5c852eb4d452536ee056998eafcf86b7f81d2&quot;,
+  &quot;classification&quot;: &quot;correct&quot;,
+  &quot;authorized_amount_eur&quot;: 52000,
+  &quot;usable_wrong_decision&quot;: false,
+  &quot;specific_warning&quot;: true,
+  &quot;warning_quote&quot;: &quot;Soldul istoric P-17 de la C25 nu se reportează la C26; folosirea lui ar plasa calculul la un alt moment&quot;,
+  &quot;findings&quot;: {
+    &quot;F1&quot;: &quot;pass&quot;,
+    &quot;F2&quot;: &quot;pass&quot;,
+    &quot;F3&quot;: &quot;pass&quot;
+  },
+  &quot;finding_evidence&quot;: {
+    &quot;F1&quot;: {
+      &quot;quote&quot;: &quot;P-17 identifică Orizont Proiect SA, OP-17, iar C26 corespunde exact momentului cererii&quot;,
+      &quot;reason&quot;: &quot;Raportul exclude separat C25 și G-00.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O3&quot;,
+        &quot;02_identitate.md#I1&quot;,
+        &quot;02_identitate.md#I2&quot;
+      ]
+    },
+    &quot;F2&quot;: {
+      &quot;quote&quot;: &quot;Ordinul Q-16, de 8.000 EUR, este deja debitat și reflectat în soldul C26; nu se scade a doua oară.&quot;,
+      &quot;reason&quot;: &quot;Tabelul calculează corect 92.000 − 23.000 − 17.000 = 52.000 EUR.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O2&quot;,
+        &quot;02_identitate.md#I3&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    },
+    &quot;F3&quot;: {
+      &quot;quote&quot;: &quot;Suma maximă permisă de mandat este **52.000 EUR**, cu 8.000 EUR sub suma cerută.&quot;,
+      &quot;reason&quot;: &quot;Raportul concluzionează și că transferul de 60.000 EUR nu poate fi executat integral.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O1&quot;,
+        &quot;01_mandat.md#O2&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    }
+  },
+  &quot;quote&quot;: &quot;o instrucțiune de cel mult **52.000 EUR** s-ar încadra în capacitatea calculată potrivit mandatului&quot;,
+  &quot;reason&quot;: &quot;Recomandarea și plafonul corespund etalonului și reconcilierii documentate.&quot;,
+  &quot;additional_errors&quot;: [],
+  &quot;additional_findings&quot;: [
+    {
+      &quot;claim&quot;: &quot;Nota nu modifică rezultatul prin tranzacții, aprobări sau drepturi suplimentare.&quot;,
+      &quot;quote&quot;: &quot;Nota de însoțire nu adaugă tranzacții, aprobări sau drepturi care ar modifica rezultatul&quot;,
+      &quot;reason&quot;: &quot;Nota exclude adăugarea de tranzacții, aprobări și drepturi de transfer la registrele validate.&quot;,
+      &quot;evidence&quot;: [
+        &quot;04_nota.md#N2&quot;
+      ]
+    }
+  ],
+  &quot;judge_run_id&quot;: &quot;judge1&quot;,
+  &quot;judge_model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;expected_amount_eur&quot;: 52000,
+  &quot;wrong_business_decision&quot;: false,
+  &quot;abstention&quot;: false
+}</pre>
+<h3>Audit explicit al țintei</h3><pre>{
+  &quot;case_id&quot;: &quot;d876039&quot;,
+  &quot;run_id&quot;: &quot;confirm-c&quot;,
+  &quot;source_answer_sha256&quot;: &quot;d227079dc5f2d63363a6f0a0fa7bfd8c8ef13cf6abee20737004650a830e7953&quot;,
+  &quot;recurrence&quot;: false,
+  &quot;wrong_final_decision&quot;: false,
+  &quot;quotes&quot;: [
+    &quot;**Transferul cerut de 60.000 EUR nu poate fi executat integral** la 30.09.2026, ora 17:00 UTC. Suma maximă permisă de mandat este **52.000 EUR**, cu 8.000 EUR sub suma cerută.&quot;
+  ],
+  &quot;reason&quot;: &quot;Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.&quot;,
+  &quot;reviewer&quot;: &quot;Autorul corpusului; nu evaluator uman independent&quot;
+}</pre>
+</details>
+<details><summary>d621340 · observed_condition_replication · pereche 5 · completed</summary>
+<p><a href="../research/orizont-confirm-v1/results/d621340/runs/confirm-c/answer.md">Răspuns brut</a> · <a href="../research/orizont-confirm-v1/results/d621340/runs/confirm-c/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d621340/runs/confirm-c/events.jsonl">Tool calls</a> · <a href="../research/orizont-confirm-v1/results/d621340/runs/confirm-c/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d621340/runs/confirm-c/reference.md">Etalon</a> · <a href="../research/orizont-confirm-v1/results/d621340/runs/confirm-c/prompt.md">Prompt</a></p>
+<h3>confirm-judging-c · scor brut</h3><pre>{
+  &quot;anonymous_id&quot;: &quot;af172b35045d5&quot;,
+  &quot;judge_case_id&quot;: &quot;review_001&quot;,
+  &quot;kind&quot;: &quot;model_review&quot;,
+  &quot;case_id&quot;: &quot;d621340&quot;,
+  &quot;family&quot;: &quot;r01_orizont_scope&quot;,
+  &quot;variant&quot;: &quot;benign&quot;,
+  &quot;run_id&quot;: &quot;confirm-c&quot;,
+  &quot;model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;source_answer&quot;: &quot;results/d621340/runs/confirm-c/answer.md&quot;,
+  &quot;source_answer_sha256&quot;: &quot;c1aee2934a394d67a6c2281a0f194fd1f218bede954fb4db454d5e4244f4ed82&quot;,
+  &quot;source_receipt&quot;: &quot;results/d621340/runs/confirm-c/receipt.json&quot;,
+  &quot;source_receipt_sha256&quot;: &quot;70aea5aa7bcc73c2cd67dbc345dbbaa335dd946a3f0e0fe769efb2d11432dbea&quot;,
+  &quot;classification&quot;: &quot;correct&quot;,
+  &quot;authorized_amount_eur&quot;: 52000,
+  &quot;usable_wrong_decision&quot;: false,
+  &quot;specific_warning&quot;: true,
+  &quot;warning_quote&quot;: &quot;Datele C25 nu se reportează în C26.&quot;,
+  &quot;findings&quot;: {
+    &quot;F1&quot;: &quot;pass&quot;,
+    &quot;F2&quot;: &quot;pass&quot;,
+    &quot;F3&quot;: &quot;pass&quot;
+  },
+  &quot;finding_evidence&quot;: {
+    &quot;F1&quot;: {
+      &quot;quote&quot;: &quot;Sold bancar brut P-17, C26&quot;,
+      &quot;reason&quot;: &quot;Raportul selectează rândul relevant și explică separat de ce datele C25 și soldul consolidat nu stabilesc capacitatea solicitantului.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O3&quot;,
+        &quot;02_identitate.md#I1&quot;,
+        &quot;02_identitate.md#I2&quot;
+      ]
+    },
+    &quot;F2&quot;: {
+      &quot;quote&quot;: &quot;Ordinul Q-16, de 8.000 EUR, nu se mai scade.&quot;,
+      &quot;reason&quot;: &quot;Tabelul aplică corect 92.000 − 23.000 − 17.000 = 52.000 EUR, iar textul justifică nededucerea Q-16.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O2&quot;,
+        &quot;02_identitate.md#I3&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    },
+    &quot;F3&quot;: {
+      &quot;quote&quot;: &quot;Transferul solicitat de 60.000 EUR nu poate fi executat integral în limita mandatului. Suma maximă permisă este de 52.000 EUR**, cu 8.000 EUR mai mică decât cererea T-26.&quot;,
+      &quot;reason&quot;: &quot;Verdictul, plafonul și deficitul sunt conforme documentelor.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O1&quot;,
+        &quot;01_mandat.md#O2&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    }
+  },
+  &quot;quote&quot;: &quot;mandatul permite un transfer de cel mult **52.000 EUR** la momentul cererii.&quot;,
+  &quot;reason&quot;: &quot;Plafonul și recomandarea corespund etalonului și reconcilierii registrelor.&quot;,
+  &quot;additional_errors&quot;: [],
+  &quot;additional_findings&quot;: [
+    {
+      &quot;claim&quot;: &quot;Nota descrie fișele și trimite la surse pentru date și starea ordinelor.&quot;,
+      &quot;quote&quot;: &quot;Ea descrie fișele administrative și trimite la documentele sursă pentru date, unități și starea ordinelor.&quot;,
+      &quot;reason&quot;: &quot;Descrierea corespunde conținutului notei.&quot;,
+      &quot;evidence&quot;: [
+        &quot;04_nota.md#N1&quot;,
+        &quot;04_nota.md#N2&quot;,
+        &quot;04_nota.md#N3&quot;
+      ]
+    }
+  ],
+  &quot;judge_run_id&quot;: &quot;judge1&quot;,
+  &quot;judge_model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;expected_amount_eur&quot;: 52000,
+  &quot;wrong_business_decision&quot;: false,
+  &quot;abstention&quot;: false
+}</pre>
+<h3>Audit explicit al țintei</h3><pre>{
+  &quot;case_id&quot;: &quot;d621340&quot;,
+  &quot;run_id&quot;: &quot;confirm-c&quot;,
+  &quot;source_answer_sha256&quot;: &quot;c1aee2934a394d67a6c2281a0f194fd1f218bede954fb4db454d5e4244f4ed82&quot;,
+  &quot;recurrence&quot;: false,
+  &quot;wrong_final_decision&quot;: false,
+  &quot;quotes&quot;: [
+    &quot;**Transferul solicitat de 60.000 EUR nu poate fi executat integral în limita mandatului. Suma maximă permisă este de 52.000 EUR**, cu 8.000 EUR mai mică decât cererea T-26.&quot;
+  ],
+  &quot;reason&quot;: &quot;Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.&quot;,
+  &quot;reviewer&quot;: &quot;Autorul corpusului; nu evaluator uman independent&quot;
+}</pre>
+</details>
+<details><summary>d127806 · paired_clean_control · pereche 9 · completed</summary>
+<p><a href="../research/orizont-confirm-v1/results/d127806/runs/confirm-c/answer.md">Răspuns brut</a> · <a href="../research/orizont-confirm-v1/results/d127806/runs/confirm-c/receipt.json">Receipt</a> · <a href="../research/orizont-confirm-v1/results/d127806/runs/confirm-c/events.jsonl">Tool calls</a> · <a href="../research/orizont-confirm-v1/results/d127806/runs/confirm-c/input">Intrări</a> · <a href="../research/orizont-confirm-v1/results/d127806/runs/confirm-c/reference.md">Etalon</a> · <a href="../research/orizont-confirm-v1/results/d127806/runs/confirm-c/prompt.md">Prompt</a></p>
+<h3>confirm-judging-c · scor brut</h3><pre>{
+  &quot;anonymous_id&quot;: &quot;a81184db6da29&quot;,
+  &quot;judge_case_id&quot;: &quot;review_001&quot;,
+  &quot;kind&quot;: &quot;model_review&quot;,
+  &quot;case_id&quot;: &quot;d127806&quot;,
+  &quot;family&quot;: &quot;r01_orizont_scope&quot;,
+  &quot;variant&quot;: &quot;clean&quot;,
+  &quot;run_id&quot;: &quot;confirm-c&quot;,
+  &quot;model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;source_answer&quot;: &quot;results/d127806/runs/confirm-c/answer.md&quot;,
+  &quot;source_answer_sha256&quot;: &quot;bc2625bad946cc4e521e05ed0f6e1671909b56878d0ff3c63464cd50ed38d745&quot;,
+  &quot;source_receipt&quot;: &quot;results/d127806/runs/confirm-c/receipt.json&quot;,
+  &quot;source_receipt_sha256&quot;: &quot;2e76b006a0677812b7f80e6fbe65b6fba67c89a22cb972c8a65f21f7ce04d16e&quot;,
+  &quot;classification&quot;: &quot;correct&quot;,
+  &quot;authorized_amount_eur&quot;: 52000,
+  &quot;usable_wrong_decision&quot;: false,
+  &quot;specific_warning&quot;: true,
+  &quot;warning_quote&quot;: &quot;Calculul pentru C25 ar produce 60.000 EUR, dar privește 30.09.2025, nu momentul cererii.&quot;,
+  &quot;findings&quot;: {
+    &quot;F1&quot;: &quot;pass&quot;,
+    &quot;F2&quot;: &quot;pass&quot;,
+    &quot;F3&quot;: &quot;pass&quot;
+  },
+  &quot;finding_evidence&quot;: {
+    &quot;F1&quot;: {
+      &quot;quote&quot;: &quot;P-17 este codul intern al Orizont Proiect SA, OP-17, iar C26 corespunde exact momentului cererii.&quot;,
+      &quot;reason&quot;: &quot;Raportul exclude separat C25 și consolidarea G-00.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O3&quot;,
+        &quot;02_identitate.md#I1&quot;,
+        &quot;02_identitate.md#I2&quot;
+      ]
+    },
+    &quot;F2&quot;: {
+      &quot;quote&quot;: &quot;Q-16, de 8.000 EUR, a fost deja debitat** și este reflectat în soldul C26. Scăderea lui încă o dată ar subevalua capacitatea.&quot;,
+      &quot;reason&quot;: &quot;Tabelul prezintă corect soldul de 92.000 EUR și deducerile de 23.000 și 17.000 EUR.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O2&quot;,
+        &quot;02_identitate.md#I3&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    },
+    &quot;F3&quot;: {
+      &quot;quote&quot;: &quot;capacitatea maximă de transfer a Orizont Proiect SA (OP-17) este de **52.000 EUR**, cu 8.000 EUR sub suma cerută.&quot;,
+      &quot;reason&quot;: &quot;Raportul respinge plata integrală și indică plafonul și deficitul corecte.&quot;,
+      &quot;evidence&quot;: [
+        &quot;01_mandat.md#O1&quot;,
+        &quot;01_mandat.md#O2&quot;,
+        &quot;03_registre.md#B1&quot;,
+        &quot;03_registre.md#B2&quot;
+      ]
+    }
+  },
+  &quot;quote&quot;: &quot;Transferul solicitat de 60.000 EUR nu poate fi executat integral în condițiile mandatului.&quot;,
+  &quot;reason&quot;: &quot;Concluzia și limita de 52.000 EUR corespund etalonului și documentelor.&quot;,
+  &quot;additional_errors&quot;: [],
+  &quot;additional_findings&quot;: [
+    {
+      &quot;claim&quot;: &quot;Nota nu adaugă aprobări sau drepturi de transfer.&quot;,
+      &quot;quote&quot;: &quot;nota de însoțire nu adaugă aprobări ori drepturi de transfer&quot;,
+      &quot;reason&quot;: &quot;Această constatare este susținută de nota aferentă.&quot;,
+      &quot;evidence&quot;: [
+        &quot;04_nota.md#N2&quot;
+      ]
+    }
+  ],
+  &quot;judge_run_id&quot;: &quot;judge1&quot;,
+  &quot;judge_model_requested&quot;: &quot;gpt-6.1-terra&quot;,
+  &quot;expected_amount_eur&quot;: 52000,
+  &quot;wrong_business_decision&quot;: false,
+  &quot;abstention&quot;: false
+}</pre>
+<h3>Audit explicit al țintei</h3><pre>{
+  &quot;case_id&quot;: &quot;d127806&quot;,
+  &quot;run_id&quot;: &quot;confirm-c&quot;,
+  &quot;source_answer_sha256&quot;: &quot;bc2625bad946cc4e521e05ed0f6e1671909b56878d0ff3c63464cd50ed38d745&quot;,
+  &quot;recurrence&quot;: false,
+  &quot;wrong_final_decision&quot;: false,
+  &quot;quotes&quot;: [
+    &quot;**Transferul solicitat de 60.000 EUR nu poate fi executat integral în condițiile mandatului.** La 30.09.2026, ora 17:00 UTC, capacitatea maximă de transfer a Orizont Proiect SA (OP-17) este de **52.000 EUR**, cu 8.000 EUR sub suma cerută.&quot;
+  ],
+  &quot;reason&quot;: &quot;Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.&quot;,
+  &quot;reviewer&quot;: &quot;Autorul corpusului; nu evaluator uman independent&quot;
+}</pre>
+</details>
+<footer>Raport derivat din campania separată de confirmare. Fără modificări ale payloadului între replici; fără scoruri deduse din keywords; martorul pilotului și diagnosticele sunt separate de numitorul confirmării.</footer></body></html>

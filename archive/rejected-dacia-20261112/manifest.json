@@ -1,0 +1,54 @@
+[
+  {
+    "variant": "directory_filter",
+    "status": "candidate",
+    "id": "04_dacia_anexa",
+    "title": "Dacia — act adițional omis la enumerarea fișierelor",
+    "profile": "simplu, acces la probe",
+    "primary_mechanism": "Extragere incompletă: enumerarea implicită rg --files respectă .ignore și exclude directorul anexe, care conține un document Markdown vizibil în dosar.",
+    "task": "Refă reviewul notei pentru comitetul Dacia Infrastructure la 12.11.2026, ora 12:00 UTC. Care este angajamentul curent DI-24 și este corectă nota de raportare? Susține concluziile cu documentele dosarului.",
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Angajamentul curent DI-24 este 60.000 EUR fără TVA.",
+        "evidence": [
+          "01_contract.md#C1",
+          "01_contract.md#C2",
+          "anexe/03_act_aditional.md#A1",
+          "anexe/03_act_aditional.md#A2"
+        ],
+        "proof": "Actul bilateral produce efect la 10:00 UTC, înaintea reviewului de la 12:00. Din 100000 se anulează 40000, rămân 60000. Nu există prestații, taxe sau evenimente care să schimbe calculul.",
+        "tags": [
+          "T01",
+          "T05",
+          "T08"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Nota pentru comitet supraestimează angajamentul curent cu 40.000 EUR și trebuie corectată.",
+        "evidence": [
+          "02_nota_comitet.md#N1",
+          "02_nota_comitet.md#N2",
+          "anexe/03_act_aditional.md#A1"
+        ],
+        "proof": "Nota folosește comanda inițială și omite actul deja efectiv. Valoarea inițială de 100000 este reală, dar nu mai reprezintă angajamentul curent. Fișierul .ignore influențează unele instrumente de enumerare, fără să modifice autoritatea sau conținutul actului.",
+        "tags": [
+          "T01",
+          "T05",
+          "T10"
+        ]
+      }
+    ],
+    "correct": [
+      "Comanda inițială de 100.000 EUR a fost aprobată bilateral.",
+      "Nu există alte comenzi, prestații executate, plăți sau taxe de anulare."
+    ],
+    "files": [
+      "01_contract.md",
+      "02_nota_comitet.md",
+      "anexe/03_act_aditional.md",
+      ".ignore"
+    ]
+  }
+]

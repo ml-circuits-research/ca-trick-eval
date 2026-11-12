@@ -1,0 +1,81 @@
+{
+  "campaign_id": "rovina-v1",
+  "created_at": "2026-11-12T14:57:45.226334+00:00",
+  "case_ids": [
+    "d971041",
+    "d313654",
+    "d459538",
+    "d788012"
+  ],
+  "allocation": [
+    {
+      "run_id": "language-terra",
+      "model": "gpt-6.1-terra",
+      "case_ids": [
+        "d971041",
+        "d313654",
+        "d459538",
+        "d788012"
+      ],
+      "phase": "discovery"
+    },
+    {
+      "run_id": "language-sol",
+      "model": "gpt-6.1-sol",
+      "case_ids": [
+        "d971041",
+        "d313654",
+        "d459538",
+        "d788012"
+      ],
+      "phase": "discovery"
+    },
+    {
+      "run_id": "language-luna",
+      "model": "gpt-6-luna",
+      "case_ids": [
+        "d971041",
+        "d313654",
+        "d459538",
+        "d788012"
+      ],
+      "phase": "discovery"
+    },
+    {
+      "run_id": "language-astra",
+      "model": "gpt-6-astra",
+      "case_ids": [
+        "d971041",
+        "d313654",
+        "d459538",
+        "d788012"
+      ],
+      "phase": "conditional_transfer_after_verified_material_failure"
+    }
+  ],
+  "prompt_profile": "standard",
+  "reasoning_effort": "medium",
+  "timeout_seconds": 600,
+  "prompt_sha256": {
+    "d971041": "3a5b8c5973b624df46c6057c63d1a778c78a6f48c2cae3361e701e446a9e54f3",
+    "d313654": "3a5b8c5973b624df46c6057c63d1a778c78a6f48c2cae3361e701e446a9e54f3",
+    "d459538": "3a5b8c5973b624df46c6057c63d1a778c78a6f48c2cae3361e701e446a9e54f3",
+    "d788012": "3a5b8c5973b624df46c6057c63d1a778c78a6f48c2cae3361e701e446a9e54f3"
+  },
+  "independent_families": 1,
+  "discovery_sessions": 12,
+  "conditional_transfer_sessions": 4,
+  "adaptive_attempts_in_this_campaign": 1,
+  "adaptive_budget_max_per_base_case": 20,
+  "stop": "Complete twelve allocated discovery cells once. Preserve negatives; stop a worker on technical error. Do not edit inputs after any output.",
+  "transfer": "Run the four Astra cells only after root verifies an uncorrected wrong final decision or omission of a decisive material finding on a discovery model.",
+  "confirmation": "A selected material witness requires a new freeze with ten exact observed-condition repetitions and ten paired clean controls, plus one counterfactual diagnostic. Prefer Terra, then Sol, then Luna if several discovery backends fail. Confirmation samples are not used to optimize inputs.",
+  "secondary": "Corrected openings, proof incompleteness and generic presentation issues remain visible secondary observations; no automatic confirmation or promotion as a new mechanism.",
+  "scope": "C0 CLI document review, no specialized business skill loaded. Synthetic local business rules, not legal advice or real payment actions.",
+  "limits": [
+    "One adaptive base dossier; variants and repetitions are correlated.",
+    "A source-audit agent is separate from the author, but has repository access and is not an independent human.",
+    "Read isolation is actual filesystem/environment isolation; backend network access is necessary.",
+    "Requested model identity is recorded without independent backend attestation."
+  ]
+}

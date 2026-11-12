@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "source_freeze_sha256": "c171a39fe8b5e5fd621fd5fe73f21926e1fa8ba5634b278492dff3dca6aee146",
+  "entries": [
+    {
+      "case_id": "d4366",
+      "run_id": "pilot-terra",
+      "source_answer_sha256": "b599849bbd48936cc2ef99eea4d9a5488dae872abc8dcccde41a024669f7a9e3",
+      "reviewer": "Autorul corpusului și audit calitativ separat method_audit; nu evaluare umană independentă",
+      "reason": "Deschiderea conține o afirmație material falsă de eligibilitate. Paragraful imediat următor o corectează explicit, iar restul raportului susține plafonul corect de 52000 EUR. Nu este un verdict final greșit sau o recomandare greșită nesuspendată. Păstrăm clasificarea brută largă wrong_business_decision ca eroare a raportului, dar corectăm usable_wrong_decision la false și afișăm subtipul; ambiguitatea rubricii originale este documentată, nu rescrisă. Confirmările vor măsura explicit contradicția executivă.",
+      "quotes": [
+        "**Concluzie:** Orizont Proiect SA, identificator OP-17, poate executa integral transferul de **60.000 EUR** cerut la 30.09.2026, ora 17:00 UTC.",
+        "Calculul arată însă o capacitate de **52.000 EUR**, astfel că transferul cerut **nu poate fi executat integral**."
+      ],
+      "overrides": {
+        "classification": "wrong_business_decision",
+        "usable_wrong_decision": false,
+        "subtype": "contradictory_report_corrected"
+      }
+    }
+  ]
+}

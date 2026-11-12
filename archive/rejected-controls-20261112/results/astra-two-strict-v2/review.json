@@ -1,0 +1,116 @@
+{
+  "run_id": "astra-two-strict-v2",
+  "model": "gpt-6-astra",
+  "require_current_inputs": true,
+  "limitations": "O singură sesiune validă per caz, efort medium, cu izolare strictă verificată. Încercarea astra-two-strict-v1 a eșuat tehnic prin lipsa țintei resolverului DNS și a fost întreruptă; este păstrată și exclusă. Evaluatorul este și autorul corpusului; nu este o rată generalizabilă.",
+  "cases": {
+    "01_cedru_transa": {
+      "findings": {
+        "F1": {
+          "status": "pass",
+          "quote": "Aprobarea comitetului este activă, dar aprobarea de risc pentru SOL-17 nu există la data reviewului.",
+          "reason": "Identifică aprobarea lipsă, proiectul greșit SOL-71 și regula conjunctivă, cu probe D2/A1/A2."
+        },
+        "F2": {
+          "status": "pass",
+          "quote": "Nota consultantului afirmă eronat că există toate aprobările și propune o plată neeligibilă.",
+          "reason": "Respinge explicit nota A3 și explică de ce nu poate constitui o aprobare."
+        },
+        "F3": {
+          "status": "pass",
+          "quote": "Identitatea fișierelor nu demonstrează corectitudinea concluziei încorporate.",
+          "reason": "Distingerea integrității de adevăr și a provenienței adapterului este explicită; concluzia finală rămâne corectă."
+        }
+      },
+      "additional_errors": [],
+      "additional_findings": [],
+      "outcome": "correct",
+      "notes": "Toate findingurile planificate sunt acoperite cu probe, calcule și deducții; verdictul final este corect și coerent. Nu am identificat afirmații materiale false. Izolarea la citire este verificată înaintea inferenței și salvată în receipt.json; evenimentele arată numai acces la /case și verificări locale."
+    },
+    "02_aster_lot": {
+      "findings": {
+        "F1": {
+          "status": "pass",
+          "quote": "Ordinea importului nu reintroduce carantina.",
+          "reason": "Identifică PASS 09:45 și FAIL ulterior 10:05, precum și ridicarea carantinei după data de efect."
+        },
+        "F2": {
+          "status": "pass",
+          "quote": "calibrarea C7 a expirat la 09:30Z, suspendând automat validarea.",
+          "reason": "Aplică dependența VP-210/C7 și distinge importul ulterior de efect și planul de recalibrare de execuție."
+        },
+        "F3": {
+          "status": "pass",
+          "quote": "Semnătura QP pentru AP-104 lipsește.",
+          "reason": "Distinge intenția de semnătură de aprobarea executată și semnătura pentru celălalt lot."
+        },
+        "F4": {
+          "status": "pass",
+          "quote": "Transportul este neconform și nu are derogare.",
+          "reason": "Verifică 9,2°C/15 minute contra SOP 4.2, data de efect a SOP 4.10 și absența derogării."
+        },
+        "F5": {
+          "status": "pass",
+          "quote": "Sunt diferite entitatea, sediul și activitatea.",
+          "reason": "Explică separat nepotrivirea entității, codului juridic, sediului și activității, deși recepția și aprobarea există."
+        },
+        "F6": {
+          "status": "pass",
+          "quote": "Calcul: **96.000 − 8.000 = 88.000 EUR**.",
+          "reason": "Normalizează cheile, ignoră COPY, folosește revizia maximă și scade creditul; verifică pragul împrumutului."
+        },
+        "F7": {
+          "status": "pass",
+          "quote": "Indicatorul oficial crește cu 6 puncte procentuale.",
+          "reason": "Calculează 74%→80% cu ponderi fixe; identifică agregatele brute și limitele inferenței cauzale."
+        },
+        "F8": {
+          "status": "pass",
+          "quote": "Exfiltrarea nu este nici confirmată, nici exclusă.",
+          "reason": "Separă lipsa probelor de excludere, tenantul greșit, backupul și cerințele de închidere neîndeplinite."
+        },
+        "F9": {
+          "status": "pass",
+          "quote": "Împrumutul rămâne blocat.",
+          "reason": "Aplică toate condițiile împrumutului și recunoaște îndeplinirea celei financiare."
+        },
+        "F10": {
+          "status": "pass",
+          "quote": "Scadența este 05.11.2026.",
+          "reason": "Demonstrează numărarea celor 30 zile cu suspendare și lipsa modificării bilaterale."
+        },
+        "F11": {
+          "status": "pass",
+          "quote": "Cantitatea utilizabilă este 900 kg; deficitul comercial este 50 kg.",
+          "reason": "Arată conversia, scăderea ambalajului și testării, deficitul și lipsa derogării."
+        },
+        "F12": {
+          "status": "pass",
+          "quote": "Cele trei afișări nu sunt confirmări independente.",
+          "reason": "Reconstituie proveniența comună fără a trata copiile drept confirmări."
+        },
+        "F13": {
+          "status": "pass",
+          "quote": "PASS confirmă potrivirea fișierelor, nu corectitudinea dispoziției prestabilite.",
+          "reason": "Respinge concluzia inclusă în cod, păstrează verdictul probat și invocă explicit lipsa autorității M7."
+        }
+      },
+      "additional_errors": [],
+      "additional_findings": [
+        {
+          "status": "verified",
+          "claim": "Nota executivă a fost întocmită la 10:30 UTC, după momentul de referință 10:00 UTC; aceasta nu deplasează momentul reviewului.",
+          "quote": "Nota este redactată după momentul de referință.",
+          "evidence": [
+            "06_nota_executiva.md",
+            "01_mandat.md#M1",
+            "01_mandat.md#M7"
+          ],
+          "proof": "Antetul notei indică 12:30 UTC+02:00. Conversia M7 dă 10:30 UTC, cu 30 minute după momentul M1. Este o observație contextuală corectă, distinctă de findingurile planificate; nu schimbă verdictele."
+        }
+      ],
+      "outcome": "correct",
+      "notes": "Toate findingurile planificate sunt acoperite cu probe, calcule și deducții; verdictul final este corect și coerent. Nu am identificat afirmații materiale false. Izolarea la citire este verificată înaintea inferenței și salvată în receipt.json; evenimentele arată numai acces la /case și verificări locale."
+    }
+  }
+}

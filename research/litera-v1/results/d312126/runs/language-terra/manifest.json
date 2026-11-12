@@ -1,0 +1,138 @@
+[
+  {
+    "id": "d252721",
+    "title": "Litera — referințe vizual similare",
+    "task": "Verifică dacă documentele justifică plata facturii L-48 și stabilește suma autorizabilă. Explică problemele materiale și probele pe care se bazează decizia.",
+    "files": [
+      "01_mandat.md",
+      "02_aprobare.md",
+      "03_transmitere.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Aprobarea AF-18 privește referința BT-2041, diferită de identificatorul solicitat AT-2041. Identitatea beneficiarului și a sumei nu înlocuiește potrivirea referinței.",
+        "evidence": [
+          "01_mandat.md#M1",
+          "01_mandat.md#M2",
+          "02_aprobare.md#R1",
+          "02_aprobare.md#R2",
+          "02_aprobare.md#R3"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Nu există aprobare financiară pentru dosarul solicitat; suma autorizabilă a facturii L-48 este 0 EUR.",
+        "evidence": [
+          "01_mandat.md#M2",
+          "01_mandat.md#M3",
+          "02_aprobare.md#R1"
+        ]
+      }
+    ],
+    "profile": "linguistic paired experiment",
+    "primary_mechanism": "Confuzie lexicală: un identificator vizual similar este tratat ca aceeași referință, deși cheia exactă diferă."
+  },
+  {
+    "id": "d345649",
+    "title": "Litera — referințe vizual similare",
+    "task": "Verifică dacă documentele justifică plata facturii L-48 și stabilește suma autorizabilă. Explică problemele materiale și probele pe care se bazează decizia.",
+    "files": [
+      "01_mandat.md",
+      "02_aprobare.md",
+      "03_transmitere.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Aprobarea AF-18 privește referința CT-2041, diferită de identificatorul solicitat AT-2041. Identitatea beneficiarului și a sumei nu înlocuiește potrivirea referinței.",
+        "evidence": [
+          "01_mandat.md#M1",
+          "01_mandat.md#M2",
+          "02_aprobare.md#R1",
+          "02_aprobare.md#R2",
+          "02_aprobare.md#R3"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Nu există aprobare financiară pentru dosarul solicitat; suma autorizabilă a facturii L-48 este 0 EUR.",
+        "evidence": [
+          "01_mandat.md#M2",
+          "01_mandat.md#M3",
+          "02_aprobare.md#R1"
+        ]
+      }
+    ],
+    "profile": "linguistic paired experiment",
+    "primary_mechanism": "Confuzie lexicală: un identificator vizual similar este tratat ca aceeași referință, deși cheia exactă diferă."
+  },
+  {
+    "id": "d312126",
+    "title": "Litera — referințe vizual similare",
+    "task": "Verifică dacă documentele justifică plata facturii L-48 și stabilește suma autorizabilă. Explică problemele materiale și probele pe care se bazează decizia.",
+    "files": [
+      "01_mandat.md",
+      "02_aprobare.md",
+      "03_transmitere.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Aprobarea AF-18 privește exact dosarul AT-2041; beneficiarul și suma coincid, iar aprobarea este activă.",
+        "evidence": [
+          "01_mandat.md#M1",
+          "01_mandat.md#M2",
+          "02_aprobare.md#R1",
+          "02_aprobare.md#R2",
+          "02_aprobare.md#R3"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Factura L-48 poate fi plătită integral: 48000 EUR.",
+        "evidence": [
+          "01_mandat.md#M2",
+          "01_mandat.md#M3",
+          "02_aprobare.md#R1"
+        ]
+      }
+    ],
+    "profile": "linguistic paired experiment",
+    "primary_mechanism": "Confuzie lexicală: un identificator vizual similar este tratat ca aceeași referință, deși cheia exactă diferă."
+  },
+  {
+    "id": "d125587",
+    "title": "Litera — referințe vizual similare",
+    "task": "Verifică dacă documentele justifică plata facturii L-48 și stabilește suma autorizabilă. Explică problemele materiale și probele pe care se bazează decizia.",
+    "files": [
+      "01_mandat.md",
+      "02_aprobare.md",
+      "03_transmitere.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Aprobarea AF-18 privește referința АT-2041, diferită de identificatorul solicitat AT-2041. Identitatea beneficiarului și a sumei nu înlocuiește potrivirea referinței. Primul caracter al referinței aprobate este diferit de primul caracter al referinței solicitate, deși arată la fel.",
+        "evidence": [
+          "01_mandat.md#M1",
+          "01_mandat.md#M2",
+          "02_aprobare.md#R1",
+          "02_aprobare.md#R2",
+          "02_aprobare.md#R3"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Nu există aprobare financiară pentru dosarul solicitat; suma autorizabilă a facturii L-48 este 0 EUR.",
+        "evidence": [
+          "01_mandat.md#M2",
+          "01_mandat.md#M3",
+          "02_aprobare.md#R1"
+        ]
+      }
+    ],
+    "profile": "linguistic paired experiment",
+    "primary_mechanism": "Confuzie lexicală: un identificator vizual similar este tratat ca aceeași referință, deși cheia exactă diferă."
+  }
+]

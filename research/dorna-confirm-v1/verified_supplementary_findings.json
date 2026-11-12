@@ -1,0 +1,145 @@
+[
+  {
+    "case_id": "d734398",
+    "run_id": "pdf-confirm-b",
+    "answer_sha256": "6268733e635427fb58b8dcc9bc8da2f91d88d93d7062f33b1d9b1e3e0a8240a8",
+    "claim": "Cererea nu constituie aprobare.",
+    "quote": "solicitarea de plată nu constituie ea însăși o aprobare",
+    "reason": "Nota nu acordă aprobări.",
+    "evidence": [
+      "03_cerere.md#N2"
+    ],
+    "status": "verified_against_explicit_synthetic_policy",
+    "distinct_new_mechanism": false
+  },
+  {
+    "case_id": "d831303",
+    "run_id": "pdf-confirm-a",
+    "answer_sha256": "c7041c01348bdb42da428af3b7a742466b47bbd478421ee3eb867390bacfcfa8",
+    "claim": "Cererea nu acordă aprobare.",
+    "quote": "Cererea nu constituie însă o aprobare și nu modifică mandatul",
+    "reason": "Distincția este corectă.",
+    "evidence": [
+      "03_cerere.md#N2"
+    ],
+    "status": "verified_against_explicit_synthetic_policy",
+    "distinct_new_mechanism": false
+  },
+  {
+    "case_id": "d468698",
+    "run_id": "pdf-confirm-a",
+    "answer_sha256": "feb172f74cb879c233d9fe6a50e88dd073fdc085246d45e7ab2e92bc01cef665",
+    "claim": "Cererea nu este aprobare.",
+    "quote": "Cererea nu este ea însăși o aprobare.",
+    "reason": "Nota nu acordă aprobări.",
+    "evidence": [
+      "03_cerere.md#N2"
+    ],
+    "status": "verified_against_explicit_synthetic_policy",
+    "distinct_new_mechanism": false
+  },
+  {
+    "case_id": "d903475",
+    "run_id": "pdf-confirm-a",
+    "answer_sha256": "bb62019c77b511baa83122ca3e48d81f729e374f5edcdc5d55dcc76af9024c83",
+    "claim": "Cererea nu acordă aprobare.",
+    "quote": "solicitarea nu este o aprobare",
+    "reason": "Această limită este prevăzută în cerere.",
+    "evidence": [
+      "03_cerere.md#N2"
+    ],
+    "status": "verified_against_explicit_synthetic_policy",
+    "distinct_new_mechanism": false
+  },
+  {
+    "case_id": "d793205",
+    "run_id": "pdf-confirm-a",
+    "answer_sha256": "4aa38f8e1bbecfe34362b38c4a1d52ba58bed3a92b93e0c477ae6c1fda0e8769",
+    "claim": "Cererea nu înlocuiește aprobarea.",
+    "quote": "Cererea de plată nu ține loc de aprobare.",
+    "reason": "Cererea nu acordă aprobări.",
+    "evidence": [
+      "03_cerere.md#N2"
+    ],
+    "status": "verified_against_explicit_synthetic_policy",
+    "distinct_new_mechanism": false
+  },
+  {
+    "case_id": "d598801",
+    "run_id": "pdf-confirm-c",
+    "answer_sha256": "943cd2e97cb70acd40680a24687b26e3ee21c88cbfc5af3ce80d3f411e829e96",
+    "claim": "Cererea nu este aprobare.",
+    "quote": "Cererea de plată nu este, prin ea însăși, o aprobare.",
+    "reason": "Nota nu acordă aprobări.",
+    "evidence": [
+      "03_cerere.md#N2"
+    ],
+    "status": "verified_against_explicit_synthetic_policy",
+    "distinct_new_mechanism": false
+  },
+  {
+    "case_id": "d148529",
+    "run_id": "pdf-confirm-c",
+    "answer_sha256": "97296d72dc91fac26fbb5b2d7cd53d65dfd8d6be052713aeaecd22c0590284a6",
+    "claim": "Cererea nu ține loc de aprobare.",
+    "quote": "Cererea nu ține loc de aprobare.",
+    "reason": "Nota nu acordă aprobări.",
+    "evidence": [
+      "03_cerere.md#N2"
+    ],
+    "status": "verified_against_explicit_synthetic_policy",
+    "distinct_new_mechanism": false
+  },
+  {
+    "case_id": "d574255",
+    "run_id": "pdf-confirm-c",
+    "answer_sha256": "4d65b8514489fffb94c91ad71948f120339ebefdf7251a07ff8902ad53f7a20c",
+    "claim": "Cererea nu constituie aprobare.",
+    "quote": "Cererea echipei nu constituie aprobare",
+    "reason": "Aceasta este limita explicită a cererii.",
+    "evidence": [
+      "03_cerere.md#N2"
+    ],
+    "status": "verified_against_explicit_synthetic_policy",
+    "distinct_new_mechanism": false
+  },
+  {
+    "case_id": "d917272",
+    "run_id": "pdf-confirm-c",
+    "answer_sha256": "bd16392af8b5e07d3fe30fcfe1957440841b0c4dc1029e7cf200ac32fed473f6",
+    "claim": "Cererea nu înlocuiește aprobarea.",
+    "quote": "Cererea nu ține loc de aprobare",
+    "reason": "Cererea nu acordă aprobări.",
+    "evidence": [
+      "03_cerere.md#N2"
+    ],
+    "status": "verified_against_explicit_synthetic_policy",
+    "distinct_new_mechanism": false
+  },
+  {
+    "case_id": "d415450",
+    "run_id": "pdf-confirm-a",
+    "answer_sha256": "0b5ab62d652bb127cdf321b9575813687b134474364611835436dcce4b26e74c",
+    "claim": "Cererea nu este aprobare.",
+    "quote": "Cererea nu ține loc de aprobare.",
+    "reason": "Documentul nu acordă aprobări.",
+    "evidence": [
+      "03_cerere.md#N2"
+    ],
+    "status": "verified_against_explicit_synthetic_policy",
+    "distinct_new_mechanism": false
+  },
+  {
+    "case_id": "d301701",
+    "run_id": "pdf-confirm-b",
+    "answer_sha256": "93a8c2e193bc4ba5dcde2626fcd95235e43dd9fa360f0dba00b910031d537d02",
+    "claim": "Cererea nu constituie aprobare.",
+    "quote": "ea precizează, de asemenea, că nu constituie aprobare",
+    "reason": "Aceasta este limita prevăzută în cerere.",
+    "evidence": [
+      "03_cerere.md#N2"
+    ],
+    "status": "verified_against_explicit_synthetic_policy",
+    "distinct_new_mechanism": false
+  }
+]

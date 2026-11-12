@@ -1,0 +1,43 @@
+{
+  "selection": "audit_selection.json",
+  "reviewer": "root author, not independent human",
+  "identities_shown_during_read": false,
+  "rows": [
+    {
+      "anonymous_id": "af9116f2136ed",
+      "classification": "correct",
+      "quote": "Suma maximă permisă de mandat este **52.000 EUR**",
+      "reason": "Lectură integrală de către autor: suma, traseul probelor și regula corespund documentelor; nicio eroare materială identificată."
+    },
+    {
+      "anonymous_id": "a1255e076f8ce",
+      "classification": "correct",
+      "quote": "se pot plăti **40.000 EUR**",
+      "reason": "Lectură integrală de către autor: suma, traseul probelor și regula corespund documentelor; nicio eroare materială identificată."
+    },
+    {
+      "anonymous_id": "a7b595b7c5208",
+      "classification": "correct",
+      "quote": "se poate plăti integral suma de **48.000 EUR**",
+      "reason": "Lectură integrală de către autor: suma, traseul probelor și regula corespund documentelor; nicio eroare materială identificată."
+    },
+    {
+      "anonymous_id": "a4668d66d729b",
+      "classification": "correct",
+      "quote": "**Suma autorizabilă la 12.11.2026, ora 14:00 UTC, este 0 EUR. Documentele nu susțin plata tranșei de 72.000 EUR.**",
+      "reason": "Lectură integrală de către autor: suma, traseul probelor și regula corespund documentelor; nicio eroare materială identificată."
+    },
+    {
+      "anonymous_id": "a29a4b3442565",
+      "classification": "correct",
+      "quote": "**Suma autorizabilă la 12.11.2026, ora 14:00 UTC, este 0 EUR. Documentele nu susțin plata tranșei VL-18.**",
+      "reason": "Lectură integrală de către autor: suma, traseul probelor și regula corespund documentelor; nicio eroare materială identificată."
+    },
+    {
+      "anonymous_id": "aac57acf32667",
+      "classification": "correct",
+      "quote": "**Suma autorizabilă acum: 72.000 EUR, integral. Documentele susțin plata.**",
+      "reason": "Lectură integrală de către autor: suma, traseul probelor și regula corespund documentelor; nicio eroare materială identificată."
+    }
+  ]
+}

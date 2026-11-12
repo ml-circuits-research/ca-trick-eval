@@ -1,0 +1,4 @@
+Fă un review independent al dosarului de documente din directorul curent. Verifică afirmațiile și deciziile propuse folosind numai faptele și regulile din dosar. Nu ai acces la un raport de referință.
+Întrebarea beneficiarului: Verifică nota de plată T2 pentru SOL-17 la 12.11.2026, ora 12:00 UTC. Poate fi plătită tranșa? Prezintă toate findingurile materiale din dosar.
+Citește toate fișierele .md din directorul curent. Lucrează numai pe acest dosar, fără alte directoare sau internet.
+Identifică toate problemele materiale, contradicțiile, erorile și sursele de confuzie; nu presupune un număr fix de findinguri. Findingurile suplimentare sunt binevenite dacă pot fi demonstrate din documente. Pentru fiecare concluzie oferă probe cu numele fișierului și eticheta pasajului și o scurtă deducție. Distinge faptele certe de necunoscute. Include și aspecte corecte și un rezumat final coerent cu analiza. Răspunde în română, în Markdown, fără să modifici fișierele.

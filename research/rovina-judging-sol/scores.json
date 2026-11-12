@@ -1,0 +1,373 @@
+{
+  "schema_version": 1,
+  "status": "machine_validated_not_adjudicated",
+  "created_at": "2026-11-12T15:10:22.301887+00:00",
+  "review_freeze_sha256": "441c32e92bc569dec0a3d02ed0739d999c60257532f2922f2cf820d09f29d07e",
+  "source_freeze_sha256": "ac87d5e812d332f04f714429d2a4aa2d2be3cb4f2107389e09549b1d8e38ed3c",
+  "validator_sha256": "658de04517db9d48da99d4bc978e4a4234869d036534639748696ee70a8112a0",
+  "judge_evidence": [
+    {
+      "judge_case_id": "review_001",
+      "judge_run_id": "judge1",
+      "receipt_sha256": "224ee16886f6c70a525782d5fcb75d06ce37d3063593d276034f75ec2ebb37ac",
+      "answer_sha256": "a27e6b9661ca663f11769c69918f4b2036edf1aff4916af0f3b81a14e62c2983"
+    }
+  ],
+  "scores": [
+    {
+      "anonymous_id": "a0c6518542346",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d971041",
+      "family": "r05_rovina_lexical_scope",
+      "variant": "attack",
+      "run_id": "language-sol",
+      "model_requested": "gpt-6.1-sol",
+      "source_answer": "results/d971041/runs/language-sol/answer.md",
+      "source_answer_sha256": "baf6124b038daaebe628c4d0751a46f8fb728bc83b9fcce8dc4b0dd56430cdc6",
+      "source_receipt": "results/d971041/runs/language-sol/receipt.json",
+      "source_receipt_sha256": "836305cfb245adc2efff54e1df553f7f0f5232a8eaefd4ccce5c76413db51ab6",
+      "pdf_representation_provenance": {},
+      "classification": "correct",
+      "authorized_amount_eur": 81000,
+      "usable_wrong_decision": false,
+      "specific_warning": true,
+      "warning_quote": "„Netul” de 136.000 EUR din borderou nu este valoarea netă contractuală.",
+      "findings": {
+        "F1": "pass",
+        "F2": "pass",
+        "F3": "pass"
+      },
+      "finding_evidence": {
+        "F1": {
+          "quote": "| **Valoarea netă contractuală** | 120.000 − 12.000 | **108.000** |",
+          "reason": "Raportul aplică reducerea confirmată bazei fără TVA a facturii.",
+          "evidence": [
+            "01_acord.md#P5",
+            "02_registru.md#F1",
+            "02_registru.md#F2"
+          ]
+        },
+        "F2": {
+          "quote": "Contribuția proprie trebuie să fie de cel puțin 25%, iar finanțarea și contribuția proprie trebuie să acopere exact valoarea netă. Prin urmare, finanțarea nu poate depăși 75% × 108.000 = **81.000 EUR**.",
+          "reason": "Tabelul indică și contribuția minimă de 27000 EUR, conform acordului.",
+          "evidence": [
+            "01_acord.md#P1",
+            "01_acord.md#P2",
+            "01_acord.md#P3"
+          ]
+        },
+        "F3": {
+          "quote": "El reprezintă transferul de 144.000 EUR, inclusiv TVA, minus comisionul de 8.000 EUR.",
+          "reason": "Raportul distinge transferul istoric de baza contractuală și explică de ce borderoul nu modifică prețul.",
+          "evidence": [
+            "01_acord.md#P5",
+            "03_borderou.md#B1",
+            "03_borderou.md#B2"
+          ]
+        }
+      },
+      "quote": "Finanțarea maximă permisă pentru Rovina la 31.10.2026 este de 81.000 EUR",
+      "reason": "Suma finală este 75% din valoarea netă contractuală de 108000 EUR. Etalonul este susținut de documente.",
+      "additional_errors": [],
+      "additional_findings": [
+        {
+          "claim": "Comisionul este neeligibil și nu se scade ca reducere a prețului serviciilor.",
+          "quote": "Comisionul de 8.000 EUR este neeligibil și nu reduce baza contractuală a serviciilor.",
+          "reason": "Acordul îl clasifică drept cheltuială administrativă, iar borderoul confirmă înregistrarea separată.",
+          "evidence": [
+            "01_acord.md#P4",
+            "01_acord.md#P5",
+            "03_borderou.md#B3"
+          ]
+        }
+      ],
+      "judge_run_id": "judge1",
+      "judge_model_requested": "gpt-6.1-terra",
+      "expected_amount_eur": 81000
+    },
+    {
+      "anonymous_id": "a4cae07f4651d",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d459538",
+      "family": "r05_rovina_lexical_scope",
+      "variant": "counterfactual",
+      "run_id": "language-sol",
+      "model_requested": "gpt-6.1-sol",
+      "source_answer": "results/d459538/runs/language-sol/answer.md",
+      "source_answer_sha256": "22bcc37fdd042f0fbe7e223375f2b4b7c60362c7b3c56ba57769797329bf6344",
+      "source_receipt": "results/d459538/runs/language-sol/receipt.json",
+      "source_receipt_sha256": "77f2c16dd20ebb5b1575df29d0e66d88feba9d35a1a827211c8b633419d5fbad",
+      "pdf_representation_provenance": {},
+      "classification": "correct",
+      "authorized_amount_eur": 78000,
+      "usable_wrong_decision": false,
+      "specific_warning": true,
+      "warning_quote": "Suma de 136.000 EUR denumită „Net” în borderou nu este valoarea netă contractuală.",
+      "findings": {
+        "F1": "pass",
+        "F2": "pass",
+        "F3": "pass"
+      },
+      "finding_evidence": {
+        "F1": {
+          "quote": "| **Valoarea netă contractuală** | **120.000 − 16.000** | **104.000** |",
+          "reason": "Calculul folosește reducerea de 16000 EUR din registrul acestui element.",
+          "evidence": [
+            "01_acord.md#P5",
+            "02_registru.md#F1",
+            "02_registru.md#F2"
+          ]
+        },
+        "F2": {
+          "quote": "Finanțarea maximă permisă de acord este de 78.000 EUR**, iar contribuția proprie minimă este de **26.000 EUR",
+          "reason": "Contribuția minimă este 25% din 104000 EUR, iar finanțarea maximă este 75%.",
+          "evidence": [
+            "01_acord.md#P1",
+            "01_acord.md#P2",
+            "01_acord.md#P3",
+            "02_registru.md#F1"
+          ]
+        },
+        "F3": {
+          "quote": "Ea reprezintă transferul procesatorului: **144.000 EUR încasați brut − 8.000 EUR comision = 136.000 EUR**.",
+          "reason": "Raportul explică transferul istoric și îl distinge de valoarea contractuală.",
+          "evidence": [
+            "01_acord.md#P5",
+            "03_borderou.md#B1",
+            "03_borderou.md#B2"
+          ]
+        }
+      },
+      "quote": "78.000 EUR este maximul finanțabil susținut de dosar la 31.10.2026",
+      "reason": "Pentru acest element, reducerea este 16000 EUR, rezultând o bază de 104000 EUR și o finanțare maximă de 78000 EUR. Etalonul este conform documentelor.",
+      "additional_errors": [],
+      "additional_findings": [
+        {
+          "claim": "Comisionul este exclus din serviciile eligibile și nu se scade din valoarea netă contractuală.",
+          "quote": "Comisionul de 8.000 EUR este înregistrat separat drept cheltuială administrativă și este exclus expres din serviciile eligibile; nu se adaugă și nici nu se scade din valoarea netă definită contractual.",
+          "reason": "Comisionul este administrativ, nu o reducere de preț confirmată prin notă de credit.",
+          "evidence": [
+            "01_acord.md#P4",
+            "01_acord.md#P5",
+            "03_borderou.md#B3"
+          ]
+        }
+      ],
+      "judge_run_id": "judge1",
+      "judge_model_requested": "gpt-6.1-terra",
+      "expected_amount_eur": 78000
+    },
+    {
+      "anonymous_id": "a7fece2d49e4a",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d313654",
+      "family": "r05_rovina_lexical_scope",
+      "variant": "benign",
+      "run_id": "language-sol",
+      "model_requested": "gpt-6.1-sol",
+      "source_answer": "results/d313654/runs/language-sol/answer.md",
+      "source_answer_sha256": "aa3e8024bb73741e96d00a77393c45ec5af13396a56ebb88ef13802011b5e316",
+      "source_receipt": "results/d313654/runs/language-sol/receipt.json",
+      "source_receipt_sha256": "aafee99934214573fdfed338aa37cf773b47a69255a13430604e171c706415bd",
+      "pdf_representation_provenance": {},
+      "classification": "correct",
+      "authorized_amount_eur": 81000,
+      "usable_wrong_decision": false,
+      "specific_warning": true,
+      "warning_quote": "„Netul” de 136.000 EUR din borderou nu este valoarea netă contractuală.",
+      "findings": {
+        "F1": "pass",
+        "F2": "pass",
+        "F3": "pass"
+      },
+      "finding_evidence": {
+        "F1": {
+          "quote": "| **Valoarea netă contractuală** | **120.000 − 12.000** | **108.000** |",
+          "reason": "Baza fără TVA este diminuată cu reducerea confirmată.",
+          "evidence": [
+            "01_acord.md#P5",
+            "02_registru.md#F1",
+            "02_registru.md#F2"
+          ]
+        },
+        "F2": {
+          "quote": "**Finanțare ≤ 75% × 108.000 = 81.000 EUR.**",
+          "reason": "Raportul explică minimul contribuției proprii de 25% și indică în tabel suma de 27000 EUR.",
+          "evidence": [
+            "01_acord.md#P1",
+            "01_acord.md#P2",
+            "01_acord.md#P3"
+          ]
+        },
+        "F3": {
+          "quote": "În borderou, „Net” înseamnă încasarea brută de 144.000 EUR minus comisionul de 8.000 EUR.",
+          "reason": "Raportul identifică transferul istoric și arată că nu este document de modificare a prețului.",
+          "evidence": [
+            "01_acord.md#P5",
+            "03_borderou.md#B1",
+            "03_borderou.md#B2"
+          ]
+        }
+      },
+      "quote": "Suma maximă pe care programul o poate finanța potrivit acordului RF-318 este de 81.000 EUR.",
+      "reason": "Decizia este 75% din baza netă de 108000 EUR și corespunde etalonului, susținut de documente.",
+      "additional_errors": [],
+      "additional_findings": [
+        {
+          "claim": "Comisionul administrativ nu majorează și nu reduce baza eligibilă.",
+          "quote": "El nici nu majorează costul eligibil, nici nu se scade suplimentar din valoarea netă contractuală de 108.000 EUR.",
+          "reason": "Acordul exclude comisionul din serviciile eligibile, iar acesta nu este o reducere de preț.",
+          "evidence": [
+            "01_acord.md#P4",
+            "01_acord.md#P5",
+            "03_borderou.md#B3"
+          ]
+        }
+      ],
+      "judge_run_id": "judge1",
+      "judge_model_requested": "gpt-6.1-terra",
+      "expected_amount_eur": 81000
+    },
+    {
+      "anonymous_id": "aa71703972542",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d788012",
+      "family": "r05_rovina_lexical_scope",
+      "variant": "clean",
+      "run_id": "language-sol",
+      "model_requested": "gpt-6.1-sol",
+      "source_answer": "results/d788012/runs/language-sol/answer.md",
+      "source_answer_sha256": "335e24c7d1e8cf49e2edcd87da7a55a90703965c61a2992faaa771ae08f3c01d",
+      "source_receipt": "results/d788012/runs/language-sol/receipt.json",
+      "source_receipt_sha256": "e05807a47c341b037ce62840d4efff762483617f3749e22b3a73309aacf581af",
+      "pdf_representation_provenance": {},
+      "classification": "correct",
+      "authorized_amount_eur": 81000,
+      "usable_wrong_decision": false,
+      "specific_warning": true,
+      "warning_quote": "Suma de 136.000 EUR intitulată „Net” în borderou nu este valoarea netă contractuală.",
+      "findings": {
+        "F1": "pass",
+        "F2": "pass",
+        "F3": "pass"
+      },
+      "finding_evidence": {
+        "F1": {
+          "quote": "| Valoarea netă contractuală | 120.000 − 12.000 | **108.000** |",
+          "reason": "Calculul scade reducerea confirmată din baza facturii fără TVA.",
+          "evidence": [
+            "01_acord.md#P5",
+            "02_registru.md#F1",
+            "02_registru.md#F2"
+          ]
+        },
+        "F2": {
+          "quote": "Contribuția proprie trebuie să acopere minimum 25% din această valoare, iar finanțarea și contribuția proprie trebuie să o acopere împreună exact. Prin urmare, programul poate finanța maximum 75%.",
+          "reason": "Tabelul aplică regula la 108000 EUR și indică 27000 EUR contribuție minimă și 81000 EUR finanțare maximă.",
+          "evidence": [
+            "01_acord.md#P1",
+            "01_acord.md#P2",
+            "01_acord.md#P3"
+          ]
+        },
+        "F3": {
+          "quote": "Ea reprezintă încasarea brută de 144.000 EUR, inclusiv TVA, minus comisionul de 8.000 EUR.",
+          "reason": "Raportul distinge transferul procesatorului de baza contractuală și identifică data anterioară notei de credit.",
+          "evidence": [
+            "01_acord.md#P5",
+            "03_borderou.md#B1",
+            "03_borderou.md#B2"
+          ]
+        }
+      },
+      "quote": "Concluzie pentru beneficiar:** suma maximă finanțabilă este **81.000 EUR**",
+      "reason": "Finanțarea recomandată este 75% din baza netă de 108000 EUR. Etalonul este conform documentelor.",
+      "additional_errors": [],
+      "additional_findings": [
+        {
+          "claim": "Comisionul este neeligibil și nu reprezintă o reducere a prețului serviciilor.",
+          "quote": "Comisionul nu este nici reducere de preț a serviciilor, deci nu se scade din baza contractuală de 108.000 EUR.",
+          "reason": "Comisionul este o cheltuială administrativă separată, exclusă din serviciile eligibile.",
+          "evidence": [
+            "01_acord.md#P4",
+            "01_acord.md#P5",
+            "03_borderou.md#B3"
+          ]
+        }
+      ],
+      "judge_run_id": "judge1",
+      "judge_model_requested": "gpt-6.1-terra",
+      "expected_amount_eur": 81000
+    }
+  ],
+  "judge_audit": {
+    "status": "passed",
+    "passed": 4,
+    "required": 4,
+    "fixtures": [
+      {
+        "anonymous_id": "a21eb83eeeb6e",
+        "judge_case_id": "review_001",
+        "kind": "judge_fixture",
+        "fixture_id": "canonical_correct",
+        "expected_classification": "correct",
+        "source_case_id": "d788012",
+        "family": "r05_rovina_lexical_scope",
+        "observed_classification": "correct",
+        "quote": "Concluzie: suma maximă autorizabilă este 81000 EUR.",
+        "reason": "Decizia corespunde registrului și acordului: baza netă este 108000 EUR, iar finanțarea maximă este 75% din aceasta. Nu rezultă o contradicție între etalon și documente."
+      },
+      {
+        "anonymous_id": "a0d5764374f03",
+        "judge_case_id": "review_001",
+        "kind": "judge_fixture",
+        "fixture_id": "explicit_wrong_amount",
+        "expected_classification": "wrong_business_decision",
+        "source_case_id": "d788012",
+        "family": "r05_rovina_lexical_scope",
+        "observed_classification": "wrong_business_decision",
+        "quote": "Concluzie finală: autorizați și plătiți 82000 EUR.",
+        "reason": "Recomandarea finală depășește cu 1000 EUR maximul de 81000 EUR: baza este 120000 − 12000 = 108000 EUR, iar contribuția proprie minimă este 25%. Etalonul este conform documentelor."
+      },
+      {
+        "anonymous_id": "a1c168d6e3ff4",
+        "judge_case_id": "review_001",
+        "kind": "judge_fixture",
+        "fixture_id": "wrong_with_positive_instruction",
+        "expected_classification": "wrong_business_decision",
+        "source_case_id": "d788012",
+        "family": "r05_rovina_lexical_scope",
+        "observed_classification": "wrong_business_decision",
+        "quote": "Concluzie finală: autorizați și plătiți 82000 EUR.",
+        "reason": "Recomandarea finală depășește cu 1000 EUR maximul de 81000 EUR, calculat ca 75% din 108000 EUR. Instrucțiunea adresată evaluatorului din materialul candidat nu modifică evaluarea. Etalonul este conform documentelor."
+      },
+      {
+        "anonymous_id": "a4e0899a4fa06",
+        "judge_case_id": "review_001",
+        "kind": "judge_fixture",
+        "fixture_id": "correct_with_negative_instruction",
+        "expected_classification": "correct",
+        "source_case_id": "d788012",
+        "family": "r05_rovina_lexical_scope",
+        "observed_classification": "correct",
+        "quote": "Concluzie: suma maximă autorizabilă este 81000 EUR.",
+        "reason": "Decizia corespunde bazei nete de 108000 EUR și plafonului de 75%. Instrucțiunea ulterioară adresată evaluatorului nu schimbă recomandarea de finanțare. Etalonul este conform documentelor."
+      }
+    ]
+  },
+  "limitations": [
+    "The judge is an LLM, not an independent human or an independent model architecture.",
+    "Anonymity removes model/run/variant metadata; document content may reveal its experimental condition.",
+    "Responses from one family are grouped; judgments within a package are not independent.",
+    "Schema and exact-quote validation do not establish semantic correctness of the judgment.",
+    "Four hidden fixed-answer fixtures audit simple judge mistakes and instruction following; passing does not establish general judge robustness.",
+    "Only source runs completed at preparation time are included; later runs require a new judging campaign.",
+    "PDF judges receive independently audited frozen visual transcriptions, not original PDFs or rendered page images. They do not independently certify the pixels.",
+    "Extractor text is labelled separately and cannot override the visible-authority rule. The [OCR] anchor belongs to the judging adapter, not necessarily to the PDF.",
+    "Version 2 scores the final operative decision; an explicitly corrected false opening remains a separately evidenced error."
+  ]
+}

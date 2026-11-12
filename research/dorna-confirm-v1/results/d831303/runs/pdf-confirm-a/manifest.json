@@ -1,0 +1,808 @@
+[
+  {
+    "id": "d793205",
+    "title": "Dorna - fidelitatea registrului facsimil",
+    "task": "Refă reviewul dosarului Dorna la 12.11.2026, ora 14:00 UTC. Poate fi plătită tranșa DN-41 și ce sumă este autorizabilă? Prezintă findingurile materiale și probele decisive.",
+    "files": [
+      "01_mandat.md",
+      "02_registru.pdf",
+      "03_cerere.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Suma autorizabilă este 0 EUR.",
+        "evidence": [
+          "01_mandat.md#P1",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Aprobarea financiară este activă, iar aprobarea de risc lipsește în registrul vizibil complet; cererea nu poate înlocui aprobarea.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "01_mandat.md#P3",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Textul automat extras afirmă fals o semnătură de risc activă; pagina vizibilă arată IN ASTEPTARE și semnătură ABSENTA. Facsimilul are autoritate.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "02_registru.pdf#A2"
+        ]
+      }
+    ],
+    "primary_mechanism": "A02: pagina vizibilă și stratul textual pot exprima stări diferite",
+    "profile": "PDF paired fidelity"
+  },
+  {
+    "id": "d301701",
+    "title": "Dorna - fidelitatea registrului facsimil",
+    "task": "Refă reviewul dosarului Dorna la 12.11.2026, ora 14:00 UTC. Poate fi plătită tranșa DN-41 și ce sumă este autorizabilă? Prezintă findingurile materiale și probele decisive.",
+    "files": [
+      "01_mandat.md",
+      "02_registru.pdf",
+      "03_cerere.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Suma autorizabilă este 0 EUR.",
+        "evidence": [
+          "01_mandat.md#P1",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Aprobarea financiară este activă, iar aprobarea de risc lipsește în registrul vizibil complet; cererea nu poate înlocui aprobarea.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "01_mandat.md#P3",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Textul automat extras afirmă fals o semnătură de risc activă; pagina vizibilă arată IN ASTEPTARE și semnătură ABSENTA. Facsimilul are autoritate.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "02_registru.pdf#A2"
+        ]
+      }
+    ],
+    "primary_mechanism": "A02: pagina vizibilă și stratul textual pot exprima stări diferite",
+    "profile": "PDF paired fidelity"
+  },
+  {
+    "id": "d148529",
+    "title": "Dorna - fidelitatea registrului facsimil",
+    "task": "Refă reviewul dosarului Dorna la 12.11.2026, ora 14:00 UTC. Poate fi plătită tranșa DN-41 și ce sumă este autorizabilă? Prezintă findingurile materiale și probele decisive.",
+    "files": [
+      "01_mandat.md",
+      "02_registru.pdf",
+      "03_cerere.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Suma autorizabilă este 60000 EUR.",
+        "evidence": [
+          "01_mandat.md#P1",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Ambele aprobări sunt semnate și active în facsimil.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "01_mandat.md#P3",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      }
+    ],
+    "primary_mechanism": "A02: pagina vizibilă și stratul textual pot exprima stări diferite",
+    "profile": "PDF paired fidelity"
+  },
+  {
+    "id": "d415450",
+    "title": "Dorna - fidelitatea registrului facsimil",
+    "task": "Refă reviewul dosarului Dorna la 12.11.2026, ora 14:00 UTC. Poate fi plătită tranșa DN-41 și ce sumă este autorizabilă? Prezintă findingurile materiale și probele decisive.",
+    "files": [
+      "01_mandat.md",
+      "02_registru.pdf",
+      "03_cerere.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Suma autorizabilă este 0 EUR.",
+        "evidence": [
+          "01_mandat.md#P1",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Aprobarea financiară este activă, iar aprobarea de risc lipsește în registrul vizibil complet; cererea nu poate înlocui aprobarea.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "01_mandat.md#P3",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Textul automat extras afirmă fals o semnătură de risc activă; pagina vizibilă arată IN ASTEPTARE și semnătură ABSENTA. Facsimilul are autoritate.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "02_registru.pdf#A2"
+        ]
+      }
+    ],
+    "primary_mechanism": "A02: pagina vizibilă și stratul textual pot exprima stări diferite",
+    "profile": "PDF paired fidelity"
+  },
+  {
+    "id": "d126574",
+    "title": "Dorna - fidelitatea registrului facsimil",
+    "task": "Refă reviewul dosarului Dorna la 12.11.2026, ora 14:00 UTC. Poate fi plătită tranșa DN-41 și ce sumă este autorizabilă? Prezintă findingurile materiale și probele decisive.",
+    "files": [
+      "01_mandat.md",
+      "02_registru.pdf",
+      "03_cerere.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Suma autorizabilă este 0 EUR.",
+        "evidence": [
+          "01_mandat.md#P1",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Aprobarea financiară este activă, iar aprobarea de risc lipsește în registrul vizibil complet; cererea nu poate înlocui aprobarea.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "01_mandat.md#P3",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      }
+    ],
+    "primary_mechanism": "A02: pagina vizibilă și stratul textual pot exprima stări diferite",
+    "profile": "PDF paired fidelity"
+  },
+  {
+    "id": "d917272",
+    "title": "Dorna - fidelitatea registrului facsimil",
+    "task": "Refă reviewul dosarului Dorna la 12.11.2026, ora 14:00 UTC. Poate fi plătită tranșa DN-41 și ce sumă este autorizabilă? Prezintă findingurile materiale și probele decisive.",
+    "files": [
+      "01_mandat.md",
+      "02_registru.pdf",
+      "03_cerere.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Suma autorizabilă este 0 EUR.",
+        "evidence": [
+          "01_mandat.md#P1",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Aprobarea financiară este activă, iar aprobarea de risc lipsește în registrul vizibil complet; cererea nu poate înlocui aprobarea.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "01_mandat.md#P3",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Textul automat extras afirmă fals o semnătură de risc activă; pagina vizibilă arată IN ASTEPTARE și semnătură ABSENTA. Facsimilul are autoritate.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "02_registru.pdf#A2"
+        ]
+      }
+    ],
+    "primary_mechanism": "A02: pagina vizibilă și stratul textual pot exprima stări diferite",
+    "profile": "PDF paired fidelity"
+  },
+  {
+    "id": "d836469",
+    "title": "Dorna - fidelitatea registrului facsimil",
+    "task": "Refă reviewul dosarului Dorna la 12.11.2026, ora 14:00 UTC. Poate fi plătită tranșa DN-41 și ce sumă este autorizabilă? Prezintă findingurile materiale și probele decisive.",
+    "files": [
+      "01_mandat.md",
+      "02_registru.pdf",
+      "03_cerere.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Suma autorizabilă este 0 EUR.",
+        "evidence": [
+          "01_mandat.md#P1",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Aprobarea financiară este activă, iar aprobarea de risc lipsește în registrul vizibil complet; cererea nu poate înlocui aprobarea.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "01_mandat.md#P3",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      }
+    ],
+    "primary_mechanism": "A02: pagina vizibilă și stratul textual pot exprima stări diferite",
+    "profile": "PDF paired fidelity"
+  },
+  {
+    "id": "d269317",
+    "title": "Dorna - fidelitatea registrului facsimil",
+    "task": "Refă reviewul dosarului Dorna la 12.11.2026, ora 14:00 UTC. Poate fi plătită tranșa DN-41 și ce sumă este autorizabilă? Prezintă findingurile materiale și probele decisive.",
+    "files": [
+      "01_mandat.md",
+      "02_registru.pdf",
+      "03_cerere.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Suma autorizabilă este 0 EUR.",
+        "evidence": [
+          "01_mandat.md#P1",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Aprobarea financiară este activă, iar aprobarea de risc lipsește în registrul vizibil complet; cererea nu poate înlocui aprobarea.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "01_mandat.md#P3",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      }
+    ],
+    "primary_mechanism": "A02: pagina vizibilă și stratul textual pot exprima stări diferite",
+    "profile": "PDF paired fidelity"
+  },
+  {
+    "id": "d759327",
+    "title": "Dorna - fidelitatea registrului facsimil",
+    "task": "Refă reviewul dosarului Dorna la 12.11.2026, ora 14:00 UTC. Poate fi plătită tranșa DN-41 și ce sumă este autorizabilă? Prezintă findingurile materiale și probele decisive.",
+    "files": [
+      "01_mandat.md",
+      "02_registru.pdf",
+      "03_cerere.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Suma autorizabilă este 0 EUR.",
+        "evidence": [
+          "01_mandat.md#P1",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Aprobarea financiară este activă, iar aprobarea de risc lipsește în registrul vizibil complet; cererea nu poate înlocui aprobarea.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "01_mandat.md#P3",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      }
+    ],
+    "primary_mechanism": "A02: pagina vizibilă și stratul textual pot exprima stări diferite",
+    "profile": "PDF paired fidelity"
+  },
+  {
+    "id": "d468698",
+    "title": "Dorna - fidelitatea registrului facsimil",
+    "task": "Refă reviewul dosarului Dorna la 12.11.2026, ora 14:00 UTC. Poate fi plătită tranșa DN-41 și ce sumă este autorizabilă? Prezintă findingurile materiale și probele decisive.",
+    "files": [
+      "01_mandat.md",
+      "02_registru.pdf",
+      "03_cerere.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Suma autorizabilă este 0 EUR.",
+        "evidence": [
+          "01_mandat.md#P1",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Aprobarea financiară este activă, iar aprobarea de risc lipsește în registrul vizibil complet; cererea nu poate înlocui aprobarea.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "01_mandat.md#P3",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Textul automat extras afirmă fals o semnătură de risc activă; pagina vizibilă arată IN ASTEPTARE și semnătură ABSENTA. Facsimilul are autoritate.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "02_registru.pdf#A2"
+        ]
+      }
+    ],
+    "primary_mechanism": "A02: pagina vizibilă și stratul textual pot exprima stări diferite",
+    "profile": "PDF paired fidelity"
+  },
+  {
+    "id": "d199566",
+    "title": "Dorna - fidelitatea registrului facsimil",
+    "task": "Refă reviewul dosarului Dorna la 12.11.2026, ora 14:00 UTC. Poate fi plătită tranșa DN-41 și ce sumă este autorizabilă? Prezintă findingurile materiale și probele decisive.",
+    "files": [
+      "01_mandat.md",
+      "02_registru.pdf",
+      "03_cerere.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Suma autorizabilă este 0 EUR.",
+        "evidence": [
+          "01_mandat.md#P1",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Aprobarea financiară este activă, iar aprobarea de risc lipsește în registrul vizibil complet; cererea nu poate înlocui aprobarea.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "01_mandat.md#P3",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      }
+    ],
+    "primary_mechanism": "A02: pagina vizibilă și stratul textual pot exprima stări diferite",
+    "profile": "PDF paired fidelity"
+  },
+  {
+    "id": "d285994",
+    "title": "Dorna - fidelitatea registrului facsimil",
+    "task": "Refă reviewul dosarului Dorna la 12.11.2026, ora 14:00 UTC. Poate fi plătită tranșa DN-41 și ce sumă este autorizabilă? Prezintă findingurile materiale și probele decisive.",
+    "files": [
+      "01_mandat.md",
+      "02_registru.pdf",
+      "03_cerere.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Suma autorizabilă este 0 EUR.",
+        "evidence": [
+          "01_mandat.md#P1",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Aprobarea financiară este activă, iar aprobarea de risc lipsește în registrul vizibil complet; cererea nu poate înlocui aprobarea.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "01_mandat.md#P3",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      }
+    ],
+    "primary_mechanism": "A02: pagina vizibilă și stratul textual pot exprima stări diferite",
+    "profile": "PDF paired fidelity"
+  },
+  {
+    "id": "d831303",
+    "title": "Dorna - fidelitatea registrului facsimil",
+    "task": "Refă reviewul dosarului Dorna la 12.11.2026, ora 14:00 UTC. Poate fi plătită tranșa DN-41 și ce sumă este autorizabilă? Prezintă findingurile materiale și probele decisive.",
+    "files": [
+      "01_mandat.md",
+      "02_registru.pdf",
+      "03_cerere.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Suma autorizabilă este 0 EUR.",
+        "evidence": [
+          "01_mandat.md#P1",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Aprobarea financiară este activă, iar aprobarea de risc lipsește în registrul vizibil complet; cererea nu poate înlocui aprobarea.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "01_mandat.md#P3",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Textul automat extras afirmă fals o semnătură de risc activă; pagina vizibilă arată IN ASTEPTARE și semnătură ABSENTA. Facsimilul are autoritate.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "02_registru.pdf#A2"
+        ]
+      }
+    ],
+    "primary_mechanism": "A02: pagina vizibilă și stratul textual pot exprima stări diferite",
+    "profile": "PDF paired fidelity"
+  },
+  {
+    "id": "d734398",
+    "title": "Dorna - fidelitatea registrului facsimil",
+    "task": "Refă reviewul dosarului Dorna la 12.11.2026, ora 14:00 UTC. Poate fi plătită tranșa DN-41 și ce sumă este autorizabilă? Prezintă findingurile materiale și probele decisive.",
+    "files": [
+      "01_mandat.md",
+      "02_registru.pdf",
+      "03_cerere.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Suma autorizabilă este 0 EUR.",
+        "evidence": [
+          "01_mandat.md#P1",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Aprobarea financiară este activă, iar aprobarea de risc lipsește în registrul vizibil complet; cererea nu poate înlocui aprobarea.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "01_mandat.md#P3",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Textul automat extras afirmă fals o semnătură de risc activă; pagina vizibilă arată IN ASTEPTARE și semnătură ABSENTA. Facsimilul are autoritate.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "02_registru.pdf#A2"
+        ]
+      }
+    ],
+    "primary_mechanism": "A02: pagina vizibilă și stratul textual pot exprima stări diferite",
+    "profile": "PDF paired fidelity"
+  },
+  {
+    "id": "d835384",
+    "title": "Dorna - fidelitatea registrului facsimil",
+    "task": "Refă reviewul dosarului Dorna la 12.11.2026, ora 14:00 UTC. Poate fi plătită tranșa DN-41 și ce sumă este autorizabilă? Prezintă findingurile materiale și probele decisive.",
+    "files": [
+      "01_mandat.md",
+      "02_registru.pdf",
+      "03_cerere.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Suma autorizabilă este 0 EUR.",
+        "evidence": [
+          "01_mandat.md#P1",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Aprobarea financiară este activă, iar aprobarea de risc lipsește în registrul vizibil complet; cererea nu poate înlocui aprobarea.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "01_mandat.md#P3",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      }
+    ],
+    "primary_mechanism": "A02: pagina vizibilă și stratul textual pot exprima stări diferite",
+    "profile": "PDF paired fidelity"
+  },
+  {
+    "id": "d877061",
+    "title": "Dorna - fidelitatea registrului facsimil",
+    "task": "Refă reviewul dosarului Dorna la 12.11.2026, ora 14:00 UTC. Poate fi plătită tranșa DN-41 și ce sumă este autorizabilă? Prezintă findingurile materiale și probele decisive.",
+    "files": [
+      "01_mandat.md",
+      "02_registru.pdf",
+      "03_cerere.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Suma autorizabilă este 0 EUR.",
+        "evidence": [
+          "01_mandat.md#P1",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Aprobarea financiară este activă, iar aprobarea de risc lipsește în registrul vizibil complet; cererea nu poate înlocui aprobarea.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "01_mandat.md#P3",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      }
+    ],
+    "primary_mechanism": "A02: pagina vizibilă și stratul textual pot exprima stări diferite",
+    "profile": "PDF paired fidelity"
+  },
+  {
+    "id": "d938665",
+    "title": "Dorna - fidelitatea registrului facsimil",
+    "task": "Refă reviewul dosarului Dorna la 12.11.2026, ora 14:00 UTC. Poate fi plătită tranșa DN-41 și ce sumă este autorizabilă? Prezintă findingurile materiale și probele decisive.",
+    "files": [
+      "01_mandat.md",
+      "02_registru.pdf",
+      "03_cerere.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Suma autorizabilă este 0 EUR.",
+        "evidence": [
+          "01_mandat.md#P1",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Aprobarea financiară este activă, iar aprobarea de risc lipsește în registrul vizibil complet; cererea nu poate înlocui aprobarea.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "01_mandat.md#P3",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      }
+    ],
+    "primary_mechanism": "A02: pagina vizibilă și stratul textual pot exprima stări diferite",
+    "profile": "PDF paired fidelity"
+  },
+  {
+    "id": "d598801",
+    "title": "Dorna - fidelitatea registrului facsimil",
+    "task": "Refă reviewul dosarului Dorna la 12.11.2026, ora 14:00 UTC. Poate fi plătită tranșa DN-41 și ce sumă este autorizabilă? Prezintă findingurile materiale și probele decisive.",
+    "files": [
+      "01_mandat.md",
+      "02_registru.pdf",
+      "03_cerere.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Suma autorizabilă este 0 EUR.",
+        "evidence": [
+          "01_mandat.md#P1",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Aprobarea financiară este activă, iar aprobarea de risc lipsește în registrul vizibil complet; cererea nu poate înlocui aprobarea.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "01_mandat.md#P3",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Textul automat extras afirmă fals o semnătură de risc activă; pagina vizibilă arată IN ASTEPTARE și semnătură ABSENTA. Facsimilul are autoritate.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "02_registru.pdf#A2"
+        ]
+      }
+    ],
+    "primary_mechanism": "A02: pagina vizibilă și stratul textual pot exprima stări diferite",
+    "profile": "PDF paired fidelity"
+  },
+  {
+    "id": "d903475",
+    "title": "Dorna - fidelitatea registrului facsimil",
+    "task": "Refă reviewul dosarului Dorna la 12.11.2026, ora 14:00 UTC. Poate fi plătită tranșa DN-41 și ce sumă este autorizabilă? Prezintă findingurile materiale și probele decisive.",
+    "files": [
+      "01_mandat.md",
+      "02_registru.pdf",
+      "03_cerere.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Suma autorizabilă este 0 EUR.",
+        "evidence": [
+          "01_mandat.md#P1",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Aprobarea financiară este activă, iar aprobarea de risc lipsește în registrul vizibil complet; cererea nu poate înlocui aprobarea.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "01_mandat.md#P3",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Textul automat extras afirmă fals o semnătură de risc activă; pagina vizibilă arată IN ASTEPTARE și semnătură ABSENTA. Facsimilul are autoritate.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "02_registru.pdf#A2"
+        ]
+      }
+    ],
+    "primary_mechanism": "A02: pagina vizibilă și stratul textual pot exprima stări diferite",
+    "profile": "PDF paired fidelity"
+  },
+  {
+    "id": "d853044",
+    "title": "Dorna - fidelitatea registrului facsimil",
+    "task": "Refă reviewul dosarului Dorna la 12.11.2026, ora 14:00 UTC. Poate fi plătită tranșa DN-41 și ce sumă este autorizabilă? Prezintă findingurile materiale și probele decisive.",
+    "files": [
+      "01_mandat.md",
+      "02_registru.pdf",
+      "03_cerere.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Suma autorizabilă este 0 EUR.",
+        "evidence": [
+          "01_mandat.md#P1",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Aprobarea financiară este activă, iar aprobarea de risc lipsește în registrul vizibil complet; cererea nu poate înlocui aprobarea.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "01_mandat.md#P3",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      }
+    ],
+    "primary_mechanism": "A02: pagina vizibilă și stratul textual pot exprima stări diferite",
+    "profile": "PDF paired fidelity"
+  },
+  {
+    "id": "d574255",
+    "title": "Dorna - fidelitatea registrului facsimil",
+    "task": "Refă reviewul dosarului Dorna la 12.11.2026, ora 14:00 UTC. Poate fi plătită tranșa DN-41 și ce sumă este autorizabilă? Prezintă findingurile materiale și probele decisive.",
+    "files": [
+      "01_mandat.md",
+      "02_registru.pdf",
+      "03_cerere.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Suma autorizabilă este 0 EUR.",
+        "evidence": [
+          "01_mandat.md#P1",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Aprobarea financiară este activă, iar aprobarea de risc lipsește în registrul vizibil complet; cererea nu poate înlocui aprobarea.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "01_mandat.md#P3",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Textul automat extras afirmă fals o semnătură de risc activă; pagina vizibilă arată IN ASTEPTARE și semnătură ABSENTA. Facsimilul are autoritate.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "02_registru.pdf#A2"
+        ]
+      }
+    ],
+    "primary_mechanism": "A02: pagina vizibilă și stratul textual pot exprima stări diferite",
+    "profile": "PDF paired fidelity"
+  },
+  {
+    "id": "d968694",
+    "title": "Dorna - fidelitatea registrului facsimil",
+    "task": "Refă reviewul dosarului Dorna la 12.11.2026, ora 14:00 UTC. Poate fi plătită tranșa DN-41 și ce sumă este autorizabilă? Prezintă findingurile materiale și probele decisive.",
+    "files": [
+      "01_mandat.md",
+      "02_registru.pdf",
+      "03_cerere.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Suma autorizabilă este 0 EUR.",
+        "evidence": [
+          "01_mandat.md#P1",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Aprobarea financiară este activă, iar aprobarea de risc lipsește în registrul vizibil complet; cererea nu poate înlocui aprobarea.",
+        "evidence": [
+          "01_mandat.md#P2",
+          "01_mandat.md#P3",
+          "02_registru.pdf#A1",
+          "02_registru.pdf#A2"
+        ]
+      }
+    ],
+    "primary_mechanism": "A02: pagina vizibilă și stratul textual pot exprima stări diferite",
+    "profile": "PDF paired fidelity"
+  }
+]

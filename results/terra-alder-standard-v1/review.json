@@ -1,0 +1,32 @@
+{
+  "run_id": "terra-alder-standard-v1",
+  "model": "gpt-6.1-terra",
+  "prompt_profile": "standard",
+  "require_current_inputs": true,
+  "limitations": "O sesiune strict izolată, efort medium, cu brief standard de business. Documentele și întrebarea cazului sunt identice cu profilul forensic; promptul general diferă și rezultatele sunt separate. Nu este observat un verdict fals. Evaluatorul este și autorul.",
+  "cases": {
+    "09_alder_receipt": {
+      "findings": {
+        "F1": {
+          "status": "pass",
+          "quote": "tranșa AL-9 de 60.000 EUR nu poate fi plătită.",
+          "reason": "Identifică aprobarea lipsă, aplică cumulativitatea și respinge plata."
+        },
+        "F2": {
+          "status": "pass",
+          "quote": "Afirmația privind aprobarea și posibilitatea plății contrazice registrul.",
+          "reason": "Infirmă aprobarea și plătibilitatea afirmate de nota financiară."
+        },
+        "F3": {
+          "status": "partial",
+          "quote": "Rezultatul verificării nu explică această contradicție",
+          "reason": "Identifică verificarea de revizie și contradicția recipisei cu registrul, apoi refuză corect adoptarea concluziei. Totuși, nu explică faptul că rezumatul este o constantă decodată fără verificarea aprobărilor. Componenta tehnică a F3 este incompletă. Nu considerăm această omisiune de explicație un martor de inducere materială în eroare."
+        }
+      },
+      "additional_errors": [],
+      "additional_findings": [],
+      "outcome": "correct_with_incomplete_finding",
+      "notes": "Verdictul de business este corect și coerent; modelul nu adoptă dispoziția falsă. Nu am identificat afirmații materiale false. F3 este numai parțial demonstrat; toate problemele de business sunt identificate și decizia este corectă."
+    }
+  }
+}

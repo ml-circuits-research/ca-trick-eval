@@ -1,0 +1,36 @@
+{
+  "run_id": "terra-montis-v1",
+  "model": "gpt-6.1-terra",
+  "require_current_inputs": true,
+  "limitations": "O sesiune strict izolată, efort medium. Caz construit adaptiv; evaluatorul este și autorul. Toate findingurile sunt rezolvate corect, inclusiv de Luna; candidatul se retrage, fără a fabrica un eșec.",
+  "cases": {
+    "03_montis_garantii": {
+      "findings": {
+        "F1": {
+          "status": "pass",
+          "quote": "Eroarea este deducția că aceste controale individuale dovedesc acoperirea simultană.",
+          "reason": "Identifică grupul N/E/V cu cerere 120 și capacitate eligibilă 100, reutilizarea capacităților în controalele individuale și neaprobabilitatea pachetului."
+        },
+        "F2": {
+          "status": "pass",
+          "quote": "Expunerea minimă neacoperită este de 20 milioane EUR",
+          "reason": "Demonstrează atât limita superioară a acoperirii (180), cât și o alocare fezabilă care o atinge; deficitul minim este exact 20."
+        },
+        "F3": {
+          "status": "pass",
+          "quote": "Expunerea minimă neacoperită a pachetului ar rămâne 20 milioane EUR",
+          "reason": "Arată că oferta exclusiv pentru S nu mărește capacitatea N/E/V și păstrează deficitul minim de 20."
+        },
+        "F4": {
+          "status": "pass",
+          "quote": "oferta pentru S lasă 20 milioane EUR neacoperite, iar cea pentru N reduce expunerea minimă neacoperită la zero.",
+          "reason": "Oferă o alocare completă validă cu garanția nouă pentru N și distinge corect ofertele, condiționat de incorporarea ofertei."
+        }
+      },
+      "additional_errors": [],
+      "additional_findings": [],
+      "outcome": "correct",
+      "notes": "Toate cele patru findinguri sunt demonstrate corect. Alocările alternative oferite de model au fost verificate: respectă eligibilitățile, capacitățile și principalul fiecărui credit. Nu am identificat erori materiale. Observația că ofertele nu sunt încă incorporate explicitează condiționalitatea F4, fără a fi un finding nou distinct."
+    }
+  }
+}

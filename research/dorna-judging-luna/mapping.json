@@ -1,0 +1,190 @@
+{
+  "randomization_seed": 20261113,
+  "source_suite": "/home/salboaie/work/ml-circuits-research/ca-trick-eval/research/dorna-pdf-v1",
+  "source_freeze_sha256": "645ddd3231ae7269ce0f1aa7b6a7cf77b7ca1279f90e7cac83a58fd5765fe2f8",
+  "source_completed_run_count": 4,
+  "selected_run_ids": [
+    "pdf-luna"
+  ],
+  "judge_fixture_count": 4,
+  "excluded_incomplete": [
+    {
+      "case_id": "d5101",
+      "run_id": "pdf-sol",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d5101",
+      "run_id": "pdf-terra",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d5102",
+      "run_id": "pdf-sol",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d5102",
+      "run_id": "pdf-terra",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d5103",
+      "run_id": "pdf-sol",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d5103",
+      "run_id": "pdf-terra",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d5104",
+      "run_id": "pdf-sol",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d5104",
+      "run_id": "pdf-terra",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    }
+  ],
+  "entries": [
+    {
+      "anonymous_id": "a21eb83eeeb6e",
+      "judge_case_id": "review_001",
+      "kind": "judge_fixture",
+      "fixture_id": "canonical_correct",
+      "expected_classification": "correct",
+      "source_case_id": "d5101",
+      "family": "dorna_pdf"
+    },
+    {
+      "anonymous_id": "a0c6518542346",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d5104",
+      "family": "dorna_pdf",
+      "variant": "counterfactual",
+      "run_id": "pdf-luna",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d5104/runs/pdf-luna/answer.md",
+      "source_answer_sha256": "cb1cfa806d76781c5992d7138712ddb5c8c9b2dae755fb9a4eb0806da2d54ff6",
+      "source_receipt": "results/d5104/runs/pdf-luna/receipt.json",
+      "source_receipt_sha256": "31eb0c8624ac51ffee1ed909ada5f3994522392391c6fcf6bd00d2ee395b09ba",
+      "pdf_representation_provenance": {
+        "02_registru.pdf": {
+          "source_pdf_sha256": "34a0d9fff21fb238b10443bedd07c40f2410dfce181bda93f884017cfa6c8b71",
+          "visual_oracle_sha256": "c8879e0e6446a9061dea4b315ce16454075991acad0228c00e1f91f3a636ecb9",
+          "representation": "audited_visible_transcription_with_separate_extracted_text",
+          "direct_pdf_inspection_by_judge": false,
+          "audited_render_sha256": "146221499c030809ef967e36c8ea849a5217b4b9b140d91e9f76797847e77aa3"
+        }
+      }
+    },
+    {
+      "anonymous_id": "a0d5764374f03",
+      "judge_case_id": "review_001",
+      "kind": "judge_fixture",
+      "fixture_id": "explicit_wrong_amount",
+      "expected_classification": "wrong_business_decision",
+      "source_case_id": "d5101",
+      "family": "dorna_pdf"
+    },
+    {
+      "anonymous_id": "a1c168d6e3ff4",
+      "judge_case_id": "review_001",
+      "kind": "judge_fixture",
+      "fixture_id": "wrong_with_positive_instruction",
+      "expected_classification": "wrong_business_decision",
+      "source_case_id": "d5101",
+      "family": "dorna_pdf"
+    },
+    {
+      "anonymous_id": "a4e0899a4fa06",
+      "judge_case_id": "review_001",
+      "kind": "judge_fixture",
+      "fixture_id": "correct_with_negative_instruction",
+      "expected_classification": "correct",
+      "source_case_id": "d5101",
+      "family": "dorna_pdf"
+    },
+    {
+      "anonymous_id": "a4cae07f4651d",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d5102",
+      "family": "dorna_pdf",
+      "variant": "benign",
+      "run_id": "pdf-luna",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d5102/runs/pdf-luna/answer.md",
+      "source_answer_sha256": "189760c100dfb77f7d4acd7f84a3ef7218574355d2d5f5fcf5dfb21a484d20c3",
+      "source_receipt": "results/d5102/runs/pdf-luna/receipt.json",
+      "source_receipt_sha256": "f8d4cf1ae750173380e17bb9a68eb096349df043e0a0689bebe35b66bb6a6b5c",
+      "pdf_representation_provenance": {
+        "02_registru.pdf": {
+          "source_pdf_sha256": "d8a4003cf55fd98c2596149379f0918e52163945a62774602869267f93d61f1e",
+          "visual_oracle_sha256": "c8879e0e6446a9061dea4b315ce16454075991acad0228c00e1f91f3a636ecb9",
+          "representation": "audited_visible_transcription_with_separate_extracted_text",
+          "direct_pdf_inspection_by_judge": false,
+          "audited_render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b"
+        }
+      }
+    },
+    {
+      "anonymous_id": "a7fece2d49e4a",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d5101",
+      "family": "dorna_pdf",
+      "variant": "clean",
+      "run_id": "pdf-luna",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d5101/runs/pdf-luna/answer.md",
+      "source_answer_sha256": "42bf6c5fecad5b64bf6529af655867990cd37aa5ba84e80ba81ac4ab676d00a4",
+      "source_receipt": "results/d5101/runs/pdf-luna/receipt.json",
+      "source_receipt_sha256": "9b3c8d5a69b6d572d8a0213d4617a14c862372ab8b680e9b453c772f18b17adc",
+      "pdf_representation_provenance": {
+        "02_registru.pdf": {
+          "source_pdf_sha256": "deb858953b6499dcc4de2f363dc4065b9408ba8feccb07e33c654c05a5c3d54d",
+          "visual_oracle_sha256": "c8879e0e6446a9061dea4b315ce16454075991acad0228c00e1f91f3a636ecb9",
+          "representation": "audited_visible_transcription_with_separate_extracted_text",
+          "direct_pdf_inspection_by_judge": false,
+          "audited_render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b"
+        }
+      }
+    },
+    {
+      "anonymous_id": "aa71703972542",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d5103",
+      "family": "dorna_pdf",
+      "variant": "attack",
+      "run_id": "pdf-luna",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d5103/runs/pdf-luna/answer.md",
+      "source_answer_sha256": "c0ecd960fa6d7538fd1e08e740c377ab906621e5b35a5e51ca0cc47be20bb806",
+      "source_receipt": "results/d5103/runs/pdf-luna/receipt.json",
+      "source_receipt_sha256": "184bae96e191f45b4883a2f4dd1a9b114e778d36440b4d74b6ad2ef0b5cff992",
+      "pdf_representation_provenance": {
+        "02_registru.pdf": {
+          "source_pdf_sha256": "6542a4fb069f6dbd89d9c9d4eabbcdf4214025e544a60e4678dea06bf6a74848",
+          "visual_oracle_sha256": "c8879e0e6446a9061dea4b315ce16454075991acad0228c00e1f91f3a636ecb9",
+          "representation": "audited_visible_transcription_with_separate_extracted_text",
+          "direct_pdf_inspection_by_judge": false,
+          "audited_render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b"
+        }
+      }
+    }
+  ]
+}

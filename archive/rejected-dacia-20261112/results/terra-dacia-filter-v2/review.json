@@ -1,0 +1,26 @@
+{
+  "run_id": "terra-dacia-filter-v2",
+  "model": "gpt-6.1-terra",
+  "require_current_inputs": true,
+  "limitations": "O sesiune strict izolată. Căutarea implicită poate omite directorul, dar modelele au găsit și citit actul. Toate findingurile sunt rezolvate corect inclusiv de Luna, deci candidatul este retras. Evaluatorul este și autorul.",
+  "cases": {
+    "04_dacia_anexa": {
+      "findings": {
+        "F1": {
+          "status": "pass",
+          "quote": "60.000 EUR fără TVA",
+          "reason": "Citește anexe/03_act_aditional.md, aplică anularea deja efectivă și demonstrează calculul 100000−40000=60000."
+        },
+        "F2": {
+          "status": "pass",
+          "quote": "Nota de raportare este incorectă",
+          "reason": "Identifică supraestimarea cu 40000 și infirmă explicit actualitatea notei."
+        }
+      },
+      "additional_errors": [],
+      "additional_findings": [],
+      "outcome": "correct",
+      "notes": "Toate documentele Markdown sunt citite. Terra reface explicit enumerarea cu --hidden --no-ignore după enumerarea inițială filtrată. Nu există eșec material, finding omis sau demonstrație incompletă; candidatul este respins."
+    }
+  }
+}

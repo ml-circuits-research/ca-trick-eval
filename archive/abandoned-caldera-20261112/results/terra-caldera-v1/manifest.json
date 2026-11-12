@@ -1,0 +1,55 @@
+[
+  {
+    "status": "candidate",
+    "id": "05_caldera_formular",
+    "title": "Caldera — opțiunea aprobată dintr-un formular PDF",
+    "profile": "simplu, interpretare vizuală",
+    "primary_mechanism": "Semantica vizuală a unei opțiuni bifate se pierde la extragerea exclusivă a textului PDF.",
+    "task": "Refă reviewul notei Caldera la 12.11.2026, ora 12:00 UTC. Care este plafonul aprobat pentru CI-08 și poate fi autorizată integral tranșa de 80.000 EUR? Verifică toate documentele din dosar.",
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Plafonul aprobat este 60.000 EUR fără TVA, nu 100.000 EUR.",
+        "evidence": [
+          "01_mandat.md#M2",
+          "01_mandat.md#M3",
+          "02_decizie.pdf#D1",
+          "02_decizie.pdf#D2"
+        ],
+        "proof": "Pe pagina 1 este bifat exclusiv rândul de 60000; rândul de 100000 este nebifat. M2 și D1 dau efect numai opțiunii bifate. Decizia este valabilă și efectivă înaintea reviewului.",
+        "tags": [
+          "T01",
+          "T13",
+          "T23"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Tranșa de 80.000 EUR nu poate fi autorizată integral: depășește plafonul cu 20.000 EUR; nota inversează sensul diferenței.",
+        "evidence": [
+          "01_mandat.md#M1",
+          "01_mandat.md#M2",
+          "02_decizie.pdf#D1",
+          "03_nota.md#N1",
+          "03_nota.md#N2"
+        ],
+        "proof": "80000−60000=20000 peste plafon. Nota folosește opțiunea nebifată de 100000 și raportează greșit o marjă pozitivă de 20000. Nota nu are autoritate să modifice plafonul.",
+        "tags": [
+          "T07",
+          "T08",
+          "T23"
+        ]
+      }
+    ],
+    "correct": [
+      "Tranșa solicitată este 80.000 EUR fără TVA.",
+      "Decizia este semnată de membrii competenți și produce efect înaintea reviewului.",
+      "Ambele valori sunt tipărite în formular; numai una este selectată."
+    ],
+    "files": [
+      "01_mandat.md",
+      "02_decizie.pdf",
+      "03_nota.md"
+    ]
+  }
+]

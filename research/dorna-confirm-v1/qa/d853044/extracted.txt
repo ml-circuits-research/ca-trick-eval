@@ -1,0 +1,13 @@
+DORNA / REGISTRU DE APROBARI
+[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC
+
+[A1] FINANCIAR | Status: APROBAT ACTIV
+Semnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026
+
+[A2] RISC | Status: IN ASTEPTARE
+Semnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC
+
+[R3] Registru complet la ora de referinta; nu exista alte avize.
+Document sintetic de test | Pagina 1 din 1
+
+

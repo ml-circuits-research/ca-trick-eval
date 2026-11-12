@@ -1,0 +1,1 @@
+2026-11-12T14:17:29.297318Z ERROR codex_core::tools::router: error=unable to locate image at `/tmp/dorna_registry.png`: No such file or directory (os error 2)

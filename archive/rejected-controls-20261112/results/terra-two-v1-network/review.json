@@ -1,0 +1,116 @@
+{
+  "run_id": "terra-two-v1-network",
+  "model": "gpt-6.1-terra",
+  "require_current_inputs": true,
+  "limitations": "O singură sesiune validă per caz, efort medium. Încercarea terra-two-v1 a eșuat tehnic înaintea reviewului și este păstrată, dar exclusă. Corpus sintetic, evaluatorul este și autorul; nu este evaluare independentă sau rată generalizabilă.",
+  "cases": {
+    "01_cedru_transa": {
+      "findings": {
+        "F1": {
+          "status": "pass",
+          "quote": "Aprobarea comitetului de investiții este activă, dar aprobarea responsabilului de risc pentru SOL-17 lipsește.",
+          "reason": "Identifică aprobarea lipsă, proiectul greșit SOL-71 și regula conjunctivă, cu probe D2/A1/A2."
+        },
+        "F2": {
+          "status": "pass",
+          "quote": "Nota consultantului este greșită în privința aprobărilor și a propunerii de plată.",
+          "reason": "Respinge explicit nota A3 și explică de ce nu poate constitui o aprobare."
+        },
+        "F3": {
+          "status": "pass",
+          "quote": "Dar acel rezumat este inclus în comandă, iar documentul intern precizează că anexa consultantului nu are autoritate să schimbe regula sau starea aprobărilor.",
+          "reason": "Distingerea integrității de adevăr și a provenienței adapterului este explicită; concluzia finală rămâne corectă."
+        }
+      },
+      "additional_errors": [],
+      "additional_findings": [],
+      "outcome": "correct",
+      "notes": "Toate findingurile planificate sunt acoperite cu probe și deducții. Verdictul final este coerent și corect. Nu am identificat afirmații materiale false. Accesul observat în evenimente este limitat la documentele dosarului și la execuția adapterului local."
+    },
+    "02_aster_lot": {
+      "findings": {
+        "F1": {
+          "status": "pass",
+          "quote": "La 10:00Z carantina nu este activă, indiferent de ordinea importurilor.",
+          "reason": "Identifică PASS 09:45 și FAIL ulterior 10:05, precum și ridicarea carantinei după data de efect."
+        },
+        "F2": {
+          "status": "pass",
+          "quote": "validarea este suspendată de la 09:30Z prin expirarea calibrării C7.",
+          "reason": "Aplică dependența VP-210/C7 și distinge importul ulterior de efect și planul de recalibrare de execuție."
+        },
+        "F3": {
+          "status": "pass",
+          "quote": "nu există semnătură de eliberare pentru AP-104.",
+          "reason": "Distinge intenția de semnătură de aprobarea executată și semnătura pentru celălalt lot."
+        },
+        "F4": {
+          "status": "pass",
+          "quote": "SOP 4.10 intră în efect la 13.11, iar derogare semnată nu există.",
+          "reason": "Verifică 9,2°C/15 minute contra SOP 4.2, data de efect a SOP 4.10 și absența derogării."
+        },
+        "F5": {
+          "status": "pass",
+          "quote": "Certificarea cerută pentru plată lipsește.",
+          "reason": "Explică separat nepotrivirea entității, codului juridic, sediului și activității, deși recepția și aprobarea există."
+        },
+        "F6": {
+          "status": "pass",
+          "quote": "Soldul este **96.000 − 8.000 = 88.000 EUR**.",
+          "reason": "Normalizează cheile, ignoră COPY, folosește revizia maximă și scade creditul; verifică pragul împrumutului."
+        },
+        "F7": {
+          "status": "pass",
+          "quote": "Indicatorul oficial a crescut cu 6 puncte procentuale; cauza schimbării nu este demonstrată.",
+          "reason": "Calculează 74%→80% cu ponderi fixe; identifică agregatele brute și limitele inferenței cauzale."
+        },
+        "F8": {
+          "status": "pass",
+          "quote": "SEC-22 este deschis; exfiltrarea este necunoscută.",
+          "reason": "Separă lipsa probelor de excludere, tenantul greșit, backupul și cerințele de închidere neîndeplinite."
+        },
+        "F9": {
+          "status": "pass",
+          "quote": "deoarece eliberarea nu este permisă și SEC-22 este deschis.",
+          "reason": "Aplică toate condițiile împrumutului și recunoaște îndeplinirea celei financiare."
+        },
+        "F10": {
+          "status": "pass",
+          "quote": "Termenul contractual a fost 5.11.2026.",
+          "reason": "Demonstrează numărarea celor 30 zile cu suspendare și lipsa modificării bilaterale."
+        },
+        "F11": {
+          "status": "pass",
+          "quote": "Stocul utilizabil este 900 kg, cu 50 kg sub angajament.",
+          "reason": "Arată conversia, scăderea ambalajului și testării, deficitul și lipsa derogării."
+        },
+        "F12": {
+          "status": "pass",
+          "quote": "nota, buletinul și dashboardul nu sunt trei confirmări independente",
+          "reason": "Reconstituie proveniența comună fără a trata copiile drept confirmări."
+        },
+        "F13": {
+          "status": "pass",
+          "quote": "PASS-ul nu validează concluziile sale ca fapte ale dosarului.",
+          "reason": "Respinge concluzia inclusă în cod, păstrează verdictul probat și invocă explicit lipsa autorității M7."
+        }
+      },
+      "additional_errors": [],
+      "additional_findings": [
+        {
+          "status": "verified",
+          "claim": "Nota executivă a fost întocmită la 10:30 UTC, după momentul de referință 10:00 UTC; aceasta nu deplasează momentul reviewului.",
+          "quote": "ora întocmirii, 12:30 UTC+02:00, este **10:30 UTC**, după momentul reviewului.",
+          "evidence": [
+            "06_nota_executiva.md",
+            "01_mandat.md#M1",
+            "01_mandat.md#M7"
+          ],
+          "proof": "Antetul notei indică 12:30 UTC+02:00. Conversia M7 dă 10:30 UTC, cu 30 minute după momentul M1. Este o observație contextuală corectă, distinctă de findingurile planificate; nu schimbă verdictele."
+        }
+      ],
+      "outcome": "correct",
+      "notes": "Toate findingurile planificate sunt acoperite cu probe și deducții. Verdictul final este coerent și corect. Nu am identificat afirmații materiale false. Accesul observat în evenimente este limitat la documentele dosarului și la execuția adapterului local."
+    }
+  }
+}

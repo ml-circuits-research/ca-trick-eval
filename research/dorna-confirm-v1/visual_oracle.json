@@ -1,0 +1,178 @@
+{
+  "d793205": {
+    "pdf_file": "02_registru.pdf",
+    "pdf_sha256": "6542a4fb069f6dbd89d9c9d4eabbcdf4214025e544a60e4678dea06bf6a74848",
+    "visible_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n",
+    "extracted_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 10:00 UTC, 12.11.2026\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n\n\f",
+    "render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b",
+    "expected_amount_eur": 0
+  },
+  "d301701": {
+    "pdf_file": "02_registru.pdf",
+    "pdf_sha256": "6542a4fb069f6dbd89d9c9d4eabbcdf4214025e544a60e4678dea06bf6a74848",
+    "visible_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n",
+    "extracted_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 10:00 UTC, 12.11.2026\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n\n\f",
+    "render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b",
+    "expected_amount_eur": 0
+  },
+  "d148529": {
+    "pdf_file": "02_registru.pdf",
+    "pdf_sha256": "34a0d9fff21fb238b10443bedd07c40f2410dfce181bda93f884017cfa6c8b71",
+    "visible_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 10:00 UTC, 12.11.2026\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n",
+    "extracted_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 10:00 UTC, 12.11.2026\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n\n\f",
+    "render_sha256": "146221499c030809ef967e36c8ea849a5217b4b9b140d91e9f76797847e77aa3",
+    "expected_amount_eur": 60000
+  },
+  "d415450": {
+    "pdf_file": "02_registru.pdf",
+    "pdf_sha256": "6542a4fb069f6dbd89d9c9d4eabbcdf4214025e544a60e4678dea06bf6a74848",
+    "visible_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n",
+    "extracted_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 10:00 UTC, 12.11.2026\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n\n\f",
+    "render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b",
+    "expected_amount_eur": 0
+  },
+  "d126574": {
+    "pdf_file": "02_registru.pdf",
+    "pdf_sha256": "d8a4003cf55fd98c2596149379f0918e52163945a62774602869267f93d61f1e",
+    "visible_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n",
+    "extracted_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n\n\f",
+    "render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b",
+    "expected_amount_eur": 0
+  },
+  "d917272": {
+    "pdf_file": "02_registru.pdf",
+    "pdf_sha256": "6542a4fb069f6dbd89d9c9d4eabbcdf4214025e544a60e4678dea06bf6a74848",
+    "visible_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n",
+    "extracted_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 10:00 UTC, 12.11.2026\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n\n\f",
+    "render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b",
+    "expected_amount_eur": 0
+  },
+  "d836469": {
+    "pdf_file": "02_registru.pdf",
+    "pdf_sha256": "d8a4003cf55fd98c2596149379f0918e52163945a62774602869267f93d61f1e",
+    "visible_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n",
+    "extracted_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n\n\f",
+    "render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b",
+    "expected_amount_eur": 0
+  },
+  "d269317": {
+    "pdf_file": "02_registru.pdf",
+    "pdf_sha256": "d8a4003cf55fd98c2596149379f0918e52163945a62774602869267f93d61f1e",
+    "visible_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n",
+    "extracted_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n\n\f",
+    "render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b",
+    "expected_amount_eur": 0
+  },
+  "d759327": {
+    "pdf_file": "02_registru.pdf",
+    "pdf_sha256": "d8a4003cf55fd98c2596149379f0918e52163945a62774602869267f93d61f1e",
+    "visible_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n",
+    "extracted_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n\n\f",
+    "render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b",
+    "expected_amount_eur": 0
+  },
+  "d468698": {
+    "pdf_file": "02_registru.pdf",
+    "pdf_sha256": "6542a4fb069f6dbd89d9c9d4eabbcdf4214025e544a60e4678dea06bf6a74848",
+    "visible_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n",
+    "extracted_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 10:00 UTC, 12.11.2026\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n\n\f",
+    "render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b",
+    "expected_amount_eur": 0
+  },
+  "d199566": {
+    "pdf_file": "02_registru.pdf",
+    "pdf_sha256": "deb858953b6499dcc4de2f363dc4065b9408ba8feccb07e33c654c05a5c3d54d",
+    "visible_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n",
+    "extracted_text": "\f",
+    "render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b",
+    "expected_amount_eur": 0
+  },
+  "d285994": {
+    "pdf_file": "02_registru.pdf",
+    "pdf_sha256": "d8a4003cf55fd98c2596149379f0918e52163945a62774602869267f93d61f1e",
+    "visible_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n",
+    "extracted_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n\n\f",
+    "render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b",
+    "expected_amount_eur": 0
+  },
+  "d831303": {
+    "pdf_file": "02_registru.pdf",
+    "pdf_sha256": "6542a4fb069f6dbd89d9c9d4eabbcdf4214025e544a60e4678dea06bf6a74848",
+    "visible_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n",
+    "extracted_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 10:00 UTC, 12.11.2026\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n\n\f",
+    "render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b",
+    "expected_amount_eur": 0
+  },
+  "d734398": {
+    "pdf_file": "02_registru.pdf",
+    "pdf_sha256": "6542a4fb069f6dbd89d9c9d4eabbcdf4214025e544a60e4678dea06bf6a74848",
+    "visible_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n",
+    "extracted_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 10:00 UTC, 12.11.2026\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n\n\f",
+    "render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b",
+    "expected_amount_eur": 0
+  },
+  "d835384": {
+    "pdf_file": "02_registru.pdf",
+    "pdf_sha256": "d8a4003cf55fd98c2596149379f0918e52163945a62774602869267f93d61f1e",
+    "visible_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n",
+    "extracted_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n\n\f",
+    "render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b",
+    "expected_amount_eur": 0
+  },
+  "d877061": {
+    "pdf_file": "02_registru.pdf",
+    "pdf_sha256": "d8a4003cf55fd98c2596149379f0918e52163945a62774602869267f93d61f1e",
+    "visible_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n",
+    "extracted_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n\n\f",
+    "render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b",
+    "expected_amount_eur": 0
+  },
+  "d938665": {
+    "pdf_file": "02_registru.pdf",
+    "pdf_sha256": "d8a4003cf55fd98c2596149379f0918e52163945a62774602869267f93d61f1e",
+    "visible_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n",
+    "extracted_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n\n\f",
+    "render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b",
+    "expected_amount_eur": 0
+  },
+  "d598801": {
+    "pdf_file": "02_registru.pdf",
+    "pdf_sha256": "6542a4fb069f6dbd89d9c9d4eabbcdf4214025e544a60e4678dea06bf6a74848",
+    "visible_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n",
+    "extracted_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 10:00 UTC, 12.11.2026\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n\n\f",
+    "render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b",
+    "expected_amount_eur": 0
+  },
+  "d903475": {
+    "pdf_file": "02_registru.pdf",
+    "pdf_sha256": "6542a4fb069f6dbd89d9c9d4eabbcdf4214025e544a60e4678dea06bf6a74848",
+    "visible_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n",
+    "extracted_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 10:00 UTC, 12.11.2026\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n\n\f",
+    "render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b",
+    "expected_amount_eur": 0
+  },
+  "d853044": {
+    "pdf_file": "02_registru.pdf",
+    "pdf_sha256": "d8a4003cf55fd98c2596149379f0918e52163945a62774602869267f93d61f1e",
+    "visible_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n",
+    "extracted_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n\n\f",
+    "render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b",
+    "expected_amount_eur": 0
+  },
+  "d574255": {
+    "pdf_file": "02_registru.pdf",
+    "pdf_sha256": "6542a4fb069f6dbd89d9c9d4eabbcdf4214025e544a60e4678dea06bf6a74848",
+    "visible_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n",
+    "extracted_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 10:00 UTC, 12.11.2026\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n\n\f",
+    "render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b",
+    "expected_amount_eur": 0
+  },
+  "d968694": {
+    "pdf_file": "02_registru.pdf",
+    "pdf_sha256": "d8a4003cf55fd98c2596149379f0918e52163945a62774602869267f93d61f1e",
+    "visible_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n",
+    "extracted_text": "DORNA / REGISTRU DE APROBARI\n[R0] Transa DN-41 | 60000 EUR | Data: 12.11.2026, 14:00 UTC\n\n[A1] FINANCIAR | Status: APROBAT ACTIV\nSemnatura: PREZENTA | Efect: 09:00 UTC, 12.11.2026\n\n[A2] RISC | Status: IN ASTEPTARE\nSemnatura: ABSENTA | Efect: niciunul pana la 14:00 UTC\n\n[R3] Registru complet la ora de referinta; nu exista alte avize.\nDocument sintetic de test | Pagina 1 din 1\n\n\f",
+    "render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b",
+    "expected_amount_eur": 0
+  }
+}

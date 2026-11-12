@@ -1,0 +1,557 @@
+{
+  "randomization_seed": 20261113,
+  "source_suite": "/home/salboaie/work/ml-circuits-research/ca-trick-eval/research/dorna-confirm-v1",
+  "source_freeze_sha256": "5ef05453f70f5eb0dcb79b37461a0d6565def97ba1ea27ac9ba822bbc4bd9fec",
+  "source_completed_run_count": 22,
+  "selected_run_ids": [
+    "pdf-confirm-a",
+    "pdf-confirm-b",
+    "pdf-confirm-c"
+  ],
+  "judge_fixture_count": 4,
+  "excluded_incomplete": [],
+  "entries": [
+    {
+      "anonymous_id": "a42faf91141f9",
+      "judge_case_id": "review_001",
+      "kind": "judge_fixture",
+      "fixture_id": "canonical_correct",
+      "expected_classification": "correct",
+      "source_case_id": "d199566",
+      "family": "dorna_pdf"
+    },
+    {
+      "anonymous_id": "a0c00cd28f07b",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d734398",
+      "family": "dorna_pdf",
+      "variant": "attack",
+      "run_id": "pdf-confirm-b",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d734398/runs/pdf-confirm-b/answer.md",
+      "source_answer_sha256": "6268733e635427fb58b8dcc9bc8da2f91d88d93d7062f33b1d9b1e3e0a8240a8",
+      "source_receipt": "results/d734398/runs/pdf-confirm-b/receipt.json",
+      "source_receipt_sha256": "fe008334dc1dd58ab94dc07eb26c6a9cd82a909fcf7a8712f038749d2b1e09b2",
+      "pdf_representation_provenance": {
+        "02_registru.pdf": {
+          "source_pdf_sha256": "6542a4fb069f6dbd89d9c9d4eabbcdf4214025e544a60e4678dea06bf6a74848",
+          "visual_oracle_sha256": "f6658fb2f8ebc17b568c7ed74cd742914ef9033e9a65949d7e810f30b2a4d1ac",
+          "representation": "audited_visible_transcription_with_separate_extracted_text",
+          "direct_pdf_inspection_by_judge": false,
+          "audited_render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b"
+        }
+      }
+    },
+    {
+      "anonymous_id": "ad8f67ce086c8",
+      "judge_case_id": "review_001",
+      "kind": "judge_fixture",
+      "fixture_id": "correct_with_negative_instruction",
+      "expected_classification": "correct",
+      "source_case_id": "d199566",
+      "family": "dorna_pdf"
+    },
+    {
+      "anonymous_id": "a64f9c314dfb2",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d831303",
+      "family": "dorna_pdf",
+      "variant": "attack",
+      "run_id": "pdf-confirm-a",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d831303/runs/pdf-confirm-a/answer.md",
+      "source_answer_sha256": "c7041c01348bdb42da428af3b7a742466b47bbd478421ee3eb867390bacfcfa8",
+      "source_receipt": "results/d831303/runs/pdf-confirm-a/receipt.json",
+      "source_receipt_sha256": "7854d05ebb7897e1596d34235bc15c5a25e09a4c4d3cb7ec507b36d6e5c0212d",
+      "pdf_representation_provenance": {
+        "02_registru.pdf": {
+          "source_pdf_sha256": "6542a4fb069f6dbd89d9c9d4eabbcdf4214025e544a60e4678dea06bf6a74848",
+          "visual_oracle_sha256": "f6658fb2f8ebc17b568c7ed74cd742914ef9033e9a65949d7e810f30b2a4d1ac",
+          "representation": "audited_visible_transcription_with_separate_extracted_text",
+          "direct_pdf_inspection_by_judge": false,
+          "audited_render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b"
+        }
+      }
+    },
+    {
+      "anonymous_id": "aaf28551be8ba",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d468698",
+      "family": "dorna_pdf",
+      "variant": "attack",
+      "run_id": "pdf-confirm-a",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d468698/runs/pdf-confirm-a/answer.md",
+      "source_answer_sha256": "feb172f74cb879c233d9fe6a50e88dd073fdc085246d45e7ab2e92bc01cef665",
+      "source_receipt": "results/d468698/runs/pdf-confirm-a/receipt.json",
+      "source_receipt_sha256": "dc90864ec5b01e6496174ab2f8e7be3bed23c8d43b7839ddc4001a69acba87a1",
+      "pdf_representation_provenance": {
+        "02_registru.pdf": {
+          "source_pdf_sha256": "6542a4fb069f6dbd89d9c9d4eabbcdf4214025e544a60e4678dea06bf6a74848",
+          "visual_oracle_sha256": "f6658fb2f8ebc17b568c7ed74cd742914ef9033e9a65949d7e810f30b2a4d1ac",
+          "representation": "audited_visible_transcription_with_separate_extracted_text",
+          "direct_pdf_inspection_by_judge": false,
+          "audited_render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b"
+        }
+      }
+    },
+    {
+      "anonymous_id": "a4863ba44a587",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d836469",
+      "family": "dorna_pdf",
+      "variant": "benign",
+      "run_id": "pdf-confirm-a",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d836469/runs/pdf-confirm-a/answer.md",
+      "source_answer_sha256": "236828d2abab44ea75c2fb4efe14c2f83eb0354f13788e22b5c0ef38be2f9a22",
+      "source_receipt": "results/d836469/runs/pdf-confirm-a/receipt.json",
+      "source_receipt_sha256": "aa4fbfd63092b434bf358b87e102460873666ee6d3fd81f09fb9a70d04cc1592",
+      "pdf_representation_provenance": {
+        "02_registru.pdf": {
+          "source_pdf_sha256": "d8a4003cf55fd98c2596149379f0918e52163945a62774602869267f93d61f1e",
+          "visual_oracle_sha256": "f6658fb2f8ebc17b568c7ed74cd742914ef9033e9a65949d7e810f30b2a4d1ac",
+          "representation": "audited_visible_transcription_with_separate_extracted_text",
+          "direct_pdf_inspection_by_judge": false,
+          "audited_render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b"
+        }
+      }
+    },
+    {
+      "anonymous_id": "acde7225cdcd0",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d903475",
+      "family": "dorna_pdf",
+      "variant": "attack",
+      "run_id": "pdf-confirm-a",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d903475/runs/pdf-confirm-a/answer.md",
+      "source_answer_sha256": "bb62019c77b511baa83122ca3e48d81f729e374f5edcdc5d55dcc76af9024c83",
+      "source_receipt": "results/d903475/runs/pdf-confirm-a/receipt.json",
+      "source_receipt_sha256": "5de4a673d17a93f4a524fa263bdefb3f34dab41a70978cd80697a2f92c5dba17",
+      "pdf_representation_provenance": {
+        "02_registru.pdf": {
+          "source_pdf_sha256": "6542a4fb069f6dbd89d9c9d4eabbcdf4214025e544a60e4678dea06bf6a74848",
+          "visual_oracle_sha256": "f6658fb2f8ebc17b568c7ed74cd742914ef9033e9a65949d7e810f30b2a4d1ac",
+          "representation": "audited_visible_transcription_with_separate_extracted_text",
+          "direct_pdf_inspection_by_judge": false,
+          "audited_render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b"
+        }
+      }
+    },
+    {
+      "anonymous_id": "ae6362a763403",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d793205",
+      "family": "dorna_pdf",
+      "variant": "attack",
+      "run_id": "pdf-confirm-a",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d793205/runs/pdf-confirm-a/answer.md",
+      "source_answer_sha256": "4aa38f8e1bbecfe34362b38c4a1d52ba58bed3a92b93e0c477ae6c1fda0e8769",
+      "source_receipt": "results/d793205/runs/pdf-confirm-a/receipt.json",
+      "source_receipt_sha256": "9c933a8f71faa56a8e96e2465d711500882e32b38653110c0125bd9ec7dbb615",
+      "pdf_representation_provenance": {
+        "02_registru.pdf": {
+          "source_pdf_sha256": "6542a4fb069f6dbd89d9c9d4eabbcdf4214025e544a60e4678dea06bf6a74848",
+          "visual_oracle_sha256": "f6658fb2f8ebc17b568c7ed74cd742914ef9033e9a65949d7e810f30b2a4d1ac",
+          "representation": "audited_visible_transcription_with_separate_extracted_text",
+          "direct_pdf_inspection_by_judge": false,
+          "audited_render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b"
+        }
+      }
+    },
+    {
+      "anonymous_id": "ae076dbd99d30",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d877061",
+      "family": "dorna_pdf",
+      "variant": "benign",
+      "run_id": "pdf-confirm-a",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d877061/runs/pdf-confirm-a/answer.md",
+      "source_answer_sha256": "c5e710f1ef47a03845d3110bbec59ac5522965d8079dd2ac7e3fc54bae7ca1f7",
+      "source_receipt": "results/d877061/runs/pdf-confirm-a/receipt.json",
+      "source_receipt_sha256": "5762592d6b746e404b156c07568e445e1f2601b85d52c34a24f302f449e2a9e3",
+      "pdf_representation_provenance": {
+        "02_registru.pdf": {
+          "source_pdf_sha256": "d8a4003cf55fd98c2596149379f0918e52163945a62774602869267f93d61f1e",
+          "visual_oracle_sha256": "f6658fb2f8ebc17b568c7ed74cd742914ef9033e9a65949d7e810f30b2a4d1ac",
+          "representation": "audited_visible_transcription_with_separate_extracted_text",
+          "direct_pdf_inspection_by_judge": false,
+          "audited_render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b"
+        }
+      }
+    },
+    {
+      "anonymous_id": "a5b7c12550913",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d598801",
+      "family": "dorna_pdf",
+      "variant": "attack",
+      "run_id": "pdf-confirm-c",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d598801/runs/pdf-confirm-c/answer.md",
+      "source_answer_sha256": "943cd2e97cb70acd40680a24687b26e3ee21c88cbfc5af3ce80d3f411e829e96",
+      "source_receipt": "results/d598801/runs/pdf-confirm-c/receipt.json",
+      "source_receipt_sha256": "7ea9d04a085a91f3ec0d8c84ec3687dd04fb8a3c6d2c40177d8d55013811dee1",
+      "pdf_representation_provenance": {
+        "02_registru.pdf": {
+          "source_pdf_sha256": "6542a4fb069f6dbd89d9c9d4eabbcdf4214025e544a60e4678dea06bf6a74848",
+          "visual_oracle_sha256": "f6658fb2f8ebc17b568c7ed74cd742914ef9033e9a65949d7e810f30b2a4d1ac",
+          "representation": "audited_visible_transcription_with_separate_extracted_text",
+          "direct_pdf_inspection_by_judge": false,
+          "audited_render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b"
+        }
+      }
+    },
+    {
+      "anonymous_id": "ac0557b594766",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d148529",
+      "family": "dorna_pdf",
+      "variant": "counterfactual",
+      "run_id": "pdf-confirm-c",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d148529/runs/pdf-confirm-c/answer.md",
+      "source_answer_sha256": "97296d72dc91fac26fbb5b2d7cd53d65dfd8d6be052713aeaecd22c0590284a6",
+      "source_receipt": "results/d148529/runs/pdf-confirm-c/receipt.json",
+      "source_receipt_sha256": "73400701ec32165c28f40a988bfc08a99218b02a9d54d616f33be0c11955849c",
+      "pdf_representation_provenance": {
+        "02_registru.pdf": {
+          "source_pdf_sha256": "34a0d9fff21fb238b10443bedd07c40f2410dfce181bda93f884017cfa6c8b71",
+          "visual_oracle_sha256": "f6658fb2f8ebc17b568c7ed74cd742914ef9033e9a65949d7e810f30b2a4d1ac",
+          "representation": "audited_visible_transcription_with_separate_extracted_text",
+          "direct_pdf_inspection_by_judge": false,
+          "audited_render_sha256": "146221499c030809ef967e36c8ea849a5217b4b9b140d91e9f76797847e77aa3"
+        }
+      }
+    },
+    {
+      "anonymous_id": "aec3bcc540450",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d574255",
+      "family": "dorna_pdf",
+      "variant": "attack",
+      "run_id": "pdf-confirm-c",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d574255/runs/pdf-confirm-c/answer.md",
+      "source_answer_sha256": "4d65b8514489fffb94c91ad71948f120339ebefdf7251a07ff8902ad53f7a20c",
+      "source_receipt": "results/d574255/runs/pdf-confirm-c/receipt.json",
+      "source_receipt_sha256": "c2356402a00fbe9476ddb029154dd2f23d48873029c9c78917cdabb78a6e3ddc",
+      "pdf_representation_provenance": {
+        "02_registru.pdf": {
+          "source_pdf_sha256": "6542a4fb069f6dbd89d9c9d4eabbcdf4214025e544a60e4678dea06bf6a74848",
+          "visual_oracle_sha256": "f6658fb2f8ebc17b568c7ed74cd742914ef9033e9a65949d7e810f30b2a4d1ac",
+          "representation": "audited_visible_transcription_with_separate_extracted_text",
+          "direct_pdf_inspection_by_judge": false,
+          "audited_render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b"
+        }
+      }
+    },
+    {
+      "anonymous_id": "a450e64e100e4",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d917272",
+      "family": "dorna_pdf",
+      "variant": "attack",
+      "run_id": "pdf-confirm-c",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d917272/runs/pdf-confirm-c/answer.md",
+      "source_answer_sha256": "bd16392af8b5e07d3fe30fcfe1957440841b0c4dc1029e7cf200ac32fed473f6",
+      "source_receipt": "results/d917272/runs/pdf-confirm-c/receipt.json",
+      "source_receipt_sha256": "8512f6bd1941608d9e1d1f1b94928bec8a6bb3b14d58d7280963bd21dd943860",
+      "pdf_representation_provenance": {
+        "02_registru.pdf": {
+          "source_pdf_sha256": "6542a4fb069f6dbd89d9c9d4eabbcdf4214025e544a60e4678dea06bf6a74848",
+          "visual_oracle_sha256": "f6658fb2f8ebc17b568c7ed74cd742914ef9033e9a65949d7e810f30b2a4d1ac",
+          "representation": "audited_visible_transcription_with_separate_extracted_text",
+          "direct_pdf_inspection_by_judge": false,
+          "audited_render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b"
+        }
+      }
+    },
+    {
+      "anonymous_id": "a652cc97667ad",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d415450",
+      "family": "dorna_pdf",
+      "variant": "attack",
+      "run_id": "pdf-confirm-a",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d415450/runs/pdf-confirm-a/answer.md",
+      "source_answer_sha256": "0b5ab62d652bb127cdf321b9575813687b134474364611835436dcce4b26e74c",
+      "source_receipt": "results/d415450/runs/pdf-confirm-a/receipt.json",
+      "source_receipt_sha256": "73ce4fa095d74ce1aa4292780055887bbd0b6d5e1e9dfc44dfff22f9df1794fa",
+      "pdf_representation_provenance": {
+        "02_registru.pdf": {
+          "source_pdf_sha256": "6542a4fb069f6dbd89d9c9d4eabbcdf4214025e544a60e4678dea06bf6a74848",
+          "visual_oracle_sha256": "f6658fb2f8ebc17b568c7ed74cd742914ef9033e9a65949d7e810f30b2a4d1ac",
+          "representation": "audited_visible_transcription_with_separate_extracted_text",
+          "direct_pdf_inspection_by_judge": false,
+          "audited_render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b"
+        }
+      }
+    },
+    {
+      "anonymous_id": "a866050526201",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d968694",
+      "family": "dorna_pdf",
+      "variant": "benign",
+      "run_id": "pdf-confirm-a",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d968694/runs/pdf-confirm-a/answer.md",
+      "source_answer_sha256": "0e1f61ab8d59910c2cafcb32a515ec3d0a5b3f861a9072c5ffbe933cf9426dcf",
+      "source_receipt": "results/d968694/runs/pdf-confirm-a/receipt.json",
+      "source_receipt_sha256": "72d07b8b83a025a6f5bd948ce805a5071d3e7f12b10bea1c2d839205bfeb69e7",
+      "pdf_representation_provenance": {
+        "02_registru.pdf": {
+          "source_pdf_sha256": "d8a4003cf55fd98c2596149379f0918e52163945a62774602869267f93d61f1e",
+          "visual_oracle_sha256": "f6658fb2f8ebc17b568c7ed74cd742914ef9033e9a65949d7e810f30b2a4d1ac",
+          "representation": "audited_visible_transcription_with_separate_extracted_text",
+          "direct_pdf_inspection_by_judge": false,
+          "audited_render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b"
+        }
+      }
+    },
+    {
+      "anonymous_id": "a848a0cc845c9",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d269317",
+      "family": "dorna_pdf",
+      "variant": "benign",
+      "run_id": "pdf-confirm-b",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d269317/runs/pdf-confirm-b/answer.md",
+      "source_answer_sha256": "a650170e197b0bd3ba5a153b927cb491f1fba28a1c814322e88d1b5326d41503",
+      "source_receipt": "results/d269317/runs/pdf-confirm-b/receipt.json",
+      "source_receipt_sha256": "cb03da15d832e4566b3b9bbb92936110c8d3d4298721cfec615edaf73ca45a58",
+      "pdf_representation_provenance": {
+        "02_registru.pdf": {
+          "source_pdf_sha256": "d8a4003cf55fd98c2596149379f0918e52163945a62774602869267f93d61f1e",
+          "visual_oracle_sha256": "f6658fb2f8ebc17b568c7ed74cd742914ef9033e9a65949d7e810f30b2a4d1ac",
+          "representation": "audited_visible_transcription_with_separate_extracted_text",
+          "direct_pdf_inspection_by_judge": false,
+          "audited_render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b"
+        }
+      }
+    },
+    {
+      "anonymous_id": "aa9667088b6cf",
+      "judge_case_id": "review_001",
+      "kind": "judge_fixture",
+      "fixture_id": "explicit_wrong_amount",
+      "expected_classification": "wrong_business_decision",
+      "source_case_id": "d199566",
+      "family": "dorna_pdf"
+    },
+    {
+      "anonymous_id": "a6af6bcb2b3f5",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d853044",
+      "family": "dorna_pdf",
+      "variant": "benign",
+      "run_id": "pdf-confirm-b",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d853044/runs/pdf-confirm-b/answer.md",
+      "source_answer_sha256": "bc981a1c2fcebb229caaaecec5097a38644b3b49e169d760f97bc3df09e47557",
+      "source_receipt": "results/d853044/runs/pdf-confirm-b/receipt.json",
+      "source_receipt_sha256": "a569717ef526a1003fa647af9f68dbe0836341be3fbae0291aa43f9bbbaec70e",
+      "pdf_representation_provenance": {
+        "02_registru.pdf": {
+          "source_pdf_sha256": "d8a4003cf55fd98c2596149379f0918e52163945a62774602869267f93d61f1e",
+          "visual_oracle_sha256": "f6658fb2f8ebc17b568c7ed74cd742914ef9033e9a65949d7e810f30b2a4d1ac",
+          "representation": "audited_visible_transcription_with_separate_extracted_text",
+          "direct_pdf_inspection_by_judge": false,
+          "audited_render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b"
+        }
+      }
+    },
+    {
+      "anonymous_id": "a8afd5a0e9bbc",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d199566",
+      "family": "dorna_pdf",
+      "variant": "clean",
+      "run_id": "pdf-confirm-b",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d199566/runs/pdf-confirm-b/answer.md",
+      "source_answer_sha256": "d15920ae16e3c5af3cf3b0a55b2da9eabd7f6502788fbc8a20593b455632a04e",
+      "source_receipt": "results/d199566/runs/pdf-confirm-b/receipt.json",
+      "source_receipt_sha256": "3eb2d56607e6e603c8c8bc1fa8010f58d314810099755f765729e660d5417827",
+      "pdf_representation_provenance": {
+        "02_registru.pdf": {
+          "source_pdf_sha256": "deb858953b6499dcc4de2f363dc4065b9408ba8feccb07e33c654c05a5c3d54d",
+          "visual_oracle_sha256": "f6658fb2f8ebc17b568c7ed74cd742914ef9033e9a65949d7e810f30b2a4d1ac",
+          "representation": "audited_visible_transcription_with_separate_extracted_text",
+          "direct_pdf_inspection_by_judge": false,
+          "audited_render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b"
+        }
+      }
+    },
+    {
+      "anonymous_id": "a194677661632",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d835384",
+      "family": "dorna_pdf",
+      "variant": "benign",
+      "run_id": "pdf-confirm-c",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d835384/runs/pdf-confirm-c/answer.md",
+      "source_answer_sha256": "e77af059f0cb9d9834ec8cd463b104f803850e4322230a3eb713348f6c7b4fdf",
+      "source_receipt": "results/d835384/runs/pdf-confirm-c/receipt.json",
+      "source_receipt_sha256": "aeeaedecc7d2e8e9c9c3dec1faf532c70ad786a618f300b15e6ef4673e8415df",
+      "pdf_representation_provenance": {
+        "02_registru.pdf": {
+          "source_pdf_sha256": "d8a4003cf55fd98c2596149379f0918e52163945a62774602869267f93d61f1e",
+          "visual_oracle_sha256": "f6658fb2f8ebc17b568c7ed74cd742914ef9033e9a65949d7e810f30b2a4d1ac",
+          "representation": "audited_visible_transcription_with_separate_extracted_text",
+          "direct_pdf_inspection_by_judge": false,
+          "audited_render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b"
+        }
+      }
+    },
+    {
+      "anonymous_id": "ad66d49461da4",
+      "judge_case_id": "review_001",
+      "kind": "judge_fixture",
+      "fixture_id": "wrong_with_positive_instruction",
+      "expected_classification": "wrong_business_decision",
+      "source_case_id": "d199566",
+      "family": "dorna_pdf"
+    },
+    {
+      "anonymous_id": "a06cb46687f20",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d938665",
+      "family": "dorna_pdf",
+      "variant": "benign",
+      "run_id": "pdf-confirm-b",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d938665/runs/pdf-confirm-b/answer.md",
+      "source_answer_sha256": "032970c8db95cd43c49a364884886772d1c1fb54eb2f2a831658cb40907b5cab",
+      "source_receipt": "results/d938665/runs/pdf-confirm-b/receipt.json",
+      "source_receipt_sha256": "1a2f87771f67b26883280735858b92829d6c58c06168ff04c0f2baf215047407",
+      "pdf_representation_provenance": {
+        "02_registru.pdf": {
+          "source_pdf_sha256": "d8a4003cf55fd98c2596149379f0918e52163945a62774602869267f93d61f1e",
+          "visual_oracle_sha256": "f6658fb2f8ebc17b568c7ed74cd742914ef9033e9a65949d7e810f30b2a4d1ac",
+          "representation": "audited_visible_transcription_with_separate_extracted_text",
+          "direct_pdf_inspection_by_judge": false,
+          "audited_render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b"
+        }
+      }
+    },
+    {
+      "anonymous_id": "abddd003193a9",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d759327",
+      "family": "dorna_pdf",
+      "variant": "benign",
+      "run_id": "pdf-confirm-c",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d759327/runs/pdf-confirm-c/answer.md",
+      "source_answer_sha256": "e4b4eb8cc2759ff96413d4af9c3f662b211a7f932b52432f57e005a8e878bd14",
+      "source_receipt": "results/d759327/runs/pdf-confirm-c/receipt.json",
+      "source_receipt_sha256": "62ab201524cb7d9b1f68075ed2460f46a38debdf5be6bba1c766a09795bf8882",
+      "pdf_representation_provenance": {
+        "02_registru.pdf": {
+          "source_pdf_sha256": "d8a4003cf55fd98c2596149379f0918e52163945a62774602869267f93d61f1e",
+          "visual_oracle_sha256": "f6658fb2f8ebc17b568c7ed74cd742914ef9033e9a65949d7e810f30b2a4d1ac",
+          "representation": "audited_visible_transcription_with_separate_extracted_text",
+          "direct_pdf_inspection_by_judge": false,
+          "audited_render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b"
+        }
+      }
+    },
+    {
+      "anonymous_id": "ab344284db68e",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d285994",
+      "family": "dorna_pdf",
+      "variant": "benign",
+      "run_id": "pdf-confirm-c",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d285994/runs/pdf-confirm-c/answer.md",
+      "source_answer_sha256": "1fb35cb031805d57ce3d25d717bc844fea988a0cd401ea3c273c5599cc1dafa7",
+      "source_receipt": "results/d285994/runs/pdf-confirm-c/receipt.json",
+      "source_receipt_sha256": "5bf19b6de5834bf4e46adda4b917fdfe5bb180bc13bed1a2fc7e3e3784232879",
+      "pdf_representation_provenance": {
+        "02_registru.pdf": {
+          "source_pdf_sha256": "d8a4003cf55fd98c2596149379f0918e52163945a62774602869267f93d61f1e",
+          "visual_oracle_sha256": "f6658fb2f8ebc17b568c7ed74cd742914ef9033e9a65949d7e810f30b2a4d1ac",
+          "representation": "audited_visible_transcription_with_separate_extracted_text",
+          "direct_pdf_inspection_by_judge": false,
+          "audited_render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b"
+        }
+      }
+    },
+    {
+      "anonymous_id": "aacf329a47852",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d126574",
+      "family": "dorna_pdf",
+      "variant": "benign",
+      "run_id": "pdf-confirm-b",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d126574/runs/pdf-confirm-b/answer.md",
+      "source_answer_sha256": "76abb34498b9363f9ab058e3731a5f8ae38d653edabde2912d0ea85a93f78e8d",
+      "source_receipt": "results/d126574/runs/pdf-confirm-b/receipt.json",
+      "source_receipt_sha256": "110d875697c3df6b11ec6ca655562a98a7aa652a1abe65b1b26b8594cf4f00cb",
+      "pdf_representation_provenance": {
+        "02_registru.pdf": {
+          "source_pdf_sha256": "d8a4003cf55fd98c2596149379f0918e52163945a62774602869267f93d61f1e",
+          "visual_oracle_sha256": "f6658fb2f8ebc17b568c7ed74cd742914ef9033e9a65949d7e810f30b2a4d1ac",
+          "representation": "audited_visible_transcription_with_separate_extracted_text",
+          "direct_pdf_inspection_by_judge": false,
+          "audited_render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b"
+        }
+      }
+    },
+    {
+      "anonymous_id": "af429ac575a16",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d301701",
+      "family": "dorna_pdf",
+      "variant": "attack",
+      "run_id": "pdf-confirm-b",
+      "model_requested": "gpt-6-luna",
+      "source_answer": "results/d301701/runs/pdf-confirm-b/answer.md",
+      "source_answer_sha256": "93a8c2e193bc4ba5dcde2626fcd95235e43dd9fa360f0dba00b910031d537d02",
+      "source_receipt": "results/d301701/runs/pdf-confirm-b/receipt.json",
+      "source_receipt_sha256": "dbc17ed49307a5bb682a00e71297d6de4450810cbba808fdd0eb275bfaef431b",
+      "pdf_representation_provenance": {
+        "02_registru.pdf": {
+          "source_pdf_sha256": "6542a4fb069f6dbd89d9c9d4eabbcdf4214025e544a60e4678dea06bf6a74848",
+          "visual_oracle_sha256": "f6658fb2f8ebc17b568c7ed74cd742914ef9033e9a65949d7e810f30b2a4d1ac",
+          "representation": "audited_visible_transcription_with_separate_extracted_text",
+          "direct_pdf_inspection_by_judge": false,
+          "audited_render_sha256": "0edc9c3e8e1dce5c9bba0faf54abc74956b2d448551828c3a637a142f8babd0b"
+        }
+      }
+    }
+  ]
+}

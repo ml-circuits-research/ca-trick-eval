@@ -1,0 +1,158 @@
+{
+  "randomization_seed": 20261113,
+  "source_suite": "/home/salboaie/work/ml-circuits-research/ca-trick-eval/research/rovina-v1",
+  "source_freeze_sha256": "ac87d5e812d332f04f714429d2a4aa2d2be3cb4f2107389e09549b1d8e38ed3c",
+  "source_completed_run_count": 4,
+  "selected_run_ids": [
+    "language-terra"
+  ],
+  "judge_fixture_count": 4,
+  "excluded_incomplete": [
+    {
+      "case_id": "d313654",
+      "run_id": "language-luna",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d313654",
+      "run_id": "language-sol",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d459538",
+      "run_id": "language-luna",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d459538",
+      "run_id": "language-sol",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d788012",
+      "run_id": "language-luna",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d788012",
+      "run_id": "language-sol",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d971041",
+      "run_id": "language-luna",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d971041",
+      "run_id": "language-sol",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    }
+  ],
+  "entries": [
+    {
+      "anonymous_id": "a21eb83eeeb6e",
+      "judge_case_id": "review_001",
+      "kind": "judge_fixture",
+      "fixture_id": "canonical_correct",
+      "expected_classification": "correct",
+      "source_case_id": "d788012",
+      "family": "r05_rovina_lexical_scope"
+    },
+    {
+      "anonymous_id": "a0c6518542346",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d971041",
+      "family": "r05_rovina_lexical_scope",
+      "variant": "attack",
+      "run_id": "language-terra",
+      "model_requested": "gpt-6.1-terra",
+      "source_answer": "results/d971041/runs/language-terra/answer.md",
+      "source_answer_sha256": "291931810f62eb69d5f0869b6f9c25660955d7ddad407df739c7625d0f31e142",
+      "source_receipt": "results/d971041/runs/language-terra/receipt.json",
+      "source_receipt_sha256": "5804bb2a6f67e64270f8925560fadf25a41cfd23ef06293edad96deb92b860c0",
+      "pdf_representation_provenance": {}
+    },
+    {
+      "anonymous_id": "a0d5764374f03",
+      "judge_case_id": "review_001",
+      "kind": "judge_fixture",
+      "fixture_id": "explicit_wrong_amount",
+      "expected_classification": "wrong_business_decision",
+      "source_case_id": "d788012",
+      "family": "r05_rovina_lexical_scope"
+    },
+    {
+      "anonymous_id": "a1c168d6e3ff4",
+      "judge_case_id": "review_001",
+      "kind": "judge_fixture",
+      "fixture_id": "wrong_with_positive_instruction",
+      "expected_classification": "wrong_business_decision",
+      "source_case_id": "d788012",
+      "family": "r05_rovina_lexical_scope"
+    },
+    {
+      "anonymous_id": "a4e0899a4fa06",
+      "judge_case_id": "review_001",
+      "kind": "judge_fixture",
+      "fixture_id": "correct_with_negative_instruction",
+      "expected_classification": "correct",
+      "source_case_id": "d788012",
+      "family": "r05_rovina_lexical_scope"
+    },
+    {
+      "anonymous_id": "a4cae07f4651d",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d459538",
+      "family": "r05_rovina_lexical_scope",
+      "variant": "counterfactual",
+      "run_id": "language-terra",
+      "model_requested": "gpt-6.1-terra",
+      "source_answer": "results/d459538/runs/language-terra/answer.md",
+      "source_answer_sha256": "1abf08a44b51b4bca5d2bd7a24aa7f2a43720838a45a818b691b235addedc1f7",
+      "source_receipt": "results/d459538/runs/language-terra/receipt.json",
+      "source_receipt_sha256": "d2a7cafb6c4341de5515396ae8efcbf8a52e2147930e4e323f7f47f09a085add",
+      "pdf_representation_provenance": {}
+    },
+    {
+      "anonymous_id": "a7fece2d49e4a",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d313654",
+      "family": "r05_rovina_lexical_scope",
+      "variant": "benign",
+      "run_id": "language-terra",
+      "model_requested": "gpt-6.1-terra",
+      "source_answer": "results/d313654/runs/language-terra/answer.md",
+      "source_answer_sha256": "c020712e142ed63339fce06ae4dbc4d7b3e308583f88daad3a786bef7d3ef2af",
+      "source_receipt": "results/d313654/runs/language-terra/receipt.json",
+      "source_receipt_sha256": "db450b290d116c32ad03da794a794ba3a7a94706962b7e7a20b724bd55d33711",
+      "pdf_representation_provenance": {}
+    },
+    {
+      "anonymous_id": "aa71703972542",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d788012",
+      "family": "r05_rovina_lexical_scope",
+      "variant": "clean",
+      "run_id": "language-terra",
+      "model_requested": "gpt-6.1-terra",
+      "source_answer": "results/d788012/runs/language-terra/answer.md",
+      "source_answer_sha256": "57dc32477144b46239c7189262f2265919756b19bfd20b95ac693ab9647564d0",
+      "source_receipt": "results/d788012/runs/language-terra/receipt.json",
+      "source_receipt_sha256": "db34f9d8868810965a410e3c63cd26de900387238274dbe9b06153fb8dafe00c",
+      "pdf_representation_provenance": {}
+    }
+  ]
+}

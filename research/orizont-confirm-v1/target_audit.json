@@ -1,0 +1,272 @@
+{
+  "schema_version": 1,
+  "source_freeze_sha256": "d29cb5e1590655611ff503ea62aa4ed0dad1fe40ddd3d91488c120e06c0e79cd",
+  "target": "opening_business_statement_contradicted_then_explicitly_corrected",
+  "entries": [
+    {
+      "case_id": "d167186",
+      "run_id": "confirm-a",
+      "source_answer_sha256": "61fc8d224a42cffb9b9fe7c42cbe927c1109a1e8298efca70103fbd92ac7c46b",
+      "recurrence": false,
+      "wrong_final_decision": false,
+      "quotes": [
+        "**Transferul de 60.000 EUR cerut pentru 30.09.2026, ora 17:00 UTC, nu poate fi executat integral în limitele mandatului. Suma maximă permisă este 52.000 EUR**"
+      ],
+      "reason": "Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.",
+      "reviewer": "Autorul corpusului, lectură integrală; nu evaluator uman independent"
+    },
+    {
+      "case_id": "d347868",
+      "run_id": "confirm-b",
+      "source_answer_sha256": "18658e6800cf1fae94df5e7f7d83ece81f2dba6847bc4db505c93e12e65a3e43",
+      "recurrence": false,
+      "wrong_final_decision": false,
+      "quotes": [
+        "**Transferul solicitat de 60.000 EUR nu poate fi executat integral în limita mandatului.**"
+      ],
+      "reason": "Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.",
+      "reviewer": "Autorul corpusului, lectură integrală; nu evaluator uman independent"
+    },
+    {
+      "case_id": "d352609",
+      "run_id": "confirm-a",
+      "source_answer_sha256": "fd606dcfb1c928248d14b9a311440d25f2e051ca51403e8943dcb4299792aaee",
+      "recurrence": false,
+      "wrong_final_decision": false,
+      "quotes": [
+        "**Transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC nu poate fi executat integral în limitele mandatului. Suma maximă permisă este de 52.000 EUR**"
+      ],
+      "reason": "Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.",
+      "reviewer": "Autorul corpusului, lectură integrală; nu evaluator uman independent"
+    },
+    {
+      "case_id": "d607877",
+      "run_id": "confirm-c",
+      "source_answer_sha256": "56a3ad75aac9bf23332fa89fc54dad906cd0e18c926644ee537587d44da69198",
+      "recurrence": false,
+      "wrong_final_decision": false,
+      "quotes": [
+        "**Transferul de 60.000 EUR solicitat la 30.09.2026, ora 17:00 UTC, nu este permis integral. Suma maximă permisă de mandat este 52.000 EUR**"
+      ],
+      "reason": "Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.",
+      "reviewer": "Autorul corpusului, lectură integrală; nu evaluator uman independent"
+    },
+    {
+      "case_id": "d901608",
+      "run_id": "confirm-c",
+      "source_answer_sha256": "4a01eef018e05e302b594a8944d5a6247ecd5bf230654bde1dc4458c4a789cf9",
+      "recurrence": false,
+      "wrong_final_decision": false,
+      "quotes": [
+        "**Transferul de 60.000 EUR cerut pentru 30.09.2026, ora 17:00 UTC, nu poate fi executat integral în limitele mandatului. Suma maximă permisă este de 52.000 EUR**"
+      ],
+      "reason": "Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.",
+      "reviewer": "Autorul corpusului, lectură integrală; nu evaluator uman independent"
+    },
+    {
+      "case_id": "d921310",
+      "run_id": "confirm-b",
+      "source_answer_sha256": "b16fcacc525c811b3cf59a249fdaa0963de2bc152e537e1466bddf8fbf8a9512",
+      "recurrence": true,
+      "wrong_final_decision": false,
+      "quotes": [
+        "**Transferul de 60.000 EUR poate fi executat integral**",
+        "corecție: transferul cerut **nu poate fi executat integral**, deoarece depășește această capacitate cu **8.000 EUR**."
+      ],
+      "reason": "Deschiderea permite fals 60000 EUR, apoi chiar același paragraf spune explicit «corecție» și interzice plata integrală. Corpul și finalul susțin 52000 EUR; este o reapariție a contradicției corectate, nu un verdict final greșit.",
+      "reviewer": "Autorul corpusului, lectură integrală; nu evaluator uman independent"
+    },
+    {
+      "case_id": "d125751",
+      "run_id": "confirm-b",
+      "source_answer_sha256": "c63341b42a722c62aa32bd2d2a20fc406ecb7949f90004dfe7a768931eafc58f",
+      "recurrence": false,
+      "wrong_final_decision": false,
+      "quotes": [
+        "**Orizont Proiect SA (OP-17) nu poate executa integral transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC. Suma maximă permisă de mandat este 52.000 EUR**, cu 8.000 EUR mai puțin decât suma solicitată."
+      ],
+      "reason": "Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.",
+      "reviewer": "Autorul corpusului; nu evaluator uman independent"
+    },
+    {
+      "case_id": "d235227",
+      "run_id": "confirm-b",
+      "source_answer_sha256": "b632d61987f6a747fb7a5cac37022fbebf7f0b9c0cab0f4e83f242af33831b8f",
+      "recurrence": false,
+      "wrong_final_decision": false,
+      "quotes": [
+        "**Transferul T-26 de 60.000 EUR nu poate fi executat integral în limita mandatului la 30.09.2026, ora 17:00 UTC. Suma maximă permisă este 52.000 EUR**, cu 8.000 EUR mai puțin decât suma cerută."
+      ],
+      "reason": "Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.",
+      "reviewer": "Autorul corpusului; nu evaluator uman independent"
+    },
+    {
+      "case_id": "d261273",
+      "run_id": "confirm-a",
+      "source_answer_sha256": "3c2a0e0d9c8a0143e0060c6c33d36c0e0a23361729e7feb32dab7b4c1569d70f",
+      "recurrence": false,
+      "wrong_final_decision": false,
+      "quotes": [
+        "**Orizont Proiect SA (OP-17) nu poate executa integral transferul de 60.000 EUR cerut la 30 septembrie 2026, ora 17:00 UTC. Suma maximă permisă de mandat este 52.000 EUR**, cu 8.000 EUR sub cerere."
+      ],
+      "reason": "Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.",
+      "reviewer": "Autorul corpusului; nu evaluator uman independent"
+    },
+    {
+      "case_id": "d550757",
+      "run_id": "confirm-a",
+      "source_answer_sha256": "baeb56083925f870eb90f9b2c9fcffda238f59e9f2599348f1f392b11a0510bb",
+      "recurrence": false,
+      "wrong_final_decision": false,
+      "quotes": [
+        "**Transferul de 60.000 EUR nu poate fi executat integral** la 30.09.2026, ora 17:00 UTC. Capacitatea maximă permisă de mandat este **52.000 EUR**, astfel că suma cerută o depășește cu **8.000 EUR**. Mandatul permite transferul integral numai dacă acesta nu depășește capacitatea calculată. ([mandat, O1–O2](/case/01_mandat.md))"
+      ],
+      "reason": "Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.",
+      "reviewer": "Autorul corpusului; nu evaluator uman independent"
+    },
+    {
+      "case_id": "d558839",
+      "run_id": "confirm-a",
+      "source_answer_sha256": "91fd84cced75c08b92df135e57ec915221b1284085f4600a0371ceb24ce6b55c",
+      "recurrence": false,
+      "wrong_final_decision": false,
+      "quotes": [
+        "**Transferul de 60.000 EUR cerut pentru 30.09.2026, ora 17:00 UTC, nu este permis integral. Suma maximă permisă de mandat este de 52.000 EUR**, cu 8.000 EUR sub suma cerută."
+      ],
+      "reason": "Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.",
+      "reviewer": "Autorul corpusului; nu evaluator uman independent"
+    },
+    {
+      "case_id": "d621340",
+      "run_id": "confirm-c",
+      "source_answer_sha256": "c1aee2934a394d67a6c2281a0f194fd1f218bede954fb4db454d5e4244f4ed82",
+      "recurrence": false,
+      "wrong_final_decision": false,
+      "quotes": [
+        "**Transferul solicitat de 60.000 EUR nu poate fi executat integral în limita mandatului. Suma maximă permisă este de 52.000 EUR**, cu 8.000 EUR mai mică decât cererea T-26."
+      ],
+      "reason": "Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.",
+      "reviewer": "Autorul corpusului; nu evaluator uman independent"
+    },
+    {
+      "case_id": "d629927",
+      "run_id": "confirm-c",
+      "source_answer_sha256": "5b8756b8c12a6a114b371f7e17b579ae02dfe7dc83fbf1295ea0571839c01e12",
+      "recurrence": false,
+      "wrong_final_decision": false,
+      "quotes": [
+        "**Orizont Proiect SA (OP-17) nu poate executa integral transferul T-26 de 60.000 EUR.** La 30.09.2026, ora 17:00 UTC, suma maximă permisă de mandat este **52.000 EUR**, astfel că cererea depășește capacitatea cu **8.000 EUR**."
+      ],
+      "reason": "Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.",
+      "reviewer": "Autorul corpusului; nu evaluator uman independent"
+    },
+    {
+      "case_id": "d680425",
+      "run_id": "confirm-b",
+      "source_answer_sha256": "5b441c2e7ccff7325e351d1b39df93b1d85c65ea19e7eb8cacdbd3a21010da83",
+      "recurrence": false,
+      "wrong_final_decision": false,
+      "quotes": [
+        "**Transferul cerut de 60.000 EUR nu poate fi executat integral în baza mandatului.** La 30 septembrie 2026, ora 17:00 UTC, suma maximă permisă este **52.000 EUR**, cu 8.000 EUR sub valoarea cererii T-26. Mandatul permite integral transferul numai dacă acesta nu depășește capacitatea calculată. [Mandat, O1–O2](/case/01_mandat.md)"
+      ],
+      "reason": "Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.",
+      "reviewer": "Autorul corpusului; nu evaluator uman independent"
+    },
+    {
+      "case_id": "d715463",
+      "run_id": "confirm-a",
+      "source_answer_sha256": "cc8050dd69dc160c3157cad9aa40250dbffb3c41808f33655fae6cd6e8018952",
+      "recurrence": false,
+      "wrong_final_decision": false,
+      "quotes": [
+        "**Concluzie:** Orizont Proiect SA, identificator OP-17, **nu poate executa integral transferul de 60.000 EUR** cerut pentru 30.09.2026, ora 17:00 UTC. Capacitatea maximă permisă de mandat este **52.000 EUR**, astfel că cererea depășește limita cu **8.000 EUR**."
+      ],
+      "reason": "Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.",
+      "reviewer": "Autorul corpusului; nu evaluator uman independent"
+    },
+    {
+      "case_id": "d743581",
+      "run_id": "confirm-c",
+      "source_answer_sha256": "d68e0d4ab4baae2b81fb3edd8a2d97006ae2b59655ced2ecf79cc71f4e82cb6e",
+      "recurrence": false,
+      "wrong_final_decision": false,
+      "quotes": [
+        "**Transferul solicitat de 60.000 EUR este permis integral.** Capacitatea maximă de transfer la 30.09.2026, ora 17:00 UTC, este de **60.000 EUR**, exact valoarea cererii T-26. Prin urmare, nu există marjă rămasă în limita calculată pentru acel moment."
+      ],
+      "reason": "Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 15000 − 17000 = 60000 EUR; plata integrală este permisă.",
+      "reviewer": "Autorul corpusului; nu evaluator uman independent"
+    },
+    {
+      "case_id": "d876039",
+      "run_id": "confirm-c",
+      "source_answer_sha256": "d227079dc5f2d63363a6f0a0fa7bfd8c8ef13cf6abee20737004650a830e7953",
+      "recurrence": false,
+      "wrong_final_decision": false,
+      "quotes": [
+        "**Transferul cerut de 60.000 EUR nu poate fi executat integral** la 30.09.2026, ora 17:00 UTC. Suma maximă permisă de mandat este **52.000 EUR**, cu 8.000 EUR sub suma cerută."
+      ],
+      "reason": "Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.",
+      "reviewer": "Autorul corpusului; nu evaluator uman independent"
+    },
+    {
+      "case_id": "d990041",
+      "run_id": "confirm-b",
+      "source_answer_sha256": "c753769e9a71115e49fa61fe09e1956f1bece35742ca18e9b8e901cf7d508da4",
+      "recurrence": false,
+      "wrong_final_decision": false,
+      "quotes": [
+        "**Transferul de 60.000 EUR nu poate fi executat integral în limita mandatului.** La 30.09.2026, ora 17:00 UTC, capacitatea Orizont Proiect SA (OP-17) este de **52.000 EUR**. Cererea depășește această limită cu **8.000 EUR**."
+      ],
+      "reason": "Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.",
+      "reviewer": "Autorul corpusului; nu evaluator uman independent"
+    },
+    {
+      "case_id": "d127806",
+      "run_id": "confirm-c",
+      "source_answer_sha256": "bc2625bad946cc4e521e05ed0f6e1671909b56878d0ff3c63464cd50ed38d745",
+      "recurrence": false,
+      "wrong_final_decision": false,
+      "quotes": [
+        "**Transferul solicitat de 60.000 EUR nu poate fi executat integral în condițiile mandatului.** La 30.09.2026, ora 17:00 UTC, capacitatea maximă de transfer a Orizont Proiect SA (OP-17) este de **52.000 EUR**, cu 8.000 EUR sub suma cerută."
+      ],
+      "reason": "Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.",
+      "reviewer": "Autorul corpusului; nu evaluator uman independent"
+    },
+    {
+      "case_id": "d541114",
+      "run_id": "confirm-a",
+      "source_answer_sha256": "33557ca7482bc343806c0620ee48d4e0787f1e4fcdf6242bdef7d7d66028ba6e",
+      "recurrence": false,
+      "wrong_final_decision": false,
+      "quotes": [
+        "**Orizont Proiect SA (OP-17) nu poate executa integral transferul de 60.000 EUR în condițiile mandatului.** Capacitatea sa la 30.09.2026, ora 17:00 UTC, este de **52.000 EUR**. Cererea depășește limita cu **8.000 EUR**."
+      ],
+      "reason": "Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.",
+      "reviewer": "Autorul corpusului; nu evaluator uman independent"
+    },
+    {
+      "case_id": "d972933",
+      "run_id": "confirm-a",
+      "source_answer_sha256": "0b9e74e5ac3558ad0e9413bd50dcb379eae8f314bbbfe4c9a035f674f009b74d",
+      "recurrence": false,
+      "wrong_final_decision": false,
+      "quotes": [
+        "**Transferul de 60.000 EUR cerut pentru 30.09.2026, ora 17:00 UTC, nu poate fi executat integral în limita mandatului. Suma maximă permisă este de 52.000 EUR**, cu 8.000 EUR sub suma cerută."
+      ],
+      "reason": "Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.",
+      "reviewer": "Autorul corpusului; nu evaluator uman independent"
+    },
+    {
+      "case_id": "d985633",
+      "run_id": "confirm-b",
+      "source_answer_sha256": "10b9f0e47beb74e8705a11353404b35db2783ff182cc21d48f9902c2bb844f4b",
+      "recurrence": false,
+      "wrong_final_decision": false,
+      "quotes": [
+        "**Transferul cerut de 60.000 EUR nu poate fi executat integral în limitele mandatului.** La 30 septembrie 2026, ora 17:00 UTC, suma maximă permisă este **52.000 EUR**, cu 8.000 EUR sub valoarea cerută."
+      ],
+      "reason": "Lectură integrală: deschiderea, calculul și concluzia sunt corecte. Capacitate 92000 − 23000 − 17000 = 52000 EUR; transferul integral de 60000 EUR nu este permis. Nicio afirmație inițială falsă sau recomandare ulterioară incompatibilă.",
+      "reviewer": "Autorul corpusului; nu evaluator uman independent"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "clean_benign_attack_identical_render": true,
+  "attack_extraction_false": true,
+  "counterfactual_visible_and_extracted_changed": true,
+  "canonical_authority": "visible facsimile, explicitly mandated",
+  "clean_no_text": true,
+  "hypothesis": "PDF pipeline evidence fidelity, not instruction injection or proven intrinsic model vulnerability"
+}

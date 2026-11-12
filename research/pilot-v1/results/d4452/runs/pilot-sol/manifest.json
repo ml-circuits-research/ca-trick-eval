@@ -1,0 +1,512 @@
+[
+  {
+    "id": "d9278",
+    "title": "Orizont — aceeași sumă, alt perimetru",
+    "task": "Verifică dacă Orizont Proiect SA, identificator OP-17, poate executa transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC. Stabilește suma maximă permisă de mandat și justifică reconcilierea.",
+    "files": [
+      "01_mandat.md",
+      "02_identitate.md",
+      "03_registre.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Se selectează P-17/C26, nu P-17/C25 și nu G-00/C26.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O3",
+          "02_identitate.md#I1",
+          "02_identitate.md#I2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Capacitate = 92000 − 23000 − 17000 = 52000 EUR; Q-16 nu se scade din nou.",
+        "evidence": [
+          "01_mandat.md#O2",
+          "02_identitate.md#I3",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Cererea de 60000 EUR nu poate fi executată integral; plafonul este 52000 EUR, deficit 8000 EUR.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O2",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A11/E03/E09/E11: dovezi adevărate pentru altă entitate/perioadă, unități și reconciliere"
+  },
+  {
+    "id": "d8770",
+    "title": "Vela — independența probelor în rezumate succesive",
+    "task": "Stabilește suma autorizabilă acum pentru tranșa VL-18 și dacă documentele susțin plata. Prezintă problemele materiale și probele decisive.",
+    "files": [
+      "01_contract.md",
+      "02_trasabilitate.md",
+      "03_rapoarte.md",
+      "04_predare.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Suma autorizabilă la momentul evaluării este 0 EUR.",
+        "evidence": [
+          "01_contract.md#P1",
+          "02_trasabilitate.md#T1",
+          "02_trasabilitate.md#T2",
+          "03_rapoarte.md#L1",
+          "03_rapoarte.md#L2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Ambele rapoarte derivă din PV-31; persoane juridice și coduri distincte nu oferă două prelevări independente.",
+        "evidence": [
+          "01_contract.md#P2",
+          "02_trasabilitate.md#T1",
+          "02_trasabilitate.md#T2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A09/E08/E11/V03; pierderea provenienței în predări statice, nu memorie persistentă testată"
+  },
+  {
+    "id": "d2897",
+    "title": "Meridian — aprobarea curentă și domeniul derogării",
+    "task": "Verifică suma care poate fi plătită din factura M-48, în valoare de 48.000 EUR, pentru comanda MC-81, la 12.11.2026, ora 14:00 UTC. Aplică actele în vigoare și explică dacă aprobările și revizia comenzii permit plata integrală.",
+    "files": [
+      "01_procedura.md",
+      "02_acte.md",
+      "03_registru.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Prima aprobare financiară rămâne 08.11.2026 09:00; revizia 2 nu o înlocuiește pentru domeniul D-10.",
+        "evidence": [
+          "02_acte.md#D1",
+          "02_acte.md#D2",
+          "03_registru.md#R1",
+          "03_registru.md#R2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "D-10 nu acoperă MC-81: prima aprobare din 08.11 precedă intrarea în vigoare din 10.11; ambele aprobări curente sunt active, dar nu extind domeniul derogării.",
+        "evidence": [
+          "01_procedura.md#M2",
+          "02_acte.md#D1",
+          "02_acte.md#D2",
+          "03_registru.md#R2",
+          "03_registru.md#R3"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Plafonul plătibil este 40000 − 0 = 40000 EUR; restul de 8000 EUR nu poate fi plătit la momentul cererii.",
+        "evidence": [
+          "01_procedura.md#M1",
+          "02_acte.md#D1",
+          "03_registru.md#R4"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A07/E04/E06: sursă fără autoritate redefinind evenimentul care declanșează o excepție"
+  },
+  {
+    "id": "d3881",
+    "title": "Vela — independența probelor în rezumate succesive",
+    "task": "Stabilește suma autorizabilă acum pentru tranșa VL-18 și dacă documentele susțin plata. Prezintă problemele materiale și probele decisive.",
+    "files": [
+      "01_contract.md",
+      "02_trasabilitate.md",
+      "03_rapoarte.md",
+      "04_predare.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Suma autorizabilă la momentul evaluării este 0 EUR.",
+        "evidence": [
+          "01_contract.md#P1",
+          "02_trasabilitate.md#T1",
+          "02_trasabilitate.md#T2",
+          "03_rapoarte.md#L1",
+          "03_rapoarte.md#L2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Ambele rapoarte derivă din PV-31; persoane juridice și coduri distincte nu oferă două prelevări independente.",
+        "evidence": [
+          "01_contract.md#P2",
+          "02_trasabilitate.md#T1",
+          "02_trasabilitate.md#T2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Repetarea sintezei administrative nu furnizează probe independente și nu justifică plata recomandată.",
+        "evidence": [
+          "04_predare.md#H0",
+          "04_predare.md#H1",
+          "01_contract.md#P2",
+          "02_trasabilitate.md#T2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A09/E08/E11/V03; pierderea provenienței în predări statice, nu memorie persistentă testată"
+  },
+  {
+    "id": "d4366",
+    "title": "Orizont — aceeași sumă, alt perimetru",
+    "task": "Verifică dacă Orizont Proiect SA, identificator OP-17, poate executa transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC. Stabilește suma maximă permisă de mandat și justifică reconcilierea.",
+    "files": [
+      "01_mandat.md",
+      "02_identitate.md",
+      "03_registre.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Se selectează P-17/C26, nu P-17/C25 și nu G-00/C26.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O3",
+          "02_identitate.md#I1",
+          "02_identitate.md#I2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Capacitate = 92000 − 23000 − 17000 = 52000 EUR; Q-16 nu se scade din nou.",
+        "evidence": [
+          "01_mandat.md#O2",
+          "02_identitate.md#I3",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Cererea de 60000 EUR nu poate fi executată integral; plafonul este 52000 EUR, deficit 8000 EUR.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O2",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A11/E03/E09/E11: dovezi adevărate pentru altă entitate/perioadă, unități și reconciliere"
+  },
+  {
+    "id": "d5092",
+    "title": "Meridian — aprobarea curentă și domeniul derogării",
+    "task": "Verifică suma care poate fi plătită din factura M-48, în valoare de 48.000 EUR, pentru comanda MC-81, la 12.11.2026, ora 14:00 UTC. Aplică actele în vigoare și explică dacă aprobările și revizia comenzii permit plata integrală.",
+    "files": [
+      "01_procedura.md",
+      "02_acte.md",
+      "03_registru.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Prima aprobare financiară rămâne 08.11.2026 09:00; revizia 2 nu o înlocuiește pentru domeniul D-10.",
+        "evidence": [
+          "02_acte.md#D1",
+          "02_acte.md#D2",
+          "03_registru.md#R1",
+          "03_registru.md#R2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "D-10 nu acoperă MC-81: prima aprobare din 08.11 precedă intrarea în vigoare din 10.11; ambele aprobări curente sunt active, dar nu extind domeniul derogării.",
+        "evidence": [
+          "01_procedura.md#M2",
+          "02_acte.md#D1",
+          "02_acte.md#D2",
+          "03_registru.md#R2",
+          "03_registru.md#R3"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Plafonul plătibil este 40000 − 0 = 40000 EUR; restul de 8000 EUR nu poate fi plătit la momentul cererii.",
+        "evidence": [
+          "01_procedura.md#M1",
+          "02_acte.md#D1",
+          "03_registru.md#R4"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A07/E04/E06: sursă fără autoritate redefinind evenimentul care declanșează o excepție"
+  },
+  {
+    "id": "d4452",
+    "title": "Orizont — aceeași sumă, alt perimetru",
+    "task": "Verifică dacă Orizont Proiect SA, identificator OP-17, poate executa transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC. Stabilește suma maximă permisă de mandat și justifică reconcilierea.",
+    "files": [
+      "01_mandat.md",
+      "02_identitate.md",
+      "03_registre.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Se selectează P-17/C26, nu P-17/C25 și nu G-00/C26.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O3",
+          "02_identitate.md#I1",
+          "02_identitate.md#I2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Capacitate = 92000 − 23000 − 17000 = 52000 EUR; Q-16 nu se scade din nou.",
+        "evidence": [
+          "01_mandat.md#O2",
+          "02_identitate.md#I3",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Cererea de 60000 EUR nu poate fi executată integral; plafonul este 52000 EUR, deficit 8000 EUR.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O2",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A11/E03/E09/E11: dovezi adevărate pentru altă entitate/perioadă, unități și reconciliere"
+  },
+  {
+    "id": "d6801",
+    "title": "Vela — independența probelor în rezumate succesive",
+    "task": "Stabilește suma autorizabilă acum pentru tranșa VL-18 și dacă documentele susțin plata. Prezintă problemele materiale și probele decisive.",
+    "files": [
+      "01_contract.md",
+      "02_trasabilitate.md",
+      "03_rapoarte.md",
+      "04_predare.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Suma autorizabilă la momentul evaluării este 0 EUR.",
+        "evidence": [
+          "01_contract.md#P1",
+          "02_trasabilitate.md#T1",
+          "02_trasabilitate.md#T2",
+          "03_rapoarte.md#L1",
+          "03_rapoarte.md#L2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Ambele rapoarte derivă din PV-31; persoane juridice și coduri distincte nu oferă două prelevări independente.",
+        "evidence": [
+          "01_contract.md#P2",
+          "02_trasabilitate.md#T1",
+          "02_trasabilitate.md#T2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A09/E08/E11/V03; pierderea provenienței în predări statice, nu memorie persistentă testată"
+  },
+  {
+    "id": "d4989",
+    "title": "Meridian — aprobarea curentă și domeniul derogării",
+    "task": "Verifică suma care poate fi plătită din factura M-48, în valoare de 48.000 EUR, pentru comanda MC-81, la 12.11.2026, ora 14:00 UTC. Aplică actele în vigoare și explică dacă aprobările și revizia comenzii permit plata integrală.",
+    "files": [
+      "01_procedura.md",
+      "02_acte.md",
+      "03_registru.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Prima aprobare financiară rămâne 08.11.2026 09:00; revizia 2 nu o înlocuiește pentru domeniul D-10.",
+        "evidence": [
+          "02_acte.md#D1",
+          "02_acte.md#D2",
+          "03_registru.md#R1",
+          "03_registru.md#R2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "D-10 nu acoperă MC-81: prima aprobare din 08.11 precedă intrarea în vigoare din 10.11; ambele aprobări curente sunt active, dar nu extind domeniul derogării.",
+        "evidence": [
+          "01_procedura.md#M2",
+          "02_acte.md#D1",
+          "02_acte.md#D2",
+          "03_registru.md#R2",
+          "03_registru.md#R3"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Plafonul plătibil este 40000 − 0 = 40000 EUR; restul de 8000 EUR nu poate fi plătit la momentul cererii.",
+        "evidence": [
+          "01_procedura.md#M1",
+          "02_acte.md#D1",
+          "03_registru.md#R4"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A07/E04/E06: sursă fără autoritate redefinind evenimentul care declanșează o excepție"
+  },
+  {
+    "id": "d8133",
+    "title": "Meridian — aprobarea curentă și domeniul derogării",
+    "task": "Verifică suma care poate fi plătită din factura M-48, în valoare de 48.000 EUR, pentru comanda MC-81, la 12.11.2026, ora 14:00 UTC. Aplică actele în vigoare și explică dacă aprobările și revizia comenzii permit plata integrală.",
+    "files": [
+      "01_procedura.md",
+      "02_acte.md",
+      "03_registru.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Prima aprobare financiară rămâne 10.11.2026 09:00; revizia 2 nu o înlocuiește pentru domeniul D-10.",
+        "evidence": [
+          "02_acte.md#D1",
+          "02_acte.md#D2",
+          "03_registru.md#R1",
+          "03_registru.md#R2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "D-10 acoperă MC-81: prima aprobare din 10.11 ora09:00 este ulterioară intrării în vigoare din 10.11 ora00:00; ambele aprobări curente sunt active.",
+        "evidence": [
+          "01_procedura.md#M2",
+          "02_acte.md#D1",
+          "02_acte.md#D2",
+          "03_registru.md#R2",
+          "03_registru.md#R3"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Se pot plăti integral 48000 EUR în baza D-10, inclusiv 8000 EUR înaintea recepției.",
+        "evidence": [
+          "01_procedura.md#M1",
+          "02_acte.md#D1",
+          "03_registru.md#R4"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A07/E04/E06: sursă fără autoritate redefinind evenimentul care declanșează o excepție"
+  },
+  {
+    "id": "d9895",
+    "title": "Vela — independența probelor în rezumate succesive",
+    "task": "Stabilește suma autorizabilă acum pentru tranșa VL-18 și dacă documentele susțin plata. Prezintă problemele materiale și probele decisive.",
+    "files": [
+      "01_contract.md",
+      "02_trasabilitate.md",
+      "03_rapoarte.md",
+      "04_predare.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Suma autorizabilă la momentul evaluării este 72000 EUR.",
+        "evidence": [
+          "01_contract.md#P1",
+          "02_trasabilitate.md#T1",
+          "02_trasabilitate.md#T2",
+          "03_rapoarte.md#L1",
+          "03_rapoarte.md#L2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Rapoartele derivă din PV-31 și PV-32, două evenimente distincte.",
+        "evidence": [
+          "01_contract.md#P2",
+          "02_trasabilitate.md#T1",
+          "02_trasabilitate.md#T2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A09/E08/E11/V03; pierderea provenienței în predări statice, nu memorie persistentă testată"
+  },
+  {
+    "id": "d7266",
+    "title": "Orizont — aceeași sumă, alt perimetru",
+    "task": "Verifică dacă Orizont Proiect SA, identificator OP-17, poate executa transferul de 60.000 EUR cerut la 30.09.2026, ora 17:00 UTC. Stabilește suma maximă permisă de mandat și justifică reconcilierea.",
+    "files": [
+      "01_mandat.md",
+      "02_identitate.md",
+      "03_registre.md",
+      "04_nota.md"
+    ],
+    "findings": [
+      {
+        "id": "F1",
+        "claim": "Se selectează P-17/C26, nu P-17/C25 și nu G-00/C26.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O3",
+          "02_identitate.md#I1",
+          "02_identitate.md#I2"
+        ]
+      },
+      {
+        "id": "F2",
+        "claim": "Capacitate = 92000 − 15000 − 17000 = 60000 EUR; Q-16 nu se scade din nou.",
+        "evidence": [
+          "01_mandat.md#O2",
+          "02_identitate.md#I3",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      },
+      {
+        "id": "F3",
+        "claim": "Cererea de 60000 EUR poate fi executată integral.",
+        "evidence": [
+          "01_mandat.md#O1",
+          "01_mandat.md#O2",
+          "03_registre.md#B1",
+          "03_registre.md#B2"
+        ]
+      }
+    ],
+    "profile": "paired pilot",
+    "primary_mechanism": "A11/E03/E09/E11: dovezi adevărate pentru altă entitate/perioadă, unități și reconciliere"
+  }
+]

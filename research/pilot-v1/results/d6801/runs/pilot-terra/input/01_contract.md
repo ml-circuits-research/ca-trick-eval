@@ -1,0 +1,4 @@
+# Vela — contractul de validare a lotului VL-18
+[P1] O tranșă indivizibilă de 72000 EUR se plătește dacă și numai dacă există două rapoarte conforme pentru VL-18, emise de laboratoare diferite, pe probe provenite din două evenimente distincte de prelevare. În caz contrar, suma autorizabilă acum este 0 EUR. Celelalte condiții sunt îndeplinite.
+[P2] Pentru acest contract, independența se stabilește după evenimentul de prelevare, nu după laborator, numărul raportului sau codul local al probei. Divizarea, transportul și recodificarea nu creează o nouă prelevare. Registrul de trasabilitate este complet, autorizat de responsabilul de calitate și prevalează asupra rezumatelor de predare. Nu este cerut niciun standard extern.
+[P3] Dosarul se evaluează la 12.11.2026, ora 14:00 UTC. Registrele și rapoartele sunt autentice; originalele nu conțin alte probe sau rezultate. Fișele de predare sunt rezumate administrative; nu certifică evenimente de prelevare.

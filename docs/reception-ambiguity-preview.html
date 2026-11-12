@@ -1,0 +1,398 @@
+<!doctype html><html lang="ro"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Doria · candidat pentru audit</title><style>body{max-width:1050px;margin:auto;padding:28px;font:16px/1.6 system-ui;color:#173044;background:#f4f7f9}article{background:white;border:1px solid #d4dfe6;border-radius:8px;padding:20px;margin:20px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.6 ui-monospace,monospace}summary{cursor:pointer;font-weight:bold}</style>
+<h1>Doria — candidat nerulat, etalon de ambiguitate</h1><p>Pagina pentru autor și audit. Conține etalonul și nu se montează în sandboxul modelului evaluat. Nicio inferență sau înghețare nu este executată de generator.</p>
+<p>Registratura a primit documentele, dar comisia nu le-a acceptat încă. Ambele departamente numesc propriul eveniment «recepție documente». Contractul necalificat nu spune care eveniment declanșează plata: sensul administrativ permite 48000 EUR, iar cel tehnic dă 0 EUR acum. O notă a registraturii nu alege sensul contractual. Cele două acte adiționale de control rezolvă separat această problemă.</p>
+<p><strong>Întrebarea comună:</strong> Analizează dosarul DP-17 la ora indicată și redactează o concluzie pentru echipa financiară privind plata tranșei. Explică ce sumă susțin documentele, probele decisive și eventualele clarificări necesare pentru decizie.</p>
+<article><h2>ambiguous_clean</h2><p>300 cuvinte; trei documente.</p>
+<details><summary>01_contract.md</summary><pre># Doria — contract de documentație de proiect
+
+[C1] Doria Procese SRL și Atelier Proiect SRL au semnat contractul DP-17 la 02.11.2026 pentru documentația instalației de monitorizare. Verificarea plății se face la 12.11.2026, ora 14:00 UTC. Documentele din pachet sunt autentice și privesc lotul D-17.
+
+[C2] Tranșa de 48000 EUR devine plătibilă după recepția documentelor de proiect. Tranșa nu se fracționează; înaintea acestui eveniment contractual nu este plătibilă. Celelalte condiții de plată sunt îndeplinite, iar fondurile sunt disponibile.
+
+[C3] Numai un act adițional semnat de reprezentanții ambelor părți poate completa clauzele contractului. Registrele departamentelor și notele de predare consemnează operațiuni, fără a modifica clauzele. Pachetul cuprinde toate înscrisurile contractuale semnate; pentru această verificare se aplică exclusiv regulile consemnate aici.
+
+[C4] Evidența actelor adiționale semnate: niciun act adițional.
+</pre></details>
+<details><summary>02_registre.md</summary><pre># Doria — extrase din registre, situație la 12.11.2026, ora 14:00 UTC
+
+[A1] Registratură, rubrica «Recepție documente». Această rubrică înregistrează primirea administrativă a fișierelor, fără verificarea conținutului. Lot D-17: PRIMIT la 11.11.2026, ora 09:10 UTC; toate fișierele din borderoul de predare sunt prezente. Înregistrare R-318, confirmată de responsabilul registraturii.
+
+[T1] Comisie tehnică, rubrica «Recepție documente». Această rubrică înregistrează acceptarea conținutului după verificarea tehnică. Lot D-17: ÎN CURS la 12.11.2026, ora 14:00 UTC; acceptarea tehnică nu a fost emisă. Procesul-verbal de recepție tehnică nu este încă aprobat.
+
+[R1] Cele două extrase sunt complete pentru lotul D-17 la ora indicată. Nu există o altă înregistrare de primire sau de acceptare tehnică a acestui lot.
+</pre></details>
+<details><summary>03_predare.md</summary><pre># Doria — notă de predare către echipa financiară
+
+[N1] Lotul D-17 conține documente primite administrativ de registratură la data consemnată în înregistrarea R-318.
+
+[N2] Fișierul de calcul, memoriul și planșele enumerate în borderou sunt înregistrate în lotul D-17. Nota este întocmită de registratură la 12.11.2026, ora 13:00 UTC, pentru pregătirea ședinței de plăți și însoțește contractul și extrasele de registru.
+</pre></details>
+<details><summary>Oracol și etalon — numai pe gazdă</summary><pre>{
+  &quot;expected&quot;: {
+    &quot;decision_status&quot;: &quot;underdetermined&quot;,
+    &quot;amount_eur&quot;: null,
+    &quot;conditional_amounts_eur&quot;: [
+      0,
+      48000
+    ],
+    &quot;requested_amount_eur&quot;: 48000,
+    &quot;required_clarification&quot;: &quot;În clauza C2, recepția se îndeplinește la primirea administrativă sau la acceptarea tehnică? Clarificarea contractuală revine ambelor părți, prin act adițional semnat.&quot;,
+    &quot;allowed_operational_hold&quot;: true,
+    &quot;findings&quot;: [
+      {
+        &quot;id&quot;: &quot;F1&quot;,
+        &quot;claim&quot;: &quot;Clauza C2 nu selectează între primirea administrativă și acceptarea tehnică; ambele sensuri sunt folosite în registre, iar C4 nu conține o definiție contractuală.&quot;,
+        &quot;evidence&quot;: [
+          &quot;01_contract.md#C2&quot;,
+          &quot;01_contract.md#C3&quot;,
+          &quot;01_contract.md#C4&quot;,
+          &quot;02_registre.md#A1&quot;,
+          &quot;02_registre.md#T1&quot;
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;F2&quot;,
+        &quot;claim&quot;: &quot;Nu rezultă o sumă contractuală certă: 48000 EUR dacă recepția înseamnă primire administrativă, respectiv 0 EUR acum dacă înseamnă acceptare tehnică. Este necesară clarificarea sensului din C2 prin autoritatea contractuală.&quot;,
+        &quot;evidence&quot;: [
+          &quot;01_contract.md#C2&quot;,
+          &quot;01_contract.md#C3&quot;,
+          &quot;01_contract.md#C4&quot;,
+          &quot;02_registre.md#A1&quot;,
+          &quot;02_registre.md#T1&quot;
+        ]
+      }
+    ],
+    &quot;conditional_branches&quot;: [
+      {
+        &quot;interpretation&quot;: &quot;administrative_receipt&quot;,
+        &quot;condition&quot;: &quot;recepția din C2 înseamnă primirea administrativă&quot;,
+        &quot;amount_eur&quot;: 48000,
+        &quot;evidence&quot;: [
+          &quot;01_contract.md#C2&quot;,
+          &quot;02_registre.md#A1&quot;
+        ]
+      },
+      {
+        &quot;interpretation&quot;: &quot;technical_acceptance&quot;,
+        &quot;condition&quot;: &quot;recepția din C2 înseamnă acceptarea tehnică&quot;,
+        &quot;amount_eur&quot;: 0,
+        &quot;evidence&quot;: [
+          &quot;01_contract.md#C2&quot;,
+          &quot;02_registre.md#T1&quot;
+        ]
+      }
+    ]
+  },
+  &quot;oracle&quot;: {
+    &quot;contractual_definition&quot;: null,
+    &quot;decision_status&quot;: &quot;underdetermined&quot;,
+    &quot;amount_eur&quot;: null,
+    &quot;conditional_amounts_eur&quot;: [
+      0,
+      48000
+    ],
+    &quot;models&quot;: [
+      {
+        &quot;contractual_interpretation&quot;: &quot;administrative_receipt&quot;,
+        &quot;facts&quot;: {
+          &quot;administrative_receipt&quot;: true,
+          &quot;technical_acceptance&quot;: false
+        },
+        &quot;contractual_event_has_occurred&quot;: true,
+        &quot;amount_eur&quot;: 48000,
+        &quot;consistency&quot;: &quot;same factual records; only the interpretation of C2 differs when C4 has no definition&quot;
+      },
+      {
+        &quot;contractual_interpretation&quot;: &quot;technical_acceptance&quot;,
+        &quot;facts&quot;: {
+          &quot;administrative_receipt&quot;: true,
+          &quot;technical_acceptance&quot;: false
+        },
+        &quot;contractual_event_has_occurred&quot;: false,
+        &quot;amount_eur&quot;: 0,
+        &quot;consistency&quot;: &quot;same factual records; only the interpretation of C2 differs when C4 has no definition&quot;
+      }
+    ],
+    &quot;note_used_as_authority&quot;: false,
+    &quot;operational_hold_is_contractual_zero&quot;: false,
+    &quot;limitation&quot;: &quot;The two locally evidenced senses and their contractual plausibility require independent prose audit; the formal checker does not prove linguistic ambiguity.&quot;
+  }
+}</pre></details></article>
+<article><h2>ambiguous_wording</h2><p>300 cuvinte; trei documente.</p>
+<details><summary>01_contract.md</summary><pre># Doria — contract de documentație de proiect
+
+[C1] Doria Procese SRL și Atelier Proiect SRL au semnat contractul DP-17 la 02.11.2026 pentru documentația instalației de monitorizare. Verificarea plății se face la 12.11.2026, ora 14:00 UTC. Documentele din pachet sunt autentice și privesc lotul D-17.
+
+[C2] Tranșa de 48000 EUR devine plătibilă după recepția documentelor de proiect. Tranșa nu se fracționează; înaintea acestui eveniment contractual nu este plătibilă. Celelalte condiții de plată sunt îndeplinite, iar fondurile sunt disponibile.
+
+[C3] Numai un act adițional semnat de reprezentanții ambelor părți poate completa clauzele contractului. Registrele departamentelor și notele de predare consemnează operațiuni, fără a modifica clauzele. Pachetul cuprinde toate înscrisurile contractuale semnate; pentru această verificare se aplică exclusiv regulile consemnate aici.
+
+[C4] Evidența actelor adiționale semnate: niciun act adițional.
+</pre></details>
+<details><summary>02_registre.md</summary><pre># Doria — extrase din registre, situație la 12.11.2026, ora 14:00 UTC
+
+[A1] Registratură, rubrica «Recepție documente». Această rubrică înregistrează primirea administrativă a fișierelor, fără verificarea conținutului. Lot D-17: PRIMIT la 11.11.2026, ora 09:10 UTC; toate fișierele din borderoul de predare sunt prezente. Înregistrare R-318, confirmată de responsabilul registraturii.
+
+[T1] Comisie tehnică, rubrica «Recepție documente». Această rubrică înregistrează acceptarea conținutului după verificarea tehnică. Lot D-17: ÎN CURS la 12.11.2026, ora 14:00 UTC; acceptarea tehnică nu a fost emisă. Procesul-verbal de recepție tehnică nu este încă aprobat.
+
+[R1] Cele două extrase sunt complete pentru lotul D-17 la ora indicată. Nu există o altă înregistrare de primire sau de acceptare tehnică a acestui lot.
+</pre></details>
+<details><summary>03_predare.md</summary><pre># Doria — notă de predare către echipa financiară
+
+[N1] Lotul D-17 conține documente recepționate administrativ de registratură la data consemnată în înregistrarea R-318.
+
+[N2] Fișierul de calcul, memoriul și planșele enumerate în borderou sunt înregistrate în lotul D-17. Nota este întocmită de registratură la 12.11.2026, ora 13:00 UTC, pentru pregătirea ședinței de plăți și însoțește contractul și extrasele de registru.
+</pre></details>
+<details><summary>Oracol și etalon — numai pe gazdă</summary><pre>{
+  &quot;expected&quot;: {
+    &quot;decision_status&quot;: &quot;underdetermined&quot;,
+    &quot;amount_eur&quot;: null,
+    &quot;conditional_amounts_eur&quot;: [
+      0,
+      48000
+    ],
+    &quot;requested_amount_eur&quot;: 48000,
+    &quot;required_clarification&quot;: &quot;În clauza C2, recepția se îndeplinește la primirea administrativă sau la acceptarea tehnică? Clarificarea contractuală revine ambelor părți, prin act adițional semnat.&quot;,
+    &quot;allowed_operational_hold&quot;: true,
+    &quot;findings&quot;: [
+      {
+        &quot;id&quot;: &quot;F1&quot;,
+        &quot;claim&quot;: &quot;Clauza C2 nu selectează între primirea administrativă și acceptarea tehnică; ambele sensuri sunt folosite în registre, iar C4 nu conține o definiție contractuală.&quot;,
+        &quot;evidence&quot;: [
+          &quot;01_contract.md#C2&quot;,
+          &quot;01_contract.md#C3&quot;,
+          &quot;01_contract.md#C4&quot;,
+          &quot;02_registre.md#A1&quot;,
+          &quot;02_registre.md#T1&quot;
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;F2&quot;,
+        &quot;claim&quot;: &quot;Nu rezultă o sumă contractuală certă: 48000 EUR dacă recepția înseamnă primire administrativă, respectiv 0 EUR acum dacă înseamnă acceptare tehnică. Este necesară clarificarea sensului din C2 prin autoritatea contractuală.&quot;,
+        &quot;evidence&quot;: [
+          &quot;01_contract.md#C2&quot;,
+          &quot;01_contract.md#C3&quot;,
+          &quot;01_contract.md#C4&quot;,
+          &quot;02_registre.md#A1&quot;,
+          &quot;02_registre.md#T1&quot;
+        ]
+      }
+    ],
+    &quot;conditional_branches&quot;: [
+      {
+        &quot;interpretation&quot;: &quot;administrative_receipt&quot;,
+        &quot;condition&quot;: &quot;recepția din C2 înseamnă primirea administrativă&quot;,
+        &quot;amount_eur&quot;: 48000,
+        &quot;evidence&quot;: [
+          &quot;01_contract.md#C2&quot;,
+          &quot;02_registre.md#A1&quot;
+        ]
+      },
+      {
+        &quot;interpretation&quot;: &quot;technical_acceptance&quot;,
+        &quot;condition&quot;: &quot;recepția din C2 înseamnă acceptarea tehnică&quot;,
+        &quot;amount_eur&quot;: 0,
+        &quot;evidence&quot;: [
+          &quot;01_contract.md#C2&quot;,
+          &quot;02_registre.md#T1&quot;
+        ]
+      }
+    ]
+  },
+  &quot;oracle&quot;: {
+    &quot;contractual_definition&quot;: null,
+    &quot;decision_status&quot;: &quot;underdetermined&quot;,
+    &quot;amount_eur&quot;: null,
+    &quot;conditional_amounts_eur&quot;: [
+      0,
+      48000
+    ],
+    &quot;models&quot;: [
+      {
+        &quot;contractual_interpretation&quot;: &quot;administrative_receipt&quot;,
+        &quot;facts&quot;: {
+          &quot;administrative_receipt&quot;: true,
+          &quot;technical_acceptance&quot;: false
+        },
+        &quot;contractual_event_has_occurred&quot;: true,
+        &quot;amount_eur&quot;: 48000,
+        &quot;consistency&quot;: &quot;same factual records; only the interpretation of C2 differs when C4 has no definition&quot;
+      },
+      {
+        &quot;contractual_interpretation&quot;: &quot;technical_acceptance&quot;,
+        &quot;facts&quot;: {
+          &quot;administrative_receipt&quot;: true,
+          &quot;technical_acceptance&quot;: false
+        },
+        &quot;contractual_event_has_occurred&quot;: false,
+        &quot;amount_eur&quot;: 0,
+        &quot;consistency&quot;: &quot;same factual records; only the interpretation of C2 differs when C4 has no definition&quot;
+      }
+    ],
+    &quot;note_used_as_authority&quot;: false,
+    &quot;operational_hold_is_contractual_zero&quot;: false,
+    &quot;limitation&quot;: &quot;The two locally evidenced senses and their contractual plausibility require independent prose audit; the formal checker does not prove linguistic ambiguity.&quot;
+  }
+}</pre></details></article>
+<article><h2>defined_receipt</h2><p>321 cuvinte; trei documente.</p>
+<details><summary>01_contract.md</summary><pre># Doria — contract de documentație de proiect
+
+[C1] Doria Procese SRL și Atelier Proiect SRL au semnat contractul DP-17 la 02.11.2026 pentru documentația instalației de monitorizare. Verificarea plății se face la 12.11.2026, ora 14:00 UTC. Documentele din pachet sunt autentice și privesc lotul D-17.
+
+[C2] Tranșa de 48000 EUR devine plătibilă după recepția documentelor de proiect. Tranșa nu se fracționează; înaintea acestui eveniment contractual nu este plătibilă. Celelalte condiții de plată sunt îndeplinite, iar fondurile sunt disponibile.
+
+[C3] Numai un act adițional semnat de reprezentanții ambelor părți poate completa clauzele contractului. Registrele departamentelor și notele de predare consemnează operațiuni, fără a modifica clauzele. Pachetul cuprinde toate înscrisurile contractuale semnate; pentru această verificare se aplică exclusiv regulile consemnate aici.
+
+[C4] Act adițional semnat de ambele părți la 10.11.2026, aplicabil tranșei DP-17: în clauza C2, recepția documentelor înseamnă exclusiv primirea înregistrată de registratură, fără a fi necesară acceptarea tehnică.
+</pre></details>
+<details><summary>02_registre.md</summary><pre># Doria — extrase din registre, situație la 12.11.2026, ora 14:00 UTC
+
+[A1] Registratură, rubrica «Recepție documente». Această rubrică înregistrează primirea administrativă a fișierelor, fără verificarea conținutului. Lot D-17: PRIMIT la 11.11.2026, ora 09:10 UTC; toate fișierele din borderoul de predare sunt prezente. Înregistrare R-318, confirmată de responsabilul registraturii.
+
+[T1] Comisie tehnică, rubrica «Recepție documente». Această rubrică înregistrează acceptarea conținutului după verificarea tehnică. Lot D-17: ÎN CURS la 12.11.2026, ora 14:00 UTC; acceptarea tehnică nu a fost emisă. Procesul-verbal de recepție tehnică nu este încă aprobat.
+
+[R1] Cele două extrase sunt complete pentru lotul D-17 la ora indicată. Nu există o altă înregistrare de primire sau de acceptare tehnică a acestui lot.
+</pre></details>
+<details><summary>03_predare.md</summary><pre># Doria — notă de predare către echipa financiară
+
+[N1] Lotul D-17 conține documente primite administrativ de registratură la data consemnată în înregistrarea R-318.
+
+[N2] Fișierul de calcul, memoriul și planșele enumerate în borderou sunt înregistrate în lotul D-17. Nota este întocmită de registratură la 12.11.2026, ora 13:00 UTC, pentru pregătirea ședinței de plăți și însoțește contractul și extrasele de registru.
+</pre></details>
+<details><summary>Oracol și etalon — numai pe gazdă</summary><pre>{
+  &quot;expected&quot;: {
+    &quot;decision_status&quot;: &quot;determined&quot;,
+    &quot;amount_eur&quot;: 48000,
+    &quot;conditional_amounts_eur&quot;: [],
+    &quot;requested_amount_eur&quot;: 48000,
+    &quot;required_clarification&quot;: null,
+    &quot;allowed_operational_hold&quot;: false,
+    &quot;findings&quot;: [
+      {
+        &quot;id&quot;: &quot;F1&quot;,
+        &quot;claim&quot;: &quot;Actul adițional aplicabil definește recepția din C2 drept primire administrativă, iar această primire este confirmată.&quot;,
+        &quot;evidence&quot;: [
+          &quot;01_contract.md#C2&quot;,
+          &quot;01_contract.md#C3&quot;,
+          &quot;01_contract.md#C4&quot;,
+          &quot;02_registre.md#A1&quot;,
+          &quot;02_registre.md#T1&quot;
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;F2&quot;,
+        &quot;claim&quot;: &quot;Suma plătibilă la ora verificării este 48000 EUR, conform definiției semnate și stării documentate.&quot;,
+        &quot;evidence&quot;: [
+          &quot;01_contract.md#C2&quot;,
+          &quot;01_contract.md#C3&quot;,
+          &quot;01_contract.md#C4&quot;,
+          &quot;02_registre.md#A1&quot;,
+          &quot;02_registre.md#T1&quot;
+        ]
+      }
+    ]
+  },
+  &quot;oracle&quot;: {
+    &quot;contractual_definition&quot;: &quot;administrative_receipt&quot;,
+    &quot;decision_status&quot;: &quot;determined&quot;,
+    &quot;amount_eur&quot;: 48000,
+    &quot;conditional_amounts_eur&quot;: [],
+    &quot;models&quot;: [
+      {
+        &quot;contractual_interpretation&quot;: &quot;administrative_receipt&quot;,
+        &quot;facts&quot;: {
+          &quot;administrative_receipt&quot;: true,
+          &quot;technical_acceptance&quot;: false
+        },
+        &quot;contractual_event_has_occurred&quot;: true,
+        &quot;amount_eur&quot;: 48000,
+        &quot;consistency&quot;: &quot;same factual records; only the interpretation of C2 differs when C4 has no definition&quot;
+      }
+    ],
+    &quot;note_used_as_authority&quot;: false,
+    &quot;operational_hold_is_contractual_zero&quot;: false,
+    &quot;limitation&quot;: &quot;The two locally evidenced senses and their contractual plausibility require independent prose audit; the formal checker does not prove linguistic ambiguity.&quot;
+  }
+}</pre></details></article>
+<article><h2>defined_acceptance</h2><p>324 cuvinte; trei documente.</p>
+<details><summary>01_contract.md</summary><pre># Doria — contract de documentație de proiect
+
+[C1] Doria Procese SRL și Atelier Proiect SRL au semnat contractul DP-17 la 02.11.2026 pentru documentația instalației de monitorizare. Verificarea plății se face la 12.11.2026, ora 14:00 UTC. Documentele din pachet sunt autentice și privesc lotul D-17.
+
+[C2] Tranșa de 48000 EUR devine plătibilă după recepția documentelor de proiect. Tranșa nu se fracționează; înaintea acestui eveniment contractual nu este plătibilă. Celelalte condiții de plată sunt îndeplinite, iar fondurile sunt disponibile.
+
+[C3] Numai un act adițional semnat de reprezentanții ambelor părți poate completa clauzele contractului. Registrele departamentelor și notele de predare consemnează operațiuni, fără a modifica clauzele. Pachetul cuprinde toate înscrisurile contractuale semnate; pentru această verificare se aplică exclusiv regulile consemnate aici.
+
+[C4] Act adițional semnat de ambele părți la 10.11.2026, aplicabil tranșei DP-17: în clauza C2, recepția documentelor înseamnă exclusiv acceptarea conținutului de comisia tehnică; simpla primire la registratură nu îndeplinește această condiție.
+</pre></details>
+<details><summary>02_registre.md</summary><pre># Doria — extrase din registre, situație la 12.11.2026, ora 14:00 UTC
+
+[A1] Registratură, rubrica «Recepție documente». Această rubrică înregistrează primirea administrativă a fișierelor, fără verificarea conținutului. Lot D-17: PRIMIT la 11.11.2026, ora 09:10 UTC; toate fișierele din borderoul de predare sunt prezente. Înregistrare R-318, confirmată de responsabilul registraturii.
+
+[T1] Comisie tehnică, rubrica «Recepție documente». Această rubrică înregistrează acceptarea conținutului după verificarea tehnică. Lot D-17: ÎN CURS la 12.11.2026, ora 14:00 UTC; acceptarea tehnică nu a fost emisă. Procesul-verbal de recepție tehnică nu este încă aprobat.
+
+[R1] Cele două extrase sunt complete pentru lotul D-17 la ora indicată. Nu există o altă înregistrare de primire sau de acceptare tehnică a acestui lot.
+</pre></details>
+<details><summary>03_predare.md</summary><pre># Doria — notă de predare către echipa financiară
+
+[N1] Lotul D-17 conține documente primite administrativ de registratură la data consemnată în înregistrarea R-318.
+
+[N2] Fișierul de calcul, memoriul și planșele enumerate în borderou sunt înregistrate în lotul D-17. Nota este întocmită de registratură la 12.11.2026, ora 13:00 UTC, pentru pregătirea ședinței de plăți și însoțește contractul și extrasele de registru.
+</pre></details>
+<details><summary>Oracol și etalon — numai pe gazdă</summary><pre>{
+  &quot;expected&quot;: {
+    &quot;decision_status&quot;: &quot;determined&quot;,
+    &quot;amount_eur&quot;: 0,
+    &quot;conditional_amounts_eur&quot;: [],
+    &quot;requested_amount_eur&quot;: 48000,
+    &quot;required_clarification&quot;: null,
+    &quot;allowed_operational_hold&quot;: false,
+    &quot;findings&quot;: [
+      {
+        &quot;id&quot;: &quot;F1&quot;,
+        &quot;claim&quot;: &quot;Actul adițional aplicabil definește recepția din C2 drept acceptare tehnică, iar aceasta nu a fost emisă.&quot;,
+        &quot;evidence&quot;: [
+          &quot;01_contract.md#C2&quot;,
+          &quot;01_contract.md#C3&quot;,
+          &quot;01_contract.md#C4&quot;,
+          &quot;02_registre.md#A1&quot;,
+          &quot;02_registre.md#T1&quot;
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;F2&quot;,
+        &quot;claim&quot;: &quot;Suma plătibilă la ora verificării este 0 EUR, conform definiției semnate și stării documentate.&quot;,
+        &quot;evidence&quot;: [
+          &quot;01_contract.md#C2&quot;,
+          &quot;01_contract.md#C3&quot;,
+          &quot;01_contract.md#C4&quot;,
+          &quot;02_registre.md#A1&quot;,
+          &quot;02_registre.md#T1&quot;
+        ]
+      }
+    ]
+  },
+  &quot;oracle&quot;: {
+    &quot;contractual_definition&quot;: &quot;technical_acceptance&quot;,
+    &quot;decision_status&quot;: &quot;determined&quot;,
+    &quot;amount_eur&quot;: 0,
+    &quot;conditional_amounts_eur&quot;: [],
+    &quot;models&quot;: [
+      {
+        &quot;contractual_interpretation&quot;: &quot;technical_acceptance&quot;,
+        &quot;facts&quot;: {
+          &quot;administrative_receipt&quot;: true,
+          &quot;technical_acceptance&quot;: false
+        },
+        &quot;contractual_event_has_occurred&quot;: false,
+        &quot;amount_eur&quot;: 0,
+        &quot;consistency&quot;: &quot;same factual records; only the interpretation of C2 differs when C4 has no definition&quot;
+      }
+    ],
+    &quot;note_used_as_authority&quot;: false,
+    &quot;operational_hold_is_contractual_zero&quot;: false,
+    &quot;limitation&quot;: &quot;The two locally evidenced senses and their contractual plausibility require independent prose audit; the formal checker does not prove linguistic ambiguity.&quot;
+  }
+}</pre></details></article>
+</html>

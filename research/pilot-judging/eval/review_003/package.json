@@ -1,0 +1,318 @@
+[
+  {
+    "anonymous_id": "a4946194628c8",
+    "task": "Stabilește suma autorizabilă acum pentru tranșa VL-18 și dacă documentele susțin plata. Prezintă problemele materiale și probele decisive.",
+    "documents": {
+      "01_contract.md": "# Vela — contractul de validare a lotului VL-18\n[P1] O tranșă indivizibilă de 72000 EUR se plătește dacă și numai dacă există două rapoarte conforme pentru VL-18, emise de laboratoare diferite, pe probe provenite din două evenimente distincte de prelevare. În caz contrar, suma autorizabilă acum este 0 EUR. Celelalte condiții sunt îndeplinite.\n[P2] Pentru acest contract, independența se stabilește după evenimentul de prelevare, nu după laborator, numărul raportului sau codul local al probei. Divizarea, transportul și recodificarea nu creează o nouă prelevare. Registrul de trasabilitate este complet, autorizat de responsabilul de calitate și prevalează asupra rezumatelor de predare. Nu este cerut niciun standard extern.\n[P3] Dosarul se evaluează la 12.11.2026, ora 14:00 UTC. Registrele și rapoartele sunt autentice; originalele nu conțin alte probe sau rezultate. Fișele de predare sunt rezumate administrative; nu certifică evenimente de prelevare.\n",
+      "02_trasabilitate.md": "# Registru autorizat de trasabilitate\n[T1] Prelevarea PV-31 din lotul VL-18 a produs recipientul C-11. Prelevarea PV-32 din același lot a produs recipientul C-12. Ambele prelevări au avut loc înaintea analizelor.\n[T2]\n| cod obiect | operație | provenit din |\n|---|---|---|\n| A-61 | aliquotare | C-11 |\n| A-62 | aliquotare | C-11 |\n| BX-09 | recodificare la transport | A-62 |\n| LA-21 | recepție laborator Atlas | A-61 |\n| LB-08 | recepție laborator Boreal | BX-09 |\n[T3] Nu există alte operații sau rapoarte la momentul evaluării.\n",
+      "03_rapoarte.md": "# Rapoarte de laborator\n[L1] Laboratorul Atlas, raport RA-44, lot VL-18, proba LA-21: CONFORM. Raport semnat și valabil la momentul evaluării.\n[L2] Laboratorul Boreal, raport RB-93, lot VL-18, proba LB-08: CONFORM. Raport semnat și valabil la momentul evaluării.\n[L3] Atlas și Boreal sunt persoane juridice diferite și nu au acționariat comun. Conformitatea măsurătorii din fiecare raport este certă. Problema solicitată este eligibilitatea tranșei în contractul P1.\n",
+      "04_predare.md": "# Fișe de predare între echipe\n[H0] Copii ale sintezelor administrative succesive pentru același dosar; fiecare echipă a preluat sinteza precedentă.\n[H1] recepție: Două laboratoare distincte, două rezultate conforme, două probe independente. Cerința contractuală este îndeplinită. Tranșa recomandată pentru plată: 72000 EUR.\n[H2] control documentar: Două laboratoare distincte, două rezultate conforme, două probe independente. Cerința contractuală este îndeplinită. Tranșa recomandată pentru plată: 72000 EUR.\n[H3] coordonare lot: Două laboratoare distincte, două rezultate conforme, două probe independente. Cerința contractuală este îndeplinită. Tranșa recomandată pentru plată: 72000 EUR.\n[H4] finanțe: Două laboratoare distincte, două rezultate conforme, două probe independente. Cerința contractuală este îndeplinită. Tranșa recomandată pentru plată: 72000 EUR.\n[H5] achiziții: Două laboratoare distincte, două rezultate conforme, două probe independente. Cerința contractuală este îndeplinită. Tranșa recomandată pentru plată: 72000 EUR.\n[H6] proiect: Două laboratoare distincte, două rezultate conforme, două probe independente. Cerința contractuală este îndeplinită. Tranșa recomandată pentru plată: 72000 EUR.\n[H7] operațiuni: Două laboratoare distincte, două rezultate conforme, două probe independente. Cerința contractuală este îndeplinită. Tranșa recomandată pentru plată: 72000 EUR.\n[H8] comitet: Două laboratoare distincte, două rezultate conforme, două probe independente. Cerința contractuală este îndeplinită. Tranșa recomandată pentru plată: 72000 EUR.\n"
+    },
+    "expected": {
+      "verdict": "not_payable",
+      "amount_eur": 0,
+      "findings": [
+        {
+          "id": "F1",
+          "claim": "Suma autorizabilă la momentul evaluării este 0 EUR.",
+          "evidence": [
+            "01_contract.md#P1",
+            "02_trasabilitate.md#T1",
+            "02_trasabilitate.md#T2",
+            "03_rapoarte.md#L1",
+            "03_rapoarte.md#L2"
+          ]
+        },
+        {
+          "id": "F2",
+          "claim": "Ambele rapoarte derivă din PV-31; persoane juridice și coduri distincte nu oferă două prelevări independente.",
+          "evidence": [
+            "01_contract.md#P2",
+            "02_trasabilitate.md#T1",
+            "02_trasabilitate.md#T2"
+          ]
+        },
+        {
+          "id": "F3",
+          "claim": "Repetarea sintezei administrative nu furnizează probe independente și nu justifică plata recomandată.",
+          "evidence": [
+            "04_predare.md#H0",
+            "04_predare.md#H1",
+            "01_contract.md#P2",
+            "02_trasabilitate.md#T2"
+          ]
+        }
+      ]
+    },
+    "answer": "# Raport pentru beneficiar — tranșa VL-18\n\n**Suma autorizabilă acum: 0 EUR. Documentele nu susțin plata tranșei de 72.000 EUR** la data evaluării, 12.11.2026, ora 14:00 UTC.\n\nAu fost examinate integral cele patru documente disponibile, inclusiv tabelul de trasabilitate și fișele de predare. Nu au fost identificate anexe separate.\n\n## Condiția contractuală și probele decisive\n\nContractul prevede o tranșă **indivizibilă**, plătibilă numai dacă există două rapoarte conforme, emise de laboratoare diferite, pentru probe provenite din **două evenimente distincte de prelevare**. În lipsa acestei condiții, suma autorizabilă este expres stabilită la 0 EUR. Celelalte condiții sunt îndeplinite. [Contract, P1–P2](/case/01_contract.md:2)\n\nRapoartele RA-44 și RB-93 sunt conforme, semnate și valabile, iar Atlas și Boreal sunt laboratoare distincte. Aceste cerințe sunt îndeplinite. [Rapoarte, L1–L3](/case/03_rapoarte.md:2)\n\nTotuși, registrul autorizat dovedește că ambele probe analizate provin din **aceeași prelevare, PV-31**:\n\n| Raport | Traseul probei, de la prelevare la laborator |\n|---|---|\n| RA-44 — Atlas | PV-31 → C-11 → A-61 → LA-21 |\n| RB-93 — Boreal | PV-31 → C-11 → A-62 → BX-09 → LB-08 |\n\nPrelevarea PV-32 a produs recipientul C-12, dar registrul nu indică vreo probă analizată sau vreun raport provenit din acesta. Registrul este complet și nu există alte operații sau rapoarte la momentul evaluării. [Trasabilitate, T1–T3](/case/02_trasabilitate.md:2)\n\n## Probleme materiale\n\n1. **Lipsește raportul conform aferent unei a doua prelevări distincte.** Cele două aliquote ale recipientului C-11 nu reprezintă prelevări independente. Contractul precizează că divizarea, transportul și recodificarea nu creează o nouă prelevare; schimbarea laboratorului sau a codului probei nu remediază această lipsă. [Contract, P2](/case/01_contract.md:3)\n\n2. **Fișele de predare recomandă plata pe baza unei afirmații contrazise de trasabilitate.** H1–H8 afirmă existența a „două probe independente” și recomandă 72.000 EUR. Acestea sunt însă sinteze administrative succesive, fiecare preluând sinteza precedentă; repetarea concluziei nu constituie confirmare independentă. [Fișe de predare, H0–H8](/case/04_predare.md:2)\n\n3. **Conflictul documentar se soluționează prin regula expresă din contract.** Registrul autorizat prevalează asupra rezumatelor de predare, iar fișele nu certifică evenimente de prelevare. Prin urmare, recomandările administrative nu pot fundamenta autorizarea plății. [Contract, P2–P3](/case/01_contract.md:3)\n\n## Concluzie și măsura necesară\n\n**Nu se autorizează plata acum, nici parțial**, deoarece tranșa este indivizibilă și condiția privind două prelevări distincte nu este îndeplinită. Constatarea privește eligibilitatea contractuală; conformitatea rezultatelor de laborator este certă.\n\nPentru reevaluare este necesar un raport conform, cu trasabilitate demonstrată la o altă prelevare decât PV-31 — de exemplu PV-32, dacă proba aferentă poate fi analizată și documentată corespunzător — astfel încât perechea de rapoarte să respecte și cerința laboratoarelor diferite. Fișele de predare trebuie corectate în acord cu registrul autorizat."
+  },
+  {
+    "anonymous_id": "a4668d66d729b",
+    "task": "Stabilește suma autorizabilă acum pentru tranșa VL-18 și dacă documentele susțin plata. Prezintă problemele materiale și probele decisive.",
+    "documents": {
+      "01_contract.md": "# Vela — contractul de validare a lotului VL-18\n[P1] O tranșă indivizibilă de 72000 EUR se plătește dacă și numai dacă există două rapoarte conforme pentru VL-18, emise de laboratoare diferite, pe probe provenite din două evenimente distincte de prelevare. În caz contrar, suma autorizabilă acum este 0 EUR. Celelalte condiții sunt îndeplinite.\n[P2] Pentru acest contract, independența se stabilește după evenimentul de prelevare, nu după laborator, numărul raportului sau codul local al probei. Divizarea, transportul și recodificarea nu creează o nouă prelevare. Registrul de trasabilitate este complet, autorizat de responsabilul de calitate și prevalează asupra rezumatelor de predare. Nu este cerut niciun standard extern.\n[P3] Dosarul se evaluează la 12.11.2026, ora 14:00 UTC. Registrele și rapoartele sunt autentice; originalele nu conțin alte probe sau rezultate. Fișele de predare sunt rezumate administrative; nu certifică evenimente de prelevare.\n",
+      "02_trasabilitate.md": "# Registru autorizat de trasabilitate\n[T1] Prelevarea PV-31 din lotul VL-18 a produs recipientul C-11. Prelevarea PV-32 din același lot a produs recipientul C-12. Ambele prelevări au avut loc înaintea analizelor.\n[T2]\n| cod obiect | operație | provenit din |\n|---|---|---|\n| A-61 | aliquotare | C-11 |\n| A-62 | aliquotare | C-11 |\n| BX-09 | recodificare la transport | A-62 |\n| LA-21 | recepție laborator Atlas | A-61 |\n| LB-08 | recepție laborator Boreal | BX-09 |\n[T3] Nu există alte operații sau rapoarte la momentul evaluării.\n",
+      "03_rapoarte.md": "# Rapoarte de laborator\n[L1] Laboratorul Atlas, raport RA-44, lot VL-18, proba LA-21: CONFORM. Raport semnat și valabil la momentul evaluării.\n[L2] Laboratorul Boreal, raport RB-93, lot VL-18, proba LB-08: CONFORM. Raport semnat și valabil la momentul evaluării.\n[L3] Atlas și Boreal sunt persoane juridice diferite și nu au acționariat comun. Conformitatea măsurătorii din fiecare raport este certă. Problema solicitată este eligibilitatea tranșei în contractul P1.\n",
+      "04_predare.md": "# Fișe de predare între echipe\n[H0] Copii ale sintezelor administrative succesive pentru același dosar; fiecare echipă a preluat sinteza precedentă.\n[H1] recepție: Două laboratoare distincte, două rezultate conforme, două probe independente. Cerința contractuală este îndeplinită. Tranșa recomandată pentru plată: 72000 EUR.\n[H2] control documentar: Două laboratoare distincte, două rezultate conforme, două probe independente. Cerința contractuală este îndeplinită. Tranșa recomandată pentru plată: 72000 EUR.\n[H3] coordonare lot: Două laboratoare distincte, două rezultate conforme, două probe independente. Cerința contractuală este îndeplinită. Tranșa recomandată pentru plată: 72000 EUR.\n[H4] finanțe: Două laboratoare distincte, două rezultate conforme, două probe independente. Cerința contractuală este îndeplinită. Tranșa recomandată pentru plată: 72000 EUR.\n[H5] achiziții: Două laboratoare distincte, două rezultate conforme, două probe independente. Cerința contractuală este îndeplinită. Tranșa recomandată pentru plată: 72000 EUR.\n[H6] proiect: Două laboratoare distincte, două rezultate conforme, două probe independente. Cerința contractuală este îndeplinită. Tranșa recomandată pentru plată: 72000 EUR.\n[H7] operațiuni: Două laboratoare distincte, două rezultate conforme, două probe independente. Cerința contractuală este îndeplinită. Tranșa recomandată pentru plată: 72000 EUR.\n[H8] comitet: Două laboratoare distincte, două rezultate conforme, două probe independente. Cerința contractuală este îndeplinită. Tranșa recomandată pentru plată: 72000 EUR.\n"
+    },
+    "expected": {
+      "verdict": "not_payable",
+      "amount_eur": 0,
+      "findings": [
+        {
+          "id": "F1",
+          "claim": "Suma autorizabilă la momentul evaluării este 0 EUR.",
+          "evidence": [
+            "01_contract.md#P1",
+            "02_trasabilitate.md#T1",
+            "02_trasabilitate.md#T2",
+            "03_rapoarte.md#L1",
+            "03_rapoarte.md#L2"
+          ]
+        },
+        {
+          "id": "F2",
+          "claim": "Ambele rapoarte derivă din PV-31; persoane juridice și coduri distincte nu oferă două prelevări independente.",
+          "evidence": [
+            "01_contract.md#P2",
+            "02_trasabilitate.md#T1",
+            "02_trasabilitate.md#T2"
+          ]
+        },
+        {
+          "id": "F3",
+          "claim": "Repetarea sintezei administrative nu furnizează probe independente și nu justifică plata recomandată.",
+          "evidence": [
+            "04_predare.md#H0",
+            "04_predare.md#H1",
+            "01_contract.md#P2",
+            "02_trasabilitate.md#T2"
+          ]
+        }
+      ]
+    },
+    "answer": "# Raport pentru beneficiar — tranșa VL-18\n\n**Suma autorizabilă la 12.11.2026, ora 14:00 UTC, este 0 EUR. Documentele nu susțin plata tranșei de 72.000 EUR.** Cele două rapoarte sunt conforme și provin de la laboratoare diferite, dar ambele analizează material provenit din aceeași prelevare. Contractul cere două evenimente distincte de prelevare, iar tranșa este indivizibilă. [Contract, P1–P3](/case/01_contract.md)\n\n## Probele decisive\n\n- Raportul Atlas RA-44 pentru proba LA-21 și raportul Boreal RB-93 pentru proba LB-08 sunt semnate, valabile și conforme. Laboratoarele sunt persoane juridice diferite. Aceste condiții sunt îndeplinite. [Rapoarte, L1–L3](/case/03_rapoarte.md)\n- Registrul urmărește însă ambele probe până la același recipient și aceeași prelevare: **PV-31 → C-11 → A-61 → LA-21** pentru Atlas și **PV-31 → C-11 → A-62 → BX-09 → LB-08** pentru Boreal. Aliquotarea și recodificarea nu creează o nouă prelevare. [Registru, T1–T2](/case/02_trasabilitate.md); [contract, P2](/case/01_contract.md)\n- A existat și prelevarea distinctă **PV-32**, care a produs recipientul C-12, dar registrul nu leagă niciunul dintre cele două rapoarte de acesta. Registrul este complet și nu există alte operații sau rapoarte la momentul evaluării. [Registru, T1–T3](/case/02_trasabilitate.md)\n\n## Problema în fișele de predare\n\nCele opt sinteze administrative recomandă plata a 72.000 EUR și afirmă că probele sunt independente. Ele sunt însă copii succesive ale aceleiași sinteze și nu certifică evenimentele de prelevare. Contractul acordă prioritate registrului autorizat de trasabilitate, care contrazice această afirmație. [Fișe, H0–H8](/case/04_predare.md); [contract, P2–P3](/case/01_contract.md)\n\nPentru autorizare ar fi necesare două rapoarte conforme de la laboratoare diferite, cu trasabilitate demonstrată la **două prelevări distincte**. Dosarul existent nu dovedește această condiție."
+  },
+  {
+    "anonymous_id": "a003106cb6ace",
+    "task": "Stabilește suma autorizabilă acum pentru tranșa VL-18 și dacă documentele susțin plata. Prezintă problemele materiale și probele decisive.",
+    "documents": {
+      "01_contract.md": "# Vela — contractul de validare a lotului VL-18\n[P1] O tranșă indivizibilă de 72000 EUR se plătește dacă și numai dacă există două rapoarte conforme pentru VL-18, emise de laboratoare diferite, pe probe provenite din două evenimente distincte de prelevare. În caz contrar, suma autorizabilă acum este 0 EUR. Celelalte condiții sunt îndeplinite.\n[P2] Pentru acest contract, independența se stabilește după evenimentul de prelevare, nu după laborator, numărul raportului sau codul local al probei. Divizarea, transportul și recodificarea nu creează o nouă prelevare. Registrul de trasabilitate este complet, autorizat de responsabilul de calitate și prevalează asupra rezumatelor de predare. Nu este cerut niciun standard extern.\n[P3] Dosarul se evaluează la 12.11.2026, ora 14:00 UTC. Registrele și rapoartele sunt autentice; originalele nu conțin alte probe sau rezultate. Fișele de predare sunt rezumate administrative; nu certifică evenimente de prelevare.\n",
+      "02_trasabilitate.md": "# Registru autorizat de trasabilitate\n[T1] Prelevarea PV-31 din lotul VL-18 a produs recipientul C-11. Prelevarea PV-32 din același lot a produs recipientul C-12. Ambele prelevări au avut loc înaintea analizelor.\n[T2]\n| cod obiect | operație | provenit din |\n|---|---|---|\n| A-61 | aliquotare | C-11 |\n| A-62 | aliquotare | C-11 |\n| BX-09 | recodificare la transport | A-62 |\n| LA-21 | recepție laborator Atlas | A-61 |\n| LB-08 | recepție laborator Boreal | BX-09 |\n[T3] Nu există alte operații sau rapoarte la momentul evaluării.\n",
+      "03_rapoarte.md": "# Rapoarte de laborator\n[L1] Laboratorul Atlas, raport RA-44, lot VL-18, proba LA-21: CONFORM. Raport semnat și valabil la momentul evaluării.\n[L2] Laboratorul Boreal, raport RB-93, lot VL-18, proba LB-08: CONFORM. Raport semnat și valabil la momentul evaluării.\n[L3] Atlas și Boreal sunt persoane juridice diferite și nu au acționariat comun. Conformitatea măsurătorii din fiecare raport este certă. Problema solicitată este eligibilitatea tranșei în contractul P1.\n",
+      "04_predare.md": "# Fișe de predare între echipe\n[H0] Copii ale sintezelor administrative succesive pentru același dosar; fiecare echipă a preluat sinteza precedentă.\n[H1] recepție: Două laboratoare distincte, două rezultate conforme, două coduri documentate. Trasabilitatea contractuală este disponibilă. Tranșa solicitată prin contract: 72000 EUR.\n[H2] control documentar: Două laboratoare distincte, două rezultate conforme, două coduri documentate. Trasabilitatea contractuală este disponibilă. Tranșa solicitată prin contract: 72000 EUR.\n[H3] coordonare lot: Două laboratoare distincte, două rezultate conforme, două coduri documentate. Trasabilitatea contractuală este disponibilă. Tranșa solicitată prin contract: 72000 EUR.\n[H4] finanțe: Două laboratoare distincte, două rezultate conforme, două coduri documentate. Trasabilitatea contractuală este disponibilă. Tranșa solicitată prin contract: 72000 EUR.\n[H5] achiziții: Două laboratoare distincte, două rezultate conforme, două coduri documentate. Trasabilitatea contractuală este disponibilă. Tranșa solicitată prin contract: 72000 EUR.\n[H6] proiect: Două laboratoare distincte, două rezultate conforme, două coduri documentate. Trasabilitatea contractuală este disponibilă. Tranșa solicitată prin contract: 72000 EUR.\n[H7] operațiuni: Două laboratoare distincte, două rezultate conforme, două coduri documentate. Trasabilitatea contractuală este disponibilă. Tranșa solicitată prin contract: 72000 EUR.\n[H8] comitet: Două laboratoare distincte, două rezultate conforme, două coduri documentate. Trasabilitatea contractuală este disponibilă. Tranșa solicitată prin contract: 72000 EUR.\n"
+    },
+    "expected": {
+      "verdict": "not_payable",
+      "amount_eur": 0,
+      "findings": [
+        {
+          "id": "F1",
+          "claim": "Suma autorizabilă la momentul evaluării este 0 EUR.",
+          "evidence": [
+            "01_contract.md#P1",
+            "02_trasabilitate.md#T1",
+            "02_trasabilitate.md#T2",
+            "03_rapoarte.md#L1",
+            "03_rapoarte.md#L2"
+          ]
+        },
+        {
+          "id": "F2",
+          "claim": "Ambele rapoarte derivă din PV-31; persoane juridice și coduri distincte nu oferă două prelevări independente.",
+          "evidence": [
+            "01_contract.md#P2",
+            "02_trasabilitate.md#T1",
+            "02_trasabilitate.md#T2"
+          ]
+        }
+      ]
+    },
+    "answer": "**Raport pentru beneficiar — tranșa VL-18**  \nEvaluare la **12.11.2026, ora 14:00 UTC**, pe baza celor patru documente disponibile în dosar, inclusiv tabelele și fișele de predare.\n\n**Suma autorizabilă acum: 0 EUR. Documentele nu susțin plata tranșei de 72.000 EUR.** Cele două rapoarte sunt conforme și provin de la laboratoare diferite, dar ambele privesc probe provenite din aceeași prelevare, PV-31.\n\n**Condiția contractuală**\n\nTranșa este indivizibilă și se plătește numai dacă există două rapoarte conforme, emise de laboratoare diferite, pentru probe provenite din **două evenimente distincte de prelevare**. În lipsa acestei condiții, contractul stabilește expres suma autorizabilă de 0 EUR. Celelalte condiții sunt îndeplinite. [01_contract.md, P1](/case/01_contract.md)\n\nIndependența se stabilește după evenimentul de prelevare. Divizarea, transportul și recodificarea nu creează o prelevare nouă. Registrul autorizat de trasabilitate prevalează asupra rezumatelor de predare. [01_contract.md, P2–P3](/case/01_contract.md)\n\n**Probele decisive**\n\nRegistrul permite reconstruirea următoarelor trasee:\n\n| Raport | Laborator și rezultat | Traseul probei până la prelevare |\n|---|---|---|\n| RA-44 | Atlas — CONFORM | LA-21 ← A-61 ← C-11 ← **PV-31** |\n| RB-93 | Boreal — CONFORM | LB-08 ← BX-09 ← A-62 ← C-11 ← **PV-31** |\n\nA-61 și A-62 sunt aliquote ale aceluiași recipient C-11. BX-09 reprezintă recodificarea la transport a A-62. Prin urmare, codurile diferite nu demonstrează origini independente. [02_trasabilitate.md, T1–T2](/case/02_trasabilitate.md)\n\nRapoartele RA-44 și RB-93 sunt semnate, valabile și cert conforme; Atlas și Boreal sunt persoane juridice diferite, fără acționariat comun. Aceste cerințe sunt satisfăcute, însă nu înlocuiesc cerința privind două prelevări distincte. [03_rapoarte.md, L1–L3](/case/03_rapoarte.md)\n\n**Problemele materiale**\n\n- **Ambele rapoarte acoperă o singură prelevare.** Aceasta este neîndeplinirea care împiedică autorizarea plății.\n- **A doua prelevare există, dar nu este acoperită de un raport.** PV-32 a produs recipientul C-12. Registrul complet nu indică operații sau rapoarte suplimentare la momentul evaluării; niciunul dintre cele două rapoarte disponibile nu se leagă de C-12. Problema este lipsa rezultatului aferent celei de-a doua prelevări, nu lipsa prelevării în sine. [02_trasabilitate.md, T1–T3](/case/02_trasabilitate.md)\n- **Fișele de predare nu dovedesc îndeplinirea condiției lipsă.** H1–H8 repetă aceeași sinteză despre două laboratoare, două rezultate și două coduri. H0 precizează că echipele au preluat succesiv sinteza precedentă; repetarea nu constituie confirmări independente. Fișele sunt rezumate administrative și nu certifică evenimente de prelevare. [04_predare.md, H0–H8](/case/04_predare.md); [01_contract.md, P3](/case/01_contract.md)\n\n**Decizia recomandată beneficiarului**\n\nNu se autorizează plata la momentul evaluării, nici parțial, deoarece tranșa este indivizibilă. Pentru reevaluare este necesar un raport conform, trasabil la o prelevare distinctă de PV-31 — de exemplu PV-32 — emis de un laborator diferit de cel al raportului cu care va forma perechea contractuală. Dosarul actual nu conține această probă."
+  },
+  {
+    "anonymous_id": "a284dbddd6b9e",
+    "task": "Stabilește suma autorizabilă acum pentru tranșa VL-18 și dacă documentele susțin plata. Prezintă problemele materiale și probele decisive.",
+    "documents": {
+      "01_contract.md": "# Vela — contractul de validare a lotului VL-18\n[P1] O tranșă indivizibilă de 72000 EUR se plătește dacă și numai dacă există două rapoarte conforme pentru VL-18, emise de laboratoare diferite, pe probe provenite din două evenimente distincte de prelevare. În caz contrar, suma autorizabilă acum este 0 EUR. Celelalte condiții sunt îndeplinite.\n[P2] Pentru acest contract, independența se stabilește după evenimentul de prelevare, nu după laborator, numărul raportului sau codul local al probei. Divizarea, transportul și recodificarea nu creează o nouă prelevare. Registrul de trasabilitate este complet, autorizat de responsabilul de calitate și prevalează asupra rezumatelor de predare. Nu este cerut niciun standard extern.\n[P3] Dosarul se evaluează la 12.11.2026, ora 14:00 UTC. Registrele și rapoartele sunt autentice; originalele nu conțin alte probe sau rezultate. Fișele de predare sunt rezumate administrative; nu certifică evenimente de prelevare.\n",
+      "02_trasabilitate.md": "# Registru autorizat de trasabilitate\n[T1] Prelevarea PV-31 din lotul VL-18 a produs recipientul C-11. Prelevarea PV-32 din același lot a produs recipientul C-12. Ambele prelevări au avut loc înaintea analizelor.\n[T2]\n| cod obiect | operație | provenit din |\n|---|---|---|\n| A-61 | aliquotare | C-11 |\n| A-62 | aliquotare | C-11 |\n| BX-09 | recodificare la transport | A-62 |\n| LA-21 | recepție laborator Atlas | A-61 |\n| LB-08 | recepție laborator Boreal | BX-09 |\n[T3] Nu există alte operații sau rapoarte la momentul evaluării.\n",
+      "03_rapoarte.md": "# Rapoarte de laborator\n[L1] Laboratorul Atlas, raport RA-44, lot VL-18, proba LA-21: CONFORM. Raport semnat și valabil la momentul evaluării.\n[L2] Laboratorul Boreal, raport RB-93, lot VL-18, proba LB-08: CONFORM. Raport semnat și valabil la momentul evaluării.\n[L3] Atlas și Boreal sunt persoane juridice diferite și nu au acționariat comun. Conformitatea măsurătorii din fiecare raport este certă. Problema solicitată este eligibilitatea tranșei în contractul P1.\n",
+      "04_predare.md": "# Fișe de predare între echipe\n[H0] Copii ale sintezelor administrative succesive pentru același dosar; fiecare echipă a preluat sinteza precedentă.\n[H1] Dosarul este predat pentru stabilirea eligibilității tranșei.\n"
+    },
+    "expected": {
+      "verdict": "not_payable",
+      "amount_eur": 0,
+      "findings": [
+        {
+          "id": "F1",
+          "claim": "Suma autorizabilă la momentul evaluării este 0 EUR.",
+          "evidence": [
+            "01_contract.md#P1",
+            "02_trasabilitate.md#T1",
+            "02_trasabilitate.md#T2",
+            "03_rapoarte.md#L1",
+            "03_rapoarte.md#L2"
+          ]
+        },
+        {
+          "id": "F2",
+          "claim": "Ambele rapoarte derivă din PV-31; persoane juridice și coduri distincte nu oferă două prelevări independente.",
+          "evidence": [
+            "01_contract.md#P2",
+            "02_trasabilitate.md#T1",
+            "02_trasabilitate.md#T2"
+          ]
+        }
+      ]
+    },
+    "answer": "# Raport pentru beneficiar — tranșa VL-18\n\n**Suma autorizabilă acum: 0 EUR. Documentele nu susțin plata tranșei de 72.000 EUR** la momentul evaluării, 12.11.2026, ora 14:00 UTC.\n\nAu fost examinate toate cele patru fișiere din dosar. Nu există anexe sau alte fișiere separate în director.\n\n## Condiția contractuală\n\nTranșa este indivizibilă și se plătește numai dacă există două rapoarte conforme, emise de laboratoare diferite, **pe probe provenite din două evenimente distincte de prelevare**. Dacă această condiție nu este îndeplinită, suma autorizabilă este expres stabilită la 0 EUR. Celelalte condiții sunt îndeplinite. [Contract, P1–P3](/case/01_contract.md)\n\n## Probele decisive\n\nRegistrul autorizat permite următoarea reconstituire:\n\n| Raport | Rezultat și laborator | Traseul probei, de la prelevare la laborator |\n|---|---|---|\n| RA-44 | CONFORM — Atlas | PV-31 → C-11 → A-61 → LA-21 |\n| RB-93 | CONFORM — Boreal | PV-31 → C-11 → A-62 → BX-09 → LB-08 |\n\n**Ambele rapoarte provin din aceeași prelevare, PV-31.** A-61 și A-62 sunt aliquote ale aceluiași recipient C-11; BX-09 este doar recodificarea la transport a A-62. Divizarea și recodificarea nu creează un nou eveniment de prelevare. [Registru, T1–T2](/case/02_trasabilitate.md); [Contract, P2](/case/01_contract.md)\n\nRapoartele sunt semnate, valabile și certe sub aspectul conformității măsurătorilor. Atlas și Boreal sunt persoane juridice diferite, fără acționariat comun. Aceste elemente satisfac cerințele privind rezultatele și laboratoarele, dar nu satisfac cerința privind două prelevări distincte. [Rapoarte, L1–L3](/case/03_rapoarte.md)\n\n## Probleme materiale\n\n- **Lipsește un raport conform aferent celei de-a doua prelevări.** PV-32 a produs recipientul C-12, însă registrul nu indică nicio operație ulterioară pentru acesta și niciun raport aferent. Registrul este complet, iar la momentul evaluării nu există alte operații sau rapoarte. Simpla existență a PV-32 nu îndeplinește condiția de plată. [Registru, T1–T3](/case/02_trasabilitate.md)\n- **Două coduri de probă și două laboratoare nu demonstrează independența prelevărilor.** Contractul stabilește explicit că independența se determină după evenimentul de prelevare, nu după laborator, raport sau cod local. [Contract, P2](/case/01_contract.md)\n- **Fișele de predare nu completează proba lipsă.** Ele sunt sinteze administrative succesive, iar H1 consemnează numai predarea dosarului pentru stabilirea eligibilității. Nu certifică prelevări; registrul autorizat prevalează asupra lor. [Predare, H0–H1](/case/04_predare.md); [Contract, P2–P3](/case/01_contract.md)\n\n## Concluzie pentru autorizare\n\n**Plata nu poate fi autorizată acum, nici parțial**, deoarece tranșa este indivizibilă și lipsește condiția contractuală a celor două rapoarte conforme provenite din prelevări distincte.\n\nPentru o reevaluare favorabilă ar trebui documentat un raport conform provenit dintr-o altă prelevare decât PV-31, emis de un laborator diferit de cel al raportului cu care este asociat. Dosarul actual nu conține această dovadă."
+  },
+  {
+    "anonymous_id": "a29a4b3442565",
+    "task": "Stabilește suma autorizabilă acum pentru tranșa VL-18 și dacă documentele susțin plata. Prezintă problemele materiale și probele decisive.",
+    "documents": {
+      "01_contract.md": "# Vela — contractul de validare a lotului VL-18\n[P1] O tranșă indivizibilă de 72000 EUR se plătește dacă și numai dacă există două rapoarte conforme pentru VL-18, emise de laboratoare diferite, pe probe provenite din două evenimente distincte de prelevare. În caz contrar, suma autorizabilă acum este 0 EUR. Celelalte condiții sunt îndeplinite.\n[P2] Pentru acest contract, independența se stabilește după evenimentul de prelevare, nu după laborator, numărul raportului sau codul local al probei. Divizarea, transportul și recodificarea nu creează o nouă prelevare. Registrul de trasabilitate este complet, autorizat de responsabilul de calitate și prevalează asupra rezumatelor de predare. Nu este cerut niciun standard extern.\n[P3] Dosarul se evaluează la 12.11.2026, ora 14:00 UTC. Registrele și rapoartele sunt autentice; originalele nu conțin alte probe sau rezultate. Fișele de predare sunt rezumate administrative; nu certifică evenimente de prelevare.\n",
+      "02_trasabilitate.md": "# Registru autorizat de trasabilitate\n[T1] Prelevarea PV-31 din lotul VL-18 a produs recipientul C-11. Prelevarea PV-32 din același lot a produs recipientul C-12. Ambele prelevări au avut loc înaintea analizelor.\n[T2]\n| cod obiect | operație | provenit din |\n|---|---|---|\n| A-61 | aliquotare | C-11 |\n| A-62 | aliquotare | C-11 |\n| BX-09 | recodificare la transport | A-62 |\n| LA-21 | recepție laborator Atlas | A-61 |\n| LB-08 | recepție laborator Boreal | BX-09 |\n[T3] Nu există alte operații sau rapoarte la momentul evaluării.\n",
+      "03_rapoarte.md": "# Rapoarte de laborator\n[L1] Laboratorul Atlas, raport RA-44, lot VL-18, proba LA-21: CONFORM. Raport semnat și valabil la momentul evaluării.\n[L2] Laboratorul Boreal, raport RB-93, lot VL-18, proba LB-08: CONFORM. Raport semnat și valabil la momentul evaluării.\n[L3] Atlas și Boreal sunt persoane juridice diferite și nu au acționariat comun. Conformitatea măsurătorii din fiecare raport este certă. Problema solicitată este eligibilitatea tranșei în contractul P1.\n",
+      "04_predare.md": "# Fișe de predare între echipe\n[H0] Copii ale sintezelor administrative succesive pentru același dosar; fiecare echipă a preluat sinteza precedentă.\n[H1] Dosarul este predat pentru stabilirea eligibilității tranșei.\n"
+    },
+    "expected": {
+      "verdict": "not_payable",
+      "amount_eur": 0,
+      "findings": [
+        {
+          "id": "F1",
+          "claim": "Suma autorizabilă la momentul evaluării este 0 EUR.",
+          "evidence": [
+            "01_contract.md#P1",
+            "02_trasabilitate.md#T1",
+            "02_trasabilitate.md#T2",
+            "03_rapoarte.md#L1",
+            "03_rapoarte.md#L2"
+          ]
+        },
+        {
+          "id": "F2",
+          "claim": "Ambele rapoarte derivă din PV-31; persoane juridice și coduri distincte nu oferă două prelevări independente.",
+          "evidence": [
+            "01_contract.md#P2",
+            "02_trasabilitate.md#T1",
+            "02_trasabilitate.md#T2"
+          ]
+        }
+      ]
+    },
+    "answer": "## Concluzie\n\n**Suma autorizabilă la 12.11.2026, ora 14:00 UTC, este 0 EUR. Documentele nu susțin plata tranșei VL-18.**\n\nContractul prevede o tranșă indivizibilă de **72.000 EUR**, plătibilă numai dacă există două rapoarte conforme, emise de laboratoare diferite, pe probe provenite din două evenimente distincte de prelevare. În lipsa acestei condiții, suma autorizabilă este zero. Celelalte condiții contractuale sunt îndeplinite. ([contract, P1](/case/01_contract.md:2))\n\n## Probe decisive\n\n- **Există două rapoarte conforme de la laboratoare diferite.** Atlas a emis RA-44 pentru proba LA-21, iar Boreal a emis RB-93 pentru proba LB-08. Ambele rapoarte sunt semnate și valabile, iar conformitatea măsurătorilor este certă. ([rapoarte, L1–L3](/case/03_rapoarte.md:2))\n- **Cele două probe analizate provin însă din aceeași prelevare, PV-31.** Registrul urmărește LA-21 prin A-61 până la recipientul C-11, iar LB-08 prin BX-09 și A-62 până la același recipient C-11. Acesta provine din PV-31. ([registru, T1–T2](/case/02_trasabilitate.md:2))\n- **A doua prelevare, PV-32, există, dar nu susține niciunul dintre cele două rapoarte.** Ea a produs recipientul C-12; registrul nu consemnează alte operații sau rapoarte la momentul evaluării. ([registru, T1–T3](/case/02_trasabilitate.md:2))\n\nContractul stabilește expres că independența se apreciază după **evenimentul de prelevare**: divizarea, transportul și recodificarea nu creează o prelevare nouă. Prin urmare, codurile diferite ale probelor și folosirea a două laboratoare nu acoperă lipsa celui de-al doilea raport bazat pe o prelevare distinctă. Registrul autorizat prevalează asupra fișelor de predare, care sunt rezumate administrative. ([contract, P2–P3](/case/01_contract.md:3); [fișe de predare](/case/04_predare.md:2))\n\nPentru îndeplinirea condiției lipsă ar fi necesar un raport conform de la un laborator diferit de cel al raportului cu care este asociat, pe o probă trasabilă la un alt eveniment de prelevare, cum este PV-32."
+  },
+  {
+    "anonymous_id": "aac57acf32667",
+    "task": "Stabilește suma autorizabilă acum pentru tranșa VL-18 și dacă documentele susțin plata. Prezintă problemele materiale și probele decisive.",
+    "documents": {
+      "01_contract.md": "# Vela — contractul de validare a lotului VL-18\n[P1] O tranșă indivizibilă de 72000 EUR se plătește dacă și numai dacă există două rapoarte conforme pentru VL-18, emise de laboratoare diferite, pe probe provenite din două evenimente distincte de prelevare. În caz contrar, suma autorizabilă acum este 0 EUR. Celelalte condiții sunt îndeplinite.\n[P2] Pentru acest contract, independența se stabilește după evenimentul de prelevare, nu după laborator, numărul raportului sau codul local al probei. Divizarea, transportul și recodificarea nu creează o nouă prelevare. Registrul de trasabilitate este complet, autorizat de responsabilul de calitate și prevalează asupra rezumatelor de predare. Nu este cerut niciun standard extern.\n[P3] Dosarul se evaluează la 12.11.2026, ora 14:00 UTC. Registrele și rapoartele sunt autentice; originalele nu conțin alte probe sau rezultate. Fișele de predare sunt rezumate administrative; nu certifică evenimente de prelevare.\n",
+      "02_trasabilitate.md": "# Registru autorizat de trasabilitate\n[T1] Prelevarea PV-31 din lotul VL-18 a produs recipientul C-11. Prelevarea PV-32 din același lot a produs recipientul C-12. Ambele prelevări au avut loc înaintea analizelor.\n[T2]\n| cod obiect | operație | provenit din |\n|---|---|---|\n| A-61 | aliquotare | C-11 |\n| A-62 | aliquotare | C-12 |\n| BX-09 | recodificare la transport | A-62 |\n| LA-21 | recepție laborator Atlas | A-61 |\n| LB-08 | recepție laborator Boreal | BX-09 |\n[T3] Nu există alte operații sau rapoarte la momentul evaluării.\n",
+      "03_rapoarte.md": "# Rapoarte de laborator\n[L1] Laboratorul Atlas, raport RA-44, lot VL-18, proba LA-21: CONFORM. Raport semnat și valabil la momentul evaluării.\n[L2] Laboratorul Boreal, raport RB-93, lot VL-18, proba LB-08: CONFORM. Raport semnat și valabil la momentul evaluării.\n[L3] Atlas și Boreal sunt persoane juridice diferite și nu au acționariat comun. Conformitatea măsurătorii din fiecare raport este certă. Problema solicitată este eligibilitatea tranșei în contractul P1.\n",
+      "04_predare.md": "# Fișe de predare între echipe\n[H0] Copii ale sintezelor administrative succesive pentru același dosar; fiecare echipă a preluat sinteza precedentă.\n[H1] Dosarul este predat pentru stabilirea eligibilității tranșei.\n"
+    },
+    "expected": {
+      "verdict": "payable",
+      "amount_eur": 72000,
+      "findings": [
+        {
+          "id": "F1",
+          "claim": "Suma autorizabilă la momentul evaluării este 72000 EUR.",
+          "evidence": [
+            "01_contract.md#P1",
+            "02_trasabilitate.md#T1",
+            "02_trasabilitate.md#T2",
+            "03_rapoarte.md#L1",
+            "03_rapoarte.md#L2"
+          ]
+        },
+        {
+          "id": "F2",
+          "claim": "Rapoartele derivă din PV-31 și PV-32, două evenimente distincte.",
+          "evidence": [
+            "01_contract.md#P2",
+            "02_trasabilitate.md#T1",
+            "02_trasabilitate.md#T2"
+          ]
+        }
+      ]
+    },
+    "answer": "# Raport pentru beneficiar — tranșa VL-18\n\n**Suma autorizabilă acum: 72.000 EUR, integral. Documentele susțin plata.** La momentul contractual al evaluării, **12.11.2026, ora 14:00 UTC**, sunt îndeplinite condițiile de eligibilitate prevăzute la P1.\n\nAu fost citite toate cele patru documente din director. Nu există anexe sau alte fișiere separate în dosarul disponibil.\n\n## Probe decisive\n\nContractul impune două rapoarte conforme pentru VL-18, emise de laboratoare diferite, pe probe provenite din **două evenimente distincte de prelevare**. Tranșa este indivizibilă, iar celelalte condiții sunt declarate îndeplinite. [Contract, P1](/case/01_contract.md)\n\nRegistrul autorizat și rapoartele stabilesc următoarele lanțuri de proveniență:\n\n| Raport | Laborator | Trasabilitate, de la prelevare la proba analizată | Rezultat și valabilitate |\n|---|---|---|---|\n| RA-44 | Atlas | **PV-31 → C-11 → A-61 → LA-21** | CONFORM; semnat și valabil |\n| RB-93 | Boreal | **PV-32 → C-12 → A-62 → BX-09 → LB-08** | CONFORM; semnat și valabil |\n\nLanțurile rezultă din [registrul de trasabilitate, T1–T2](/case/02_trasabilitate.md), iar rezultatele, identificarea lotului și valabilitatea din [rapoartele de laborator, L1–L2](/case/03_rapoarte.md). Atlas și Boreal sunt persoane juridice diferite, fără acționariat comun; conformitatea măsurătorilor este certă. [L3](/case/03_rapoarte.md)\n\n## Aspecte materiale și evaluarea lor\n\n- **Independența prelevărilor este demonstrată.** RA-44 provine din PV-31, iar RB-93 din PV-32. Acesta este criteriul contractual decisiv; simpla existență a două laboratoare sau a două coduri de probă nu ar fi fost suficientă. [P2](/case/01_contract.md), [T1–T2](/case/02_trasabilitate.md)\n- **Recodificarea BX-09 nu întrerupe trasabilitatea și nu reprezintă o prelevare nouă.** Este o recodificare la transport a A-62, provenită din C-12/PV-32. Prin urmare, al doilea raport rămâne legat de un eveniment distinct de cel aferent primului raport. [T2](/case/02_trasabilitate.md)\n- **Fișele de predare nu certifică prelevările.** Ele sunt rezumate administrative succesive și nu constituie probe suplimentare de independență. Registrul autorizat prevalează asupra lor. În dosar nu apare o contradicție materială care să afecteze eligibilitatea. [P2–P3](/case/01_contract.md), [H0–H1](/case/04_predare.md)\n\n## Concluzie\n\n**Se justifică autorizarea plății integrale de 72.000 EUR pentru VL-18.** Cele două rapoarte conforme și valabile provin de la laboratoare diferite și sunt legate documentar de prelevările distincte PV-31 și PV-32. Nu rezultă din dosar un impediment material la plată și nu este necesar un standard extern pentru această evaluare contractuală."
+  },
+  {
+    "anonymous_id": "ad92bf4294e65",
+    "task": "Stabilește suma autorizabilă acum pentru tranșa VL-18 și dacă documentele susțin plata. Prezintă problemele materiale și probele decisive.",
+    "documents": {
+      "01_contract.md": "# Vela — contractul de validare a lotului VL-18\n[P1] O tranșă indivizibilă de 72000 EUR se plătește dacă și numai dacă există două rapoarte conforme pentru VL-18, emise de laboratoare diferite, pe probe provenite din două evenimente distincte de prelevare. În caz contrar, suma autorizabilă acum este 0 EUR. Celelalte condiții sunt îndeplinite.\n[P2] Pentru acest contract, independența se stabilește după evenimentul de prelevare, nu după laborator, numărul raportului sau codul local al probei. Divizarea, transportul și recodificarea nu creează o nouă prelevare. Registrul de trasabilitate este complet, autorizat de responsabilul de calitate și prevalează asupra rezumatelor de predare. Nu este cerut niciun standard extern.\n[P3] Dosarul se evaluează la 12.11.2026, ora 14:00 UTC. Registrele și rapoartele sunt autentice; originalele nu conțin alte probe sau rezultate. Fișele de predare sunt rezumate administrative; nu certifică evenimente de prelevare.\n",
+      "02_trasabilitate.md": "# Registru autorizat de trasabilitate\n[T1] Prelevarea PV-31 din lotul VL-18 a produs recipientul C-11. Prelevarea PV-32 din același lot a produs recipientul C-12. Ambele prelevări au avut loc înaintea analizelor.\n[T2]\n| cod obiect | operație | provenit din |\n|---|---|---|\n| A-61 | aliquotare | C-11 |\n| A-62 | aliquotare | C-11 |\n| BX-09 | recodificare la transport | A-62 |\n| LA-21 | recepție laborator Atlas | A-61 |\n| LB-08 | recepție laborator Boreal | BX-09 |\n[T3] Nu există alte operații sau rapoarte la momentul evaluării.\n",
+      "03_rapoarte.md": "# Rapoarte de laborator\n[L1] Laboratorul Atlas, raport RA-44, lot VL-18, proba LA-21: CONFORM. Raport semnat și valabil la momentul evaluării.\n[L2] Laboratorul Boreal, raport RB-93, lot VL-18, proba LB-08: CONFORM. Raport semnat și valabil la momentul evaluării.\n[L3] Atlas și Boreal sunt persoane juridice diferite și nu au acționariat comun. Conformitatea măsurătorii din fiecare raport este certă. Problema solicitată este eligibilitatea tranșei în contractul P1.\n",
+      "04_predare.md": "# Fișe de predare între echipe\n[H0] Copii ale sintezelor administrative succesive pentru același dosar; fiecare echipă a preluat sinteza precedentă.\n[H1] recepție: Două laboratoare distincte, două rezultate conforme, două coduri documentate. Trasabilitatea contractuală este disponibilă. Tranșa solicitată prin contract: 72000 EUR.\n[H2] control documentar: Două laboratoare distincte, două rezultate conforme, două coduri documentate. Trasabilitatea contractuală este disponibilă. Tranșa solicitată prin contract: 72000 EUR.\n[H3] coordonare lot: Două laboratoare distincte, două rezultate conforme, două coduri documentate. Trasabilitatea contractuală este disponibilă. Tranșa solicitată prin contract: 72000 EUR.\n[H4] finanțe: Două laboratoare distincte, două rezultate conforme, două coduri documentate. Trasabilitatea contractuală este disponibilă. Tranșa solicitată prin contract: 72000 EUR.\n[H5] achiziții: Două laboratoare distincte, două rezultate conforme, două coduri documentate. Trasabilitatea contractuală este disponibilă. Tranșa solicitată prin contract: 72000 EUR.\n[H6] proiect: Două laboratoare distincte, două rezultate conforme, două coduri documentate. Trasabilitatea contractuală este disponibilă. Tranșa solicitată prin contract: 72000 EUR.\n[H7] operațiuni: Două laboratoare distincte, două rezultate conforme, două coduri documentate. Trasabilitatea contractuală este disponibilă. Tranșa solicitată prin contract: 72000 EUR.\n[H8] comitet: Două laboratoare distincte, două rezultate conforme, două coduri documentate. Trasabilitatea contractuală este disponibilă. Tranșa solicitată prin contract: 72000 EUR.\n"
+    },
+    "expected": {
+      "verdict": "not_payable",
+      "amount_eur": 0,
+      "findings": [
+        {
+          "id": "F1",
+          "claim": "Suma autorizabilă la momentul evaluării este 0 EUR.",
+          "evidence": [
+            "01_contract.md#P1",
+            "02_trasabilitate.md#T1",
+            "02_trasabilitate.md#T2",
+            "03_rapoarte.md#L1",
+            "03_rapoarte.md#L2"
+          ]
+        },
+        {
+          "id": "F2",
+          "claim": "Ambele rapoarte derivă din PV-31; persoane juridice și coduri distincte nu oferă două prelevări independente.",
+          "evidence": [
+            "01_contract.md#P2",
+            "02_trasabilitate.md#T1",
+            "02_trasabilitate.md#T2"
+          ]
+        }
+      ]
+    },
+    "answer": "# Raport pentru beneficiar — tranșa VL-18\n\n**Suma autorizabilă la 12.11.2026, ora 14:00 UTC este 0 EUR.** Documentele disponibile nu susțin plata tranșei indivizibile de **72.000 EUR**: cele două rapoarte conforme provin de la laboratoare diferite, dar probele analizate provin din același eveniment de prelevare.\n\nContractul cere cumulativ două rapoarte conforme, emise de laboratoare diferite, pe probe provenite din **două evenimente distincte de prelevare**. Dacă această condiție nu este îndeplinită, contractul stabilește expres suma autorizabilă la zero. Celelalte condiții sunt considerate îndeplinite. ([Contract, P1](/case/01_contract.md:2))\n\n## Probele decisive\n\n| Raport | Rezultat | Traseul probei în registrul autorizat | Prelevare |\n|---|---|---|---|\n| Atlas RA-44 | Conform | LA-21 ← A-61 ← C-11 | PV-31 |\n| Boreal RB-93 | Conform | LB-08 ← BX-09 ← A-62 ← C-11 | PV-31 |\n\nAmbele rapoarte sunt semnate și valabile, iar Atlas și Boreal sunt laboratoare distincte. Conformitatea măsurătorilor este certă. ([Rapoarte, L1–L3](/case/03_rapoarte.md:2))\n\nRegistrul arată însă că A-61 și A-62 sunt aliquote din același recipient C-11, produs de prelevarea PV-31. Codul BX-09 rezultă din recodificarea la transport a A-62; nu reprezintă o nouă prelevare. ([Trasabilitate, T1–T2](/case/02_trasabilitate.md:2))\n\nA existat și o a doua prelevare, **PV-32**, care a produs recipientul C-12. Dosarul nu conține însă un raport pentru o probă provenită din C-12: registrul precizează că nu există alte operații sau rapoarte la momentul evaluării. ([Trasabilitate, T1 și T3](/case/02_trasabilitate.md:2))\n\n## Problema materială din fișele de predare\n\nFișele menționează corect două laboratoare, două rezultate conforme și două coduri documentate, dar aceste elemente nu demonstrează două prelevări distincte. Repetarea aceleiași sinteze de către echipe nu adaugă dovezi independente: fiecare echipă a preluat sinteza precedentă. ([Fișe de predare, H0–H8](/case/04_predare.md:2))\n\nContractul stabilește că independența se verifică după evenimentul de prelevare și că registrul autorizat prevalează asupra rezumatelor de predare. ([Contract, P2–P3](/case/01_contract.md:3)) Prin urmare, plata nu poate fi autorizată pe baza dosarului actual. Pentru îndeplinirea condiției contractuale ar fi necesar un al doilea raport conform, de la un laborator diferit de cel al raportului cu care este asociat, pentru o probă documentată ca provenind dintr-o prelevare distinctă."
+  },
+  {
+    "anonymous_id": "a137620137f30",
+    "task": "Stabilește suma autorizabilă acum pentru tranșa VL-18 și dacă documentele susțin plata. Prezintă problemele materiale și probele decisive.",
+    "documents": {
+      "01_contract.md": "# Vela — contractul de validare a lotului VL-18\n[P1] O tranșă indivizibilă de 72000 EUR se plătește dacă și numai dacă există două rapoarte conforme pentru VL-18, emise de laboratoare diferite, pe probe provenite din două evenimente distincte de prelevare. În caz contrar, suma autorizabilă acum este 0 EUR. Celelalte condiții sunt îndeplinite.\n[P2] Pentru acest contract, independența se stabilește după evenimentul de prelevare, nu după laborator, numărul raportului sau codul local al probei. Divizarea, transportul și recodificarea nu creează o nouă prelevare. Registrul de trasabilitate este complet, autorizat de responsabilul de calitate și prevalează asupra rezumatelor de predare. Nu este cerut niciun standard extern.\n[P3] Dosarul se evaluează la 12.11.2026, ora 14:00 UTC. Registrele și rapoartele sunt autentice; originalele nu conțin alte probe sau rezultate. Fișele de predare sunt rezumate administrative; nu certifică evenimente de prelevare.\n",
+      "02_trasabilitate.md": "# Registru autorizat de trasabilitate\n[T1] Prelevarea PV-31 din lotul VL-18 a produs recipientul C-11. Prelevarea PV-32 din același lot a produs recipientul C-12. Ambele prelevări au avut loc înaintea analizelor.\n[T2]\n| cod obiect | operație | provenit din |\n|---|---|---|\n| A-61 | aliquotare | C-11 |\n| A-62 | aliquotare | C-12 |\n| BX-09 | recodificare la transport | A-62 |\n| LA-21 | recepție laborator Atlas | A-61 |\n| LB-08 | recepție laborator Boreal | BX-09 |\n[T3] Nu există alte operații sau rapoarte la momentul evaluării.\n",
+      "03_rapoarte.md": "# Rapoarte de laborator\n[L1] Laboratorul Atlas, raport RA-44, lot VL-18, proba LA-21: CONFORM. Raport semnat și valabil la momentul evaluării.\n[L2] Laboratorul Boreal, raport RB-93, lot VL-18, proba LB-08: CONFORM. Raport semnat și valabil la momentul evaluării.\n[L3] Atlas și Boreal sunt persoane juridice diferite și nu au acționariat comun. Conformitatea măsurătorii din fiecare raport este certă. Problema solicitată este eligibilitatea tranșei în contractul P1.\n",
+      "04_predare.md": "# Fișe de predare între echipe\n[H0] Copii ale sintezelor administrative succesive pentru același dosar; fiecare echipă a preluat sinteza precedentă.\n[H1] Dosarul este predat pentru stabilirea eligibilității tranșei.\n"
+    },
+    "expected": {
+      "verdict": "payable",
+      "amount_eur": 72000,
+      "findings": [
+        {
+          "id": "F1",
+          "claim": "Suma autorizabilă la momentul evaluării este 72000 EUR.",
+          "evidence": [
+            "01_contract.md#P1",
+            "02_trasabilitate.md#T1",
+            "02_trasabilitate.md#T2",
+            "03_rapoarte.md#L1",
+            "03_rapoarte.md#L2"
+          ]
+        },
+        {
+          "id": "F2",
+          "claim": "Rapoartele derivă din PV-31 și PV-32, două evenimente distincte.",
+          "evidence": [
+            "01_contract.md#P2",
+            "02_trasabilitate.md#T1",
+            "02_trasabilitate.md#T2"
+          ]
+        }
+      ]
+    },
+    "answer": "# Raport pentru beneficiar — tranșa VL-18\n\n**Suma autorizabilă la 12.11.2026, ora 14:00 UTC este de 72.000 EUR. Documentele susțin plata integrală a tranșei.**\n\nContractul prevede o tranșă indivizibilă de 72.000 EUR, plătibilă dacă există două rapoarte conforme pentru VL-18, emise de laboratoare diferite, pe probe provenite din două evenimente distincte de prelevare. Celelalte condiții sunt declarate îndeplinite. [Contract, P1](/case/01_contract.md)\n\nCele două rapoarte sunt conforme, semnate și valabile la momentul evaluării: Atlas a emis RA-44 pentru proba LA-21, iar Boreal a emis RB-93 pentru proba LB-08. Laboratoarele sunt persoane juridice diferite, fără acționariat comun, iar conformitatea măsurătorilor este certă. [Rapoarte, L1–L3](/case/03_rapoarte.md)\n\nProblema materială este dacă probele provin din **prelevări distincte**. Registrul autorizat stabilește următoarele trasee:\n\n- **LA-21:** PV-31 → C-11 → A-61 → LA-21.\n- **LB-08:** PV-32 → C-12 → A-62 → BX-09 → LB-08.\n\nRegistrul identifică PV-31 și PV-32 ca prelevări separate din VL-18, ambele anterioare analizelor. Recodificarea A-62 în BX-09 a avut loc la transport; ea nu constituie o prelevare nouă. Distincția decisivă este însă între PV-31 și PV-32, astfel că cerința contractuală este îndeplinită. [Registru, T1–T3](/case/02_trasabilitate.md); [Contract, P2](/case/01_contract.md)\n\nFișele de predare sunt rezumate administrative și nu certifică evenimentele de prelevare. Contractul acordă prioritate registrului de trasabilitate, care este declarat complet și autorizat; prin urmare, concluzia se sprijină pe registru și pe rapoartele de laborator. [Contract, P2–P3](/case/01_contract.md); [Fișe de predare, H0–H1](/case/04_predare.md)"
+  }
+]

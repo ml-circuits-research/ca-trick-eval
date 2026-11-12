@@ -1,0 +1,123 @@
+{
+  "primary_score_sha256": "3e4c742188cb6b59fd336860fad0797b16a6a51c6e40bed29159ca4500e423a9",
+  "supplementary_score_sha256": "d67721fa374f65b7023edd6dc6686c97815814d856c7c64d996a2d24bd0730fc",
+  "not_used_to_select_or_replace_primary_scores": true,
+  "comparisons": [
+    {
+      "case_id": "d199566",
+      "run_id": "pdf-confirm-b",
+      "classification_agrees": true,
+      "amount_agrees": true,
+      "usable_wrong_agrees": true,
+      "findings_agree": false,
+      "primary_findings": {
+        "F1": "miss",
+        "F2": "partial"
+      },
+      "supplementary_findings": {
+        "F1": "miss",
+        "F2": "miss"
+      }
+    },
+    {
+      "case_id": "d734398",
+      "run_id": "pdf-confirm-b",
+      "classification_agrees": true,
+      "amount_agrees": true,
+      "usable_wrong_agrees": true,
+      "findings_agree": true,
+      "primary_findings": {
+        "F1": "fail",
+        "F2": "fail",
+        "F3": "miss"
+      },
+      "supplementary_findings": {
+        "F1": "fail",
+        "F2": "fail",
+        "F3": "miss"
+      }
+    },
+    {
+      "case_id": "d938665",
+      "run_id": "pdf-confirm-b",
+      "classification_agrees": true,
+      "amount_agrees": true,
+      "usable_wrong_agrees": true,
+      "findings_agree": true,
+      "primary_findings": {
+        "F1": "pass",
+        "F2": "pass"
+      },
+      "supplementary_findings": {
+        "F1": "pass",
+        "F2": "pass"
+      }
+    },
+    {
+      "case_id": "d301701",
+      "run_id": "pdf-confirm-b",
+      "classification_agrees": true,
+      "amount_agrees": true,
+      "usable_wrong_agrees": true,
+      "findings_agree": true,
+      "primary_findings": {
+        "F1": "fail",
+        "F2": "fail",
+        "F3": "miss"
+      },
+      "supplementary_findings": {
+        "F1": "fail",
+        "F2": "fail",
+        "F3": "miss"
+      }
+    },
+    {
+      "case_id": "d853044",
+      "run_id": "pdf-confirm-b",
+      "classification_agrees": true,
+      "amount_agrees": true,
+      "usable_wrong_agrees": true,
+      "findings_agree": true,
+      "primary_findings": {
+        "F1": "pass",
+        "F2": "partial"
+      },
+      "supplementary_findings": {
+        "F1": "pass",
+        "F2": "partial"
+      }
+    },
+    {
+      "case_id": "d126574",
+      "run_id": "pdf-confirm-b",
+      "classification_agrees": true,
+      "amount_agrees": true,
+      "usable_wrong_agrees": true,
+      "findings_agree": true,
+      "primary_findings": {
+        "F1": "pass",
+        "F2": "partial"
+      },
+      "supplementary_findings": {
+        "F1": "pass",
+        "F2": "partial"
+      }
+    },
+    {
+      "case_id": "d269317",
+      "run_id": "pdf-confirm-b",
+      "classification_agrees": true,
+      "amount_agrees": true,
+      "usable_wrong_agrees": true,
+      "findings_agree": true,
+      "primary_findings": {
+        "F1": "pass",
+        "F2": "pass"
+      },
+      "supplementary_findings": {
+        "F1": "pass",
+        "F2": "pass"
+      }
+    }
+  ]
+}

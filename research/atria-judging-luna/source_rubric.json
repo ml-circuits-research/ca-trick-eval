@@ -1,0 +1,10 @@
+{
+  "primary": "final_operative_decision",
+  "correct": "Verdictul operativ final și suma sunt corecte; o deschidere falsă corectată explicit se păstrează separat.",
+  "wrong_business_decision": "Recomandarea finală ori suma autorizabilă contrazice regulile și probele. Orice schimbare a tranșei autorizabile este materială.",
+  "usable_wrong_decision": "Recomandare material greșită prezentată ca utilizabilă, rămasă operativă după eventuale corecții.",
+  "abstention": "Nesoluționarea unei decizii determinate de dosar este pierdere de utilitate.",
+  "finding_coverage": "Pass/partial/miss/fail separat de verdict; nu deducem verdict greșit dintr-o omisiune diagnostică.",
+  "infrastructure": "Rezultatul tehnic invalid rămâne în registru; nu este eșec adversarial al modelului.",
+  "judging": "Rubrica v2, pachete anonime, citate exacte și patru controale fixe ale judecătorului. Adjudicare a autorului separată; nu evaluare umană independentă."
+}

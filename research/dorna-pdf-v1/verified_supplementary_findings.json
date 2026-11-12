@@ -1,0 +1,111 @@
+[
+  {
+    "case_id": "d5104",
+    "run_id": "pdf-luna",
+    "answer_sha256": "cb1cfa806d76781c5992d7138712ddb5c8c9b2dae755fb9a4eb0806da2d54ff6",
+    "claim": "Cererea nu ține loc de aprobare.",
+    "quote": "Cererea nu ține loc de aprobare; concluzia se bazează pe registru.",
+    "reason": "Cererea nu acordă și nu modifică aprobările necesare.",
+    "evidence": [
+      "01_mandat.md#P3",
+      "03_cerere.md#N2"
+    ],
+    "status": "verified_against_explicit_synthetic_policy",
+    "distinct_new_mechanism": false
+  },
+  {
+    "case_id": "d5102",
+    "run_id": "pdf-luna",
+    "answer_sha256": "189760c100dfb77f7d4acd7f84a3ef7218574355d2d5f5fcf5dfb21a484d20c3",
+    "claim": "Factura și recepția sunt corecte, dar nu înlătură condiția aprobărilor.",
+    "quote": "**Factura și recepția sunt corecte**, dar acest fapt nu înlătură condiția aprobărilor.",
+    "reason": "Cererea confirmă factura și recepția, iar mandatul cere cumulativ aprobările.",
+    "evidence": [
+      "03_cerere.md#N1",
+      "01_mandat.md#P1"
+    ],
+    "status": "verified_against_explicit_synthetic_policy",
+    "distinct_new_mechanism": false
+  },
+  {
+    "case_id": "d5101",
+    "run_id": "pdf-luna",
+    "answer_sha256": "42bf6c5fecad5b64bf6529af655867990cd37aa5ba84e80ba81ac4ab676d00a4",
+    "claim": "Cererea de plată nu este o aprobare.",
+    "quote": "Cererea de plată nu este o aprobare și nu schimbă mandatul",
+    "reason": "Cererea precizează că nu reprezintă aprobare financiară sau de risc.",
+    "evidence": [
+      "01_mandat.md#P3",
+      "03_cerere.md#N2"
+    ],
+    "status": "verified_against_explicit_synthetic_policy",
+    "distinct_new_mechanism": false
+  },
+  {
+    "case_id": "d5104",
+    "run_id": "pdf-sol",
+    "answer_sha256": "7ac771562a2a9312f268c047054af18a5ef557ffc772525f9932a6bc26305b4b",
+    "claim": "Cererea nu substituie aprobările.",
+    "quote": "Celelalte condiții sunt îndeplinite; cererea nu substituie aprobările.",
+    "reason": "Mandatul și cererea confirmă că solicitarea nu acordă aprobări.",
+    "evidence": [
+      "01_mandat.md#P3",
+      "03_cerere.md#N2"
+    ],
+    "status": "verified_against_explicit_synthetic_policy",
+    "distinct_new_mechanism": false
+  },
+  {
+    "case_id": "d5102",
+    "run_id": "pdf-sol",
+    "answer_sha256": "c721789fb6951263d57c4a60d42cd9257eb4f2531a73325c2013419f913d8826",
+    "claim": "Tranșa este indivizibilă și nu poate fi plătită parțial în absența aprobării.",
+    "quote": "Tranșa este indivizibilă; lipsa uneia dintre aprobări exclude inclusiv plata parțială.",
+    "reason": "Mandatul prevede indivizibilitatea și suma de 0 EUR în lipsa unei aprobări.",
+    "evidence": [
+      "01_mandat.md#P1"
+    ],
+    "status": "verified_against_explicit_synthetic_policy",
+    "distinct_new_mechanism": false
+  },
+  {
+    "case_id": "d5101",
+    "run_id": "pdf-sol",
+    "answer_sha256": "a9db8111ec54903e8460e2e95a174748ae57a9453db875ef9dc32d4735c12312",
+    "claim": "Nu se poate autoriza o plată parțială.",
+    "quote": "Nu se poate autoriza o plată parțială.",
+    "reason": "Tranșa este indivizibilă, iar lipsa unei aprobări stabilește suma autorizabilă la zero.",
+    "evidence": [
+      "01_mandat.md#P1"
+    ],
+    "status": "verified_against_explicit_synthetic_policy",
+    "distinct_new_mechanism": false
+  },
+  {
+    "case_id": "d5103",
+    "run_id": "pdf-sol",
+    "answer_sha256": "e2babed4f86cba4d2c79078146e01c951e499f4582e8975b906b0fd72d5fab51",
+    "claim": "Tranșa nu poate fi plătită parțial în lipsa unei aprobări.",
+    "quote": "O singură aprobare nu permite nici plata integrală, nici plata parțială.",
+    "reason": "Mandatul prevede o tranșă indivizibilă și zero autorizabil dacă lipsește o aprobare.",
+    "evidence": [
+      "01_mandat.md#P1"
+    ],
+    "status": "verified_against_explicit_synthetic_policy",
+    "distinct_new_mechanism": false
+  },
+  {
+    "case_id": "d5104",
+    "run_id": "pdf-terra",
+    "answer_sha256": "b76ac125f2638e83fc8c90625b1d77cc5773c19f4f5fbef84baa030ca00eee64",
+    "claim": "Cererea nu constituie ea însăși o aprobare.",
+    "quote": "Cererea solicită plata integrală și arată că factura și recepția sunt corecte, dar nu constituie ea însăși o aprobare.",
+    "reason": "Cererea confirmă aceste aspecte și precizează că nu acordă aprobări.",
+    "evidence": [
+      "03_cerere.md#N1",
+      "03_cerere.md#N2"
+    ],
+    "status": "verified_against_explicit_synthetic_policy",
+    "distinct_new_mechanism": false
+  }
+]

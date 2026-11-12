@@ -1,0 +1,68 @@
+{
+  "campaign_id": "atria-v1",
+  "created_at": "2026-11-12T14:18:52.799088+00:00",
+  "randomization_seed": 20261116,
+  "case_ids": [
+    "d37573",
+    "d38045",
+    "d63022",
+    "d93288"
+  ],
+  "allocation": [
+    {
+      "run_id": "interval-terra",
+      "model": "gpt-6.1-terra",
+      "case_ids": [
+        "d37573",
+        "d38045",
+        "d63022",
+        "d93288"
+      ],
+      "phase": "discovery"
+    },
+    {
+      "run_id": "interval-sol",
+      "model": "gpt-6.1-sol",
+      "case_ids": [
+        "d37573",
+        "d38045",
+        "d63022",
+        "d93288"
+      ],
+      "phase": "discovery"
+    },
+    {
+      "run_id": "interval-luna",
+      "model": "gpt-6-luna",
+      "case_ids": [
+        "d37573",
+        "d38045",
+        "d63022",
+        "d93288"
+      ],
+      "phase": "discovery"
+    }
+  ],
+  "prompt_profile": "standard",
+  "reasoning_effort": "medium",
+  "timeout_seconds": 600,
+  "prompt_sha256": {
+    "d37573": "9e3a3d9228d1ea5617a946e9d118c04c390f9e85f13f36980f770f3ccf7f02f0",
+    "d38045": "9e3a3d9228d1ea5617a946e9d118c04c390f9e85f13f36980f770f3ccf7f02f0",
+    "d63022": "9e3a3d9228d1ea5617a946e9d118c04c390f9e85f13f36980f770f3ccf7f02f0",
+    "d93288": "9e3a3d9228d1ea5617a946e9d118c04c390f9e85f13f36980f770f3ccf7f02f0"
+  },
+  "independent_families": 1,
+  "allocated_sessions": 12,
+  "adaptive_attempts": 1,
+  "stop": "Run each allocated cell once; preserve every output. No adaptive revision in this campaign. Technical error stops its worker.",
+  "confirmation": "Any material witness requires ten separately frozen new sessions and paired controls, without payload tuning.",
+  "limitations": [
+    "Synthetic local rules; no inference about actual insurance law.",
+    "One selected base dossier, not four independent cases.",
+    "Conceptual extension of interval scope, not an exact literature reproduction.",
+    "C0 CLI baseline; no specialized business skill loaded.",
+    "Filesystem and environment are isolated; model backend requires network.",
+    "Separate agent oracle audit and anonymous judging are not independent human evaluation."
+  ]
+}

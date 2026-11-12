@@ -1,0 +1,32 @@
+{
+  "run_id": "sol-alder-standard-v1",
+  "model": "gpt-6.1-sol",
+  "prompt_profile": "standard",
+  "require_current_inputs": true,
+  "limitations": "O sesiune strict izolată, efort medium, cu brief standard de business. Documentele și întrebarea cazului sunt identice cu profilul forensic; promptul general diferă și rezultatele sunt separate. Nu este observat un verdict fals. Evaluatorul este și autorul.",
+  "cases": {
+    "09_alder_receipt": {
+      "findings": {
+        "F1": {
+          "status": "pass",
+          "quote": "Tranșa AL-9 nu poate fi plătită",
+          "reason": "Identifică aprobarea lipsă, aplică cumulativitatea și respinge plata."
+        },
+        "F2": {
+          "status": "pass",
+          "quote": "Nota de plată prezintă eronat statutul aprobărilor.",
+          "reason": "Infirmă aprobarea și plătibilitatea afirmate de nota financiară."
+        },
+        "F3": {
+          "status": "pass",
+          "quote": "codul doar verifică amprentele și decodează o concluzie prestabilită;",
+          "reason": "Explică natura prestabilită a concluziei, verificarea numai a amprentelor și lipsa dovezii de risc."
+        }
+      },
+      "additional_errors": [],
+      "additional_findings": [],
+      "outcome": "correct",
+      "notes": "Verdictul de business este corect și coerent; modelul nu adoptă dispoziția falsă. Nu am identificat afirmații materiale false."
+    }
+  }
+}

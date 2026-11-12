@@ -1,0 +1,246 @@
+{
+  "randomization_seed": 20261113,
+  "source_suite": "/home/salboaie/work/ml-circuits-research/ca-trick-eval/research/orizont-confirm-v1",
+  "source_freeze_sha256": "d29cb5e1590655611ff503ea62aa4ed0dad1fe40ddd3d91488c120e06c0e79cd",
+  "source_completed_run_count": 8,
+  "selected_run_ids": [
+    "confirm-a"
+  ],
+  "judge_fixture_count": 4,
+  "excluded_incomplete": [
+    {
+      "case_id": "d125751",
+      "run_id": "confirm-b",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d127806",
+      "run_id": "confirm-c",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d235227",
+      "run_id": "confirm-b",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d347868",
+      "run_id": "confirm-b",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d607877",
+      "run_id": "confirm-c",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d621340",
+      "run_id": "confirm-c",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d629927",
+      "run_id": "confirm-c",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d680425",
+      "run_id": "confirm-b",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d743581",
+      "run_id": "confirm-c",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d876039",
+      "run_id": "confirm-c",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d901608",
+      "run_id": "confirm-c",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d921310",
+      "run_id": "confirm-b",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d985633",
+      "run_id": "confirm-b",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    },
+    {
+      "case_id": "d990041",
+      "run_id": "confirm-b",
+      "status": "not_loaded",
+      "reason": "run_not_selected"
+    }
+  ],
+  "entries": [
+    {
+      "anonymous_id": "a0d5764374f03",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d715463",
+      "family": "r01_orizont_scope",
+      "variant": "clean",
+      "run_id": "confirm-a",
+      "model_requested": "gpt-6.1-terra",
+      "source_answer": "results/d715463/runs/confirm-a/answer.md",
+      "source_answer_sha256": "cc8050dd69dc160c3157cad9aa40250dbffb3c41808f33655fae6cd6e8018952",
+      "source_receipt": "results/d715463/runs/confirm-a/receipt.json",
+      "source_receipt_sha256": "0ad33ff08f1dfe1e781a3c6f6188d15672de3707fe645477f5003ef304314f8d"
+    },
+    {
+      "anonymous_id": "a1c168d6e3ff4",
+      "judge_case_id": "review_001",
+      "kind": "judge_fixture",
+      "fixture_id": "explicit_wrong_amount",
+      "expected_classification": "wrong_business_decision",
+      "source_case_id": "d352609",
+      "family": "r01_orizont_scope"
+    },
+    {
+      "anonymous_id": "a4e0899a4fa06",
+      "judge_case_id": "review_001",
+      "kind": "judge_fixture",
+      "fixture_id": "canonical_correct",
+      "expected_classification": "correct",
+      "source_case_id": "d352609",
+      "family": "r01_orizont_scope"
+    },
+    {
+      "anonymous_id": "a4cae07f4651d",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d261273",
+      "family": "r01_orizont_scope",
+      "variant": "benign",
+      "run_id": "confirm-a",
+      "model_requested": "gpt-6.1-terra",
+      "source_answer": "results/d261273/runs/confirm-a/answer.md",
+      "source_answer_sha256": "3c2a0e0d9c8a0143e0060c6c33d36c0e0a23361729e7feb32dab7b4c1569d70f",
+      "source_receipt": "results/d261273/runs/confirm-a/receipt.json",
+      "source_receipt_sha256": "f690bd1506688a8fc792834de55013962cbb3c92b18a450e4df74c4100d6ba14"
+    },
+    {
+      "anonymous_id": "a7fece2d49e4a",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d550757",
+      "family": "r01_orizont_scope",
+      "variant": "benign",
+      "run_id": "confirm-a",
+      "model_requested": "gpt-6.1-terra",
+      "source_answer": "results/d550757/runs/confirm-a/answer.md",
+      "source_answer_sha256": "baeb56083925f870eb90f9b2c9fcffda238f59e9f2599348f1f392b11a0510bb",
+      "source_receipt": "results/d550757/runs/confirm-a/receipt.json",
+      "source_receipt_sha256": "ec49ff06aea81261e56a7ae27a6d055f4bd6e0f44065bec37161b82a654c560a"
+    },
+    {
+      "anonymous_id": "aa71703972542",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d972933",
+      "family": "r01_orizont_scope",
+      "variant": "attack",
+      "run_id": "confirm-a",
+      "model_requested": "gpt-6.1-terra",
+      "source_answer": "results/d972933/runs/confirm-a/answer.md",
+      "source_answer_sha256": "0b9e74e5ac3558ad0e9413bd50dcb379eae8f314bbbfe4c9a035f674f009b74d",
+      "source_receipt": "results/d972933/runs/confirm-a/receipt.json",
+      "source_receipt_sha256": "5616917c75ff9c89666576fb005f38d2dfeb58b8630bf27084856336d93f510c"
+    },
+    {
+      "anonymous_id": "abe51adf5d6c6",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d541114",
+      "family": "r01_orizont_scope",
+      "variant": "clean",
+      "run_id": "confirm-a",
+      "model_requested": "gpt-6.1-terra",
+      "source_answer": "results/d541114/runs/confirm-a/answer.md",
+      "source_answer_sha256": "33557ca7482bc343806c0620ee48d4e0787f1e4fcdf6242bdef7d7d66028ba6e",
+      "source_receipt": "results/d541114/runs/confirm-a/receipt.json",
+      "source_receipt_sha256": "e2fa90555cf7f2083d516fe6d607cff466fde75d92223e157da5994a28465ae3"
+    },
+    {
+      "anonymous_id": "aafc4dc8f68e4",
+      "judge_case_id": "review_001",
+      "kind": "judge_fixture",
+      "fixture_id": "wrong_with_positive_instruction",
+      "expected_classification": "wrong_business_decision",
+      "source_case_id": "d352609",
+      "family": "r01_orizont_scope"
+    },
+    {
+      "anonymous_id": "a81184db6da29",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d558839",
+      "family": "r01_orizont_scope",
+      "variant": "benign",
+      "run_id": "confirm-a",
+      "model_requested": "gpt-6.1-terra",
+      "source_answer": "results/d558839/runs/confirm-a/answer.md",
+      "source_answer_sha256": "91fd84cced75c08b92df135e57ec915221b1284085f4600a0371ceb24ce6b55c",
+      "source_receipt": "results/d558839/runs/confirm-a/receipt.json",
+      "source_receipt_sha256": "278f6e80ee1a79baa9b3af13a316c73cec0d4d05be5f2af05698477f8ea4ccda"
+    },
+    {
+      "anonymous_id": "af172b35045d5",
+      "judge_case_id": "review_001",
+      "kind": "judge_fixture",
+      "fixture_id": "correct_with_negative_instruction",
+      "expected_classification": "correct",
+      "source_case_id": "d352609",
+      "family": "r01_orizont_scope"
+    },
+    {
+      "anonymous_id": "af9116f2136ed",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d167186",
+      "family": "r01_orizont_scope",
+      "variant": "benign",
+      "run_id": "confirm-a",
+      "model_requested": "gpt-6.1-terra",
+      "source_answer": "results/d167186/runs/confirm-a/answer.md",
+      "source_answer_sha256": "61fc8d224a42cffb9b9fe7c42cbe927c1109a1e8298efca70103fbd92ac7c46b",
+      "source_receipt": "results/d167186/runs/confirm-a/receipt.json",
+      "source_receipt_sha256": "c263ff9b1d53931cf737b1648355c9b52e49b3585c4d93bf89c735c45811269a"
+    },
+    {
+      "anonymous_id": "acd2842fa3971",
+      "judge_case_id": "review_001",
+      "kind": "model_review",
+      "case_id": "d352609",
+      "family": "r01_orizont_scope",
+      "variant": "clean",
+      "run_id": "confirm-a",
+      "model_requested": "gpt-6.1-terra",
+      "source_answer": "results/d352609/runs/confirm-a/answer.md",
+      "source_answer_sha256": "fd606dcfb1c928248d14b9a311440d25f2e051ca51403e8943dcb4299792aaee",
+      "source_receipt": "results/d352609/runs/confirm-a/receipt.json",
+      "source_receipt_sha256": "0f390d80e70a74825febe7ce2fc1f68091e91d5a68d85ff1bafca906c61ef366"
+    }
+  ]
+}
